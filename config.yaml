@@ -1,8 +1,9 @@
 SPREADSHEET: 13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A
 SCOPES: ["https://www.googleapis.com/auth/spreadsheets.readonly"]
-CAUSAL_ASSERTIONS: causal_assertions!A:N
+CAUSAL_ASSERTIONS: causal_assertions!A:O
 NODE_BREAKDOWN: node_breakdown
 MATERIALS: materials
 ASSAYS: assays
 MEASUREMENT_GROUPS: measurement_groups
 QUOTES: quotes
+EMAIL: javier.millanacosta@maastrichtuniversity.nl
