@@ -1,0 +1,620 @@
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix enm: <http://purl.enanomapper.org/onto/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix kb: <https://h2020-sbd4nano.github.io/sbd-data-landscape/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pato: <http://purl.org/obo/owl/PATO#> .
+@prefix placeholder: <http://purl.placeholder.enanomapper.net/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sbd: <https://www.sbd4nano.eu/rdf/#> .
+@prefix sbdbel: <https://www.sbd4nano.eu/bel/#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<https://github.com/h2020-sbd4nano/relationship_network> a void:DatasetDescription ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A> ;
+    dc:title "SbD4nano WP2 TiO2:SiO2 Relationships"@en ;
+    foaf:page <https://www.sbd4nano.eu/> .
+
+kb:CausalAssertion_tio2sio2_1 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 1:1" ;
+            sio:description "TiO2:SiO2 1:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/1:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    cito:cites "https://doi.org/10.1006/jaut.1999.0342",
+        "https://doi.org/10.1016/j.powtec.2007.02.002",
+        "https://doi.org/10.1023/A:1012029517394 " ;
+    sio:SIO_000299 "The size and physical properties of NPs are partly responsible for the NPs toxicity, with particles with smaller size and higher stability being more interactive with pulmonary cells." ;
+    sbdbel:cause [ a pato:PATO_0000117 ;
+            rdfs:label "size" ] ;
+    sbdbel:outcome [ rdfs:label "cytoskeleton dissassembly" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_10 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    cito:cites "https://doi.org/10.1016/S0008-6223(02)00441-4",
+        "https://doi.org/10.1021/la800532q" ;
+    sio:SIO_000299 "The increase of hydrodynamic diameter as a function of the TiO2:SiO2 ratio is caused by both the steric hindrance of SiO2 heterocoagulated on the TiO2 surface and the consequent electrostatic destabilization due to the progressive neutralization of the TiO2 surface charge with the increase of SiO2 content [29,30]." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "electrostatic stability" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_11 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    cito:cites "https://doi.org/10.1016/S0008-6223(02)00441-4",
+        "https://doi.org/10.1021/la800532q" ;
+    sio:SIO_000299 "The increase of hydrodynamic diameter as a function of the TiO2:SiO2 ratio is caused by both the steric hindrance of SiO2 heterocoagulated on the TiO2 surface and the consequent electrostatic destabilization due to the progressive neutralization of the TiO2 surface charge with the increase of SiO2 content [29,30]." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "surface charge" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_12 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 1:1" ;
+            sio:description "TiO2:SiO2 1:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/1:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "Furthermore, data from rhodamine phalloidin staining showed that the exposure to the different NPs seems to induce actin network morphological change (Figure 9). The interaction of TiO2:SiO2 NPs 1:1 (Figure 9b) and 3:1 (Figure 9d) with A549 cells, increased cytoskeleton disassembly and the presence of cellular filopodia, while an analog localization of actin is not detectable in the cells exposed to TiO2:SiO2 1:3 (Figure 9c)." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "cytoskeleton dissassembly" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_13 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 3:1" ;
+            sio:description "TiO2:SiO2 3:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/3:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "The analysis of the LC3BII protein allows us to understand the potential of NPs to induce cell autophagy. Data showed that TiO2:SiO2 1:1 and 3:1 NPs at the dose of 75 µg/mL induced a significant increase of LC3BII expression, while 1:3 NPs values are similar to the control one (Figure 7). " ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "autophagy" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_14 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/catal10070759> ;
+    sio:SIO_000299 "For TiO2, as the particle size decreases, its photocatalytic activity will increase to a certain extent, showing a specific size effect." ;
+    sbdbel:cause [ a pato:PATO_0000117 ;
+            rdfs:label "size" ] ;
+    sbdbel:outcome [ rdfs:label "photocatalytic activity" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_15 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3389/fchem.2021.738969> ;
+    sio:SIO_000299 "As shown in Table 2, the mass fraction of anatase increases from 64.4 to 90.7% when the SiO2 content increases from 0 to 50%. " ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "anatase to rutile phase transformation" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_16 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3389/fchem.2021.738969> ;
+    dcterms:subject [ a "TiO2:SiO2" ;
+            sio:description "TiO2:SiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/TiO2:SiO2> ] ;
+    sio:SIO_000299 "According to the nitrogen adsorption-desorption isotherms (Figures 5A,B; Table 3), the TiO2/SiO2 Nc (15%) with a mesoporous structure and large surface area (132.9 m2/g) makes their ability to well-dispersed and interact with binder (liquid glass) and extender pigments, which lead to the formation of isolate nanoparticles of W silicate coating This is an important feature indicating that W silicate coating with adding TiO2/SiO2 Nc (15%) has the potential to be photocatalytic and bactericidal materials." ;
+    sbdbel:cause [ a placeholder:mesoporous_structure ;
+            rdfs:label "mesoporous structure" ] ;
+    sbdbel:outcome [ rdfs:label "dispersion" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_17 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3389/fchem.2021.738969> ;
+    dcterms:subject [ a "95%TiO2:SiO2" ;
+            sio:description "95%TiO2:SiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/TiO2:SiO2> ] ;
+    sio:SIO_000299 "The anatase grain size decreases from 20.0 to 18.2 nm when the SiO2 content increases from 0 to 50%." ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "size" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_18 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3389/fchem.2021.738969> ;
+    dcterms:subject [ a "90%TiO2:SiO2" ;
+            sio:description "90%TiO2:SiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/TiO2:SiO2> ] ;
+    sio:SIO_000299 "Besides, the adding of SiO2 into TiO2 could retard the growth of nanoparticles and reduce the anatase grain size from 20.0 to 18.2 nm. " ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "size" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_19 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3389/fchem.2021.738969> ;
+    dcterms:subject [ a "85%TiO2:SiO2" ;
+            sio:description "85%TiO2:SiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/TiO2:SiO2> ] ;
+    sio:SIO_000299 "The presence of SiO2 in TiO2/SiO2 Nc (15%) not only inhibits the anatase to rutile phase transformation but also enhances the photocatalytic performance of TiO2 NPs" ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "anatase to rutile phase transformation" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_2 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 3:1" ;
+            sio:description "TiO2:SiO2 3:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/3:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    cito:cites "https://doi.org/10.3390/ijms18010120",
+        "https://doi.org/10.3390/nano5031163" ;
+    sio:SIO_000299 "A significant impact on cell viability was observed only with TiO2:SiO2 3:1 at the higher concentrations and necrosis, and slight apoptosis, seems to be the main pathways of cell death. A549 necrosis induced by exposure to 75 µg TiO2/mL TiO2:SiO2 3:1 is mediated by increasing reactive oxygen species, according to mechanisms widely described in literature concerning NPs cytotoxicity [48,49]." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "necrosis" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_20 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3389/fchem.2021.738969> ;
+    dcterms:subject [ a "80%TiO2:SiO2" ;
+            sio:description "80%TiO2:SiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/TiO2:SiO2> ] ;
+    sio:SIO_000299 "The presence of SiO2 in TiO2/SiO2 Nc (15%) not only inhibits the anatase to rutile phase transformation but also enhances the photocatalytic performance of TiO2 NPs" ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "photocatalytic activity" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_21 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1186/1743-8977-9-4> ;
+    sio:SIO_000299 "Pulmonary inflammation and DNA damage and hepatic histopathology were not changed in mice instilled with sanding dust from NanoTiO2 paint compared to paint without NanoTiO2. However, pure NanoTiO2 caused greater inflammation than NanoTiO2 embedded in the paint matrix." ;
+    sbdbel:cause [ a placeholder:photocatalytic_activity ;
+            rdfs:label "photocatalytic activity" ] ;
+    sbdbel:outcome [ rdfs:label "embedding in paint matrix" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_22 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 enm:placeholder_c57bl6mouse ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1186/1743-8977-9-4> ;
+    dcterms:subject [ a "rutile TiO2" ;
+            sio:description "rutile TiO2" ;
+            owl:sameAs placeholder:UV-Titan-L181 ] ;
+    sio:SIO_000299 "Pulmonary inflammation and DNA damage and hepatic histopathology were not changed in mice instilled with sanding dust from NanoTiO2 paint compared to paint without NanoTiO2. However, pure NanoTiO2 caused greater inflammation than NanoTiO2 embedded in the paint matrix." ;
+    sbdbel:cause [ a placeholder:embedding_paint_matrix ;
+            rdfs:label "embedding in paint matrix" ] ;
+    sbdbel:outcome [ rdfs:label "genotoxicity" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_23 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1186/1743-8977-9-4> ;
+    sio:SIO_000299 "toxicity of NanoTiO2 was reduced by inclusion into a paint matrix" ;
+    sbdbel:cause [ a placeholder:photocatalytic_activity ;
+            rdfs:label "photocatalytic activity" ] ;
+    sbdbel:outcome [ rdfs:label "embedding in paint matrix" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_24 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 enm:placeholder_c57bl6mouse ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1186/1743-8977-9-4> ;
+    dcterms:subject [ a "rutile TiO2" ;
+            sio:description "rutile TiO2" ;
+            owl:sameAs placeholder:UV-Titan-L181 ] ;
+    sio:SIO_000299 "Sanding dust from both paints resulted in increased neutrophil counts in mice 1 day after intratracheal instillation of 162 and 486 μg. Exposure to 486 μg of both types of sanding dust resulted in increased neutrophil numbers 3 days after intratracheal instillation, while no increased influx of neutrophils were observed 28 days after intratracheal instillation. The neutrophil counts were not different between the NanoTiO2 containing paint (Indoor-NanoTiO2) and the reference paint without NanoTiO2 (Indoor-R). Thus, inflammation was observed for all tested materials, although the paint dust with and without nanoparticles was much less inflammogenic than the pure NanoTiO2 at similar mass. " ;
+    sbdbel:cause [ a placeholder:embedding_paint_matrix ;
+            rdfs:label "embedding in paint matrix" ] ;
+    sbdbel:outcome [ rdfs:label "BAL fluid count" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_25 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1111/j.1151-2916.2001.tb00882.x> ;
+    sio:SIO_000299 """At still higher temperatures, the Si4+ is expelled from the
+interior of the anatase particles and gradually forms an amorphous
+surface SiO2 layer. Because this surface layer prevents direct contact
+of the anatase particles, it suppresses grain growth and retards the
+transition to rutile.""" ;
+    sbdbel:cause [ a placeholder:ion_release ;
+            rdfs:label "Si4+ ion release" ] ;
+    sbdbel:outcome [ rdfs:label "size" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_26 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1111/j.1151-2916.2001.tb00882.x> ;
+    sio:SIO_000299 """At still higher temperatures, the Si4+ is expelled from the
+interior of the anatase particles and gradually forms an amorphous
+surface SiO2 layer. Because this surface layer prevents direct contact
+of the anatase particles, it suppresses grain growth and retards the
+transition to rutile.""" ;
+    sbdbel:cause [ a pato:PATO_0000117 ;
+            rdfs:label "size" ] ;
+    sbdbel:outcome [ rdfs:label "anatase to rutile phase transformation" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_27 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "While overall the toxicity in culture was low, different types of nano-TiO2 did exhibit different levels of toxicity. Nano-TiO2 anatase particles were the most cytotoxic to human cells in culture, while nano-TiO2 rutile particles were the least cytotoxic. Specifically, nano-TiO2 anatase particles induced an LC50 of 3.6 lg/ml, while nano-TiO2 rutile particles induced an LC50 of 550 lg/ml." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "toxicity" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_28 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "While overall the toxicity in culture was low, different types of nano-TiO2 did exhibit different levels of toxicity. Nano-TiO2 anatase particles were the most cytotoxic to human cells in culture, while nano-TiO2 rutile particles were the least cytotoxic. Specifically, nano-TiO2 anatase particles induced an LC50 of 3.6 lg/ml, while nano-TiO2 rutile particles induced an LC50 of 550 lg/ml." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "toxicity" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_29 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "rutile TiO2" ;
+            sio:description "rutile TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:rutile-tio2> ] ;
+    sio:SIO_000299 "While overall the toxicity in culture was low, different types of nano-TiO2 did exhibit different levels of toxicity. Nano-TiO2 anatase particles were the most cytotoxic to human cells in culture, while nano-TiO2 rutile particles were the least cytotoxic. Specifically, nano-TiO2 anatase particles induced an LC50 of 3.6 lg/ml, while nano-TiO2 rutile particles induced an LC50 of 550 lg/ml." ;
+    sbdbel:cause [ a placeholder:rutile ;
+            rdfs:label "rutile crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "toxicity" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_3 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 3:1" ;
+            sio:description "TiO2:SiO2 3:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/3:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "We observed that TiO2:SiO2 3:1 was able to induce a slight but significant arrest of the cell cycle in the S-phase" ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "S-phase cell cycle arrest" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_30 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "In this test, nano-TiO2 anatase and rutile particles were added to luminol solutions; an increase in relative luminescent units within the scatter plot indicates an increase in reactive oxygen species, generally interpreted to consist of OH• radicals. These data show that under a wide variety of conditions (dark/illuminated, sonicated, in biological media), nano-TiO2 anatase particles produce greater levels of reactive species than nano-TiO2 rutile particles. " ;
+    sbdbel:cause [ a placeholder:rutile ;
+            rdfs:label "rutile crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "ROS production" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_31 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/CL_0000057> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "While overall the toxicity in culture was low, different types of nano-TiO2 did exhibit different levels of toxicity. Nano-TiO2 anatase particles were the most cytotoxic to human cells in culture, while nano-TiO2 rutile particles were the least cytotoxic. Specifically, nano-TiO2 anatase particles induced an LC50 of 3.6 lg/ml, while nano-TiO2 rutile particles induced an LC50 of 550 lg/ml." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "toxicity" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_32 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/CL_0000057> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "rutile TiO2" ;
+            sio:description "rutile TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:rutile-tio2> ] ;
+    sio:SIO_000299 "While overall the toxicity in culture was low, different types of nano-TiO2 did exhibit different levels of toxicity. Nano-TiO2 anatase particles were the most cytotoxic to human cells in culture, while nano-TiO2 rutile particles were the least cytotoxic. Specifically, nano-TiO2 anatase particles induced an LC50 of 3.6 lg/ml, while nano-TiO2 rutile particles induced an LC50 of 550 lg/ml." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "lc50" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_33 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/CL_0000057> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "In this test, nano-TiO2 anatase and rutile particles were added to luminol solutions; an increase in relative luminescent units within the scatter plot indicates an increase in reactive oxygen species, generally interpreted to consist of OH• radicals. These data show that under a wide variety of conditions (dark/illuminated, sonicated, in biological media), nano-TiO2 anatase particles produce greater levels of reactive species than nano-TiO2 rutile particles. " ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "ROS production" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_34 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/CL_0000057> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "rutile TiO2" ;
+            sio:description "rutile TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:rutile-tio2> ] ;
+    sio:SIO_000299 "In this test, nano-TiO2 anatase and rutile particles were added to luminol solutions; an increase in relative luminescent units within the scatter plot indicates an increase in reactive oxygen species, generally interpreted to consist of OH• radicals. These data show that under a wide variety of conditions (dark/illuminated, sonicated, in biological media), nano-TiO2 anatase particles produce greater levels of reactive species than nano-TiO2 rutile particles. " ;
+    sbdbel:cause [ a placeholder:rutile ;
+            rdfs:label "rutile crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "ROS production" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_35 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "Specifically, nano-TiO2 anatase particles produced a high LDH release in cells under ambient conditions and a higher cellular LDH release when exposed to UV light after nano-TiO2 particle inoculation. Nano-TiO2 anatase/rutile particles produced a biological response less than that of anatase but greater than rutile. In addition, nano-TiO2 anatase particles decreased mitochondrial activity (or cellular viability) and enhanced IL-8 in both HDF and A549 cell lines." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "percent cell viability" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_36 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "Nano-TiO2 anatase/rutile particles produced a biological response less than that of anatase but greater than rutile. In addition, nano-TiO2 anatase particles decreased mitochondrial activity (or cellular viability) and enhanced IL-8 in both HDF and A549 cell lines." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "percent cell viability" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_37 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/CL_0000057> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 "Nano-TiO2 anatase/rutile particles produced a biological response less than that of anatase but greater than rutile. In addition, nano-TiO2 anatase particles decreased mitochondrial activity (or cellular viability) and enhanced IL-8 in both HDF and A549 cell lines." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "percent cell viability" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_38 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    sio:SIO_000299 "Nano-TiO2 anatase/rutile particles produced a biological response less than that of anatase but greater than rutile. In addition, nano-TiO2 anatase particles decreased mitochondrial activity (or cellular viability) and enhanced IL-8 in both HDF and A549 cell lines." ;
+    sbdbel:cause [ a placeholder:anatase ;
+            rdfs:label "anatase crystalline phase" ] ;
+    sbdbel:outcome [ rdfs:label "IL-8 expression" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_39 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1093/toxsci/kfj197> ;
+    dcterms:subject [ a "anatase TiO2" ;
+            sio:description "anatase TiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:anatase-tio2> ] ;
+    sio:SIO_000299 """As Table 1 illustrates, those samples that were the effective
+photocatalysts were also the most cytotoxic and inflammatory
+in cell culture.""" ;
+    sbdbel:cause [ a placeholder:photocatalytic_activity ;
+            rdfs:label "photocatalytic activity" ] ;
+    sbdbel:outcome [ rdfs:label "toxicity" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_4 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 1:1" ;
+            sio:description "TiO2:SiO2 1:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/1:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "Microtubule-associated protein light-chain protein-3 (LC3) is a key protein in autophagosome formation, and it is converted from its cytosolic form (LC3 I) into an active membrane-bound form (LC3 II) by sequential proteolysis and lipidation during autophagosome assembly [54]. Our data on LC3B II expression confirm that autophagy occurs with TiO2:SiO2 1:1, 3:1, and TiO2 NPs, confirming that autophagy is one of the main pathways involved in the response to metal oxide NPs." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "autophagy" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_40 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1016/S0920-5861(02)00225-0> ;
+    cito:cites "https://doi.org/10.1016/S0167-2991(06)81816-1" ;
+    sio:SIO_000299 "the inclusion of magnesium silicate in the structure of the catalyst stabilises the anatase phase TiO2" ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "structural phase stability" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_41 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1016/j.ceramint.2021.12.096> ;
+    sio:SIO_000299 "On the other hand, the formation of more oxygen vacancies during the heat treatment in N2 leads to a decreased phase transformation energy of TiO2 in the CTS-850" ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "autophagy" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_42 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1016/j.ceramint.2021.12.096> ;
+    sio:SIO_000299 "Interestingly, the CTS-1050, even though with carbon doping, shows a larger band gap than those of CTS-650 and CTS-850. This is ascribed to the largest grain size, fading of quantum confinement, which is in agreement with previous reports" ;
+    sbdbel:cause [ a pato:PATO_0000117 ;
+            rdfs:label "size" ] ;
+    sbdbel:outcome [ rdfs:label "band gap" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_43 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1016/j.ceramint.2021.12.096> ;
+    sio:SIO_000299 "Moreover, interface states caused by oxygen vacancies also effectively lower the band gap" ;
+    sbdbel:cause [ a placeholder:oxygen_vacancies ;
+            rdfs:label "oxygen vacancies" ] ;
+    sbdbel:outcome [ rdfs:label "band gap" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_44 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1016/j.apcata.2021.118179> ;
+    dcterms:subject [ a "XX%TiO2NP@SiO2" ;
+            sio:description "XX%TiO2NP@SiO2" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/placeholder:titanium-silica-nanocomposite> ] ;
+    sio:SIO_000299 "due to the different atomic mass of titanium and silicon: increasing the relative amount of TiO2 leads to a decreased specific surface area" ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "surface area" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_45 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1016/j.apcata.2021.118179> ;
+    sio:SIO_000299 "the firm immobilisation of the TiO2 nanoparticles at the surface of the silica matrix ensures stability against aggregation during the reaction (which, on the other hand, is a known issue for P25 TiO2" ;
+    sbdbel:cause [ a placeholder:silica_coating ;
+            rdfs:label "silica coating" ] ;
+    sbdbel:outcome [ rdfs:label "aggregation" ] ;
+    sbdbel:relationship sbdbel:negatively_correlates .
+
+kb:CausalAssertion_tio2sio2_46 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.1007/s13399-023-03783-z> ;
+    sio:SIO_000299 "With respect to influence of different metal and nonmetal dopants, C, N, Ag, and Fe could also improve crystallinity, increase in the specific surface area or thus, additionally, enhancing the photocatalytic performance regarding reaction time" ;
+    sbdbel:cause [ a enm:ENM_9000242 ;
+            rdfs:label "doping (organic, inorganic)" ] ;
+    sbdbel:outcome [ rdfs:label "crystal structure" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_5 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 1:1" ;
+            sio:description "TiO2:SiO2 1:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/1:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "The analysis of the LC3BII protein allows us to understand the potential of NPs to induce cell autophagy. Data showed that TiO2:SiO2 1:1 and 3:1 NPs at the dose of 75 µg/mL induced a significant increase of LC3BII expression, while 1:3 NPs values are similar to the control on" ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "autophagy" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_6 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 3:1" ;
+            sio:description "TiO2:SiO2 3:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/3:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "Cells viability was assessed to evaluate the toxic potential of TiO2 based nanocomposites. Data from MTT test showed that particles TiO2:SiO2 3:1, with a lower amount of SiO2 vs. TiO2, have affected the viability of the cells at the doses 750 and 75 µg/mL with a mortality of the 30% and 10%, respectively (Figure 4a). Cell viability data obtained from the exposure to TiO2 and SiO2 NPs alone are reported in Supplementary Materials (Figure S2). To investigate the type of cell death induced by these NPs, H/PI staining has been performed at the dose 75 µg TiO2/mL, which is the dose used for the other endpoints. Furthermore, this effective concentration falls in the range (from 1 µg/mL until 200 µg/mL) recommended for the in vitro testing of NMs aiming to investigate biological responses and in mechanistic studies [31,32]. Results from this test showed that TiO2:SiO2 3:1 induced a reduction of cell viability, as demonstrated by the increased number of necrotic cells (Figure 4b). " ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "cytotoxicity" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_7 a sbd:CausalAssertion,
+        sbd:resource ;
+    enm:CL_00010304 <http://purl.obolibrary.org/obo/BTO_0000018> ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    dcterms:subject [ a "TiO2:SiO2 3:1" ;
+            sio:description "TiO2:SiO2 3:1" ;
+            owl:sameAs <http://purl.placeholder.enanomapper.net/3:1-nanocomposite-of-TiO2-in-a-Silica-coat> ] ;
+    sio:SIO_000299 "Data were also confirmed by the Annexin V/PI test, which evidenced that the exposure to TiO2:SiO2 3:1, as well as TiO2 NPs alone, increased the percentage of early necrotic cells (Annexin V+/PI+). Thanks to the Annexin V test, a slight increase of apoptotic (Annexin V+) cells, after exposure to TiO2:SiO2 1:1, 3:1, and TiO2 NPs alone, was appreciated (Supplementary Materials S3b,c)." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "necrosis" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_8 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    cito:cites "https://doi.org/10.1016/S0008-6223(02)00441-4",
+        "https://doi.org/10.1021/la800532q" ;
+    sio:SIO_000299 "The increase of hydrodynamic diameter as a function of the TiO2:SiO2 ratio is caused by both the steric hindrance of SiO2 heterocoagulated on the TiO2 surface and the consequent electrostatic destabilization due to the progressive neutralization of the TiO2 surface charge with the increase of SiO2 content [29,30]." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "hydrodynamic diameter" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
+kb:CausalAssertion_tio2sio2_9 a sbd:CausalAssertion,
+        sbd:resource ;
+    dc:source <https://docs.google.com/spreadsheets/d/13dqwura-jSnGMVBSO7pVXfRgbPegGC7QNoSLNAFls3A>,
+        <https://doi.org/10.3390/nano9071041> ;
+    cito:cites "https://doi.org/10.1016/S0008-6223(02)00441-4",
+        "https://doi.org/10.1021/la800532q" ;
+    sio:SIO_000299 "The increase of hydrodynamic diameter as a function of the TiO2:SiO2 ratio is caused by both the steric hindrance of SiO2 heterocoagulated on the TiO2 surface and the consequent electrostatic destabilization due to the progressive neutralization of the TiO2 surface charge with the increase of SiO2 content [29,30]." ;
+    sbdbel:cause [ a placeholder:silica_to_titanium_ratio ;
+            rdfs:label "SiO2 encapsulation" ] ;
+    sbdbel:outcome [ rdfs:label "steric hindrance" ] ;
+    sbdbel:relationship sbdbel:positively_correlates .
+
