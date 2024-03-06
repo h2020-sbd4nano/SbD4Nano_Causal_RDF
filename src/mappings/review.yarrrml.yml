@@ -1,3 +1,5 @@
+#TODO aggregate size
+#TODO check all assays reported in spreadsheet
 prefixes:
   rr: "http://www.w3.org/ns/r2rml#"
   dc: "http://purl.org/dc/elements/1.1/"
@@ -30,6 +32,7 @@ prefixes:
   nsvoc: "https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:"
   fn: "https://w3id.org/imec/idlab/function#"
   sbd4nano: "https://h2020-sbd4nano.github.io/sbd-data-landscape/"
+  placeholder: "https://purl.placeholder.enanomapper.net/"
 
 base: https://h2020-sbd4nano.github.io/sbd-data-landscape/
 
@@ -58,7 +61,8 @@ external:
   protocolSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_
   methodSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/method_
   endpointSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_
-  assertionSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/CausalAssertion_
+  assertionSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/causalAssertion_
+  evidenceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/evidence_
 
 mappings:
   dataset:
@@ -74,12 +78,70 @@ mappings:
       - [dcterms:creator, $(_publisherName)]
       - [dcterms:creator, $(_publisherName2)]
       - [dcterms:creator, $(_publisherName3)]
+  # References
+  reference:
+    sources:
+      - data-source
+    subjects:
+      - $(_referenceSubjectUrl)$(#)
+    predicateobjects:
+      - [rdf:type, wd:Q13442814~iri]
+      - [owl:sameAs, $(source)~iri]
+  # Quotes (text passages) are evidence for causalAssertions
+  quoteEvidence:
+    sources:
+      - data-source
+    subjects:
+      - $(_evidenceSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sio:000299~iri] #is a quote
+      - [sio:000208, $(_assertionSubjectUrl)$(row_id)~iri] #is supporting evidence for a causalAssertion
+      - [rdf:value, $(quote), en~lang]
+      - [dcterms:source, $(_referenceSubjectUrl)$(#)~iri]
+  # causalAssertions
+  causalAssertion:
+    sources:
+      - data-source
+    subjects:
+      - $(_assertionSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sio:001183~iri] #is a statement
+      - [sio:000206, $(_evidenceSubjectUrl)$(row_id)~iri] #is supported by an evidence
+      - [sbdbel:hasCause, $(s_iri)~iri] 
+      - [sbdbel:hasRelationship, sbdbel:$(p)~iri]
+      - [sbdbel:hasOutcome, $(o_iri)~iri]
+      - [sio:000339, $(_referenceSubjectUrl)$(#)~iri] #is specified by a reference
+
+  # causes
+  cause:
+    sources:
+      - data-source
+    subjects:
+      - sbdbel:$(s_iri)
+    predicateobjects:
+      - [rdf:type, sbdbel:cause~iri] #is a cause
+  # relationships
+  relationship:
+    sources:
+      - data-source
+    subjects:
+      - sbdbel:$(p)
+    predicateobjects:
+      - [rdf:type, sbdbel:relationship~iri] #is a relationship
+  # outcomes
+  outcome:
+    sources:
+      - data-source
+    subjects:
+      - $(o_iri)
+    predicateobjects:
+      - [rdf:type, sbdbel:outcome~iri] #is an outcome
   # Substance
   chemicalSubstance:  
     sources:
       - data-source
     subjects:
-          - $(_chemicalSubstanceSubjectUrl)$(row_id)
+        - $(_chemicalSubstanceSubjectUrl)$(row_id)
     predicateobjects:
       - [rdf:type, obo:CHEBI_59999~iri] # chemical substance
       - [rdfs:label, $(material_type), en~lang] #TODO this is an ~iri
@@ -554,3 +616,31 @@ mappings:
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(row_id)_endotoxin_impurities_ep
 
+  # Endpoints
+
+  ## Primary Size
+
+  endpointPrimarySize:
+    sources:
+      - data-source
+    subjects:
+      - $(_endpointSubjectUrl)$(row_id)_primary_size_ep
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000179~iri]
+      - [rdf:type, obo:PATO_0000117~iri]
+      - [rdfs:label, primary size, en~lang]
+      - [sio:000221, obo:UO_0000018~iri]      
+      - predicate: sio:000300 # For non-ranges
+        object: 
+          value: $(primary_size)
+          datatype: xsd:float
+      #TODO- predicate: sio:madeup # For ranges
+      #TODO  object: 
+      #TODO    value: $(primary_size)
+      #TODO    datatype: xsd:string
+      #TODO  condition:
+      #TODO    function: grel:string_contains
+      #TODO    parameters:
+      #TODO      - [grel:valueParameter, $(primary_size)]
+      #TODO      - [grel:string_sub, "-"]
+    
