@@ -30,3 +30,8 @@ java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $NQ
 # Step 6: cleanup
 echo "Removing files"
 #rm rmlmapper*
+
+# Step 7: SPARQL tests
+echo Downloading robot
+wget -nc https://github.com/ontodev/robot/releases/download/v1.9.4/robot.jar
+wget -nc https://raw.githubusercontent.com/ontodev/robot/master/bin/robot
