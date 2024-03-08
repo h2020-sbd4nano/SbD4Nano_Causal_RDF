@@ -15,7 +15,7 @@ This repository contains links to supporting data for the SbD4Nano network linki
 - Javier Millan Acosta [0000-0002-4166-7093](https://orcid.org/0000-0002-4166-7093)
 - Egon L. Willighagen [0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286)
 
-The methodology to generate RDF versions of the curated spreadsheets was adapted from the Nano-MIE-interactions-RDF [Ammar Ammar. (2023)](https://doi.org/10.5281/zenodo.8075705).
+The methodology to generate RDF versions of the curated spreadsheets was adapted from the Nano-MIE-interactions-RDF [(Ammar Ammar, 2023)](https://doi.org/10.5281/zenodo.8075705).
 
 
 ## Abstract
