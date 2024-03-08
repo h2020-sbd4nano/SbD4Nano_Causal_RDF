@@ -1,0 +1,25 @@
+version: "3"
+services:
+  virtuoso:
+    image: openlink/virtuoso-opensource-7:7.2.11
+    restart: always
+    container_name: virtuoso
+    volumes:
+      - ./virtuoso:/database # directory to persist the Virtuoso database. If empty dir, a new database will be created
+    environment:
+      - DBA_PASSWORD=CONDUCTOR_PASSWORD
+      - SPARQL_UPDATE=false
+    ports:
+      - "8899:8890"
+      - "1133:1111"
+  snorql:
+    image: aammar/snorql-httpd:latest
+    restart: always
+    container_name: snorql
+    environment:
+      - SNORQL_ENDPOINT=http://localhost:8899/sparql
+      - SNORQL_EXAMPLES_REPO=https://github.com/jmillanacosta/SbD4nano-causal-SPARQL
+      - SNORQL_TITLE=SbD4Nano\ Causal\ Network\ RDF
+    ports:
+      - "8088:80"
+      - "4430:443"

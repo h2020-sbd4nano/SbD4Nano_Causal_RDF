@@ -1,0 +1,895 @@
+#TODO aggregate size
+#TODO check all assays reported in spreadsheet
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  dc: "http://purl.org/dc/elements/1.1/"
+  dcterms: "http://purl.org/dc/terms/"
+  void: "http://rdfs.org/ns/void#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  d2rq: "http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#"
+  idlab-fn: "http://example.com/idlab/function/"
+  fnml:   "http://semweb.mmlab.be/ns/fnml#"
+  fno: 	"http://w3id.org/function/ontology#"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  obo: "http://purl.obolibrary.org/obo/"
+  npo: "http://purl.bioontology.org/ontology/npo#"
+  enm: "http://purl.enanomapper.org/onto/"
+  amb:   "http://purl.enanomapper.net/"
+  sio: "http://semanticscience.org/resource/"
+  wdt: "http://www.wikidata.org/prop/direct/"
+  wd: "http://www.wikidata.org/entity/"
+  bao: "http://www.bioassayontology.org/bao#"
+  efo: "http://www.ebi.ac.uk/efo/"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  cito: "http://purl.org/net/cito/"
+  nci: "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+  NCBITAXON: "http://purl.bioontology.org/ontology/NCBITAXON/"
+  sbdbel: "https://h2020-sbd4nano.github.io/sbdbel/"
+  nsvoc: "https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:"
+  fn: "https://w3id.org/imec/idlab/function#"
+  sbd4nano: "https://h2020-sbd4nano.github.io/sbd-data-landscape/"
+  placeholder: "https://purl.placeholder.enanomapper.net/"
+
+base: https://h2020-sbd4nano.github.io/sbd-data-landscape/
+
+authors:
+  - name: Javier Millan Acosta
+    website: http://orcid.org/0000-0002-4166-7093
+  - name: Ammar Ammar #original mappings for https://zenodo.org/badge/latestdoi/386910392
+    website: http://orcid.org/0000-0002-8399-8990
+ 
+sources:
+  data-source: ['data/causal_network.csv~csv']
+  
+external:
+  licenseUrl: https://creativecommons.org/licenses/by/4.0/
+  publisherName: Javier Millan Acosta
+  publisherName2: Jeaphianne van Rijn
+  publisherName3: Egon Willighagen
+  datasetName: NANO_SBD_RDF
+  datasetTitle: NANO-SBD RDF
+  datasetDescription: RDF version of the literature review on nanomaterial SbD
+  datasetSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/dataset_
+  referenceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/reference_
+  chemicalSubstanceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/chemical_substance_
+  measureGroupSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_
+  assaySubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_
+  protocolSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_
+  methodSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/method_
+  endpointSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_
+  assertionSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/causal_assertion_
+  evidenceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/evidence_
+  bioassayFormatSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_
+
+mappings:
+  dataset:
+    sources:
+      - data-source
+    subject:
+      - $(_datasetSubjectUrl)$(_datasetName)
+    predicateobjects:
+      - [rdf:type, void:DataSet~iri]
+      - [dcterms:title, $(_datasetTitle), en~lang]
+      - [dcterms:description, $(_datasetDescription), en~lang]
+      - [dcterms:license, $(_licenseUrl)~iri]
+      - [dcterms:creator, $(_publisherName)]
+      - [dcterms:creator, $(_publisherName2)]
+      - [dcterms:creator, $(_publisherName3)]
+  # References
+  reference:
+    sources:
+      - data-source
+    subjects:
+      - $(_referenceSubjectUrl)$(reference_id)
+    predicateobjects:
+      - [rdf:type, wd:Q13442814~iri]
+      - [owl:sameAs, $(source)~iri]
+  # Quotes (text passages) are evidence for causalAssertions
+  quoteEvidence:
+    sources:
+      - data-source
+    subjects:
+      - $(_evidenceSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sio:000299~iri] #is a quote
+      - [sio:000208, $(_assertionSubjectUrl)$(row_id)~iri] #is supporting evidence for a causalAssertion
+      - [rdf:value, $(quote), en~lang]
+      - [dcterms:source, $(_referenceSubjectUrl)$(reference_id)~iri]
+      #- predicate: cito:citesAsSourceDocument
+      #  object: 
+      #    function: grel:string_split
+      #    parameters:
+      #      - [grel:valueParameter, $(citesAsSourceDocument)]
+      #      - [grel:param_string_sep, ","]
+      #  condition:
+      #    function: grel:string_contains
+      #    parameters:
+      #      - [grel:valueParameter, $(citesAsSourceDocument)]
+      #      - [grel:string_sub, "http"]
+
+
+        
+  # causalAssertions
+  causalAssertion:
+    sources:
+      - data-source
+    subjects:
+      - $(_assertionSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sio:001183~iri] #is a statement
+      - [sio:000206, $(_evidenceSubjectUrl)$(row_id)~iri] #is supported by an evidence
+      - [sbdbel:hasCause, $(s_iri)~iri] 
+      - [sbdbel:hasRelationship, sbdbel:$(p)~iri]
+      - [sbdbel:hasOutcome, $(o_iri)~iri]
+      - [sio:000339, $(_referenceSubjectUrl)$(reference_id)~iri] #is specified by a reference
+      - [sio:000332, $(_chemicalSubstanceSubjectUrl)$(erm)~iri] # is about a chemical substance
+
+  # causes
+  cause:
+    sources:
+      - data-source
+    subjects:
+      - sbdbel:$(s_iri)
+    predicateobjects:
+      - [rdf:type, sbdbel:cause~iri] #is a cause
+      - [rdfs:label, $(s), en~lang]
+  # relationships
+  relationship:
+    sources:
+      - data-source
+    subjects:
+      - sbdbel:$(p)
+    predicateobjects:
+      - [rdf:type, sbdbel:relationship~iri] #is a relationship
+      - [rdfs:label, $(p), en~lang]
+  # outcomes
+  outcome:
+    sources:
+      - data-source
+    subjects:
+      - $(o_iri)
+    predicateobjects:
+      - [rdf:type, sbdbel:outcome~iri] #is an outcome
+      - [rdfs:label, $(o), en~lang]
+  # Substance
+  chemicalSubstance:  
+    sources:
+      - data-source
+    subjects:
+        - $(_chemicalSubstanceSubjectUrl)$(erm) #TODO change for ERM
+    predicateobjects:
+      - [rdf:type, obo:CHEBI_59999~iri] # chemical substance
+      - [rdfs:label, $(material_type), en~lang] #TODO this is an ~iri
+      #- [dcterms:title, $(material_type), en~lang]
+      - [dcterms:description, $(material_type): $(material_description), en~lang]
+      - [dcterms:type, $(material_iri)]
+      #- [dcterms:identifier, $(erm)~iri]
+      # Sources
+      - predicate: dcterms:source
+        object: $(_datasetSubjectUrl)$(_datasetName)~iri
+      - predicate: dcterms:source
+        object: $(source) #TODO add condition so we can specify this is an ~iri
+
+      # primary size measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_primary_size_mg~iri
+
+      # bundle diameter measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_bundle_diameter_mg~iri
+
+      # hydrodynamic diameter measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_hydrodynamic_diameter_mg~iri
+
+      # surface area measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_surface_area_mg~iri
+
+      # shape measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_shape_mg~iri
+
+      # zeta potential measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_zeta_potential_mg~iri
+
+      # porosity measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_porosity_mg~iri
+
+      # crystal structure measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_crystal_structure_mg~iri
+    
+      # polidispersity index measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_polidispersity_index_mg~iri
+
+      # endotoxin impurities measurement group
+      - predicate: obo:BFO_0000056
+        object: $(_measureGroupSubjectUrl)$(row_id)_endotoxin_impurities_mg~iri
+
+# Assays
+## Bioassay
+  bioassay:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_bio_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_bio_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_bio_ap~iri
+      - predicate: bao:BAO_0000555 # Has assay format
+        object: $(_bioassayFormatSubjectUrl)$(row_id)_bio_af~iri
+
+
+## Assay primary size
+  assayPrimarySize:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_primary_size_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial primary size", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_primary_size_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_primary_size_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_primary_size_me~iri
+
+## Assay bundle diameter
+
+  assayBundleDiameter:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_bundle_diameter_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial bundle diameter", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_bundle_diameter_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_bundle_diameter_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_bundle_diameter~iri
+
+## Assay diameter
+
+  assayDiameter:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_diameter_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial diameter", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_diameter_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_diameter_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_diameter~iri
+
+## Assay hydrodynamic diameter
+
+  assayHydrodynamicDiameter:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_hydrodynamic_diameter_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial hydrodynamic diameter", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_hydrodynamic_diameter_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_hydrodynamic_diameter_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_hydrodynamic_diameter~iri
+
+## Assay surface area  
+  assaySurfaceArea:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_surface_area_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial hydrodynamic diameter", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_surface_area_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_surface_area_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_surface_area~iri
+
+## Assay shape
+  assayShape:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_shape_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial shape", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_shape_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_shape_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_shape~iri
+
+
+## Assay zeta potential
+  assayZetaPotential:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_zeta_potential_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial zeta_potential", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_zeta_potential_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_zeta_potential_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_zeta_potential~iri
+
+## Assay porosity
+  assayPorosity:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_porosity_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial porosity", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_porosity_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_porosity_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_porosity~iri
+
+## Assay crystal_structure
+  assayCrystalStructure:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_crystal_structure_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial crystal_structure", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_crystal_structure_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_crystal_structure_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_crystal_structure~iri
+
+## Assay polidispersity index
+  assayPolidispersityIndex:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_polidispersity_index_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial polidispersity_index", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_polidispersity_index_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_polidispersity_index_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_polidispersity_index~iri
+
+## Assay endotoxin impurities
+  assayEndotoxinImpurities:
+    sources:
+      - data-source
+    subjects: $(_assaySubjectUrl)$(row_id)_endotoxin_impurities_as
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000015~iri] 
+      - [rdfs:label, "assay for nanomaterial endotoxin impurities", en~lang]
+      - predicate: bao:BAO_0000209
+        object: $(_measureGroupSubjectUrl)$(row_id)_endotoxin_impurities_mg~iri
+      - predicate: bao:BAO_0002846
+        object: $(_protocolSubjectUrl)$(row_id)_endotoxin_impurities_ap~iri
+      - predicate: bao:BAO_0000207
+        object: $(_methodSubjectUrl)$(row_id)_endotoxin_impurities~iri
+
+# Methods
+
+## Method primary size
+  methodPrimarySize:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_primary_size_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(primary_size_instrument)
+          datatype: xsd:string
+
+## Method bundle diameter
+  methodBundleDiameter:    
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_bundle_diameter_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(bundle_diameter_instrument)
+          datatype: xsd:string
+
+  ## Method diameter
+  methodDiameter:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_diameter_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(diameter_instrument)
+          datatype: xsd:string
+
+  ## Method hydrodynamic diameter
+  methodHydrodynamicDiameter:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_hydrodynamic_diameter_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(hydrodynamic_diameter_instrument)
+          datatype: xsd:string
+  ## Method surface area
+  methodSurfaceArea:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_surface_area_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(surface_area_instrument)
+          datatype: xsd:string
+  
+  ## Method zeta potential
+  methodZetaPotential:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_zeta_potential_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(zeta_potential_instrument)
+          datatype: xsd:string
+  
+  ## Method porosity
+  methodPorosity:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_porosity_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(porosity_instrument)
+          datatype: xsd:string
+
+## Method crystal structure
+  methodCrystalStructure:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_crystal_structure_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(crystal_structure_instrument)
+          datatype: xsd:string
+  
+  ## Method polidispersity index
+  methodPolidispersityIndex:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_polidispersity_index_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(polidispersity_index_instrument)
+          datatype: xsd:string
+  
+  ## Method endotoxin impurities
+  methodEndotoxinImpurities:
+    sources:
+      - data-source
+    subjects: $(_methodSubjectUrl)$(row_id)_endotoxin_impurities_me
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000035~iri]
+      - predicate: rdfs:label
+        object: 
+          value: $(endotoxin_impurities_instrument)
+          datatype: xsd:string
+
+  # Bioassay formats
+  ## Organism
+  ## Cell
+  bioassayFormatOrganism:
+    sources:
+      - data-source
+    condition:
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(organism_iri)]
+            - [grel:string_sub, "http"]
+    subjects: $(_bioassayFormatSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdfs:type, bao:BAO_0000219~iri] # type: organism format bioassay
+      - [bao:BAO_0002921, $(organism_iri)~iri] # organism
+      - [bao:BAO_0002833, $(exposure_time)] #incubation time value, TODO need to handle ranges or > < etc
+      - predicate: rdfs:type # a (assay format type)
+        object: $(assay_iri)~iri
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(assay_iri)]
+            - [grel:string_sub, "http"]
+     
+  ## Cell
+  bioassayFormatCell:
+    sources:
+      - data-source
+    condition:
+      function: grel:string_contains
+      parameters:
+        - [grel:valueParameter, $(model_cell_iri)]
+        - [grel:string_sub, "http"]
+    subjects: $(_bioassayFormatSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdfs:type, bao:BAO_0000218~iri] # tyype: cell format bioassay
+      - [bao:BAO_0002004, $(model_cell_iri)~iri] # cell line
+      - predicate: rdfs:type # a (assay format type, e.g., ELISA)
+        object: $(assay_iri)~iri
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(assay_iri)]
+            - [grel:string_sub, "http"]
+                 
+          
+
+   ## Measurement Group primary size
+  measurementGroupPrimarySize:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_primary_size_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_primary_size_ep~iri
+
+
+   ## Measurement Group bundle diameter
+  measurementGroupBundleDiameter:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_bundle_diameter_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_bundle_diameter_ep~iri
+
+
+
+
+   ## Measurement Group diameter
+  measurementGroupDiameter:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_diameter_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_diameter_ep~iri
+
+
+
+
+   ## Measurement Group hydrodynamic diameter
+  measurementGroupHydrodynamicDiameter:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_hydrodynamic_diameter_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_hydrodynamic_diameter_ep~iri
+
+
+
+
+   ## Measurement Group surface area
+  measurementGroupSurfaceArea:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_surface_area_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_surface_area_ep~iri
+
+
+
+
+   ## Measurement Group zeta_potential
+  measurementGroupZetaPotential:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_zeta_potential_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_zeta_potential_ep~iri
+
+
+
+
+   ## Measurement Group porosity
+  measurementGroupPorosity:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_porosity_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_porosity_ep~iri
+
+
+
+
+   ## Measurement Group crystal structure
+  measurementGroupCrystalStructure:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_crystal_structure_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_crystal_structure_ep~iri
+
+
+
+
+   ## Measurement Group polidispersity index
+  measurementGroupPolidispersityIndex:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_polidispersity_index_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_polidispersity_index_ep~iri
+
+
+
+
+   ## Measurement Group endotoxin impurities
+  measurementGroupEndotoxinImpurities:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(row_id)_endotoxin_impurities_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(row_id)_endotoxin_impurities_ep~iri
+
+  # Endpoints
+
+  ## Bioassay
+
+  endpointBioassay:
+    sources:
+      - data-source
+#    condition:
+#      function: grel:string_contains
+#      parameters:
+#        - [grel:valueParameter, $(endpoint_iri)]
+#        - [grel:param_string_sub, "http"]
+    subjects: $(_endpointSubjectUrl)$(row_id)_bio_ep
+    predicateobjects:
+      - [rdfs:label, $(endpoint), en~lang]
+      - [bao:BAO_0000182, $(endpoint_units)]   # has response units, TODO change to UO   
+      - [bao:BAO_0000108, $(endpoint_measurement)] # has response value
+      - [bao:BAO_0002668, $(exposure_time_units)]   # has time units TODO change to UO   
+      - [bao:BAO_0002669, $(exposure_time)] # has time value
+
+  ## Primary Size
+
+  endpointPrimarySize:
+    sources:
+      - data-source
+    subjects:
+      - $(_endpointSubjectUrl)$(row_id)_primary_size_ep
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000179~iri]
+      - [rdf:type, obo:PATO_0000117~iri]
+      - [rdfs:label, primary size, en~lang]
+      - [sio:000221, obo:UO_0000018~iri]      
+      - predicate: sio:000300 # For non-ranges
+        object: 
+          value: $(primary_size)
+          datatype: xsd:float
+      #TODO - predicate: sio:madeup # For ranges
+      #TODO   object: 
+      #TODO     value: $(primary_size)
+      #TODO     datatype: xsd:string
+      #TODO   condition:
+      #TODO     function: grel:string_contains
+      #TODO     parameters:
+      #TODO       - [grel:valueParameter, $(primary_size)]
+      #TODO       - [grel:string_sub, "-"]
+      #TODO qualifiers
+
+  endpointHydrodynamicDiameter:
+    sources:
+      - data-source
+    subjects:
+      - $(_endpointSubjectUrl)$(row_id)_hydrodynamic_diameter_ep
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000179~iri]
+      - [rdf:type, obo:PATO_0000117~iri]
+      - [rdfs:label, primary size, en~lang]
+      - [sio:000221, obo:UO_0000018~iri]      
+      - predicate: sio:000300 # For non-ranges
+        object: 
+          value: $(hydrodynamic_diameter)
+          datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(hydrodynamic_diameter_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+
+  endpointSurfaceArea:
+    sources:
+      - data-source
+    subjects:
+      - $(_endpointSubjectUrl)$(row_id)_surface_area_ep
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000179~iri]
+      - [rdf:type, obo:PATO_0000117~iri]
+      - [rdfs:label, surface area, en~lang]
+      - [sio:000221, obo:UO_0000018~iri]      
+      - predicate: sio:000300 # For non-ranges
+        object: 
+          value: $(surface_area)
+          datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+
+  endpointShape:
+    sources:
+      - data-source
+    subjects:
+      - $(_endpointSubjectUrl)$(row_id)_shape_ep
+    predicateobjects:
+      - [rdf:type, bao:BAO_0000179~iri]
+      - [rdf:type, obo:PATO_0000117~iri]
+      - [rdfs:label, shape, en~lang]
+      - [sio:000221, obo:UO_0000018~iri]
+      - predicate: sio:000300
+        object:
+          value: $(shape)
+          datatype: xsd:string
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+endpointZetaPotential:
+  sources:
+    - data-source
+  subjects:
+    - $(_endpointSubjectUrl)$(row_id)_zeta_potential_ep
+  predicateobjects:
+    - [rdf:type, bao:BAO_0000179~iri]
+    - [rdf:type, obo:PATO_0000117~iri]
+    - [rdfs:label, zeta potential, en~lang]
+    - [sio:000221, obo:UO_0000018~iri]
+    - predicate: sio:000300
+      object:
+        value: $(zeta_potential)
+        datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+endpointPorosity:
+  sources:
+    - data-source
+  subjects:
+    - $(_endpointSubjectUrl)$(row_id)_porosity_ep
+  predicateobjects:
+    - [rdf:type, bao:BAO_0000179~iri]
+    - [rdf:type, obo:PATO_0000117~iri]
+    - [rdfs:label, porosity, en~lang]
+    - [sio:000221, obo:UO_0000018~iri]
+    - predicate: sio:000300
+      object:
+        value: $(porosity)
+        datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+endpointCrystalStructure:
+  sources:
+    - data-source
+  subjects:
+    - $(_endpointSubjectUrl)$(row_id)_crystal_structure_ep
+  predicateobjects:
+    - [rdf:type, bao:BAO_000017]
+    - [rdf:type, obo:PATO_0000117~iri]
+    - [rdfs:label, porosity, en~lang]
+    - [sio:000221, obo:UO_0000018~iri]
+    - predicate: sio:000300
+      object:
+        value: $(porosity)
+        datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+endpointPolidispersityIndex:
+  sources:
+    - data-source
+  subjects:
+    - $(_endpointSubjectUrl)$(row_id)_polidispersity_index_ep
+  predicateobjects:
+    - [rdf:type, bao:BAO_0000179~iri]
+    - [rdf:type, obo:PATO_0000117~iri]
+    - [rdfs:label, polidispersity index, en~lang]
+    - [sio:000221, obo:UO_0000018~iri]
+    - predicate: sio:000300
+      object:
+        value: $(polidispersity_index)
+        datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers
+endpointEndotoxin:
+  sources:
+    - data-source
+  subjects:
+    - $(_endpointSubjectUrl)$(row_id)_endotoxin_ep
+  predicateobjects:
+    - [rdf:type, bao:BAO_0000179~iri]
+    - [rdf:type, obo:PATO_0000117~iri]
+    - [rdfs:label, endotoxin, en~lang]
+    - [sio:000221, obo:UO_0000018~iri]
+    - predicate: sio:000300
+      object:
+        value: $(endotoxin)
+        datatype: xsd:float
+      #- predicate: sio:000221 # unit
+      #  object: 
+      #    value: $(surface_area_unit) #TODO change for ontology unit
+      #    datatype: xsd:float
+      #TODO qualifiers

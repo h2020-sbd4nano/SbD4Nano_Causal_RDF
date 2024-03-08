@@ -4,3 +4,13 @@ rmlmapper-6.2.2-r371-all.jar
 grel.ttl
 robot.jar
 robot
+blazegraph/blazegraph.jar
+blazegraph/blazegraph.jnl
+blazegraph/rules.log
+virtuoso-temp.db
+virtuoso.db
+virtuoso.ini
+virtuoso.lck
+virtuoso.log
+virtuoso.pxa
+virtuoso.trx
