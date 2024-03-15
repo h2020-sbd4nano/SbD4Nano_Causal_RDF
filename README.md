@@ -27,3 +27,9 @@ The [`make_rdf.sh`](/make_rdf.sh) script regenerates the RML and RDF files from 
 ```
 sudo bash make_rdf.sh
 ```
+
+## Loading a local instance of Virtuoso + SNORQL with the data
+```
+docker compose up -d
+```
+
