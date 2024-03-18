@@ -60,9 +60,6 @@ npo:NPO_1969 a sbdbel:outcome;
 npo:NPO_532 a sbdbel:outcome;
   rdfs:label "Suspension"@en .
 
-npo:NPO_895 a sbdbel:outcome;
-  rdfs:label "band gap"@en, "crystal structure"@en .
-
 enm:ENM_0000037 a sbdbel:outcome;
   rdfs:label "oxidative stress"@en .
 
@@ -98,6 +95,12 @@ obo:OAE_0007476 a sbdbel:outcome;
 
 <http://sbmi.uth.tmc.edu/ontology/ochv#C0678559> a sbdbel:outcome;
   rdfs:label "ROS production"@en .
+
+sio:CHEMINF_000102 a sbdbel:outcome;
+  rdfs:label "crystal structure"@en .
+
+sio:CHEMINF_000487 a sbdbel:outcome;
+  rdfs:label "band gap"@en .
 
 bao:BAO_0000188 a sbdbel:outcome;
   rdfs:label "EC50"@en .
@@ -1250,8 +1253,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002846 :protocol_121_shape_ap;
   rdfs:label "assay for nanomaterial shape"@en .
 
-:assay_121_surface_area_as bao:BAO_0000207 :method_121_surface_area;
-  a bao:BAO_0000015;
+:assay_121_surface_area_as a bao:BAO_0000015;
+  bao:BAO_0000207 :method_121_surface_area;
   bao:BAO_0000209 :measurement_group_121_surface_area_mg;
   bao:BAO_0002846 :protocol_121_surface_area_ap;
   rdfs:label "assay for nanomaterial hydrodynamic diameter"@en .
@@ -2453,8 +2456,8 @@ efo:EFO_0801080 a sbdbel:outcome;
 
 :assay_152_shape_as bao:BAO_0000207 :method_152_shape;
   bao:BAO_0000209 :measurement_group_152_shape_mg;
-  bao:BAO_0002846 :protocol_152_shape_ap;
   a bao:BAO_0000015;
+  bao:BAO_0002846 :protocol_152_shape_ap;
   rdfs:label "assay for nanomaterial shape"@en .
 
 :assay_152_surface_area_as a bao:BAO_0000015;
@@ -4860,8 +4863,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   rdfs:label "assay for nanomaterial porosity"@en .
 
 :assay_186_primary_size_as bao:BAO_0000207 :method_186_primary_size_me;
-  bao:BAO_0000209 :measurement_group_186_primary_size_mg;
   a bao:BAO_0000015;
+  bao:BAO_0000209 :measurement_group_186_primary_size_mg;
   bao:BAO_0002846 :protocol_186_primary_size_ap;
   rdfs:label "assay for nanomaterial primary size"@en .
 
@@ -6060,10 +6063,10 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002846 :protocol_203_polidispersity_index_ap;
   rdfs:label "assay for nanomaterial polidispersity_index"@en .
 
-:assay_203_porosity_as a bao:BAO_0000015;
-  bao:BAO_0000207 :method_203_porosity;
+:assay_203_porosity_as bao:BAO_0000207 :method_203_porosity;
   bao:BAO_0000209 :measurement_group_203_porosity_mg;
   bao:BAO_0002846 :protocol_203_porosity_ap;
+  a bao:BAO_0000015;
   rdfs:label "assay for nanomaterial porosity"@en .
 
 :assay_203_primary_size_as a bao:BAO_0000015;
@@ -7267,8 +7270,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002846 :protocol_21_polidispersity_index_ap;
   rdfs:label "assay for nanomaterial polidispersity_index"@en .
 
-:assay_21_porosity_as bao:BAO_0000207 :method_21_porosity;
-  a bao:BAO_0000015;
+:assay_21_porosity_as a bao:BAO_0000015;
+  bao:BAO_0000207 :method_21_porosity;
   bao:BAO_0000209 :measurement_group_21_porosity_mg;
   bao:BAO_0002846 :protocol_21_porosity_ap;
   rdfs:label "assay for nanomaterial porosity"@en .
@@ -8470,8 +8473,8 @@ efo:EFO_0801080 a sbdbel:outcome;
 
 :assay_235_polidispersity_index_as bao:BAO_0000207 :method_235_polidispersity_index;
   bao:BAO_0000209 :measurement_group_235_polidispersity_index_mg;
-  bao:BAO_0002846 :protocol_235_polidispersity_index_ap;
   a bao:BAO_0000015;
+  bao:BAO_0002846 :protocol_235_polidispersity_index_ap;
   rdfs:label "assay for nanomaterial polidispersity_index"@en .
 
 :assay_235_porosity_as a bao:BAO_0000015;
@@ -10877,8 +10880,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   rdfs:label "assay for nanomaterial endotoxin impurities"@en .
 
 :assay_60_hydrodynamic_diameter_as bao:BAO_0000207 :method_60_hydrodynamic_diameter;
-  bao:BAO_0000209 :measurement_group_60_hydrodynamic_diameter_mg;
   a bao:BAO_0000015;
+  bao:BAO_0000209 :measurement_group_60_hydrodynamic_diameter_mg;
   bao:BAO_0002846 :protocol_60_hydrodynamic_diameter_ap;
   rdfs:label "assay for nanomaterial hydrodynamic diameter"@en .
 
@@ -12077,10 +12080,10 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002846 :protocol_76_diameter_ap;
   rdfs:label "assay for nanomaterial diameter"@en .
 
-:assay_76_endotoxin_impurities_as a bao:BAO_0000015;
-  bao:BAO_0000207 :method_76_endotoxin_impurities;
+:assay_76_endotoxin_impurities_as bao:BAO_0000207 :method_76_endotoxin_impurities;
   bao:BAO_0000209 :measurement_group_76_endotoxin_impurities_mg;
   bao:BAO_0002846 :protocol_76_endotoxin_impurities_ap;
+  a bao:BAO_0000015;
   rdfs:label "assay for nanomaterial endotoxin impurities"@en .
 
 :assay_76_hydrodynamic_diameter_as a bao:BAO_0000015;
@@ -13284,8 +13287,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002846 :protocol_94_diameter_ap;
   rdfs:label "assay for nanomaterial diameter"@en .
 
-:assay_94_endotoxin_impurities_as bao:BAO_0000207 :method_94_endotoxin_impurities;
-  a bao:BAO_0000015;
+:assay_94_endotoxin_impurities_as a bao:BAO_0000015;
+  bao:BAO_0000207 :method_94_endotoxin_impurities;
   bao:BAO_0000209 :measurement_group_94_endotoxin_impurities_mg;
   bao:BAO_0002846 :protocol_94_endotoxin_impurities_ap;
   rdfs:label "assay for nanomaterial endotoxin impurities"@en .
@@ -14454,8 +14457,8 @@ efo:EFO_0801080 a sbdbel:outcome;
 
 :causal_assertion_158 sio:000206 :evidence_158;
   sio:000332 :chemical_substance_GO27;
-  sio:000339 :reference_27;
   a sio:001183;
+  sio:000339 :reference_27;
   sbdbel:hasCause placeholder:cell_type;
   sbdbel:hasOutcome npo:NPO_1338;
   sbdbel:hasRelationship sbdbel:negatively_correlates .
@@ -14801,7 +14804,7 @@ efo:EFO_0801080 a sbdbel:outcome;
   sio:000332 :chemical_substance_TiO2%3ASiO25;
   sio:000339 :reference_5;
   sbdbel:hasCause enm:ENM_9000242;
-  sbdbel:hasOutcome npo:NPO_895;
+  sbdbel:hasOutcome sio:CHEMINF_000102;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_200 a sio:001183;
@@ -15417,7 +15420,7 @@ efo:EFO_0801080 a sbdbel:outcome;
   sio:000332 :chemical_substance_TiO213;
   sio:000339 :reference_13;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
-  sbdbel:hasOutcome npo:NPO_895;
+  sbdbel:hasOutcome sio:CHEMINF_000487;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_68 a sio:001183;
@@ -15425,7 +15428,7 @@ efo:EFO_0801080 a sbdbel:outcome;
   sio:000332 :chemical_substance_TiO213;
   sio:000339 :reference_13;
   sbdbel:hasCause placeholder:oxidative_stress;
-  sbdbel:hasOutcome npo:NPO_895;
+  sbdbel:hasOutcome sio:CHEMINF_000487;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_69 a sio:001183;
@@ -15597,8 +15600,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_90 sio:000206 :evidence_90;
-  sio:000332 :chemical_substance_Ag3;
   a sio:001183;
+  sio:000332 :chemical_substance_Ag3;
   sio:000339 :reference_15;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
   sbdbel:hasOutcome placeholder:rosgeneration;
@@ -16130,11 +16133,10 @@ efo:EFO_0801080 a sbdbel:outcome;
 
 :chemical_substance_GO38 obo:BFO_0000056 :measurement_group_222_bundle_diameter_mg,
     :measurement_group_222_crystal_structure_mg, :measurement_group_222_endotoxin_impurities_mg,
-    :measurement_group_222_hydrodynamic_diameter_mg, :measurement_group_222_polidispersity_index_mg,
-    :measurement_group_222_porosity_mg;
+    :measurement_group_222_hydrodynamic_diameter_mg, :measurement_group_222_polidispersity_index_mg;
   a obo:CHEBI_59999;
-  obo:BFO_0000056 :measurement_group_222_primary_size_mg, :measurement_group_222_shape_mg,
-    :measurement_group_222_surface_area_mg, :measurement_group_222_zeta_potential_mg,
+  obo:BFO_0000056 :measurement_group_222_porosity_mg, :measurement_group_222_primary_size_mg,
+    :measurement_group_222_shape_mg, :measurement_group_222_surface_area_mg, :measurement_group_222_zeta_potential_mg,
     :measurement_group_223_bundle_diameter_mg, :measurement_group_223_crystal_structure_mg,
     :measurement_group_223_endotoxin_impurities_mg, :measurement_group_223_hydrodynamic_diameter_mg,
     :measurement_group_223_polidispersity_index_mg, :measurement_group_223_porosity_mg,
@@ -16613,12 +16615,11 @@ efo:EFO_0801080 a sbdbel:outcome;
     :measurement_group_73_hydrodynamic_diameter_mg, :measurement_group_73_polidispersity_index_mg,
     :measurement_group_73_porosity_mg, :measurement_group_73_primary_size_mg, :measurement_group_73_shape_mg,
     :measurement_group_73_surface_area_mg, :measurement_group_73_zeta_potential_mg, :measurement_group_74_bundle_diameter_mg,
-    :measurement_group_74_crystal_structure_mg, :measurement_group_74_endotoxin_impurities_mg,
-    :measurement_group_74_hydrodynamic_diameter_mg;
+    :measurement_group_74_crystal_structure_mg, :measurement_group_74_endotoxin_impurities_mg;
   a obo:CHEBI_59999;
-  obo:BFO_0000056 :measurement_group_74_polidispersity_index_mg, :measurement_group_74_porosity_mg,
-    :measurement_group_74_primary_size_mg, :measurement_group_74_shape_mg, :measurement_group_74_surface_area_mg,
-    :measurement_group_74_zeta_potential_mg, :measurement_group_75_bundle_diameter_mg,
+  obo:BFO_0000056 :measurement_group_74_hydrodynamic_diameter_mg, :measurement_group_74_polidispersity_index_mg,
+    :measurement_group_74_porosity_mg, :measurement_group_74_primary_size_mg, :measurement_group_74_shape_mg,
+    :measurement_group_74_surface_area_mg, :measurement_group_74_zeta_potential_mg, :measurement_group_75_bundle_diameter_mg,
     :measurement_group_75_crystal_structure_mg, :measurement_group_75_endotoxin_impurities_mg,
     :measurement_group_75_hydrodynamic_diameter_mg, :measurement_group_75_polidispersity_index_mg,
     :measurement_group_75_porosity_mg, :measurement_group_75_primary_size_mg, :measurement_group_75_shape_mg,
@@ -17552,8 +17553,8 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002669 "#N/A";
   rdfs:label "#N/A"@en .
 
-:endpoint_158_hydrodynamic_diameter_ep sio:000221 obo:UO_0000018;
-  a obo:PATO_0000117, bao:BAO_0000179;
+:endpoint_158_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
+  sio:000221 obo:UO_0000018;
   rdfs:label "primary size"@en .
 
 :endpoint_158_primary_size_ep a obo:PATO_0000117, bao:BAO_0000179;
@@ -18593,10 +18594,9 @@ efo:EFO_0801080 a sbdbel:outcome;
   bao:BAO_0002669 "24";
   rdfs:label "DCF fluorescence instensity"@en .
 
-:endpoint_19_hydrodynamic_diameter_ep a obo:PATO_0000117;
-  sio:000221 obo:UO_0000018;
+:endpoint_19_hydrodynamic_diameter_ep sio:000221 obo:UO_0000018;
   sio:000300 "121"^^xsd:float;
-  a bao:BAO_0000179;
+  a obo:PATO_0000117, bao:BAO_0000179;
   rdfs:label "primary size"@en .
 
 :endpoint_19_primary_size_ep a obo:PATO_0000117, bao:BAO_0000179;
@@ -23255,8 +23255,8 @@ transition to rutile."""@en .
 :measurement_group_155_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_155_bundle_diameter_ep .
 
-:measurement_group_155_crystal_structure_mg a bao:BAO_0000040;
-  bao:BAO_0000208 :endpoint_155_crystal_structure_ep .
+:measurement_group_155_crystal_structure_mg bao:BAO_0000208 :endpoint_155_crystal_structure_ep;
+  a bao:BAO_0000040 .
 
 :measurement_group_155_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_155_diameter_ep .
@@ -24755,8 +24755,8 @@ transition to rutile."""@en .
 :measurement_group_204_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_204_bundle_diameter_ep .
 
-:measurement_group_204_crystal_structure_mg a bao:BAO_0000040;
-  bao:BAO_0000208 :endpoint_204_crystal_structure_ep .
+:measurement_group_204_crystal_structure_mg bao:BAO_0000208 :endpoint_204_crystal_structure_ep;
+  a bao:BAO_0000040 .
 
 :measurement_group_204_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_204_diameter_ep .
@@ -26255,8 +26255,8 @@ transition to rutile."""@en .
 :measurement_group_39_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_39_bundle_diameter_ep .
 
-:measurement_group_39_crystal_structure_mg a bao:BAO_0000040;
-  bao:BAO_0000208 :endpoint_39_crystal_structure_ep .
+:measurement_group_39_crystal_structure_mg bao:BAO_0000208 :endpoint_39_crystal_structure_ep;
+  a bao:BAO_0000040 .
 
 :measurement_group_39_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_39_diameter_ep .
@@ -27755,8 +27755,8 @@ transition to rutile."""@en .
 :measurement_group_93_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_93_bundle_diameter_ep .
 
-:measurement_group_93_crystal_structure_mg a bao:BAO_0000040;
-  bao:BAO_0000208 :endpoint_93_crystal_structure_ep .
+:measurement_group_93_crystal_structure_mg bao:BAO_0000208 :endpoint_93_crystal_structure_ep;
+  a bao:BAO_0000040 .
 
 :measurement_group_93_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_93_diameter_ep .
