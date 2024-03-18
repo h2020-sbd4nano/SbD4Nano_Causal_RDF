@@ -10,6 +10,7 @@
 ################################################################################
 
 # Step 0: retrieve csv #TODO need to retrieve from zenodo
+echo Fetching latest spreadsheet data
 jupyter execute notebooks/00_explore_clean_spreadsheet.ipynb
 
 # Step 1: define paths
@@ -17,6 +18,8 @@ YARRRML="mappings/causal_network.yarrrml.yml"
 RML="mappings/causal_network.rml"
 TTL="data/RDF/causal_network.ttl"
 NQ="data/RDF/causal_network.nq"
+ROBOT="https://github.com/ontodev/robot/raw/master/bin/robot"
+ROBOT_JAR="https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar"
 
 # Step 2: Download RML Mapper
 echo "Downloading RML Mapper v6.2.2"
@@ -34,9 +37,22 @@ yarrrml-parser --input $YARRRML > $RML
 # Step 5: Run RML Mapper
 echo "Running RML Mapper to generate RDF ttl"
 java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $TTL -s turtle
-echo "Running RML Mapper to generate RDF nq"
-java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $NQ
+#echo "Running RML Mapper to generate RDF nq"
+#java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $NQ
 
-# Step 6: cleanup
+# Step 6: Get ROBOT & eNM Ontology
+wget -nc https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper.owl
+wget -nc $ROBOT
+wget -nc $ROBOT_JAR
+
+# Step 7: Extract used classes
+echo Creating BOTTOM module for eNM
+bash robot merge --input enanomapper.owl \
+    extract --method BOT \
+    --term-file data/iris.tsv \
+    --output data/RDF/classes.owl
+
+echo Success
+# Step : cleanup
 #echo "Removing files"
 #rm rmlmapper*
