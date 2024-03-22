@@ -1,4 +1,4 @@
-# Exposing causal links in nanosafety literature in the semantic web
+# Exposing causal links in nanosafety literature using the semantic web
 
 This repository contains links to supporting data for the SbD4Nano network linking physicochemical properties of nanomaterials with stated biological outcomes in literature and the necessary files to map and verify their RDF graphs.
 
