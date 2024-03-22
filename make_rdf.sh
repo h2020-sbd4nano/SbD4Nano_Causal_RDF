@@ -12,7 +12,7 @@
 # Step 0: retrieve csv #TODO need to retrieve from zenodo
 echo Fetching latest spreadsheet data
 jupyter execute notebooks/00_explore_clean_spreadsheet.ipynb
-
+cat mappings/classes_map >> data/iris.tsv
 # Step 1: define paths
 YARRRML="mappings/causal_network.yarrrml.yml"
 RML="mappings/causal_network.rml"
@@ -41,13 +41,13 @@ java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $TTL -s turtle
 #java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $NQ
 
 # Step 6: Get ROBOT & eNM Ontology
-wget -nc https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper.owl
+wget -nc https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper-dev.owl
 wget -nc $ROBOT
 wget -nc $ROBOT_JAR
 
 # Step 7: Extract used classes
 echo Creating BOTTOM module for eNM
-bash robot merge --input enanomapper.owl \
+bash robot merge --input enanomapper-dev.owl \
     extract --method BOT \
     --term-file data/iris.tsv \
     --output data/RDF/classes.owl

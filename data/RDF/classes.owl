@@ -126,6 +126,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
@@ -180,6 +186,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_P208 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P208"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_P322 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322"/>
@@ -195,6 +207,24 @@
     <!-- http://purl.obolibrary.org/obo/NCIT_P366 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P383 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P383"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P384 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P384"/>
     
 
 
@@ -312,6 +342,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -354,6 +390,18 @@
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -370,6 +418,12 @@
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208">
         <rdfs:label>has endpoint</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000209 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000209"/>
     
 
 
@@ -460,6 +514,30 @@
         <npo:code>NPO_1364</npo:code>
         <npo:preferred_Name>surface property</npo:preferred_Name>
         <rdfs:label>surface property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1365 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000186"/>
+        <npo:code>NPO_1365</npo:code>
+        <npo:preferred_Name>aspect ratio</npo:preferred_Name>
+        <rdfs:label>aspect ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1367 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1367">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
+        <npo:code>NPO_1367</npo:code>
+        <npo:preferred_Name>coat</npo:preferred_Name>
+        <npo:synonym>coating</npo:synonym>
+        <npo:synonym>surface coating</npo:synonym>
+        <rdfs:label>coat</rdfs:label>
     </owl:Class>
     
 
@@ -571,6 +649,74 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1486 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1486">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
+        <npo:code>NPO_1486</npo:code>
+        <npo:preferred_Name>titanium oxide nanoparticle</npo:preferred_Name>
+        <npo:synonym>TiO2 nanoparticle</npo:synonym>
+        <rdfs:label>titanium oxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1491 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1491">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1494"/>
+        <npo:code>NPO_1491</npo:code>
+        <npo:preferred_Name>molecular component in nanoparticle formulation</npo:preferred_Name>
+        <rdfs:label>molecular component in nanoparticle formulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1494 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1494">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1497"/>
+        <npo:code>NPO_1494</npo:code>
+        <npo:preferred_Name>chemical component in nanoparticle formulation</npo:preferred_Name>
+        <rdfs:label>chemical component in nanoparticle formulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1495 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1495">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1491"/>
+        <npo:code>NPO_1495</npo:code>
+        <npo:preferred_Name>molecular component in nanoparticle</npo:preferred_Name>
+        <rdfs:label>molecular component in nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1497 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1497">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1597"/>
+        <npo:code>NPO_1497</npo:code>
+        <npo:preferred_Name>chemical component</npo:preferred_Name>
+        <rdfs:label>chemical component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1541 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1541">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
+        <npo:code>NPO_1541</npo:code>
+        <npo:preferred_Name>metal oxide nanoparticle</npo:preferred_Name>
+        <rdfs:label>metal oxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1597 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1597">
@@ -578,6 +724,17 @@
         <npo:code>NPO_1597</npo:code>
         <npo:preferred_Name>fiat material part</npo:preferred_Name>
         <rdfs:label>fiat material part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1616 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <npo:code>NPO_1616</npo:code>
+        <npo:preferred_Name>functionalization of nanoparticle</npo:preferred_Name>
+        <rdfs:label>functionalization of nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -679,6 +836,51 @@
         <npo:code>NPO_1816</npo:code>
         <npo:preferred_Name>percent cell viability</npo:preferred_Name>
         <rdfs:label>percent cell viability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1883 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1883">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1616"/>
+        <npo:code>NPO_1883</npo:code>
+        <npo:preferred_Name>surface functionalization of nanoparticle</npo:preferred_Name>
+        <npo:synonym>functionalization of nanoparticle surface</npo:synonym>
+        <rdfs:label>surface functionalization of nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1888 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1888">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1495"/>
+        <npo:code>NPO_1888</npo:code>
+        <npo:preferred_Name>core component</npo:preferred_Name>
+        <rdfs:label>core component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1895 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <npo:code>NPO_1895</npo:code>
+        <npo:preferred_Name>particle</npo:preferred_Name>
+        <rdfs:label>particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1896 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1896">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1895"/>
+        <npo:code>NPO_1896</npo:code>
+        <npo:preferred_Name>primary particle</npo:preferred_Name>
+        <rdfs:label>primary particle</rdfs:label>
     </owl:Class>
     
 
@@ -820,11 +1022,23 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_532 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
         <npo:code>NPO_532</npo:code>
         <npo:dBXrefID>NCIT:C45304</npo:dBXrefID>
         <npo:preferred_Name>suspension</npo:preferred_Name>
         <rdfs:label>suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_707 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1896"/>
+        <npo:code>NPO_707</npo:code>
+        <npo:preferred_Name>nanoparticle</npo:preferred_Name>
+        <rdfs:comment>Definition is partly based on ASTM E 2456-06 (Terminology for Nanotechnology).</rdfs:comment>
+        <rdfs:label>nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -836,6 +1050,97 @@
         <npo:code>NPO_821</npo:code>
         <npo:preferred_Name>polydispersity</npo:preferred_Name>
         <rdfs:label>polydispersity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0298514 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0298514">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1964"/>
+        <obo:IAO_0000115> Process by which ions are released from a nanomaterial</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Ion leakage</rdfs:label>
+        <rdfs:label xml:lang="en">Ion spilling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2458273 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2458273">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <obo:IAO_0000115>Functionalization of a nanoparticle through epoxy groups, comprised of two carbons and an oxygen in a ring formation</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Epoxy-functionalization of a nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3079648 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3079648">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+        <obo:IAO_0000115>Process by which the stacked sheets forming a material are separated through external forces</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Exfoliation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_3733911 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_3733911">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1367"/>
+        <obo:IAO_0000115> Silica coating.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Nanoparticle material part consisting of a silica coat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_6674110 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_6674110">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <obo:IAO_0000115>Functionalization of a nanoparticle through hydroxyl groups, comprised of one oxygen atom covalently bonded to one hydrogen atom</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Hydroxy-functionalization of a nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_7609815 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_7609815">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <obo:IAO_0000115>Functionalization of a nanoparticle through covalent bonds with amino groups</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Amino-functionalization of a nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_7849436 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_7849436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54072"/>
+        <obo:IAO_0000115>The quality of being free from changes due to the counterbalance between attractive Van der Waals and repulsive Coulomb forces</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Electrostatic stability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_9010524 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_9010524">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+        <obo:IAO_0000115>Embedding of a nanomaterial into nano-enabled paint formulation</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Embedding into nano-enabled paint formulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_9915100 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_9915100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54072"/>
+        <obo:IAO_0000115>The quality of being free from change into another crystalline structural phase</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Crystalline state stability</rdfs:label>
     </owl:Class>
     
 
@@ -952,6 +1257,28 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_8000314 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000314">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000845"/>
+        <rdfs:isDefinedBy xml:lang="en">A particle of TiO2 structured in anatase crystal structure</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">anatase nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000315 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000315">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1486"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000845"/>
+        <rdfs:isDefinedBy xml:lang="en">A particle of TiO2 structured in rutile crystal structure</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">rutile nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.enanomapper.org/onto/ENM_9000013 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000013">
@@ -1004,6 +1331,70 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:BFO_0000179>ic</obo:BFO_0000179>
+        <obo:BFO_0000180>IndependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a leg</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a molecule</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a spatial region</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an atom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an orchestra.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the bottom right portion of a human torso</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your mouth</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000601 xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/018-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/018-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
@@ -1039,14 +1430,14 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
     </owl:Axiom>
     
@@ -1129,6 +1520,12 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
@@ -1145,12 +1542,6 @@
         <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
-    </owl:Axiom>
     
 
 
@@ -1158,6 +1549,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:BFO_0000179>material</obo:BFO_0000179>
         <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
         <obo:IAO_0000111 xml:lang="en">material entity</obo:IAO_0000111>
@@ -1315,6 +1707,85 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_143130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_143130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51086"/>
+        <obo:IAO_0000115>A chemical role played by any unwanted chemical substance inside a confined amount of liquid, gas, or solid, which differs from the chemical composition of the material or compound. For example, an impurity can be an undesired by-product of a chemical reaction or manufacturing process, a drug contaminant, or can be created upon degradation during storage.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:143130</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>impurity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:23367</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50906 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50906">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>A role is particular behaviour which a material entity may exhibit.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:50906</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <obo:IAO_0000115>A role played by the molecular entity or part thereof within a chemical context.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:51086</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>chemical role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_52855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_52855">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <obo:IAO_0000115>A nanoparticle that contains no carbon.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:52855</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>inorganic nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:59999</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>chemical substance</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
@@ -1329,6 +1800,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <oboInOwl:hasDbXref>VHOG:0001533</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBbt:0004017</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0003012</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ubprop#_upper_level"/>
         <rdfs:comment>The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).</rdfs:comment>
         <rdfs:label>cell</rdfs:label>
@@ -1386,24 +1858,24 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000428">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>A biome is an ecosystem to which resident ecological communities have evolved adaptations.</obo:IAO_0000115>
-        <oboInOwl:hasAlternativeId>LTER:809</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 xml:lang="en">A biome is an ecosystem which is undergoing climactic ecological succession.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>EcoLexicon:biome</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>LTER:809</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>major habitat type</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>EcosytemType</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment>There has been some concern raised (see Issue #143) about the usefulness of the assertion that organisms have evolved within a given biome. They may have evolved adaptations elsewhere and demonstrating one or the other is often not feasible. Consider relabelling to &quot;environmental system determined by an ecological community&quot; or similar.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In this definition, there is an assumption that no major perturbations are occurring or have occurred in a time frame affects the successional dynamics of the ecosystem. A &quot;major&quot; perturbation is one which disrupts the community&apos;s ability to restore its (near) equilibrium. Usually, pioneer or early secondary successional processes would be in effect in such scenarios.</rdfs:comment>
         <rdfs:label>biome</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A biome is an ecosystem to which resident ecological communities have evolved adaptations.</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">A biome is an ecosystem which is undergoing climactic ecological succession.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>DOI:10.1186/2041-1480-4-43</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Biome</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000428"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>LTER:809</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=809&amp;/biomes</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1441,6 +1913,27 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_00010483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00010483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity which other material entities in an environmental system are primarily or partially composed of.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>portion of environmental material</oboInOwl:hasExactSynonym>
+        <rdfs:comment xml:lang="en">Everything under this parent must be a mass noun (i.e. not countable). All subclasses are to be understood as being composed primarily of the named entity, rather than restricted to that entity. For example, &quot;ENVO:water&quot; is to be understood as &quot;environmental material composed primarly of some CHEBI:water&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Instances of this class are portions of environmental materials, such as seawater in bucket, a water parcel in the photic zone of a lake, or the concrete that composes a building part. Instances of these portions may have fiat or non-fiat boundaries. For example, a water parcel has not physical boundaries, while the seawater in a bucket is bounded by the internal surfaces of the bucket.</rdfs:comment>
+        <rdfs:label>environmental material</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A material entity which other material entities in an environmental system are primarily or partially composed of.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://ontology.buffalo.edu/smith/articles/niches.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://dx.doi.org/10.1186/2041-1480-4-43"/>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Material"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000176 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000176">
@@ -1469,6 +1962,34 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000814 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000814">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010483"/>
+        <obo:IAO_0000115>An environmental material which is in a solid state.</obo:IAO_0000115>
+        <rdfs:comment>This is a defined class: its subclasses will not be asserted, but filled by inference.</rdfs:comment>
+        <rdfs:label xml:lang="en">solid environmental material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000845 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000845">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000814"/>
+        <obo:IAO_0000115>A solid material whose constituents, such as atoms, molecules or ions, are arranged in a highly ordered microscopic structure, forming a crystal lattice that extends in all directions.</obo:IAO_0000115>
+        <rdfs:comment>This class refers to a portion of crystal and not an individual crystal.</rdfs:comment>
+        <rdfs:label xml:lang="en">crystal</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000845"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A solid material whose constituents, such as atoms, molecules or ions, are arranged in a highly ordered microscopic structure, forming a crystal lattice that extends in all directions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Crystal</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01001836 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001836">
@@ -1478,6 +1999,531 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-11-06T16:00:33Z</dc:date>
         <rdfs:label xml:lang="en">montane biome</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006914 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006914">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The cellular catabolic process in which cells digest cellular materials, such as organelles and other macromolecular constituents, or non-self materials such as intracellular pathogens. Autophagy serves to provide essential nutrients under conditions of cellular stress; or can remodel intracellular structures during cell differentiation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/25541#issuecomment-1740659745</obo:IAO_0000233>
+        <oboInOwl:hasAlternativeId>GO:0016238</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Autophagy_(cellular)</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006914</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <rdfs:label>autophagy</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006914"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cellular catabolic process in which cells digest cellular materials, such as organelles and other macromolecular constituents, or non-self materials such as intracellular pathogens. Autophagy serves to provide essential nutrients under conditions of cellular stress; or can remodel intracellular structures during cell differentiation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:autophagy</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:11099404</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29455577</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:9412464</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-12-11T16:56:55Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0008151</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044763</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0050875</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>cell physiology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cellular physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cell growth and/or maintenance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-organism cellular process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0009987</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:comment>This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.</rdfs:comment>
+        <rdfs:label>cellular process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The assembly of a bleb, a cell extension caused by localized decoupling of the cytoskeleton from the plasma membrane and characterized by rapid formation, rounded shape, and scarcity of organelles within the protrusion. Plasma membrane blebbing occurs during apoptosis and other cellular processes, including cell locomotion, cell division, and as a result of physical or chemical stresses.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>blebbing</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>membrane blebbing</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>cell blebbing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plasma membrane bleb assembly</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plasma membrane blebbing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0032060</oboInOwl:id>
+        <rdfs:label>bleb assembly</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The assembly of a bleb, a cell extension caused by localized decoupling of the cytoskeleton from the plasma membrane and characterized by rapid formation, rounded shape, and scarcity of organelles within the protrusion. Plasma membrane blebbing occurs during apoptosis and other cellular processes, including cell locomotion, cell division, and as a result of physical or chemical stresses.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_apoptosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:12083798</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16624291</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Bleb_(cell_biology)</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>blebbing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget>membrane blebbing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>plasma membrane bleb assembly</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032060"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>plasma membrane blebbing</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>regulation of cytoskeleton organisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>regulation of cytoskeleton organization and biogenesis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0051493</oboInOwl:id>
+        <rdfs:label>regulation of cytoskeleton organization</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051493"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051493"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of cytoskeleton organisation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051493"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>regulation of cytoskeleton organization and biogenesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051493"/>
+        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>down regulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>negative regulation of cytoskeleton organisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of cytoskeleton organization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>negative regulation of cytoskeleton organization and biogenesis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0051494</oboInOwl:id>
+        <rdfs:label>negative regulation of cytoskeleton organization</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>negative regulation of cytoskeleton organisation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>negative regulation of cytoskeleton organization and biogenesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that modulates the rate, frequency, or extent of the chemical reactions and pathways resulting in the breakdown of a protein or peptide by hydrolysis of its peptide bonds that is mediated by the proteasome.</obo:IAO_0000115>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2010-05-17T01:33:20Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0061136</oboInOwl:id>
+        <rdfs:label>regulation of proteasomal protein catabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0061136"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the rate, frequency, or extent of the chemical reactions and pathways resulting in the breakdown of a protein or peptide by hydrolysis of its peptide bonds that is mediated by the proteasome.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0097553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098739"/>
+        <obo:IAO_0000115>A process in which a calcium ion is transported from one side of a membrane to the other into the cytosol by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23015</obo:IAO_0000233>
+        <oboInOwl:created_by>pr</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-01-23T11:05:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0060401</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym>calcium transmembrane import into cytosol</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>cytosolic calcium ion transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0097553</oboInOwl:id>
+        <rdfs:label>calcium ion transmembrane import into cytosol</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097553"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A process in which a calcium ion is transported from one side of a membrane to the other into the cytosol by means of some agent such as a transporter or pore.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098739 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0098739">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The directed movement of some substance from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>uptake</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0098739</oboInOwl:id>
+        <rdfs:label>import across plasma membrane</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0098739"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The directed movement of some substance from outside of a cell, across the plasma membrane and into the cytosol.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901800 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901800">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0061136"/>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.</obo:IAO_0000115>
+        <oboInOwl:created_by>rl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-01-21T20:10:58Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>activation of proteasome-mediated protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>activation of proteasome-mediated protein catabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>positive regulation of proteasome-mediated protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>positive regulation of proteasome-mediated protein catabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of proteasomal protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of proteasome-mediated protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of proteasome-mediated protein catabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of proteasomal protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of proteasome-mediated protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of proteasome-mediated protein catabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of proteasomal protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of proteasome-mediated protein catabolic process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of proteasome-mediated protein catabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of proteasomal protein catabolic process</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1901800</oboInOwl:id>
+        <rdfs:label>positive regulation of proteasomal protein catabolic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:rl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:21669198</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up regulation of proteasomal protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up regulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up-regulation of proteasomal protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up-regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>up-regulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of proteasomal protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>activation of proteasomal protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1902806">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any signaling pathway that modulates the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-03-26T16:36:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1902806</oboInOwl:id>
+        <rdfs:label>regulation of cell cycle G1/S phase transition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902806"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any signaling pathway that modulates the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000058</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902807 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1902807">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1902806"/>
+        <obo:IAO_0000115>Any signaling pathway that decreases or inhibits the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</obo:IAO_0000115>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-03-26T16:36:20Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>down regulation of cell cycle G1/S phase transition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>down-regulation of cell cycle G1/S phase transition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>downregulation of cell cycle G1/S phase transition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>inhibition of cell cycle G1/S phase transition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1902807</oboInOwl:id>
+        <rdfs:label>negative regulation of cell cycle G1/S phase transition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any signaling pathway that decreases or inhibits the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000058</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down regulation of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>down-regulation of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>downregulation of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1902807"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>inhibition of cell cycle G1/S phase transition</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903786 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903786">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of glutathione biosynthetic process.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-01-08T17:14:49Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>regulation of glutathione anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of glutathione biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of glutathione formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of glutathione synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:1903786</oboInOwl:id>
+        <rdfs:label>regulation of glutathione biosynthetic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903786"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of glutathione biosynthetic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:PARL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000058</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of glutathione anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of glutathione biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of glutathione formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903786"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>regulation of glutathione synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1496,8 +2542,46 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <rdfs:label xml:lang="en">information content entity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C54072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C54072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>The quality of being free from change or variation or not taking part readily in chemical change.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C54072</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Stability</obo:NCIT_P108>
+        <obo:NCIT_P208>CL448538</obo:NCIT_P208>
+        <obo:NCIT_P366>Stability</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Stability</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Stable</oboInOwl:hasExactSynonym>
+        <rdfs:label>Stability</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54072"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The quality of being free from change or variation or not taking part readily in chemical change.</owl:annotatedTarget>
+        <obo:NCIT_P378>NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54072"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Stability</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54072"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Stable</owl:annotatedTarget>
+        <obo:NCIT_P383>AD</obo:NCIT_P383>
+        <obo:NCIT_P384>NCI</obo:NCIT_P384>
+    </owl:Axiom>
     
 
 
@@ -1569,6 +2653,17 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000493"/>
+        <obo:IAO_0000115>a cardiovascular disorder AE that has a vascular disorder outcome</obo:IAO_0000115>
+        <obo:OAE_0004334>10047065</obo:OAE_0004334>
+        <rdfs:label>vascular disorder AE</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OAE_0000187 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000187">
@@ -1579,6 +2674,19 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <rdfs:label xml:lang="en">cell death AE</rdfs:label>
         <rdfs:seeAlso>GO: GO_0008219</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0007587</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000187"/>
+        <obo:IAO_0000115 xml:lang="en">a cell death AE that has an outcome of apoptosis, a form of programmed cell death that occurs in multicellular organisms.</obo:IAO_0000115>
+        <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Apoptosis</obo:IAO_0000119>
+        <obo:OAE_0004334>10059512</obo:OAE_0004334>
+        <rdfs:label>apoptosis AE</rdfs:label>
     </owl:Class>
     
 
@@ -1608,6 +2716,20 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0000332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000570"/>
+        <obo:IAO_0000115>mobility decreased AE is a nervous system AE that results in difficulty in movement leading to less ability to move part(s) of body</obo:IAO_0000115>
+        <obo:IAO_0000117>SS, YH</obo:IAO_0000117>
+        <obo:OAE_0004334>10048334</obo:OAE_0004334>
+        <rdfs:label>mobility decreased AE</rdfs:label>
+        <rdfs:seeAlso>HPO: HP_0006217</rdfs:seeAlso>
+        <rdfs:seeAlso>SIDER: C0700572</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OAE_0000476 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000476">
@@ -1619,6 +2741,21 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <rdfs:label>immune system AE</rdfs:label>
         <rdfs:seeAlso>HPO: HP_0002715</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0021053</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <obo:IAO_0000115>an AE that occurs in cardiovascular system.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000118>cardiovascular disorder AE</obo:IAO_0000118>
+        <obo:OAE_0004334>10007649</obo:OAE_0004334>
+        <rdfs:label>cardiovascular AE</rdfs:label>
+        <rdfs:seeAlso>HPO: HP_0001626</rdfs:seeAlso>
+        <rdfs:seeAlso>SIDER: C0007222</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1635,6 +2772,21 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <rdfs:seeAlso>HPO: HP_0007891</rdfs:seeAlso>
         <rdfs:seeAlso>MP: MP_0001846</rdfs:seeAlso>
         <rdfs:seeAlso>SIDER: C0021368</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000570">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <obo:IAO_0000115>an AE that occurs in nervous system.</obo:IAO_0000115>
+        <obo:IAO_0000117>KY, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>nervous system disorder AE</obo:IAO_0000118>
+        <obo:IAO_0000119>URL: http://www.hopkinsmedicine.org/healthlibrary/conditions/nervous_system_disorders/overview_of_nervous_system_disorders_85,P00799/</obo:IAO_0000119>
+        <obo:OAE_0004334 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10029202</obo:OAE_0004334>
+        <rdfs:label>nervous system AE</rdfs:label>
+        <rdfs:seeAlso>MP: MP_0003633</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1679,6 +2831,21 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0002605 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000085"/>
+        <obo:IAO_0000115>a vascular disorder AE that form in a blood vessel a clot (thrombus) that breaks loose and is carried by the blood stream to plug another vessel.</obo:IAO_0000115>
+        <obo:IAO_0000117>MW, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>thromboembolic event AE</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://www.medicinenet.com/script/main/art.asp?articlekey=25032</obo:IAO_0000119>
+        <obo:OAE_0004334>10043565</obo:OAE_0004334>
+        <rdfs:label xml:lang="en">thromboembolism AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E13825</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OAE_0007476 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0007476">
@@ -1700,9 +2867,10 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <obo:IAO_0000111 xml:lang="en">assay</obo:IAO_0000111>
         <obo:IAO_0000112>Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that has the objective to produce information about a material entity (the evaluant) by examining it.</obo:IAO_0000115>
         <obo:IAO_0000115>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
         <obo:IAO_0000116>12/3/12: BP: the reference to the &apos;physical examination&apos; is included to point out that a prediction is not an assay, as that does not require physical examiniation.</obo:IAO_0000116>
+        <obo:IAO_0000116>Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of &apos;assay&apos;.  https://github.com/obi-ontology/obi/issues/1683.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">measuring</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">scientific observation</obo:IAO_0000118>
@@ -1789,6 +2957,20 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <obo:IAO_0000117>IEDB</obo:IAO_0000117>
         <obo:IAO_0000119>IEDB</obo:IAO_0000119>
         <rdfs:label>cytometry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0003583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0003583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001977"/>
+        <obo:IAO_0000111>cell viability assay</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A cytometry assay which measures the number of living cells in a population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1007</obo:IAO_0000233>
+        <rdfs:label>cell viability assay</rdfs:label>
     </owl:Class>
     
 
@@ -8647,6 +9829,16 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0002145 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002145">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <obo:IAO_0000115>It is 50% lethal concentration (the concentration that kills 50% of treated cells).</obo:IAO_0000115>
+        <rdfs:label>LC50</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0002162 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002162">
@@ -8744,6 +9936,22 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000433 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000433">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000719"/>
+        <obo:IAO_0000112>60 seconds duration of centrifugation</obo:IAO_0000112>
+        <obo:IAO_0000115>A temporal measurement of the time between two specified points.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>NCIt:C25330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_2052</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:103335007</oboInOwl:hasDbXref>
+        <rdfs:label>duration</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0000487 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000487">
@@ -8754,6 +9962,18 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
         <oboInOwl:hasDbXref>ICD10:Z58</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C17941</oboInOwl:hasDbXref>
         <rdfs:label>exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000719 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000719">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+        <obo:IAO_0000112>The life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the spatiotemporal region occupied by the development of a cancer tumor.</obo:IAO_0000112>
+        <obo:IAO_0000115>A temporal entity is an entity that has temporal parts and that happens, unfolds or develops through time. An occurrent is something which exists over time, rather than existing completely at many times</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <rdfs:label>temporal measurement</rdfs:label>
     </owl:Class>
     
 
@@ -8775,7 +9995,11 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002926"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0005216"/>
+        <obo:IAO_0000115>human hepatocellular carcinoma (HCC) cells (p53-wt).</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Kalpana Panneerselvam</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>CLO:0003704</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0027</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Hep-G2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HepG2 cell</oboInOwl:hasExactSynonym>
         <rdfs:label>HepG2</rdfs:label>
@@ -8789,6 +10013,9 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0001616"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0003250"/>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>BTO:0000182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0004283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0320</oboInOwl:hasDbXref>
         <rdfs:label>HT-29</rdfs:label>
     </owl:Class>
     
@@ -8844,6 +10071,9 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002937"/>
         <obo:IAO_0000115>A human cell line derived from peripheral blood monocytes. The patient was a 1-year-old male infant with acute monocytic leukemia.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>BTO:0001370</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0009348</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>https://www.atcc.org/products/all/TIB-202.aspx</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>THP1</oboInOwl:hasExactSynonym>
         <rdfs:label>THP-1</rdfs:label>
@@ -8922,6 +10152,11 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <obo:IAO_0000117>Ele Holloway</obo:IAO_0000117>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <efo:definition_citation>https://www.atcc.org/Products/All/CCL-86.aspx</efo:definition_citation>
+        <oboInOwl:hasDbXref>BTO:0001154</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0008734</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0511</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>GM04671</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>P1-Raji</oboInOwl:hasExactSynonym>
         <rdfs:label>Raji</rdfs:label>
     </owl:Class>
     
@@ -8957,6 +10192,9 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002922"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002926"/>
         <efo:definition_citation>https://www.atcc.org/products/all/CRL-2522</efo:definition_citation>
+        <oboInOwl:hasDbXref>BTO:0003807</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0001980</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_3653</oboInOwl:hasDbXref>
         <rdfs:label>BJ</rdfs:label>
     </owl:Class>
     
@@ -8984,6 +10222,8 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <efo:definition_citation>https://www.atcc.org/products/all/CCL-247.aspx</efo:definition_citation>
         <oboInOwl:hasDbXref>BTO:0002254</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0003665</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0291</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HCT-116 cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HCT116 cell</oboInOwl:hasExactSynonym>
         <rdfs:label>HCT116</rdfs:label>
@@ -9084,7 +10324,11 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
         <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
         <efo:definition_citation>https://www.atcc.org/Products/All/HTB-161.aspx</efo:definition_citation>
+        <oboInOwl:hasDbXref>BTO:0000812</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0008279</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MCC:0000363</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0465</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>NIHOVCAR3</oboInOwl:hasExactSynonym>
         <rdfs:label>OVCAR3</rdfs:label>
     </owl:Class>
     
@@ -9104,6 +10348,18 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym>mortality measurement</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mortality rate</oboInOwl:hasExactSynonym>
         <rdfs:label>mortality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004503 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004503">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+        <obo:IAO_0000115>A measurement quantifying some blood cell, or component.</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
+        <rdfs:label>hematological measurement</rdfs:label>
     </owl:Class>
     
 
@@ -9143,6 +10399,19 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <oboInOwl:hasDbXref>SNOMEDCT:74040009</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>protein levels</oboInOwl:hasExactSynonym>
         <rdfs:label>protein measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004808 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004808">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004503"/>
+        <obo:IAO_0000115>Is a quantification of L lactate dehydrodgenase, typically measured in serum, used as a marker of tissue breakdown as LDH is abundant in red blood cells and can function as a marker for hemolysis</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <efo:definition_citation>http://en.wikipedia.org/wiki/Lactate_dehydrogenase</efo:definition_citation>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
+        <rdfs:label>L lactate dehydrogenase measurement</rdfs:label>
     </owl:Class>
     
 
@@ -9282,6 +10551,31 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0008353 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0008353">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007937"/>
+        <obo:IAO_0000115>quantification of the amount cellular adhesion molecule in a sample</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
+        <oboInOwl:hasExactSynonym>CAM measurement</oboInOwl:hasExactSynonym>
+        <rdfs:label>cellular adhesion molecule measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0008360 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0008360">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001444"/>
+        <obo:IAO_0000115>quantification of some aspect of exposure to an environmental factor such as pollutants</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
+        <rdfs:label>environmental exposure measurement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0010929 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010929">
@@ -9291,6 +10585,34 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
         <oboInOwl:hasDbXref>PMID:33067605</oboInOwl:hasDbXref>
         <rdfs:label>TNF-related activation-induced cytokine measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0020980 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0020980">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0008360"/>
+        <obo:IAO_0000115>Exposure to radioactive materials or ionizing radiation.</obo:IAO_0000115>
+        <dc:creator>Zoe May Pendlington</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-29T13:45:14Z</dc:date>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
+        <oboInOwl:hasDbXref>ICD10:Z92.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C61398</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="en">radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0022039 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022039">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0020980"/>
+        <obo:IAO_0000115>The invisible ultraviolet spectrum makes up one specific portion of sunlight. This unique portion accounts for three percent of all solar radiation reaching the earth. UV radiation causes many health problems</obo:IAO_0000115>
+        <dc:creator>Zoe May Pendlington</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-16T15:53:13Z</dc:date>
+        <oboInOwl:hasDbXref>NCIT:C17231</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="en">ultraviolet radiation</rdfs:label>
     </owl:Class>
     
 
@@ -12275,8 +13597,10 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <rdfs:label>milligram per liter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000274">
+        <oboInOwl:hasExactSynonym xml:lang="en">mcg/mL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>microgram per millilitre</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ug/ml</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">µg/mL</oboInOwl:hasExactSynonym>
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in micrograms divided by the volume in millliters.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>microgram per milliliter</rdfs:label>
     </rdf:Description>
