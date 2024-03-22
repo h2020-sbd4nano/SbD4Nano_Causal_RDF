@@ -2,7 +2,7 @@
 
 This repository contains links to supporting data for the SbD4Nano network linking physicochemical properties of nanomaterials with stated biological outcomes in literature and the necessary files to map and verify their RDF graphs.
 
-- [RDF files](data/RDF/)
+- [RDF files](data/RDF/), including the instances and the classes derived from the eNanoMapper Ontology.
 - [YARRRML mapping file](/mappings/causal_network.yarrrml.yml)
 - [RML mapping file](mappings/causal_network.rml)
 - [Shape Expressions (ShEx)](/shapes)
@@ -32,4 +32,6 @@ sudo bash make_rdf.sh
 ```
 docker compose up -d
 ```
-
+The needed graphs are:
+- Either `causal_network.nq` or `causal_network.ttl`
+- The subset of the eNanoMapper Ontology, `classes.owl`
