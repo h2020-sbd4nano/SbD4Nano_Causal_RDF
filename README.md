@@ -35,3 +35,4 @@ docker compose up -d
 The needed graphs are:
 - Either `causal_network.nq` or `causal_network.ttl`
 - The subset of the eNanoMapper Ontology, `classes.owl`
+The SNORQL instance will fetch the queries from the [queries repository](https://github.com/h2020-sbd4nano/SbD4nano-causal-SPARQL/tree/main).
