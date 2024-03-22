@@ -413,6 +413,14 @@
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_000221 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000221">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000208 -->
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000208">
@@ -432,6 +440,25 @@
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0000338">
         <rdfs:label>has concentration</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000300 -->
+
+    <owl:DatatypeProperty rdf:about="http://semanticscience.org/resource/SIO_000300">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -2154,7 +2181,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <!-- http://purl.obolibrary.org/obo/GO_0051493 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051493">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>regulation of cytoskeleton organisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -2222,7 +2249,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <!-- http://purl.obolibrary.org/obo/GO_0061136 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061136">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <obo:IAO_0000115>Any process that modulates the rate, frequency, or extent of the chemical reactions and pathways resulting in the breakdown of a protein or peptide by hydrolysis of its peptide bonds that is mediated by the proteasome.</obo:IAO_0000115>
         <oboInOwl:created_by>dph</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-05-17T01:33:20Z</oboInOwl:creation_date>
@@ -2407,7 +2434,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <!-- http://purl.obolibrary.org/obo/GO_1902806 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1902806">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <obo:IAO_0000115>Any signaling pathway that modulates the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.</obo:IAO_0000115>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
         <oboInOwl:creation_date>2014-03-26T16:36:14Z</oboInOwl:creation_date>
@@ -2479,7 +2506,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <!-- http://purl.obolibrary.org/obo/GO_1903786 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903786">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of glutathione biosynthetic process.</obo:IAO_0000115>
         <oboInOwl:created_by>bf</oboInOwl:created_by>
         <oboInOwl:creation_date>2015-01-08T17:14:49Z</oboInOwl:creation_date>
