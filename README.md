@@ -6,7 +6,7 @@ This repository contains links to supporting data for the SbD4Nano network linki
 - [YARRRML mapping file](/mappings/causal_network.yarrrml.yml)
 - [RML mapping file](mappings/causal_network.rml)
 - [Shape Expressions (ShEx)](/shapes)
-
+- [Unique IRIs used in the data model](https://github.com/h2020-sbd4nano/SbD4Nano_Causal_RDF/blob/master/data/iris.tsv)
 
 
 ## Authors
