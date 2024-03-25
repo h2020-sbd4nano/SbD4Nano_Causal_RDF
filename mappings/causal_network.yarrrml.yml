@@ -33,6 +33,8 @@ prefixes:
   fn: "https://w3id.org/imec/idlab/function#"
   sbd4nano: "https://h2020-sbd4nano.github.io/sbd-data-landscape/"
   placeholder: "https://purl.placeholder.enanomapper.net/"
+  erm: "https://nanocommons.github.io/identifiers/registry#"
+  cheminf: "http://semanticscience.org/resource/CHEMINF_"
 base: https://h2020-sbd4nano.github.io/sbd-data-landscape/
 
 authors:
@@ -64,7 +66,8 @@ external:
   evidenceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/evidence_
   bioassayFormatSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_
   screeningConcentrationUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/screening_concentration_
-
+  causeUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/cause_
+  outcomeUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/outcome_
 mappings:
   dataset:
     sources:
@@ -88,7 +91,8 @@ mappings:
     predicateobjects:
       - [rdf:type, wd:Q13442814~iri]
       - [owl:sameAs, $(source)~iri]
-  # Quotes (text passages) are evidence for causalAssertions
+
+  # Evidence
   quoteEvidence:
     sources:
       - data-source
@@ -97,9 +101,88 @@ mappings:
     predicateobjects:
       - [rdf:type, sio:000299~iri] #is a quote
       - [sio:000208, $(_assertionSubjectUrl)$(row_id)~iri] #is supporting evidence for a causalAssertion
-      - [sbdbel:statedInQuote, $(quote), en~lang]
+      - [sbdbel:quote, $(quote), en~lang]
       - [cito:containsAssertionFrom, $(_referenceSubjectUrl)$(reference_id)~iri]
-  
+      # A bioassay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object:  $(_assaySubjectUrl)$(hash)_$(reference_id)_bio_as~iri 
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "bioassay"]
+      # A primary size assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object:  $(_assaySubjectUrl)$(hash)_$(reference_id)_primary_size_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "primary size"]
+      # A hydrodynamic diameter assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object:  $(_assaySubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "hydrodynamic size"]
+      # A surface area assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object:  $(_assaySubjectUrl)$(hash)_$(reference_id)_surface_area_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "surface area"]  
+      # A shape assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object: $(_assaySubjectUrl)$(hash)_$(reference_id)_shape_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "shape"]
+      # A zeta potential assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object: $(_assaySubjectUrl)$(hash)_$(reference_id)_zeta_potential_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "zeta potential"] 
+      # A porosity assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object: $(_assaySubjectUrl)$(hash)_$(reference_id)_porosity_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "porosity"]  
+      # A crystal structure assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object: $(_assaySubjectUrl)$(hash)_$(reference_id)_crystal_structure_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "crystal structure"]
+      # A polidispersity index assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object: $(_assaySubjectUrl)$(hash)_$(reference_id)_polidispersity_index_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "polidispersity"]
+      # A endotoxin assay
+      - predicate: obo:ECO_9000001 # uses (as evidence)
+        object: $(_assaySubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_as
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(uses_assay_type)]
+            - [grel:string_sub, "endotoxin"]
   # causalAssertions
   causalAssertion:
     sources:
@@ -114,16 +197,16 @@ mappings:
       - [sbdbel:hasOutcome, $(o_iri)~iri]
       - [sio:000339, $(_referenceSubjectUrl)$(reference_id)~iri] #is specified by a reference
       - [sio:000332, $(_chemicalSubstanceSubjectUrl)$(hash)~iri] # is about a chemical substance
-
   # causes
   cause:
     sources:
       - data-source
     subjects:
-      - $(s_iri)
+      - $(_causeUrl)_$(row_id)
     predicateobjects:
       - [rdf:type, sbdbel:cause~iri] #is a cause
-      - [rdfs:label, $(s), en~lang]
+      - [rdfs:about, $(o_iri)]
+
   # relationships
   relationship:
     sources:
@@ -132,16 +215,17 @@ mappings:
       - sbdbel:$(p)
     predicateobjects:
       - [rdf:type, sbdbel:relationship~iri] #is a relationship
-      - [rdfs:label, $(p), en~lang]
+      - [rdfs:label, $(p)]
+      
   # outcomes
   outcome:
     sources:
       - data-source
     subjects:
-      - $(o_iri)
+      - $(_outcomeUrl)$(row_id)
     predicateobjects:
       - [rdf:type, sbdbel:outcome~iri] #is an outcome
-      - [rdfs:label, $(o), en~lang]
+      - [rdfs:about, $(o_iri)]
   # Substance
   chemicalSubstance:  
     sources:
@@ -149,17 +233,16 @@ mappings:
     subjects:
         - $(_chemicalSubstanceSubjectUrl)$(hash) #TODO change for ERM
     predicateobjects:
-      - [rdf:type, obo:CHEBI_59999~iri] # chemical substance
-      - [rdfs:label, $(material_type), en~lang] #TODO this is an ~iri
+      
       #- [dcterms:title, $(material_type), en~lang]
       - [dcterms:description, $(material_type): $(material_description), en~lang]
-      - [dcterms:type, $(material_iri)]
-      #- [dcterms:identifier, $(hash)~iri]
+      - [a, $(material_iri)]
+      - [dcterms:identifier, erm:$(erm)]
       # Sources
       - predicate: dcterms:source
         object: $(_datasetSubjectUrl)$(_datasetName)~iri
       - predicate: dcterms:source
-        object: $(source) #TODO add condition so we can specify this is an ~iri
+        object: $(source)~iri
 
       # primary size measurement group
       - predicate: obo:BFO_0000056
@@ -224,7 +307,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_primary_size_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial primary size", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_primary_size_mg~iri
       - predicate: bao:BAO_0002846
@@ -240,7 +323,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_bundle_diameter_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial bundle diameter", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_bundle_diameter_mg~iri
       - predicate: bao:BAO_0002846
@@ -256,7 +339,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_diameter_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial diameter", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_diameter_mg~iri
       - predicate: bao:BAO_0002846
@@ -272,7 +355,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial hydrodynamic diameter", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_mg~iri
       - predicate: bao:BAO_0002846
@@ -287,7 +370,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_surface_area_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial hydrodynamic diameter", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_surface_area_mg~iri
       - predicate: bao:BAO_0002846
@@ -302,7 +385,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_shape_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial shape", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_shape_mg~iri
       - predicate: bao:BAO_0002846
@@ -318,7 +401,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_zeta_potential_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial zeta_potential", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_zeta_potential_mg~iri
       - predicate: bao:BAO_0002846
@@ -333,7 +416,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_porosity_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial porosity", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_porosity_mg~iri
       - predicate: bao:BAO_0002846
@@ -348,7 +431,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_crystal_structure_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial crystal_structure", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_crystal_structure_mg~iri
       - predicate: bao:BAO_0002846
@@ -363,7 +446,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_polidispersity_index_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial polidispersity_index", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_polidispersity_index_mg~iri
       - predicate: bao:BAO_0002846
@@ -378,7 +461,7 @@ mappings:
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_as
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
-      - [rdfs:label, "assay for nanomaterial endotoxin impurities", en~lang]
+      
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_mg~iri
       - predicate: bao:BAO_0002846
@@ -686,17 +769,9 @@ mappings:
   endpointBioassay:
     sources:
       - data-source
-<<<<<<< HEAD
-=======
-#    condition:
-#      function: grel:string_contains
-#      parameters:
-#        - [grel:valueParameter, $(endpoint_iri)]
-#        - [grel:param_string_sub, "http"]
->>>>>>> c2af7346c41fed0efd9c6038529f6c21204c94b5
     subjects: $(_endpointSubjectUrl)$(hash)_$(reference_id)_bio_ep
     predicateobjects:
-      - [rdfs:label, $(endpoint), en~lang]
+      
       - [bao:BAO_0000182, $(endpoint_units)]   # has response units, TODO change to UO   
       - [bao:BAO_0000108, $(endpoint_measurement)] # has response value
       - [bao:BAO_0002668, $(exposure_time_units)]   # has time units TODO change to UO   
@@ -710,37 +785,7 @@ mappings:
     predicateobjects:
       - [a, bao:BAO_00000098]
       - ['bao:BAO_0000183', $(dose_units)] # has concentration units
-      - predicate: bao:BAO_0002666
-        object: 
-          value: $(dose)
-          datatype: xsd:float
-      - predicate: bao:BAO_0002666set
-        condition: # is concentration a set of points?
-          function: grel:string_contains
-          parameters: 
-            - [grel:valueParameter, $(dose)]
-            - [grel:string_sub, ","]
-          object:
-            value: $(dose)
-            datatype: xsd:string
-      - predicate: bao:BAO_0002666range
-        condition: # is concentration a range?
-          function: grel:string_contains
-          parameters: 
-            - [grel:valueParameter, $(dose)]
-            - [grel:string_sub, "-"]
-        object:
-          value: $(dose)
-          datatype: xsd:string
-      - predicate: bao:BAO_0002666na
-        condition: # is concentration a range?
-          function: grel:string_contains
-          parameters: 
-            - [grel:valueParameter, $(dose)]
-            - [grel:string_sub, "#N/A"]
-        object:
-          value: $(dose)
-          datatype: xsd:string
+      - [bao:BAO_0002666, $(dose)]
 
   ## Primary Size
 
@@ -752,7 +797,7 @@ mappings:
     predicateobjects:
       - [rdf:type, bao:BAO_0000179~iri]
       - [rdf:type, obo:PATO_0000117~iri]
-      - [rdfs:label, primary size, en~lang]
+      
       - [sio:000221, obo:UO_0000018~iri]      
       - predicate: sio:000300 # For non-ranges
         object: 
@@ -777,7 +822,7 @@ mappings:
     predicateobjects:
       - [rdf:type, bao:BAO_0000179~iri]
       - [rdf:type, obo:PATO_0000117~iri]
-      - [rdfs:label, primary size, en~lang]
+      
       - [sio:000221, obo:UO_0000018~iri]      
       - predicate: sio:000300 # For non-ranges
         object: 
@@ -797,7 +842,7 @@ mappings:
     predicateobjects:
       - [rdf:type, bao:BAO_0000179~iri]
       - [rdf:type, obo:PATO_0000117~iri]
-      - [rdfs:label, surface area, en~lang]
+      
       - [sio:000221, obo:UO_0000018~iri]      
       - predicate: sio:000300 # For non-ranges
         object: 
@@ -817,7 +862,7 @@ mappings:
     predicateobjects:
       - [rdf:type, bao:BAO_0000179~iri]
       - [rdf:type, obo:PATO_0000117~iri]
-      - [rdfs:label, shape, en~lang]
+      
       - [sio:000221, obo:UO_0000018~iri]
       - predicate: sio:000300
         object:
@@ -836,7 +881,7 @@ endpointZetaPotential:
   predicateobjects:
     - [rdf:type, bao:BAO_0000179~iri]
     - [rdf:type, obo:PATO_0000117~iri]
-    - [rdfs:label, zeta potential, en~lang]
+    
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:
@@ -855,7 +900,7 @@ endpointPorosity:
   predicateobjects:
     - [rdf:type, bao:BAO_0000179~iri]
     - [rdf:type, obo:PATO_0000117~iri]
-    - [rdfs:label, porosity, en~lang]
+    
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:
@@ -874,7 +919,7 @@ endpointCrystalStructure:
   predicateobjects:
     - [rdf:type, bao:BAO_000017]
     - [rdf:type, obo:PATO_0000117~iri]
-    - [rdfs:label, porosity, en~lang]
+    
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:
@@ -893,7 +938,7 @@ endpointPolidispersityIndex:
   predicateobjects:
     - [rdf:type, bao:BAO_0000179~iri]
     - [rdf:type, obo:PATO_0000117~iri]
-    - [rdfs:label, polidispersity index, en~lang]
+    
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:
@@ -912,7 +957,7 @@ endpointEndotoxin:
   predicateobjects:
     - [rdf:type, bao:BAO_0000179~iri]
     - [rdf:type, obo:PATO_0000117~iri]
-    - [rdfs:label, endotoxin, en~lang]
+    
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:

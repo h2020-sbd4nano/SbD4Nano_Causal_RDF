@@ -13,6 +13,8 @@
      xmlns:obo1="http://purl.obolibrary.org/obo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:npo-ext="http://purl.enanomapper.net/onto/internal/npo-ext.owl/"
+     xmlns:npo-ext2="http://purl.enanomapper.net/onto/internal/npo-ext.owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:cheminf-core="http://semanticscience.org/ontology/cheminf-core.owl#">
     <owl:Ontology rdf:about="http://enanomapper.github.io/ontologies/enanomapper.owl"/>
@@ -57,6 +59,18 @@
     <!-- http://purl.bioontology.org/ontology/npo#synonym -->
 
     <owl:AnnotationProperty rdf:about="http://purl.bioontology.org/ontology/npo#synonym"/>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/internal/npo-ext.owl#code -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.net/onto/internal/npo-ext.owl#code"/>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/internal/npo-ext.owl/synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.enanomapper.net/onto/internal/npo-ext.owl/synonym"/>
     
 
 
@@ -413,6 +427,12 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#has_component_part -->
+
+    <owl:ObjectProperty rdf:about="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_000221 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000221">
@@ -565,6 +585,30 @@
         <npo:synonym>coating</npo:synonym>
         <npo:synonym>surface coating</npo:synonym>
         <rdfs:label>coat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1373 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1373">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <npo:code>NPO_1373</npo:code>
+        <npo:preferred_Name>silica nanoparticle</npo:preferred_Name>
+        <npo:synonym>silicon dioxide nanoparticle</npo:synonym>
+        <rdfs:label>silica nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1384 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1384">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <npo:code>NPO_1384</npo:code>
+        <npo:preferred_Name>metal nanoparticle</npo:preferred_Name>
+        <npo:synonym>metallic nanoparticle</npo:synonym>
+        <rdfs:label>metal nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -744,6 +788,18 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1542 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1542">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
+        <npo:code>NPO_1542</npo:code>
+        <npo:preferred_Name>zinc oxide nanoparticle</npo:preferred_Name>
+        <npo:synonym>ZnO nanoparticle</npo:synonym>
+        <rdfs:label>zinc oxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1597 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1597">
@@ -886,6 +942,18 @@
         <npo:code>NPO_1888</npo:code>
         <npo:preferred_Name>core component</npo:preferred_Name>
         <rdfs:label>core component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1892 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1892">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1384"/>
+        <npo:code>NPO_1892</npo:code>
+        <npo:preferred_Name>silver nanoparticle</npo:preferred_Name>
+        <npo:synonym>Ag nanoparticle</npo:synonym>
+        <rdfs:label>silver nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -1256,6 +1324,28 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_0000117 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000117">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.bioontology.org/ontology/npo#has_component_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_132889"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_707"/>
+        <npo-ext2:code>graphene oxide nanoparticle</npo-ext2:code>
+        <npo-ext:synonym>GO nanoparticle</npo-ext:synonym>
+        <rdfs:label xml:lang="en">graphene oxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.enanomapper.org/onto/ENM_8000019 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000019">
@@ -1302,6 +1392,16 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000845"/>
         <rdfs:isDefinedBy xml:lang="en">A particle of TiO2 structured in rutile crystal structure</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">rutile nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_9000005 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000005">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
+        <obo:IAO_0000115>A nanoparticle which is basically composed of aluminium oxide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">aluminium oxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -1385,24 +1485,6 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/018-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
@@ -1418,6 +1500,24 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/017-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/134-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/018-002"/>
     </owl:Axiom>
     
 
@@ -1457,14 +1557,14 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
     </owl:Axiom>
     
@@ -1734,6 +1834,32 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_132889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_132889">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000115>A single carbon layer of the graphite oxide structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:132889</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#2_STAR"/>
+        <rdfs:label>graphene oxide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_134441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_134441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52855"/>
+        <obo:IAO_0000115>A nanoparticle composed of any titanium oxide.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:134441</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>titanium oxide nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_143130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_143130">
@@ -1770,6 +1896,20 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <oboInOwl:id>CHEBI:50906</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51050">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1541"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_134441"/>
+        <obo:IAO_0000115>A nanoparticle consisting of titanium dioxide.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:51050</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>titanium dioxide nanoparticle</rdfs:label>
     </owl:Class>
     
 
