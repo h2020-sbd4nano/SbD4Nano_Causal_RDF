@@ -686,6 +686,14 @@ mappings:
   endpointBioassay:
     sources:
       - data-source
+<<<<<<< HEAD
+=======
+#    condition:
+#      function: grel:string_contains
+#      parameters:
+#        - [grel:valueParameter, $(endpoint_iri)]
+#        - [grel:param_string_sub, "http"]
+>>>>>>> c2af7346c41fed0efd9c6038529f6c21204c94b5
     subjects: $(_endpointSubjectUrl)$(hash)_$(reference_id)_bio_ep
     predicateobjects:
       - [rdfs:label, $(endpoint), en~lang]

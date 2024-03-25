@@ -19,7 +19,7 @@
 @prefix npo: <http://purl.bioontology.org/ontology/npo#>.
 @prefix enm: <http://purl.enanomapper.org/onto/>.
 @prefix amb: <http://purl.enanomapper.net/>.
-@prefix sio: <http://semanticscience.org/resource/>.
+@prefix sio: <http://semanticscience.org/resource/SIO_>.
 @prefix wdt: <http://www.wikidata.org/prop/direct/>.
 @prefix wd: <http://www.wikidata.org/entity/>.
 @prefix bao: <http://www.bioassayontology.org/bao#>.
@@ -160,13 +160,13 @@ sbd4nano:pom_009 rr:predicateMap sbd4nano:pm_009.
 sbd4nano:pm_009 rr:constant rdf:type.
 sbd4nano:pom_009 rr:objectMap sbd4nano:om_009.
 sbd4nano:om_009 a rr:ObjectMap;
-    rr:constant <http://semanticscience.org/resource/000299>;
+    rr:constant <http://semanticscience.org/resource/SIO_000299>;
     rr:termType rr:IRI.
 sbd4nano:pom_010 a rr:PredicateObjectMap.
 sbd4nano:map_quoteEvidence_000 rr:predicateObjectMap sbd4nano:pom_010.
 sbd4nano:pm_010 a rr:PredicateMap.
 sbd4nano:pom_010 rr:predicateMap sbd4nano:pm_010.
-sbd4nano:pm_010 rr:constant <http://semanticscience.org/resource/000208>.
+sbd4nano:pm_010 rr:constant <http://semanticscience.org/resource/SIO_000208>.
 sbd4nano:pom_010 rr:objectMap sbd4nano:om_010.
 sbd4nano:om_010 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/causal_assertion_{row_id}";
@@ -175,7 +175,7 @@ sbd4nano:pom_011 a rr:PredicateObjectMap.
 sbd4nano:map_quoteEvidence_000 rr:predicateObjectMap sbd4nano:pom_011.
 sbd4nano:pm_011 a rr:PredicateMap.
 sbd4nano:pom_011 rr:predicateMap sbd4nano:pm_011.
-sbd4nano:pm_011 rr:constant rdf:value.
+sbd4nano:pm_011 rr:constant sbdbel:statedInQuote.
 sbd4nano:pom_011 rr:objectMap sbd4nano:om_011.
 sbd4nano:om_011 a rr:ObjectMap;
     rml:reference "quote";
@@ -186,7 +186,7 @@ sbd4nano:pom_012 a rr:PredicateObjectMap.
 sbd4nano:map_quoteEvidence_000 rr:predicateObjectMap sbd4nano:pom_012.
 sbd4nano:pm_012 a rr:PredicateMap.
 sbd4nano:pom_012 rr:predicateMap sbd4nano:pm_012.
-sbd4nano:pm_012 rr:constant dcterms:source.
+sbd4nano:pm_012 rr:constant cito:containsAssertionFrom.
 sbd4nano:pom_012 rr:objectMap sbd4nano:om_012.
 sbd4nano:om_012 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/reference_{reference_id}";
@@ -205,13 +205,13 @@ sbd4nano:pom_013 rr:predicateMap sbd4nano:pm_013.
 sbd4nano:pm_013 rr:constant rdf:type.
 sbd4nano:pom_013 rr:objectMap sbd4nano:om_013.
 sbd4nano:om_013 a rr:ObjectMap;
-    rr:constant <http://semanticscience.org/resource/001183>;
+    rr:constant <http://semanticscience.org/resource/SIO_001183>;
     rr:termType rr:IRI.
 sbd4nano:pom_014 a rr:PredicateObjectMap.
 sbd4nano:map_causalAssertion_000 rr:predicateObjectMap sbd4nano:pom_014.
 sbd4nano:pm_014 a rr:PredicateMap.
 sbd4nano:pom_014 rr:predicateMap sbd4nano:pm_014.
-sbd4nano:pm_014 rr:constant <http://semanticscience.org/resource/000206>.
+sbd4nano:pm_014 rr:constant <http://semanticscience.org/resource/SIO_000206>.
 sbd4nano:pom_014 rr:objectMap sbd4nano:om_014.
 sbd4nano:om_014 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/evidence_{row_id}";
@@ -247,7 +247,7 @@ sbd4nano:pom_018 a rr:PredicateObjectMap.
 sbd4nano:map_causalAssertion_000 rr:predicateObjectMap sbd4nano:pom_018.
 sbd4nano:pm_018 a rr:PredicateMap.
 sbd4nano:pom_018 rr:predicateMap sbd4nano:pm_018.
-sbd4nano:pm_018 rr:constant <http://semanticscience.org/resource/000339>.
+sbd4nano:pm_018 rr:constant <http://semanticscience.org/resource/SIO_000339>.
 sbd4nano:pom_018 rr:objectMap sbd4nano:om_018.
 sbd4nano:om_018 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/reference_{reference_id}";
@@ -256,10 +256,10 @@ sbd4nano:pom_019 a rr:PredicateObjectMap.
 sbd4nano:map_causalAssertion_000 rr:predicateObjectMap sbd4nano:pom_019.
 sbd4nano:pm_019 a rr:PredicateMap.
 sbd4nano:pom_019 rr:predicateMap sbd4nano:pm_019.
-sbd4nano:pm_019 rr:constant <http://semanticscience.org/resource/000332>.
+sbd4nano:pm_019 rr:constant <http://semanticscience.org/resource/SIO_000332>.
 sbd4nano:pom_019 rr:objectMap sbd4nano:om_019.
 sbd4nano:om_019 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/chemical_substance_{erm}";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/chemical_substance_{hash}";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_cause_000.
 sbd4nano:map_cause_000 rml:logicalSource sbd4nano:source_000;
@@ -267,7 +267,7 @@ sbd4nano:map_cause_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "cause".
 sbd4nano:s_004 a rr:SubjectMap.
 sbd4nano:map_cause_000 rr:subjectMap sbd4nano:s_004.
-sbd4nano:s_004 rr:template "https://h2020-sbd4nano.github.io/sbdbel/{s_iri}".
+sbd4nano:s_004 rml:reference "s_iri".
 sbd4nano:pom_020 a rr:PredicateObjectMap.
 sbd4nano:map_cause_000 rr:predicateObjectMap sbd4nano:pom_020.
 sbd4nano:pm_020 a rr:PredicateMap.
@@ -348,7 +348,7 @@ sbd4nano:map_chemicalSubstance_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "chemicalSubstance".
 sbd4nano:s_007 a rr:SubjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:subjectMap sbd4nano:s_007.
-sbd4nano:s_007 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/chemical_substance_{erm}".
+sbd4nano:s_007 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/chemical_substance_{hash}".
 sbd4nano:pom_026 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_026.
 sbd4nano:pm_026 a rr:PredicateMap.
@@ -414,7 +414,7 @@ sbd4nano:pom_032 rr:predicateMap sbd4nano:pm_032.
 sbd4nano:pm_032 rr:constant obo:BFO_0000056.
 sbd4nano:pom_032 rr:objectMap sbd4nano:om_032.
 sbd4nano:om_032 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_primary_size_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_primary_size_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_033 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_033.
@@ -423,7 +423,7 @@ sbd4nano:pom_033 rr:predicateMap sbd4nano:pm_033.
 sbd4nano:pm_033 rr:constant obo:BFO_0000056.
 sbd4nano:pom_033 rr:objectMap sbd4nano:om_033.
 sbd4nano:om_033 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_bundle_diameter_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_bundle_diameter_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_034 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_034.
@@ -432,7 +432,7 @@ sbd4nano:pom_034 rr:predicateMap sbd4nano:pm_034.
 sbd4nano:pm_034 rr:constant obo:BFO_0000056.
 sbd4nano:pom_034 rr:objectMap sbd4nano:om_034.
 sbd4nano:om_034 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_hydrodynamic_diameter_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_hydrodynamic_diameter_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_035 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_035.
@@ -441,7 +441,7 @@ sbd4nano:pom_035 rr:predicateMap sbd4nano:pm_035.
 sbd4nano:pm_035 rr:constant obo:BFO_0000056.
 sbd4nano:pom_035 rr:objectMap sbd4nano:om_035.
 sbd4nano:om_035 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_surface_area_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_surface_area_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_036 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_036.
@@ -450,7 +450,7 @@ sbd4nano:pom_036 rr:predicateMap sbd4nano:pm_036.
 sbd4nano:pm_036 rr:constant obo:BFO_0000056.
 sbd4nano:pom_036 rr:objectMap sbd4nano:om_036.
 sbd4nano:om_036 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_shape_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_shape_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_037 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_037.
@@ -459,7 +459,7 @@ sbd4nano:pom_037 rr:predicateMap sbd4nano:pm_037.
 sbd4nano:pm_037 rr:constant obo:BFO_0000056.
 sbd4nano:pom_037 rr:objectMap sbd4nano:om_037.
 sbd4nano:om_037 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_zeta_potential_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_zeta_potential_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_038 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_038.
@@ -468,7 +468,7 @@ sbd4nano:pom_038 rr:predicateMap sbd4nano:pm_038.
 sbd4nano:pm_038 rr:constant obo:BFO_0000056.
 sbd4nano:pom_038 rr:objectMap sbd4nano:om_038.
 sbd4nano:om_038 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_porosity_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_porosity_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_039 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_039.
@@ -477,7 +477,7 @@ sbd4nano:pom_039 rr:predicateMap sbd4nano:pm_039.
 sbd4nano:pm_039 rr:constant obo:BFO_0000056.
 sbd4nano:pom_039 rr:objectMap sbd4nano:om_039.
 sbd4nano:om_039 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_crystal_structure_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_crystal_structure_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_040 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_040.
@@ -486,7 +486,7 @@ sbd4nano:pom_040 rr:predicateMap sbd4nano:pm_040.
 sbd4nano:pm_040 rr:constant obo:BFO_0000056.
 sbd4nano:pom_040 rr:objectMap sbd4nano:om_040.
 sbd4nano:om_040 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_polidispersity_index_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_polidispersity_index_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_041 a rr:PredicateObjectMap.
 sbd4nano:map_chemicalSubstance_000 rr:predicateObjectMap sbd4nano:pom_041.
@@ -495,7 +495,7 @@ sbd4nano:pom_041 rr:predicateMap sbd4nano:pm_041.
 sbd4nano:pm_041 rr:constant obo:BFO_0000056.
 sbd4nano:pom_041 rr:objectMap sbd4nano:om_041.
 sbd4nano:om_041 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_endotoxin_impurities_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_endotoxin_impurities_mg";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_bioassay_000.
 sbd4nano:map_bioassay_000 rml:logicalSource sbd4nano:source_000;
@@ -503,7 +503,7 @@ sbd4nano:map_bioassay_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "bioassay".
 sbd4nano:s_008 a rr:SubjectMap.
 sbd4nano:map_bioassay_000 rr:subjectMap sbd4nano:s_008.
-sbd4nano:s_008 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_bio_as".
+sbd4nano:s_008 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_bio_as".
 sbd4nano:pom_042 a rr:PredicateObjectMap.
 sbd4nano:map_bioassay_000 rr:predicateObjectMap sbd4nano:pom_042.
 sbd4nano:pm_042 a rr:PredicateMap.
@@ -520,7 +520,7 @@ sbd4nano:pom_043 rr:predicateMap sbd4nano:pm_043.
 sbd4nano:pm_043 rr:constant bao:BAO_0000209.
 sbd4nano:pom_043 rr:objectMap sbd4nano:om_043.
 sbd4nano:om_043 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_bio_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_bio_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_044 a rr:PredicateObjectMap.
 sbd4nano:map_bioassay_000 rr:predicateObjectMap sbd4nano:pom_044.
@@ -529,7 +529,7 @@ sbd4nano:pom_044 rr:predicateMap sbd4nano:pm_044.
 sbd4nano:pm_044 rr:constant bao:BAO_0002846.
 sbd4nano:pom_044 rr:objectMap sbd4nano:om_044.
 sbd4nano:om_044 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_bio_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_bio_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_045 a rr:PredicateObjectMap.
 sbd4nano:map_bioassay_000 rr:predicateObjectMap sbd4nano:pom_045.
@@ -538,7 +538,7 @@ sbd4nano:pom_045 rr:predicateMap sbd4nano:pm_045.
 sbd4nano:pm_045 rr:constant bao:BAO_0000555.
 sbd4nano:pom_045 rr:objectMap sbd4nano:om_045.
 sbd4nano:om_045 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{row_id}_bio_af";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}_bio_af";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayPrimarySize_000.
 sbd4nano:map_assayPrimarySize_000 rml:logicalSource sbd4nano:source_000;
@@ -546,7 +546,7 @@ sbd4nano:map_assayPrimarySize_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayPrimarySize".
 sbd4nano:s_009 a rr:SubjectMap.
 sbd4nano:map_assayPrimarySize_000 rr:subjectMap sbd4nano:s_009.
-sbd4nano:s_009 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_primary_size_as".
+sbd4nano:s_009 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_primary_size_as".
 sbd4nano:pom_046 a rr:PredicateObjectMap.
 sbd4nano:map_assayPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_046.
 sbd4nano:pm_046 a rr:PredicateMap.
@@ -574,7 +574,7 @@ sbd4nano:pom_048 rr:predicateMap sbd4nano:pm_048.
 sbd4nano:pm_048 rr:constant bao:BAO_0000209.
 sbd4nano:pom_048 rr:objectMap sbd4nano:om_048.
 sbd4nano:om_048 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_primary_size_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_primary_size_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_049 a rr:PredicateObjectMap.
 sbd4nano:map_assayPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_049.
@@ -583,7 +583,7 @@ sbd4nano:pom_049 rr:predicateMap sbd4nano:pm_049.
 sbd4nano:pm_049 rr:constant bao:BAO_0002846.
 sbd4nano:pom_049 rr:objectMap sbd4nano:om_049.
 sbd4nano:om_049 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_primary_size_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_primary_size_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_050 a rr:PredicateObjectMap.
 sbd4nano:map_assayPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_050.
@@ -592,7 +592,7 @@ sbd4nano:pom_050 rr:predicateMap sbd4nano:pm_050.
 sbd4nano:pm_050 rr:constant bao:BAO_0000207.
 sbd4nano:pom_050 rr:objectMap sbd4nano:om_050.
 sbd4nano:om_050 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_primary_size_me";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_primary_size_me";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayBundleDiameter_000.
 sbd4nano:map_assayBundleDiameter_000 rml:logicalSource sbd4nano:source_000;
@@ -600,7 +600,7 @@ sbd4nano:map_assayBundleDiameter_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayBundleDiameter".
 sbd4nano:s_010 a rr:SubjectMap.
 sbd4nano:map_assayBundleDiameter_000 rr:subjectMap sbd4nano:s_010.
-sbd4nano:s_010 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_bundle_diameter_as".
+sbd4nano:s_010 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_bundle_diameter_as".
 sbd4nano:pom_051 a rr:PredicateObjectMap.
 sbd4nano:map_assayBundleDiameter_000 rr:predicateObjectMap sbd4nano:pom_051.
 sbd4nano:pm_051 a rr:PredicateMap.
@@ -628,7 +628,7 @@ sbd4nano:pom_053 rr:predicateMap sbd4nano:pm_053.
 sbd4nano:pm_053 rr:constant bao:BAO_0000209.
 sbd4nano:pom_053 rr:objectMap sbd4nano:om_053.
 sbd4nano:om_053 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_bundle_diameter_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_bundle_diameter_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_054 a rr:PredicateObjectMap.
 sbd4nano:map_assayBundleDiameter_000 rr:predicateObjectMap sbd4nano:pom_054.
@@ -637,7 +637,7 @@ sbd4nano:pom_054 rr:predicateMap sbd4nano:pm_054.
 sbd4nano:pm_054 rr:constant bao:BAO_0002846.
 sbd4nano:pom_054 rr:objectMap sbd4nano:om_054.
 sbd4nano:om_054 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_bundle_diameter_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_bundle_diameter_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_055 a rr:PredicateObjectMap.
 sbd4nano:map_assayBundleDiameter_000 rr:predicateObjectMap sbd4nano:pom_055.
@@ -646,7 +646,7 @@ sbd4nano:pom_055 rr:predicateMap sbd4nano:pm_055.
 sbd4nano:pm_055 rr:constant bao:BAO_0000207.
 sbd4nano:pom_055 rr:objectMap sbd4nano:om_055.
 sbd4nano:om_055 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_bundle_diameter";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_bundle_diameter";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayDiameter_000.
 sbd4nano:map_assayDiameter_000 rml:logicalSource sbd4nano:source_000;
@@ -654,7 +654,7 @@ sbd4nano:map_assayDiameter_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayDiameter".
 sbd4nano:s_011 a rr:SubjectMap.
 sbd4nano:map_assayDiameter_000 rr:subjectMap sbd4nano:s_011.
-sbd4nano:s_011 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_diameter_as".
+sbd4nano:s_011 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_diameter_as".
 sbd4nano:pom_056 a rr:PredicateObjectMap.
 sbd4nano:map_assayDiameter_000 rr:predicateObjectMap sbd4nano:pom_056.
 sbd4nano:pm_056 a rr:PredicateMap.
@@ -682,7 +682,7 @@ sbd4nano:pom_058 rr:predicateMap sbd4nano:pm_058.
 sbd4nano:pm_058 rr:constant bao:BAO_0000209.
 sbd4nano:pom_058 rr:objectMap sbd4nano:om_058.
 sbd4nano:om_058 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_diameter_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_diameter_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_059 a rr:PredicateObjectMap.
 sbd4nano:map_assayDiameter_000 rr:predicateObjectMap sbd4nano:pom_059.
@@ -691,7 +691,7 @@ sbd4nano:pom_059 rr:predicateMap sbd4nano:pm_059.
 sbd4nano:pm_059 rr:constant bao:BAO_0002846.
 sbd4nano:pom_059 rr:objectMap sbd4nano:om_059.
 sbd4nano:om_059 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_diameter_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_diameter_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_060 a rr:PredicateObjectMap.
 sbd4nano:map_assayDiameter_000 rr:predicateObjectMap sbd4nano:pom_060.
@@ -700,7 +700,7 @@ sbd4nano:pom_060 rr:predicateMap sbd4nano:pm_060.
 sbd4nano:pm_060 rr:constant bao:BAO_0000207.
 sbd4nano:pom_060 rr:objectMap sbd4nano:om_060.
 sbd4nano:om_060 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_diameter";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_diameter";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayHydrodynamicDiameter_000.
 sbd4nano:map_assayHydrodynamicDiameter_000 rml:logicalSource sbd4nano:source_000;
@@ -708,7 +708,7 @@ sbd4nano:map_assayHydrodynamicDiameter_000 rml:logicalSource sbd4nano:source_000
     rdfs:label "assayHydrodynamicDiameter".
 sbd4nano:s_012 a rr:SubjectMap.
 sbd4nano:map_assayHydrodynamicDiameter_000 rr:subjectMap sbd4nano:s_012.
-sbd4nano:s_012 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_hydrodynamic_diameter_as".
+sbd4nano:s_012 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_hydrodynamic_diameter_as".
 sbd4nano:pom_061 a rr:PredicateObjectMap.
 sbd4nano:map_assayHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_061.
 sbd4nano:pm_061 a rr:PredicateMap.
@@ -736,7 +736,7 @@ sbd4nano:pom_063 rr:predicateMap sbd4nano:pm_063.
 sbd4nano:pm_063 rr:constant bao:BAO_0000209.
 sbd4nano:pom_063 rr:objectMap sbd4nano:om_063.
 sbd4nano:om_063 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_hydrodynamic_diameter_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_hydrodynamic_diameter_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_064 a rr:PredicateObjectMap.
 sbd4nano:map_assayHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_064.
@@ -745,7 +745,7 @@ sbd4nano:pom_064 rr:predicateMap sbd4nano:pm_064.
 sbd4nano:pm_064 rr:constant bao:BAO_0002846.
 sbd4nano:pom_064 rr:objectMap sbd4nano:om_064.
 sbd4nano:om_064 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_hydrodynamic_diameter_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_hydrodynamic_diameter_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_065 a rr:PredicateObjectMap.
 sbd4nano:map_assayHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_065.
@@ -754,7 +754,7 @@ sbd4nano:pom_065 rr:predicateMap sbd4nano:pm_065.
 sbd4nano:pm_065 rr:constant bao:BAO_0000207.
 sbd4nano:pom_065 rr:objectMap sbd4nano:om_065.
 sbd4nano:om_065 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_hydrodynamic_diameter";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_hydrodynamic_diameter";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assaySurfaceArea_000.
 sbd4nano:map_assaySurfaceArea_000 rml:logicalSource sbd4nano:source_000;
@@ -762,7 +762,7 @@ sbd4nano:map_assaySurfaceArea_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assaySurfaceArea".
 sbd4nano:s_013 a rr:SubjectMap.
 sbd4nano:map_assaySurfaceArea_000 rr:subjectMap sbd4nano:s_013.
-sbd4nano:s_013 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_surface_area_as".
+sbd4nano:s_013 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_surface_area_as".
 sbd4nano:pom_066 a rr:PredicateObjectMap.
 sbd4nano:map_assaySurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_066.
 sbd4nano:pm_066 a rr:PredicateMap.
@@ -790,7 +790,7 @@ sbd4nano:pom_068 rr:predicateMap sbd4nano:pm_068.
 sbd4nano:pm_068 rr:constant bao:BAO_0000209.
 sbd4nano:pom_068 rr:objectMap sbd4nano:om_068.
 sbd4nano:om_068 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_surface_area_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_surface_area_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_069 a rr:PredicateObjectMap.
 sbd4nano:map_assaySurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_069.
@@ -799,7 +799,7 @@ sbd4nano:pom_069 rr:predicateMap sbd4nano:pm_069.
 sbd4nano:pm_069 rr:constant bao:BAO_0002846.
 sbd4nano:pom_069 rr:objectMap sbd4nano:om_069.
 sbd4nano:om_069 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_surface_area_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_surface_area_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_070 a rr:PredicateObjectMap.
 sbd4nano:map_assaySurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_070.
@@ -808,7 +808,7 @@ sbd4nano:pom_070 rr:predicateMap sbd4nano:pm_070.
 sbd4nano:pm_070 rr:constant bao:BAO_0000207.
 sbd4nano:pom_070 rr:objectMap sbd4nano:om_070.
 sbd4nano:om_070 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_surface_area";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_surface_area";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayShape_000.
 sbd4nano:map_assayShape_000 rml:logicalSource sbd4nano:source_000;
@@ -816,7 +816,7 @@ sbd4nano:map_assayShape_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayShape".
 sbd4nano:s_014 a rr:SubjectMap.
 sbd4nano:map_assayShape_000 rr:subjectMap sbd4nano:s_014.
-sbd4nano:s_014 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_shape_as".
+sbd4nano:s_014 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_shape_as".
 sbd4nano:pom_071 a rr:PredicateObjectMap.
 sbd4nano:map_assayShape_000 rr:predicateObjectMap sbd4nano:pom_071.
 sbd4nano:pm_071 a rr:PredicateMap.
@@ -844,7 +844,7 @@ sbd4nano:pom_073 rr:predicateMap sbd4nano:pm_073.
 sbd4nano:pm_073 rr:constant bao:BAO_0000209.
 sbd4nano:pom_073 rr:objectMap sbd4nano:om_073.
 sbd4nano:om_073 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_shape_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_shape_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_074 a rr:PredicateObjectMap.
 sbd4nano:map_assayShape_000 rr:predicateObjectMap sbd4nano:pom_074.
@@ -853,7 +853,7 @@ sbd4nano:pom_074 rr:predicateMap sbd4nano:pm_074.
 sbd4nano:pm_074 rr:constant bao:BAO_0002846.
 sbd4nano:pom_074 rr:objectMap sbd4nano:om_074.
 sbd4nano:om_074 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_shape_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_shape_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_075 a rr:PredicateObjectMap.
 sbd4nano:map_assayShape_000 rr:predicateObjectMap sbd4nano:pom_075.
@@ -862,7 +862,7 @@ sbd4nano:pom_075 rr:predicateMap sbd4nano:pm_075.
 sbd4nano:pm_075 rr:constant bao:BAO_0000207.
 sbd4nano:pom_075 rr:objectMap sbd4nano:om_075.
 sbd4nano:om_075 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_shape";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_shape";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayZetaPotential_000.
 sbd4nano:map_assayZetaPotential_000 rml:logicalSource sbd4nano:source_000;
@@ -870,7 +870,7 @@ sbd4nano:map_assayZetaPotential_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayZetaPotential".
 sbd4nano:s_015 a rr:SubjectMap.
 sbd4nano:map_assayZetaPotential_000 rr:subjectMap sbd4nano:s_015.
-sbd4nano:s_015 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_zeta_potential_as".
+sbd4nano:s_015 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_zeta_potential_as".
 sbd4nano:pom_076 a rr:PredicateObjectMap.
 sbd4nano:map_assayZetaPotential_000 rr:predicateObjectMap sbd4nano:pom_076.
 sbd4nano:pm_076 a rr:PredicateMap.
@@ -898,7 +898,7 @@ sbd4nano:pom_078 rr:predicateMap sbd4nano:pm_078.
 sbd4nano:pm_078 rr:constant bao:BAO_0000209.
 sbd4nano:pom_078 rr:objectMap sbd4nano:om_078.
 sbd4nano:om_078 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_zeta_potential_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_zeta_potential_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_079 a rr:PredicateObjectMap.
 sbd4nano:map_assayZetaPotential_000 rr:predicateObjectMap sbd4nano:pom_079.
@@ -907,7 +907,7 @@ sbd4nano:pom_079 rr:predicateMap sbd4nano:pm_079.
 sbd4nano:pm_079 rr:constant bao:BAO_0002846.
 sbd4nano:pom_079 rr:objectMap sbd4nano:om_079.
 sbd4nano:om_079 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_zeta_potential_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_zeta_potential_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_080 a rr:PredicateObjectMap.
 sbd4nano:map_assayZetaPotential_000 rr:predicateObjectMap sbd4nano:pom_080.
@@ -916,7 +916,7 @@ sbd4nano:pom_080 rr:predicateMap sbd4nano:pm_080.
 sbd4nano:pm_080 rr:constant bao:BAO_0000207.
 sbd4nano:pom_080 rr:objectMap sbd4nano:om_080.
 sbd4nano:om_080 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_zeta_potential";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_zeta_potential";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayPorosity_000.
 sbd4nano:map_assayPorosity_000 rml:logicalSource sbd4nano:source_000;
@@ -924,7 +924,7 @@ sbd4nano:map_assayPorosity_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayPorosity".
 sbd4nano:s_016 a rr:SubjectMap.
 sbd4nano:map_assayPorosity_000 rr:subjectMap sbd4nano:s_016.
-sbd4nano:s_016 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_porosity_as".
+sbd4nano:s_016 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_porosity_as".
 sbd4nano:pom_081 a rr:PredicateObjectMap.
 sbd4nano:map_assayPorosity_000 rr:predicateObjectMap sbd4nano:pom_081.
 sbd4nano:pm_081 a rr:PredicateMap.
@@ -952,7 +952,7 @@ sbd4nano:pom_083 rr:predicateMap sbd4nano:pm_083.
 sbd4nano:pm_083 rr:constant bao:BAO_0000209.
 sbd4nano:pom_083 rr:objectMap sbd4nano:om_083.
 sbd4nano:om_083 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_porosity_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_porosity_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_084 a rr:PredicateObjectMap.
 sbd4nano:map_assayPorosity_000 rr:predicateObjectMap sbd4nano:pom_084.
@@ -961,7 +961,7 @@ sbd4nano:pom_084 rr:predicateMap sbd4nano:pm_084.
 sbd4nano:pm_084 rr:constant bao:BAO_0002846.
 sbd4nano:pom_084 rr:objectMap sbd4nano:om_084.
 sbd4nano:om_084 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_porosity_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_porosity_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_085 a rr:PredicateObjectMap.
 sbd4nano:map_assayPorosity_000 rr:predicateObjectMap sbd4nano:pom_085.
@@ -970,7 +970,7 @@ sbd4nano:pom_085 rr:predicateMap sbd4nano:pm_085.
 sbd4nano:pm_085 rr:constant bao:BAO_0000207.
 sbd4nano:pom_085 rr:objectMap sbd4nano:om_085.
 sbd4nano:om_085 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_porosity";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_porosity";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayCrystalStructure_000.
 sbd4nano:map_assayCrystalStructure_000 rml:logicalSource sbd4nano:source_000;
@@ -978,7 +978,7 @@ sbd4nano:map_assayCrystalStructure_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayCrystalStructure".
 sbd4nano:s_017 a rr:SubjectMap.
 sbd4nano:map_assayCrystalStructure_000 rr:subjectMap sbd4nano:s_017.
-sbd4nano:s_017 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_crystal_structure_as".
+sbd4nano:s_017 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_crystal_structure_as".
 sbd4nano:pom_086 a rr:PredicateObjectMap.
 sbd4nano:map_assayCrystalStructure_000 rr:predicateObjectMap sbd4nano:pom_086.
 sbd4nano:pm_086 a rr:PredicateMap.
@@ -1006,7 +1006,7 @@ sbd4nano:pom_088 rr:predicateMap sbd4nano:pm_088.
 sbd4nano:pm_088 rr:constant bao:BAO_0000209.
 sbd4nano:pom_088 rr:objectMap sbd4nano:om_088.
 sbd4nano:om_088 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_crystal_structure_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_crystal_structure_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_089 a rr:PredicateObjectMap.
 sbd4nano:map_assayCrystalStructure_000 rr:predicateObjectMap sbd4nano:pom_089.
@@ -1015,7 +1015,7 @@ sbd4nano:pom_089 rr:predicateMap sbd4nano:pm_089.
 sbd4nano:pm_089 rr:constant bao:BAO_0002846.
 sbd4nano:pom_089 rr:objectMap sbd4nano:om_089.
 sbd4nano:om_089 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_crystal_structure_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_crystal_structure_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_090 a rr:PredicateObjectMap.
 sbd4nano:map_assayCrystalStructure_000 rr:predicateObjectMap sbd4nano:pom_090.
@@ -1024,7 +1024,7 @@ sbd4nano:pom_090 rr:predicateMap sbd4nano:pm_090.
 sbd4nano:pm_090 rr:constant bao:BAO_0000207.
 sbd4nano:pom_090 rr:objectMap sbd4nano:om_090.
 sbd4nano:om_090 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_crystal_structure";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_crystal_structure";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayPolidispersityIndex_000.
 sbd4nano:map_assayPolidispersityIndex_000 rml:logicalSource sbd4nano:source_000;
@@ -1032,7 +1032,7 @@ sbd4nano:map_assayPolidispersityIndex_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayPolidispersityIndex".
 sbd4nano:s_018 a rr:SubjectMap.
 sbd4nano:map_assayPolidispersityIndex_000 rr:subjectMap sbd4nano:s_018.
-sbd4nano:s_018 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_polidispersity_index_as".
+sbd4nano:s_018 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_polidispersity_index_as".
 sbd4nano:pom_091 a rr:PredicateObjectMap.
 sbd4nano:map_assayPolidispersityIndex_000 rr:predicateObjectMap sbd4nano:pom_091.
 sbd4nano:pm_091 a rr:PredicateMap.
@@ -1060,7 +1060,7 @@ sbd4nano:pom_093 rr:predicateMap sbd4nano:pm_093.
 sbd4nano:pm_093 rr:constant bao:BAO_0000209.
 sbd4nano:pom_093 rr:objectMap sbd4nano:om_093.
 sbd4nano:om_093 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_polidispersity_index_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_polidispersity_index_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_094 a rr:PredicateObjectMap.
 sbd4nano:map_assayPolidispersityIndex_000 rr:predicateObjectMap sbd4nano:pom_094.
@@ -1069,7 +1069,7 @@ sbd4nano:pom_094 rr:predicateMap sbd4nano:pm_094.
 sbd4nano:pm_094 rr:constant bao:BAO_0002846.
 sbd4nano:pom_094 rr:objectMap sbd4nano:om_094.
 sbd4nano:om_094 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_polidispersity_index_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_polidispersity_index_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_095 a rr:PredicateObjectMap.
 sbd4nano:map_assayPolidispersityIndex_000 rr:predicateObjectMap sbd4nano:pom_095.
@@ -1078,7 +1078,7 @@ sbd4nano:pom_095 rr:predicateMap sbd4nano:pm_095.
 sbd4nano:pm_095 rr:constant bao:BAO_0000207.
 sbd4nano:pom_095 rr:objectMap sbd4nano:om_095.
 sbd4nano:om_095 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_polidispersity_index";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_polidispersity_index";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayEndotoxinImpurities_000.
 sbd4nano:map_assayEndotoxinImpurities_000 rml:logicalSource sbd4nano:source_000;
@@ -1086,7 +1086,7 @@ sbd4nano:map_assayEndotoxinImpurities_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "assayEndotoxinImpurities".
 sbd4nano:s_019 a rr:SubjectMap.
 sbd4nano:map_assayEndotoxinImpurities_000 rr:subjectMap sbd4nano:s_019.
-sbd4nano:s_019 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{row_id}_endotoxin_impurities_as".
+sbd4nano:s_019 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_endotoxin_impurities_as".
 sbd4nano:pom_096 a rr:PredicateObjectMap.
 sbd4nano:map_assayEndotoxinImpurities_000 rr:predicateObjectMap sbd4nano:pom_096.
 sbd4nano:pm_096 a rr:PredicateMap.
@@ -1114,7 +1114,7 @@ sbd4nano:pom_098 rr:predicateMap sbd4nano:pm_098.
 sbd4nano:pm_098 rr:constant bao:BAO_0000209.
 sbd4nano:pom_098 rr:objectMap sbd4nano:om_098.
 sbd4nano:om_098 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_endotoxin_impurities_mg";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_endotoxin_impurities_mg";
     rr:termType rr:IRI.
 sbd4nano:pom_099 a rr:PredicateObjectMap.
 sbd4nano:map_assayEndotoxinImpurities_000 rr:predicateObjectMap sbd4nano:pom_099.
@@ -1123,7 +1123,7 @@ sbd4nano:pom_099 rr:predicateMap sbd4nano:pm_099.
 sbd4nano:pm_099 rr:constant bao:BAO_0002846.
 sbd4nano:pom_099 rr:objectMap sbd4nano:om_099.
 sbd4nano:om_099 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{row_id}_endotoxin_impurities_ap";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_{hash}_{reference_id}_endotoxin_impurities_ap";
     rr:termType rr:IRI.
 sbd4nano:pom_100 a rr:PredicateObjectMap.
 sbd4nano:map_assayEndotoxinImpurities_000 rr:predicateObjectMap sbd4nano:pom_100.
@@ -1132,7 +1132,7 @@ sbd4nano:pom_100 rr:predicateMap sbd4nano:pm_100.
 sbd4nano:pm_100 rr:constant bao:BAO_0000207.
 sbd4nano:pom_100 rr:objectMap sbd4nano:om_100.
 sbd4nano:om_100 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_endotoxin_impurities";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_endotoxin_impurities";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_methodPrimarySize_000.
 sbd4nano:map_methodPrimarySize_000 rml:logicalSource sbd4nano:source_000;
@@ -1140,7 +1140,7 @@ sbd4nano:map_methodPrimarySize_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodPrimarySize".
 sbd4nano:s_020 a rr:SubjectMap.
 sbd4nano:map_methodPrimarySize_000 rr:subjectMap sbd4nano:s_020.
-sbd4nano:s_020 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_primary_size_me".
+sbd4nano:s_020 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_primary_size_me".
 sbd4nano:pom_101 a rr:PredicateObjectMap.
 sbd4nano:map_methodPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_101.
 sbd4nano:pm_101 a rr:PredicateMap.
@@ -1166,7 +1166,7 @@ sbd4nano:map_methodBundleDiameter_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodBundleDiameter".
 sbd4nano:s_021 a rr:SubjectMap.
 sbd4nano:map_methodBundleDiameter_000 rr:subjectMap sbd4nano:s_021.
-sbd4nano:s_021 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_bundle_diameter_me".
+sbd4nano:s_021 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_bundle_diameter_me".
 sbd4nano:pom_103 a rr:PredicateObjectMap.
 sbd4nano:map_methodBundleDiameter_000 rr:predicateObjectMap sbd4nano:pom_103.
 sbd4nano:pm_103 a rr:PredicateMap.
@@ -1192,7 +1192,7 @@ sbd4nano:map_methodDiameter_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodDiameter".
 sbd4nano:s_022 a rr:SubjectMap.
 sbd4nano:map_methodDiameter_000 rr:subjectMap sbd4nano:s_022.
-sbd4nano:s_022 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_diameter_me".
+sbd4nano:s_022 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_diameter_me".
 sbd4nano:pom_105 a rr:PredicateObjectMap.
 sbd4nano:map_methodDiameter_000 rr:predicateObjectMap sbd4nano:pom_105.
 sbd4nano:pm_105 a rr:PredicateMap.
@@ -1218,7 +1218,7 @@ sbd4nano:map_methodHydrodynamicDiameter_000 rml:logicalSource sbd4nano:source_00
     rdfs:label "methodHydrodynamicDiameter".
 sbd4nano:s_023 a rr:SubjectMap.
 sbd4nano:map_methodHydrodynamicDiameter_000 rr:subjectMap sbd4nano:s_023.
-sbd4nano:s_023 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_hydrodynamic_diameter_me".
+sbd4nano:s_023 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_hydrodynamic_diameter_me".
 sbd4nano:pom_107 a rr:PredicateObjectMap.
 sbd4nano:map_methodHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_107.
 sbd4nano:pm_107 a rr:PredicateMap.
@@ -1244,7 +1244,7 @@ sbd4nano:map_methodSurfaceArea_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodSurfaceArea".
 sbd4nano:s_024 a rr:SubjectMap.
 sbd4nano:map_methodSurfaceArea_000 rr:subjectMap sbd4nano:s_024.
-sbd4nano:s_024 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_surface_area_me".
+sbd4nano:s_024 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_surface_area_me".
 sbd4nano:pom_109 a rr:PredicateObjectMap.
 sbd4nano:map_methodSurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_109.
 sbd4nano:pm_109 a rr:PredicateMap.
@@ -1270,7 +1270,7 @@ sbd4nano:map_methodZetaPotential_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodZetaPotential".
 sbd4nano:s_025 a rr:SubjectMap.
 sbd4nano:map_methodZetaPotential_000 rr:subjectMap sbd4nano:s_025.
-sbd4nano:s_025 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_zeta_potential_me".
+sbd4nano:s_025 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_zeta_potential_me".
 sbd4nano:pom_111 a rr:PredicateObjectMap.
 sbd4nano:map_methodZetaPotential_000 rr:predicateObjectMap sbd4nano:pom_111.
 sbd4nano:pm_111 a rr:PredicateMap.
@@ -1296,7 +1296,7 @@ sbd4nano:map_methodPorosity_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodPorosity".
 sbd4nano:s_026 a rr:SubjectMap.
 sbd4nano:map_methodPorosity_000 rr:subjectMap sbd4nano:s_026.
-sbd4nano:s_026 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_porosity_me".
+sbd4nano:s_026 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_porosity_me".
 sbd4nano:pom_113 a rr:PredicateObjectMap.
 sbd4nano:map_methodPorosity_000 rr:predicateObjectMap sbd4nano:pom_113.
 sbd4nano:pm_113 a rr:PredicateMap.
@@ -1322,7 +1322,7 @@ sbd4nano:map_methodCrystalStructure_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "methodCrystalStructure".
 sbd4nano:s_027 a rr:SubjectMap.
 sbd4nano:map_methodCrystalStructure_000 rr:subjectMap sbd4nano:s_027.
-sbd4nano:s_027 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_crystal_structure_me".
+sbd4nano:s_027 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_crystal_structure_me".
 sbd4nano:pom_115 a rr:PredicateObjectMap.
 sbd4nano:map_methodCrystalStructure_000 rr:predicateObjectMap sbd4nano:pom_115.
 sbd4nano:pm_115 a rr:PredicateMap.
@@ -1348,7 +1348,7 @@ sbd4nano:map_methodPolidispersityIndex_000 rml:logicalSource sbd4nano:source_000
     rdfs:label "methodPolidispersityIndex".
 sbd4nano:s_028 a rr:SubjectMap.
 sbd4nano:map_methodPolidispersityIndex_000 rr:subjectMap sbd4nano:s_028.
-sbd4nano:s_028 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_polidispersity_index_me".
+sbd4nano:s_028 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_polidispersity_index_me".
 sbd4nano:pom_117 a rr:PredicateObjectMap.
 sbd4nano:map_methodPolidispersityIndex_000 rr:predicateObjectMap sbd4nano:pom_117.
 sbd4nano:pm_117 a rr:PredicateMap.
@@ -1374,7 +1374,7 @@ sbd4nano:map_methodEndotoxinImpurities_000 rml:logicalSource sbd4nano:source_000
     rdfs:label "methodEndotoxinImpurities".
 sbd4nano:s_029 a rr:SubjectMap.
 sbd4nano:map_methodEndotoxinImpurities_000 rr:subjectMap sbd4nano:s_029.
-sbd4nano:s_029 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{row_id}_endotoxin_impurities_me".
+sbd4nano:s_029 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/method_{hash}_{reference_id}_endotoxin_impurities_me".
 sbd4nano:pom_119 a rr:PredicateObjectMap.
 sbd4nano:map_methodEndotoxinImpurities_000 rr:predicateObjectMap sbd4nano:pom_119.
 sbd4nano:pm_119 a rr:PredicateMap.
@@ -1450,7 +1450,7 @@ sbd4nano:pm_124 a rr:PredicateMap;
     rr:constant idlab-fn:str.
 sbd4nano:pom_124 rr:objectMap sbd4nano:om_124.
 sbd4nano:om_124 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{row_id}";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}";
     rr:termType rr:IRI.
 sbd4nano:pom_125 a rr:PredicateObjectMap.
 sbd4nano:map_bioassayFormatOrganism_000 rr:predicateObjectMap sbd4nano:pom_125.
@@ -1593,7 +1593,7 @@ sbd4nano:pm_136 a rr:PredicateMap;
     rr:constant idlab-fn:str.
 sbd4nano:pom_136 rr:objectMap sbd4nano:om_136.
 sbd4nano:om_136 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{row_id}";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}";
     rr:termType rr:IRI.
 sbd4nano:pom_137 a rr:PredicateObjectMap.
 sbd4nano:map_bioassayFormatCell_000 rr:predicateObjectMap sbd4nano:pom_137.
@@ -1677,7 +1677,7 @@ sbd4nano:map_measurementGroupPrimarySize_000 rml:logicalSource sbd4nano:source_0
     rdfs:label "measurementGroupPrimarySize".
 sbd4nano:s_032 a rr:SubjectMap.
 sbd4nano:map_measurementGroupPrimarySize_000 rr:subjectMap sbd4nano:s_032.
-sbd4nano:s_032 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_primary_size_mg".
+sbd4nano:s_032 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_primary_size_mg".
 sbd4nano:pom_144 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_144.
 sbd4nano:pm_144 a rr:PredicateMap.
@@ -1694,7 +1694,7 @@ sbd4nano:pom_145 rr:predicateMap sbd4nano:pm_145.
 sbd4nano:pm_145 rr:constant bao:BAO_0000208.
 sbd4nano:pom_145 rr:objectMap sbd4nano:om_145.
 sbd4nano:om_145 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_primary_size_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_primary_size_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupBundleDiameter_000.
 sbd4nano:map_measurementGroupBundleDiameter_000 rml:logicalSource sbd4nano:source_000;
@@ -1702,7 +1702,7 @@ sbd4nano:map_measurementGroupBundleDiameter_000 rml:logicalSource sbd4nano:sourc
     rdfs:label "measurementGroupBundleDiameter".
 sbd4nano:s_033 a rr:SubjectMap.
 sbd4nano:map_measurementGroupBundleDiameter_000 rr:subjectMap sbd4nano:s_033.
-sbd4nano:s_033 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_bundle_diameter_mg".
+sbd4nano:s_033 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_bundle_diameter_mg".
 sbd4nano:pom_146 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupBundleDiameter_000 rr:predicateObjectMap sbd4nano:pom_146.
 sbd4nano:pm_146 a rr:PredicateMap.
@@ -1719,7 +1719,7 @@ sbd4nano:pom_147 rr:predicateMap sbd4nano:pm_147.
 sbd4nano:pm_147 rr:constant bao:BAO_0000208.
 sbd4nano:pom_147 rr:objectMap sbd4nano:om_147.
 sbd4nano:om_147 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_bundle_diameter_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_bundle_diameter_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupDiameter_000.
 sbd4nano:map_measurementGroupDiameter_000 rml:logicalSource sbd4nano:source_000;
@@ -1727,7 +1727,7 @@ sbd4nano:map_measurementGroupDiameter_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "measurementGroupDiameter".
 sbd4nano:s_034 a rr:SubjectMap.
 sbd4nano:map_measurementGroupDiameter_000 rr:subjectMap sbd4nano:s_034.
-sbd4nano:s_034 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_diameter_mg".
+sbd4nano:s_034 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_diameter_mg".
 sbd4nano:pom_148 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupDiameter_000 rr:predicateObjectMap sbd4nano:pom_148.
 sbd4nano:pm_148 a rr:PredicateMap.
@@ -1744,7 +1744,7 @@ sbd4nano:pom_149 rr:predicateMap sbd4nano:pm_149.
 sbd4nano:pm_149 rr:constant bao:BAO_0000208.
 sbd4nano:pom_149 rr:objectMap sbd4nano:om_149.
 sbd4nano:om_149 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_diameter_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_diameter_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupHydrodynamicDiameter_000.
 sbd4nano:map_measurementGroupHydrodynamicDiameter_000 rml:logicalSource sbd4nano:source_000;
@@ -1752,7 +1752,7 @@ sbd4nano:map_measurementGroupHydrodynamicDiameter_000 rml:logicalSource sbd4nano
     rdfs:label "measurementGroupHydrodynamicDiameter".
 sbd4nano:s_035 a rr:SubjectMap.
 sbd4nano:map_measurementGroupHydrodynamicDiameter_000 rr:subjectMap sbd4nano:s_035.
-sbd4nano:s_035 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_hydrodynamic_diameter_mg".
+sbd4nano:s_035 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_hydrodynamic_diameter_mg".
 sbd4nano:pom_150 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_150.
 sbd4nano:pm_150 a rr:PredicateMap.
@@ -1769,7 +1769,7 @@ sbd4nano:pom_151 rr:predicateMap sbd4nano:pm_151.
 sbd4nano:pm_151 rr:constant bao:BAO_0000208.
 sbd4nano:pom_151 rr:objectMap sbd4nano:om_151.
 sbd4nano:om_151 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_hydrodynamic_diameter_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_hydrodynamic_diameter_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupSurfaceArea_000.
 sbd4nano:map_measurementGroupSurfaceArea_000 rml:logicalSource sbd4nano:source_000;
@@ -1777,7 +1777,7 @@ sbd4nano:map_measurementGroupSurfaceArea_000 rml:logicalSource sbd4nano:source_0
     rdfs:label "measurementGroupSurfaceArea".
 sbd4nano:s_036 a rr:SubjectMap.
 sbd4nano:map_measurementGroupSurfaceArea_000 rr:subjectMap sbd4nano:s_036.
-sbd4nano:s_036 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_surface_area_mg".
+sbd4nano:s_036 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_surface_area_mg".
 sbd4nano:pom_152 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupSurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_152.
 sbd4nano:pm_152 a rr:PredicateMap.
@@ -1794,7 +1794,7 @@ sbd4nano:pom_153 rr:predicateMap sbd4nano:pm_153.
 sbd4nano:pm_153 rr:constant bao:BAO_0000208.
 sbd4nano:pom_153 rr:objectMap sbd4nano:om_153.
 sbd4nano:om_153 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_surface_area_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_surface_area_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupZetaPotential_000.
 sbd4nano:map_measurementGroupZetaPotential_000 rml:logicalSource sbd4nano:source_000;
@@ -1802,7 +1802,7 @@ sbd4nano:map_measurementGroupZetaPotential_000 rml:logicalSource sbd4nano:source
     rdfs:label "measurementGroupZetaPotential".
 sbd4nano:s_037 a rr:SubjectMap.
 sbd4nano:map_measurementGroupZetaPotential_000 rr:subjectMap sbd4nano:s_037.
-sbd4nano:s_037 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_zeta_potential_mg".
+sbd4nano:s_037 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_zeta_potential_mg".
 sbd4nano:pom_154 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupZetaPotential_000 rr:predicateObjectMap sbd4nano:pom_154.
 sbd4nano:pm_154 a rr:PredicateMap.
@@ -1819,7 +1819,7 @@ sbd4nano:pom_155 rr:predicateMap sbd4nano:pm_155.
 sbd4nano:pm_155 rr:constant bao:BAO_0000208.
 sbd4nano:pom_155 rr:objectMap sbd4nano:om_155.
 sbd4nano:om_155 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_zeta_potential_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_zeta_potential_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupPorosity_000.
 sbd4nano:map_measurementGroupPorosity_000 rml:logicalSource sbd4nano:source_000;
@@ -1827,7 +1827,7 @@ sbd4nano:map_measurementGroupPorosity_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "measurementGroupPorosity".
 sbd4nano:s_038 a rr:SubjectMap.
 sbd4nano:map_measurementGroupPorosity_000 rr:subjectMap sbd4nano:s_038.
-sbd4nano:s_038 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_porosity_mg".
+sbd4nano:s_038 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_porosity_mg".
 sbd4nano:pom_156 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupPorosity_000 rr:predicateObjectMap sbd4nano:pom_156.
 sbd4nano:pm_156 a rr:PredicateMap.
@@ -1844,7 +1844,7 @@ sbd4nano:pom_157 rr:predicateMap sbd4nano:pm_157.
 sbd4nano:pm_157 rr:constant bao:BAO_0000208.
 sbd4nano:pom_157 rr:objectMap sbd4nano:om_157.
 sbd4nano:om_157 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_porosity_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_porosity_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupCrystalStructure_000.
 sbd4nano:map_measurementGroupCrystalStructure_000 rml:logicalSource sbd4nano:source_000;
@@ -1852,7 +1852,7 @@ sbd4nano:map_measurementGroupCrystalStructure_000 rml:logicalSource sbd4nano:sou
     rdfs:label "measurementGroupCrystalStructure".
 sbd4nano:s_039 a rr:SubjectMap.
 sbd4nano:map_measurementGroupCrystalStructure_000 rr:subjectMap sbd4nano:s_039.
-sbd4nano:s_039 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_crystal_structure_mg".
+sbd4nano:s_039 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_crystal_structure_mg".
 sbd4nano:pom_158 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupCrystalStructure_000 rr:predicateObjectMap sbd4nano:pom_158.
 sbd4nano:pm_158 a rr:PredicateMap.
@@ -1869,7 +1869,7 @@ sbd4nano:pom_159 rr:predicateMap sbd4nano:pm_159.
 sbd4nano:pm_159 rr:constant bao:BAO_0000208.
 sbd4nano:pom_159 rr:objectMap sbd4nano:om_159.
 sbd4nano:om_159 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_crystal_structure_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_crystal_structure_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupPolidispersityIndex_000.
 sbd4nano:map_measurementGroupPolidispersityIndex_000 rml:logicalSource sbd4nano:source_000;
@@ -1877,7 +1877,7 @@ sbd4nano:map_measurementGroupPolidispersityIndex_000 rml:logicalSource sbd4nano:
     rdfs:label "measurementGroupPolidispersityIndex".
 sbd4nano:s_040 a rr:SubjectMap.
 sbd4nano:map_measurementGroupPolidispersityIndex_000 rr:subjectMap sbd4nano:s_040.
-sbd4nano:s_040 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_polidispersity_index_mg".
+sbd4nano:s_040 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_polidispersity_index_mg".
 sbd4nano:pom_160 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupPolidispersityIndex_000 rr:predicateObjectMap sbd4nano:pom_160.
 sbd4nano:pm_160 a rr:PredicateMap.
@@ -1894,7 +1894,7 @@ sbd4nano:pom_161 rr:predicateMap sbd4nano:pm_161.
 sbd4nano:pm_161 rr:constant bao:BAO_0000208.
 sbd4nano:pom_161 rr:objectMap sbd4nano:om_161.
 sbd4nano:om_161 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_polidispersity_index_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_polidispersity_index_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_measurementGroupEndotoxinImpurities_000.
 sbd4nano:map_measurementGroupEndotoxinImpurities_000 rml:logicalSource sbd4nano:source_000;
@@ -1902,7 +1902,7 @@ sbd4nano:map_measurementGroupEndotoxinImpurities_000 rml:logicalSource sbd4nano:
     rdfs:label "measurementGroupEndotoxinImpurities".
 sbd4nano:s_041 a rr:SubjectMap.
 sbd4nano:map_measurementGroupEndotoxinImpurities_000 rr:subjectMap sbd4nano:s_041.
-sbd4nano:s_041 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{row_id}_endotoxin_impurities_mg".
+sbd4nano:s_041 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_{hash}_{reference_id}_endotoxin_impurities_mg".
 sbd4nano:pom_162 a rr:PredicateObjectMap.
 sbd4nano:map_measurementGroupEndotoxinImpurities_000 rr:predicateObjectMap sbd4nano:pom_162.
 sbd4nano:pm_162 a rr:PredicateMap.
@@ -1919,7 +1919,7 @@ sbd4nano:pom_163 rr:predicateMap sbd4nano:pm_163.
 sbd4nano:pm_163 rr:constant bao:BAO_0000208.
 sbd4nano:pom_163 rr:objectMap sbd4nano:om_163.
 sbd4nano:om_163 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_endotoxin_impurities_ep";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_endotoxin_impurities_ep";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_endpointBioassay_000.
 sbd4nano:map_endpointBioassay_000 rml:logicalSource sbd4nano:source_000;
@@ -1927,7 +1927,7 @@ sbd4nano:map_endpointBioassay_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "endpointBioassay".
 sbd4nano:s_042 a rr:SubjectMap.
 sbd4nano:map_endpointBioassay_000 rr:subjectMap sbd4nano:s_042.
-sbd4nano:s_042 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_bio_ep".
+sbd4nano:s_042 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_bio_ep".
 sbd4nano:pom_164 a rr:PredicateObjectMap.
 sbd4nano:map_endpointBioassay_000 rr:predicateObjectMap sbd4nano:pom_164.
 sbd4nano:pm_164 a rr:PredicateMap.
@@ -1981,7 +1981,7 @@ sbd4nano:map_endpointPrimarySize_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "endpointPrimarySize".
 sbd4nano:s_043 a rr:SubjectMap.
 sbd4nano:map_endpointPrimarySize_000 rr:subjectMap sbd4nano:s_043.
-sbd4nano:s_043 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_primary_size_ep".
+sbd4nano:s_043 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_primary_size_ep".
 sbd4nano:pom_169 a rr:PredicateObjectMap.
 sbd4nano:map_endpointPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_169.
 sbd4nano:pm_169 a rr:PredicateMap.
@@ -2015,7 +2015,7 @@ sbd4nano:pom_172 a rr:PredicateObjectMap.
 sbd4nano:map_endpointPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_172.
 sbd4nano:pm_172 a rr:PredicateMap.
 sbd4nano:pom_172 rr:predicateMap sbd4nano:pm_172.
-sbd4nano:pm_172 rr:constant <http://semanticscience.org/resource/000221>.
+sbd4nano:pm_172 rr:constant <http://semanticscience.org/resource/SIO_000221>.
 sbd4nano:pom_172 rr:objectMap sbd4nano:om_172.
 sbd4nano:om_172 a rr:ObjectMap;
     rr:constant obo:UO_0000018;
@@ -2024,7 +2024,7 @@ sbd4nano:pom_173 a rr:PredicateObjectMap.
 sbd4nano:map_endpointPrimarySize_000 rr:predicateObjectMap sbd4nano:pom_173.
 sbd4nano:pm_173 a rr:PredicateMap.
 sbd4nano:pom_173 rr:predicateMap sbd4nano:pm_173.
-sbd4nano:pm_173 rr:constant <http://semanticscience.org/resource/000300>.
+sbd4nano:pm_173 rr:constant <http://semanticscience.org/resource/SIO_000300>.
 sbd4nano:pom_173 rr:objectMap sbd4nano:om_173.
 sbd4nano:om_173 a rr:ObjectMap;
     rml:reference "primary_size";
@@ -2036,7 +2036,7 @@ sbd4nano:map_endpointHydrodynamicDiameter_000 rml:logicalSource sbd4nano:source_
     rdfs:label "endpointHydrodynamicDiameter".
 sbd4nano:s_044 a rr:SubjectMap.
 sbd4nano:map_endpointHydrodynamicDiameter_000 rr:subjectMap sbd4nano:s_044.
-sbd4nano:s_044 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_hydrodynamic_diameter_ep".
+sbd4nano:s_044 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_hydrodynamic_diameter_ep".
 sbd4nano:pom_174 a rr:PredicateObjectMap.
 sbd4nano:map_endpointHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_174.
 sbd4nano:pm_174 a rr:PredicateMap.
@@ -2070,7 +2070,7 @@ sbd4nano:pom_177 a rr:PredicateObjectMap.
 sbd4nano:map_endpointHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_177.
 sbd4nano:pm_177 a rr:PredicateMap.
 sbd4nano:pom_177 rr:predicateMap sbd4nano:pm_177.
-sbd4nano:pm_177 rr:constant <http://semanticscience.org/resource/000221>.
+sbd4nano:pm_177 rr:constant <http://semanticscience.org/resource/SIO_000221>.
 sbd4nano:pom_177 rr:objectMap sbd4nano:om_177.
 sbd4nano:om_177 a rr:ObjectMap;
     rr:constant obo:UO_0000018;
@@ -2079,7 +2079,7 @@ sbd4nano:pom_178 a rr:PredicateObjectMap.
 sbd4nano:map_endpointHydrodynamicDiameter_000 rr:predicateObjectMap sbd4nano:pom_178.
 sbd4nano:pm_178 a rr:PredicateMap.
 sbd4nano:pom_178 rr:predicateMap sbd4nano:pm_178.
-sbd4nano:pm_178 rr:constant <http://semanticscience.org/resource/000300>.
+sbd4nano:pm_178 rr:constant <http://semanticscience.org/resource/SIO_000300>.
 sbd4nano:pom_178 rr:objectMap sbd4nano:om_178.
 sbd4nano:om_178 a rr:ObjectMap;
     rml:reference "hydrodynamic_diameter";
@@ -2091,7 +2091,7 @@ sbd4nano:map_endpointSurfaceArea_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "endpointSurfaceArea".
 sbd4nano:s_045 a rr:SubjectMap.
 sbd4nano:map_endpointSurfaceArea_000 rr:subjectMap sbd4nano:s_045.
-sbd4nano:s_045 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_surface_area_ep".
+sbd4nano:s_045 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_surface_area_ep".
 sbd4nano:pom_179 a rr:PredicateObjectMap.
 sbd4nano:map_endpointSurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_179.
 sbd4nano:pm_179 a rr:PredicateMap.
@@ -2125,7 +2125,7 @@ sbd4nano:pom_182 a rr:PredicateObjectMap.
 sbd4nano:map_endpointSurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_182.
 sbd4nano:pm_182 a rr:PredicateMap.
 sbd4nano:pom_182 rr:predicateMap sbd4nano:pm_182.
-sbd4nano:pm_182 rr:constant <http://semanticscience.org/resource/000221>.
+sbd4nano:pm_182 rr:constant <http://semanticscience.org/resource/SIO_000221>.
 sbd4nano:pom_182 rr:objectMap sbd4nano:om_182.
 sbd4nano:om_182 a rr:ObjectMap;
     rr:constant obo:UO_0000018;
@@ -2134,7 +2134,7 @@ sbd4nano:pom_183 a rr:PredicateObjectMap.
 sbd4nano:map_endpointSurfaceArea_000 rr:predicateObjectMap sbd4nano:pom_183.
 sbd4nano:pm_183 a rr:PredicateMap.
 sbd4nano:pom_183 rr:predicateMap sbd4nano:pm_183.
-sbd4nano:pm_183 rr:constant <http://semanticscience.org/resource/000300>.
+sbd4nano:pm_183 rr:constant <http://semanticscience.org/resource/SIO_000300>.
 sbd4nano:pom_183 rr:objectMap sbd4nano:om_183.
 sbd4nano:om_183 a rr:ObjectMap;
     rml:reference "surface_area";
@@ -2146,7 +2146,7 @@ sbd4nano:map_endpointShape_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "endpointShape".
 sbd4nano:s_046 a rr:SubjectMap.
 sbd4nano:map_endpointShape_000 rr:subjectMap sbd4nano:s_046.
-sbd4nano:s_046 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{row_id}_shape_ep".
+sbd4nano:s_046 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_{hash}_{reference_id}_shape_ep".
 sbd4nano:pom_184 a rr:PredicateObjectMap.
 sbd4nano:map_endpointShape_000 rr:predicateObjectMap sbd4nano:pom_184.
 sbd4nano:pm_184 a rr:PredicateMap.
@@ -2180,7 +2180,7 @@ sbd4nano:pom_187 a rr:PredicateObjectMap.
 sbd4nano:map_endpointShape_000 rr:predicateObjectMap sbd4nano:pom_187.
 sbd4nano:pm_187 a rr:PredicateMap.
 sbd4nano:pom_187 rr:predicateMap sbd4nano:pm_187.
-sbd4nano:pm_187 rr:constant <http://semanticscience.org/resource/000221>.
+sbd4nano:pm_187 rr:constant <http://semanticscience.org/resource/SIO_000221>.
 sbd4nano:pom_187 rr:objectMap sbd4nano:om_187.
 sbd4nano:om_187 a rr:ObjectMap;
     rr:constant obo:UO_0000018;
@@ -2189,7 +2189,7 @@ sbd4nano:pom_188 a rr:PredicateObjectMap.
 sbd4nano:map_endpointShape_000 rr:predicateObjectMap sbd4nano:pom_188.
 sbd4nano:pm_188 a rr:PredicateMap.
 sbd4nano:pom_188 rr:predicateMap sbd4nano:pm_188.
-sbd4nano:pm_188 rr:constant <http://semanticscience.org/resource/000300>.
+sbd4nano:pm_188 rr:constant <http://semanticscience.org/resource/SIO_000300>.
 sbd4nano:pom_188 rr:objectMap sbd4nano:om_188.
 sbd4nano:om_188 a rr:ObjectMap;
     rml:reference "shape";
