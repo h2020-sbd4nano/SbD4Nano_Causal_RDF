@@ -33,7 +33,6 @@ prefixes:
   fn: "https://w3id.org/imec/idlab/function#"
   sbd4nano: "https://h2020-sbd4nano.github.io/sbd-data-landscape/"
   placeholder: "https://purl.placeholder.enanomapper.net/"
-
 base: https://h2020-sbd4nano.github.io/sbd-data-landscape/
 
 authors:
@@ -97,22 +96,9 @@ mappings:
     predicateobjects:
       - [rdf:type, sio:000299~iri] #is a quote
       - [sio:000208, $(_assertionSubjectUrl)$(row_id)~iri] #is supporting evidence for a causalAssertion
-      - [rdf:value, $(quote), en~lang]
-      - [dcterms:source, $(_referenceSubjectUrl)$(reference_id)~iri]
-      #- predicate: cito:citesAsSourceDocument
-      #  object: 
-      #    function: grel:string_split
-      #    parameters:
-      #      - [grel:valueParameter, $(citesAsSourceDocument)]
-      #      - [grel:param_string_sep, ","]
-      #  condition:
-      #    function: grel:string_contains
-      #    parameters:
-      #      - [grel:valueParameter, $(citesAsSourceDocument)]
-      #      - [grel:string_sub, "http"]
-
-
-        
+      - [sbdbel:statedInQuote, $(quote), en~lang]
+      - [cito:containsAssertionFrom, $(_referenceSubjectUrl)$(reference_id)~iri]
+  
   # causalAssertions
   causalAssertion:
     sources:

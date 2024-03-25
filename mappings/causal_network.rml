@@ -175,7 +175,7 @@ sbd4nano:pom_011 a rr:PredicateObjectMap.
 sbd4nano:map_quoteEvidence_000 rr:predicateObjectMap sbd4nano:pom_011.
 sbd4nano:pm_011 a rr:PredicateMap.
 sbd4nano:pom_011 rr:predicateMap sbd4nano:pm_011.
-sbd4nano:pm_011 rr:constant rdf:value.
+sbd4nano:pm_011 rr:constant sbdbel:statedInQuote.
 sbd4nano:pom_011 rr:objectMap sbd4nano:om_011.
 sbd4nano:om_011 a rr:ObjectMap;
     rml:reference "quote";
@@ -186,7 +186,7 @@ sbd4nano:pom_012 a rr:PredicateObjectMap.
 sbd4nano:map_quoteEvidence_000 rr:predicateObjectMap sbd4nano:pom_012.
 sbd4nano:pm_012 a rr:PredicateMap.
 sbd4nano:pom_012 rr:predicateMap sbd4nano:pm_012.
-sbd4nano:pm_012 rr:constant dcterms:source.
+sbd4nano:pm_012 rr:constant cito:containsAssertionFrom.
 sbd4nano:pom_012 rr:objectMap sbd4nano:om_012.
 sbd4nano:om_012 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/reference_{reference_id}";
