@@ -231,7 +231,7 @@ mappings:
     sources:
       - data-source
     subjects:
-        - $(_chemicalSubstanceSubjectUrl)$(hash) #TODO change for ERM
+        - $(_chemicalSubstanceSubjectUrl)$(hash) 
     predicateobjects:
       
       #- [dcterms:title, $(material_type), en~lang]
@@ -592,7 +592,6 @@ mappings:
 
   # Bioassay formats
   ## Organism
-  ## Cell
   bioassayFormatOrganism:
     sources:
       - data-source
@@ -605,7 +604,9 @@ mappings:
     predicateobjects:
       - [rdfs:type, bao:BAO_0000219~iri] # type: organism format bioassay
       - [bao:BAO_0002921, $(organism_iri)~iri] # organism
-      - [bao:BAO_0002833, $(exposure_time)] #incubation time value, TODO need to handle ranges or > < etc
+      - [bao:BAO_0002833, $(exposure_time)] #incubation time value
+      - [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
+      # Missing exposure type
       - predicate: rdfs:type # a (assay format type)
         object: $(assay_iri)~iri
         condition:  
@@ -625,8 +626,10 @@ mappings:
         - [grel:string_sub, "http"]
     subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)
     predicateobjects:
-      - [rdfs:type, bao:BAO_0000218~iri] # tyype: cell format bioassay
+      - [rdfs:type, bao:BAO_0000218~iri] # type: cell format bioassay
       - [bao:BAO_0002004, $(model_cell_iri)~iri] # cell line
+      - [bao:BAO_0002833, $(exposure_time)] #incubation time value
+      - [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
       - predicate: rdfs:type # a (assay format type, e.g., ELISA)
         object: $(assay_iri)~iri
         condition:  
@@ -635,8 +638,15 @@ mappings:
             - [grel:valueParameter, $(assay_iri)]
             - [grel:string_sub, "http"]
                  
-          
-
+   ## Measurement Group Bioassay          
+  measurementGroupBioassay:
+      sources:
+        - data-source
+      subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_bio_mg
+      predicateobjects:
+        - [rdf:type, bao:BAO_0000040~iri]
+        - predicate: bao:BAO_0000208
+          object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_$(row_id)_bioassay_ep~iri
    ## Measurement Group primary size
   measurementGroupPrimarySize:
       sources:
@@ -769,14 +779,16 @@ mappings:
   endpointBioassay:
     sources:
       - data-source
-    subjects: $(_endpointSubjectUrl)$(hash)_$(reference_id)_bio_ep
+    subjects: $(_endpointSubjectUrl)$(hash)_$(reference_id)_$(row_id)_bioassay_ep
     predicateobjects:
-      
+      - [rdf:type, bao:BAO_0000179~iri]
       - [bao:BAO_0000182, $(endpoint_units)]   # has response units, TODO change to UO   
       - [bao:BAO_0000108, $(endpoint_measurement)] # has response value
-      - [bao:BAO_0002668, $(exposure_time_units)]   # has time units TODO change to UO   
-      - [bao:BAO_0002669, $(exposure_time)] # has time value
-      - [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri] # has screeninig concentration
+      #TODO for now label is from spreadsheet as some classes are missing in enm
+      - [rdfs:label, $(endpoint)]
+      #- [bao:BAO_0002668, $(exposure_time_units)]   # has time units TODO change to UO   
+      #- [bao:BAO_0002669, $(exposure_time)] # has time value
+      #- [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri] # has screeninig concentration
 
   screeningConcentration:
     sources:

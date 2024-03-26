@@ -2375,123 +2375,220 @@
   bao:BAO_0000209 :measurement_group_857785_14_zeta_potential_mg;
   bao:BAO_0002846 :protocol_857785_14_zeta_potential_ap .
 
-:bioassay_format_001636_37 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+:bioassay_format_001636_37 bao:0000338 :screening_concentration_001636213;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_065707_41 bao:BAO_0002004 obo:BTO_0000018;
+:bioassay_format_065707_41 bao:0000338 :screening_concentration_065707238, :screening_concentration_065707239,
+    :screening_concentration_065707240, :screening_concentration_065707241, :screening_concentration_065707242,
+    :screening_concentration_065707243;
+  bao:BAO_0002004 obo:BTO_0000018;
+  bao:BAO_0002833 "24";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_1530072>, <http://purl.enanomapper.net/onto/ENM_3323766>,
     <http://purl.enanomapper.net/onto/ENM_3323768>, bao:BAO_0000218 .
 
-:bioassay_format_065708_40 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
+:bioassay_format_065708_40 bao:0000338 :screening_concentration_065708232, :screening_concentration_065708233,
+    :screening_concentration_065708234, :screening_concentration_065708235, :screening_concentration_065708237;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
+  bao:BAO_0002833 "24", "6";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_5562662>, <http://purl.enanomapper.net/onto/ENM_5723277>,
     <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218 .
 
-:bioassay_format_065708_41 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
+:bioassay_format_065708_41 bao:0000338 :screening_concentration_065708236;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
+  bao:BAO_0002833 "24";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_5723277>, bao:BAO_0000218 .
 
-:bioassay_format_065709_40 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
+:bioassay_format_065709_40 bao:0000338 :screening_concentration_065709227, :screening_concentration_065709228,
+    :screening_concentration_065709229, :screening_concentration_065709230, :screening_concentration_065709231;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
+  bao:BAO_0002833 "24", "6";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_5562662>, <http://purl.enanomapper.net/onto/ENM_5723277>,
     <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218 .
 
-:bioassay_format_065710_39 bao:BAO_0002004 efo:EFO_0001253;
+:bioassay_format_065710_39 bao:0000338 :screening_concentration_065710225, :screening_concentration_065710226;
+  bao:BAO_0002004 efo:EFO_0001253;
+  bao:BAO_0002833 "#N/A", "24";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_3323768>, bao:BAO_0000218 .
 
-:bioassay_format_065711_39 bao:BAO_0002004 efo:EFO_0001253;
+:bioassay_format_065711_39 bao:0000338 :screening_concentration_065711224;
+  bao:BAO_0002004 efo:EFO_0001253;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192655_18 bao:BAO_0002833 "24", "≤72";
+:bioassay_format_192655_18 bao:0000338 :screening_concentration_19265582, :screening_concentration_19265583,
+    :screening_concentration_19265584, :screening_concentration_19265585, :screening_concentration_19265586,
+    :screening_concentration_19265587;
+  bao:BAO_0002833 "24", "≤72";
   bao:BAO_0002921 <http://purl.enanomapper.net/onto/ENM_2659304>;
   rdfs:type bao:BAO_0000219 .
 
-:bioassay_format_192678_20 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>,
-    <http://purl.enanomapper.net/onto/ENM_2866074>, <http://purl.enanomapper.net/onto/ENM_2866075>,
-    obo:BTO_0002279, efo:EFO_0001187, efo:EFO_0001203, efo:EFO_0002795;
+:bioassay_format_192678_20 bao:0000338 :screening_concentration_192678100, :screening_concentration_192678101,
+    :screening_concentration_192678102, :screening_concentration_192678103, :screening_concentration_192678104,
+    :screening_concentration_192678105, :screening_concentration_192678106, :screening_concentration_192678107,
+    :screening_concentration_192678108, :screening_concentration_192678109, :screening_concentration_192678110,
+    :screening_concentration_192678111, :screening_concentration_192678112, :screening_concentration_192678114,
+    :screening_concentration_19267890, :screening_concentration_19267891, :screening_concentration_19267892,
+    :screening_concentration_19267893, :screening_concentration_19267894, :screening_concentration_19267895,
+    :screening_concentration_19267896, :screening_concentration_19267897, :screening_concentration_19267898,
+    :screening_concentration_19267899;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>, <http://purl.enanomapper.net/onto/ENM_2866074>,
+    <http://purl.enanomapper.net/onto/ENM_2866075>, obo:BTO_0002279, efo:EFO_0001187,
+    efo:EFO_0001203, efo:EFO_0002795;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192679_21 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>,
-    obo:BTO_0002279, efo:EFO_0001187, efo:EFO_0001203, efo:EFO_0002795;
+:bioassay_format_192679_21 bao:0000338 :screening_concentration_192679117, :screening_concentration_192679118,
+    :screening_concentration_192679119, :screening_concentration_192679120, :screening_concentration_192679121,
+    :screening_concentration_192679122;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>, obo:BTO_0002279, efo:EFO_0001187,
+    efo:EFO_0001203, efo:EFO_0002795;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192680_22 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+:bioassay_format_192680_22 bao:0000338 :screening_concentration_192680131, :screening_concentration_192680132,
+    :screening_concentration_192680133, :screening_concentration_192680134;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192681_23 bao:BAO_0002004 obo:BTO_0001619;
+:bioassay_format_192681_23 bao:0000338 :screening_concentration_192681135, :screening_concentration_192681136,
+    :screening_concentration_192681137;
+  bao:BAO_0002004 obo:BTO_0001619;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192682_24 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>,
-    <http://purl.enanomapper.net/onto/ENM_0893128>, <http://purl.enanomapper.net/onto/ENM_0893129>,
-    <http://purl.enanomapper.net/onto/ENM_0951914>, <http://purl.enanomapper.net/onto/ENM_2866073>,
-    efo:EFO_0001193, efo:EFO_0001231, efo:EFO_0002324, efo:EFO_0002824, efo:EFO_0003061;
+:bioassay_format_192682_24 bao:0000338 :screening_concentration_192682145, :screening_concentration_192682151,
+    :screening_concentration_192682152, :screening_concentration_192682154, :screening_concentration_192682155,
+    :screening_concentration_192682156, :screening_concentration_192682158, :screening_concentration_192682159,
+    :screening_concentration_192682160, :screening_concentration_192682161, :screening_concentration_192682166;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>, <http://purl.enanomapper.net/onto/ENM_0893128>,
+    <http://purl.enanomapper.net/onto/ENM_0893129>, <http://purl.enanomapper.net/onto/ENM_0951914>,
+    <http://purl.enanomapper.net/onto/ENM_2866073>, efo:EFO_0001193, efo:EFO_0001231,
+    efo:EFO_0002324, efo:EFO_0002824, efo:EFO_0003061;
   bao:BAO_0002833 "#N/A";
   bao:BAO_0002921 obo:NCIT_C14206;
   rdfs:type bao:BAO_0000218, bao:BAO_0000219 .
 
-:bioassay_format_192683_25 bao:BAO_0002004 efo:EFO_0001203, efo:EFO_0001225;
+:bioassay_format_192683_25 bao:0000338 :screening_concentration_192683188, :screening_concentration_192683189,
+    :screening_concentration_192683190, :screening_concentration_192683191;
+  bao:BAO_0002004 efo:EFO_0001203, efo:EFO_0001225;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192684_26 bao:BAO_0002004 obo:BTO_0000018, efo:EFO_0001089;
+:bioassay_format_192684_26 bao:0000338 :screening_concentration_192684192, :screening_concentration_192684194,
+    :screening_concentration_192684195;
+  bao:BAO_0002004 obo:BTO_0000018, efo:EFO_0001089;
+  bao:BAO_0002833 "#N/A", "23,48";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_3323766>, bao:BAO_0000218 .
 
-:bioassay_format_192686_28 bao:BAO_0002004 obo:BTO_0000018;
+:bioassay_format_192686_28 bao:0000338 :screening_concentration_192686198, :screening_concentration_192686199;
+  bao:BAO_0002004 obo:BTO_0000018;
+  bao:BAO_0002833 "2,24";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192711_32 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0893129>;
+:bioassay_format_192711_32 bao:0000338 :screening_concentration_192711205;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0893129>;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192712_33 bao:BAO_0002004 obo:BTO_0001619;
+:bioassay_format_192712_33 bao:0000338 :screening_concentration_192712206;
+  bao:BAO_0002004 obo:BTO_0001619;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192713_34 bao:BAO_0002833 "≤72";
+:bioassay_format_192713_34 bao:0000338 :screening_concentration_192713207, :screening_concentration_192713208;
+  bao:BAO_0002833 "≤72";
   bao:BAO_0002921 <http://purl.enanomapper.net/onto/ENM_2659304>;
   rdfs:type bao:BAO_0000219 .
 
-:bioassay_format_192714_35 bao:BAO_0002004 obo:BTO_0000018;
+:bioassay_format_192714_35 bao:0000338 :screening_concentration_192714209, :screening_concentration_192714210;
+  bao:BAO_0002004 obo:BTO_0000018;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192715_36 bao:BAO_0002004 obo:BTO_0000018;
+:bioassay_format_192715_36 bao:0000338 :screening_concentration_192715211;
+  bao:BAO_0002004 obo:BTO_0000018;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_202182_38 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0893129>,
-    efo:EFO_0002779;
+:bioassay_format_202182_38 bao:0000338 :screening_concentration_202182214, :screening_concentration_202182215,
+    :screening_concentration_202182216, :screening_concentration_202182217, :screening_concentration_202182218,
+    :screening_concentration_202182219, :screening_concentration_202182220, :screening_concentration_202182221,
+    :screening_concentration_202182222, :screening_concentration_202182223;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0893129>, efo:EFO_0002779;
+  bao:BAO_0002833 "24";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_0801504>, bao:BAO_0000218, bao:BAO_0010265 .
 
-:bioassay_format_393537_42 bao:BAO_0002833 "#N/A";
+:bioassay_format_393537_42 bao:0000338 :screening_concentration_39353774;
+  bao:BAO_0002833 "#N/A";
   bao:BAO_0002921 obo:NCIT_C14424;
   rdfs:type bao:BAO_0000219 .
 
-:bioassay_format_400848_17 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+:bioassay_format_400848_17 bao:0000338 :screening_concentration_40084879, :screening_concentration_40084880,
+    :screening_concentration_40084881;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+  bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_467460_7 bao:BAO_0002004 obo:BTO_0001619;
+:bioassay_format_467460_7 bao:0000338 :screening_concentration_46746038;
+  bao:BAO_0002004 obo:BTO_0001619;
+  bao:BAO_0002833 "#N/A";
   rdfs:type obo:OBI_0003583, bao:BAO_0000218 .
 
-:bioassay_format_467463_4 bao:BAO_0002004 obo:BTO_0000018;
+:bioassay_format_467463_4 bao:0000338 :screening_concentration_46746317, :screening_concentration_46746319,
+    :screening_concentration_46746320, :screening_concentration_46746324, :screening_concentration_46746325,
+    :screening_concentration_46746326, :screening_concentration_46746327, :screening_concentration_46746328;
+  bao:BAO_0002004 obo:BTO_0000018;
+  bao:BAO_0002833 "24";
   rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1855822>, <http://purl.enanomapper.net/onto/ENM_5562662>,
     enm:ENM_8000243, obo:OBI_0000661, bao:BAO_0000218 .
 
-:bioassay_format_679487_17 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+:bioassay_format_679487_17 bao:0000338 :screening_concentration_67948777, :screening_concentration_67948778;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+  bao:BAO_0002833 "#N/A";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_1648790>, bao:BAO_0000218 .
 
-:bioassay_format_679488_16 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+:bioassay_format_679488_16 bao:0000338 :screening_concentration_67948875, :screening_concentration_67948876;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
+  bao:BAO_0002833 "#N/A";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_1648790>, bao:BAO_0000218 .
 
-:bioassay_format_745801_10 bao:BAO_0002004 obo:BTO_0000018, obo:BTO_0001619;
+:bioassay_format_745801_10 bao:0000338 :screening_concentration_74580153, :screening_concentration_74580154,
+    :screening_concentration_74580155, :screening_concentration_74580157;
+  bao:BAO_0002004 obo:BTO_0000018, obo:BTO_0001619;
+  bao:BAO_0002833 "#N/A", "48";
   rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1855822>, bao:BAO_0000218 .
 
-:bioassay_format_781345_9 bao:BAO_0002833 "#N/A", "28";
+:bioassay_format_781345_9 bao:0000338 :screening_concentration_78134541, :screening_concentration_78134542;
+  bao:BAO_0002833 "#N/A", "28";
   bao:BAO_0002921 obo:NCBITaxon_35525;
   rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1648790>, bao:BAO_0000219 .
 
-:bioassay_format_789398_2 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_7054247>;
+:bioassay_format_789398_2 bao:0000338 :screening_concentration_78939813, :screening_concentration_78939814,
+    :screening_concentration_78939815;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_7054247>;
+  bao:BAO_0002833 "24", "30";
   rdfs:type <http://purl.enanomapper.net/onto/ENM_3323766>, <http://purl.enanomapper.net/onto/ENM_3323768>,
     <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218 .
 
-:bioassay_format_789399_1 bao:BAO_0002004 efo:EFO_0006639;
+:bioassay_format_789399_1 bao:0000338 :screening_concentration_7893991, :screening_concentration_78939910,
+    :screening_concentration_78939911, :screening_concentration_78939912, :screening_concentration_7893992,
+    :screening_concentration_7893993, :screening_concentration_7893994, :screening_concentration_7893995,
+    :screening_concentration_7893996, :screening_concentration_7893997, :screening_concentration_7893998,
+    :screening_concentration_7893999;
+  bao:BAO_0002004 efo:EFO_0006639;
+  bao:BAO_0002833 "#N/A", "24", "48";
   rdfs:type npo:NPO_1440, npo:NPO_1911, <http://purl.enanomapper.net/onto/ENM_3221617>,
     <http://purl.enanomapper.net/onto/ENM_3323767>, enm:ENM_9000013, bao:BAO_0000218,
     bao:BAO_0010265 .
 
-:bioassay_format_857785_14 bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866074>;
+:bioassay_format_857785_14 bao:0000338 :screening_concentration_85778563, :screening_concentration_85778564,
+    :screening_concentration_85778565, :screening_concentration_85778566, :screening_concentration_85778567,
+    :screening_concentration_85778568, :screening_concentration_85778569, :screening_concentration_85778570,
+    :screening_concentration_85778571, :screening_concentration_85778572, :screening_concentration_85778573;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866074>;
   bao:BAO_0002833 "30";
   bao:BAO_0002921 <http://semanticscience.org/resource/SIO_000486>;
   rdfs:type <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218, bao:BAO_0000219,
@@ -2671,7 +2768,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_21;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
   sbdbel:hasOutcome enm:ENM_0000068;
-  sbdbel:hasRelationship sbdbel:positively_correlates .
+  sbdbel:hasRelationship sbdbel:does_not_correlate .
 
 :causal_assertion_12 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_12;
@@ -2687,7 +2784,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_21;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
   sbdbel:hasOutcome enm:ENM_0000068;
-  sbdbel:hasRelationship sbdbel:negatively_correlates .
+  sbdbel:hasRelationship sbdbel:does_not_correlate .
 
 :causal_assertion_121 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_121;
@@ -2695,7 +2792,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_21;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
   sbdbel:hasOutcome enm:ENM_0000068;
-  sbdbel:hasRelationship sbdbel:negatively_correlates .
+  sbdbel:hasRelationship sbdbel:does_not_correlate .
 
 :causal_assertion_122 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_122;
@@ -2703,7 +2800,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_21;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
   sbdbel:hasOutcome enm:ENM_0000068;
-  sbdbel:hasRelationship sbdbel:correlates .
+  sbdbel:hasRelationship sbdbel:does_not_correlate .
 
 :causal_assertion_128 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_128;
@@ -2743,7 +2840,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_22;
   sbdbel:hasCause npo:NPO_1888;
   sbdbel:hasOutcome npo:NPO_1338;
-  sbdbel:hasRelationship sbdbel:observed_outcome .
+  sbdbel:hasRelationship sbdbel:correlates .
 
 :causal_assertion_132 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_132;
@@ -2775,7 +2872,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_23;
   sbdbel:hasCause efo:EFO_0000428;
   sbdbel:hasOutcome npo:NPO_1340;
-  sbdbel:hasRelationship sbdbel:negatively_correlates .
+  sbdbel:hasRelationship sbdbel:does_not_correlate .
 
 :causal_assertion_136 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_136;
@@ -3625,10 +3722,10 @@
   sbdbel:hasOutcome obo:OAE_0000196;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
-:causal_assertion_40 <http://semanticscience.org/resource/SIO_000206> :evidence_40;
+:causal_assertion_40 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_40;
   <http://semanticscience.org/resource/SIO_000332> :chemical_substance_781344;
   <http://semanticscience.org/resource/SIO_000339> :reference_8;
-  a <http://semanticscience.org/resource/SIO_001183>;
   sbdbel:hasCause <http://purl.org/obo/owl/PATO#PATO_0000117>;
   sbdbel:hasOutcome enm:ENM_8000316;
   sbdbel:hasRelationship sbdbel:negatively_correlates .
@@ -4836,13 +4933,12 @@
   dcterms:source <https://doi.org/10.3390%2Fnano9081180>, <https://doi.org/10.3390/ijms221910578>,
     :dataset_NANO_SBD_RDF .
 
-:chemical_substance_192681 obo:BFO_0000056 :measurement_group_192681_23_bundle_diameter_mg;
-  a enm:ENM_0000117;
-  obo:BFO_0000056 :measurement_group_192681_23_crystal_structure_mg, :measurement_group_192681_23_endotoxin_impurities_mg,
-    :measurement_group_192681_23_hydrodynamic_diameter_mg, :measurement_group_192681_23_polidispersity_index_mg,
-    :measurement_group_192681_23_porosity_mg, :measurement_group_192681_23_primary_size_mg,
-    :measurement_group_192681_23_shape_mg, :measurement_group_192681_23_surface_area_mg,
-    :measurement_group_192681_23_zeta_potential_mg;
+:chemical_substance_192681 a enm:ENM_0000117;
+  obo:BFO_0000056 :measurement_group_192681_23_bundle_diameter_mg, :measurement_group_192681_23_crystal_structure_mg,
+    :measurement_group_192681_23_endotoxin_impurities_mg, :measurement_group_192681_23_hydrodynamic_diameter_mg,
+    :measurement_group_192681_23_polidispersity_index_mg, :measurement_group_192681_23_porosity_mg,
+    :measurement_group_192681_23_primary_size_mg, :measurement_group_192681_23_shape_mg,
+    :measurement_group_192681_23_surface_area_mg, :measurement_group_192681_23_zeta_potential_mg;
   dcterms:description "GO: GO"@en;
   dcterms:identifier "https://nanocommons.github.io/identifiers/registry#ERM:192681";
   dcterms:source <https://doi.org/10.1007.s11671-010-9751-6>, :dataset_NANO_SBD_RDF .
@@ -5125,11 +5221,10 @@
   dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
   dcterms:title "NANO-SBD RDF"@en .
 
-:endpoint_001636_37_bio_ep bao:0000338 :screening_concentration_001636213;
+:endpoint_001636_37_213_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_001636_37_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5147,13 +5242,35 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_065707_41_bio_ep bao:0000338 :screening_concentration_065707238, :screening_concentration_065707239,
-    :screening_concentration_065707240, :screening_concentration_065707241, :screening_concentration_065707242,
-    :screening_concentration_065707243;
+:endpoint_065707_41_238_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
-  bao:BAO_0000182 "%", "% of control";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "24" .
+  bao:BAO_0000182 "% of control";
+  rdfs:label "percent cell survival" .
+
+:endpoint_065707_41_239_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "%";
+  rdfs:label "percent apoptotic cells" .
+
+:endpoint_065707_41_240_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "%";
+  rdfs:label "percent apoptotic cells" .
+
+:endpoint_065707_41_241_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "%";
+  rdfs:label "percent apoptotic cells" .
+
+:endpoint_065707_41_242_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "DCF fluorescence instensity" .
+
+:endpoint_065707_41_243_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "DCF fluorescence instensity" .
 
 :endpoint_065707_41_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5171,12 +5288,30 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_065708_40_bio_ep bao:0000338 :screening_concentration_065708232, :screening_concentration_065708233,
-    :screening_concentration_065708234, :screening_concentration_065708235, :screening_concentration_065708237;
-  bao:BAO_0000108 "10-60", "12", "20";
-  bao:BAO_0000182 "% of control", "fold increase";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "24", "6" .
+:endpoint_065708_40_232_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "12";
+  bao:BAO_0000182 "fold increase";
+  rdfs:label "DCF fluorescence instensity" .
+
+:endpoint_065708_40_233_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "10-60";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "LDH leakage into media" .
+
+:endpoint_065708_40_234_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "10-60";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "LDH leakage into media" .
+
+:endpoint_065708_40_235_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "20";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "MMP" .
+
+:endpoint_065708_40_237_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "12";
+  bao:BAO_0000182 "fold increase";
+  rdfs:label "DCF fluorescence instensity" .
 
 :endpoint_065708_40_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5191,11 +5326,10 @@
 :endpoint_065708_40_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_065708_41_bio_ep bao:0000338 :screening_concentration_065708236;
+:endpoint_065708_41_236_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "70";
   bao:BAO_0000182 "% of control";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "24" .
+  rdfs:label "gsh regulation" .
 
 :endpoint_065708_41_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5210,12 +5344,30 @@
 :endpoint_065708_41_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_065709_40_bio_ep bao:0000338 :screening_concentration_065709227, :screening_concentration_065709228,
-    :screening_concentration_065709229, :screening_concentration_065709230, :screening_concentration_065709231;
-  bao:BAO_0000108 "10", "10-40", "20", "70", "qualitative";
-  bao:BAO_0000182 "% of control", "fold increase", "qualitative";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "24", "6" .
+:endpoint_065709_40_227_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "10";
+  bao:BAO_0000182 "fold increase";
+  rdfs:label "DCF fluorescence instensity" .
+
+:endpoint_065709_40_228_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "10-40";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "LDH leakage into media" .
+
+:endpoint_065709_40_229_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "qualitative";
+  bao:BAO_0000182 "qualitative";
+  rdfs:label "DCF fluorescence instensity" .
+
+:endpoint_065709_40_230_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "70";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "gsh regulation" .
+
+:endpoint_065709_40_231_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "20";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "MMP" .
 
 :endpoint_065709_40_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5230,11 +5382,15 @@
 :endpoint_065709_40_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_065710_39_bio_ep bao:0000338 :screening_concentration_065710225, :screening_concentration_065710226;
-  bao:BAO_0000108 "0", "110";
-  bao:BAO_0000182 "% of control", "µg/ml";
-  bao:BAO_0002668 "#N/A", "hours";
-  bao:BAO_0002669 "#N/A", "24" .
+:endpoint_065710_39_225_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "110";
+  bao:BAO_0000182 "µg/ml";
+  rdfs:label "IC50" .
+
+:endpoint_065710_39_226_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "0";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "apoptotic cells" .
 
 :endpoint_065710_39_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5252,11 +5408,10 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_065711_39_bio_ep bao:0000338 :screening_concentration_065711224;
+:endpoint_065711_39_224_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_065711_39_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5274,13 +5429,35 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "15-25"^^xsd:float .
 
-:endpoint_192655_18_bio_ep bao:0000338 :screening_concentration_19265582, :screening_concentration_19265583,
-    :screening_concentration_19265584, :screening_concentration_19265585, :screening_concentration_19265586,
-    :screening_concentration_19265587;
+:endpoint_192655_18_82_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "24", "≤72" .
+  rdfs:label "#N/A" .
+
+:endpoint_192655_18_83_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192655_18_84_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192655_18_85_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192655_18_86_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192655_18_87_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192655_18_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5295,19 +5472,135 @@
 :endpoint_192655_18_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192678_20_bio_ep bao:0000338 :screening_concentration_192678100, :screening_concentration_192678101,
-    :screening_concentration_192678102, :screening_concentration_192678103, :screening_concentration_192678104,
-    :screening_concentration_192678105, :screening_concentration_192678106, :screening_concentration_192678107,
-    :screening_concentration_192678108, :screening_concentration_192678109, :screening_concentration_192678110,
-    :screening_concentration_192678111, :screening_concentration_192678112, :screening_concentration_192678113,
-    :screening_concentration_192678114, :screening_concentration_192678115, :screening_concentration_19267890,
-    :screening_concentration_19267891, :screening_concentration_19267892, :screening_concentration_19267893,
-    :screening_concentration_19267894, :screening_concentration_19267895, :screening_concentration_19267896,
-    :screening_concentration_19267897, :screening_concentration_19267898, :screening_concentration_19267899;
+:endpoint_192678_20_100_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_101_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_102_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_103_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_104_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_105_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_106_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_107_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_108_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_109_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_110_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_111_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_112_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_113_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_114_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_115_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_90_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_91_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_92_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_93_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_94_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_95_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_96_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_97_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_98_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192678_20_99_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192678_20_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5323,20 +5616,43 @@
 :endpoint_192678_20_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192679_21_bio_ep bao:0000338 :screening_concentration_192679117, :screening_concentration_192679118,
-    :screening_concentration_192679119, :screening_concentration_192679120, :screening_concentration_192679121,
-    :screening_concentration_192679122;
+:endpoint_192679_21_117_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192679_21_118_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192679_21_119_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192679_21_120_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192679_21_121_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192679_21_122_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192679_21_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_192679_21_primary_size_ep a obo:PATO_0000117, bao:BAO_0000179;
-  <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
+:endpoint_192679_21_primary_size_ep <http://semanticscience.org/resource/SIO_000221>
+    obo:UO_0000018;
+  a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
 :endpoint_192679_21_shape_ep a obo:PATO_0000117, bao:BAO_0000179;
@@ -5345,13 +5661,40 @@
 :endpoint_192679_21_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192680_22_bio_ep bao:0000338 :screening_concentration_192680128, :screening_concentration_192680129,
-    :screening_concentration_192680130, :screening_concentration_192680131, :screening_concentration_192680132,
-    :screening_concentration_192680133, :screening_concentration_192680134;
+:endpoint_192680_22_128_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192680_22_129_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192680_22_130_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192680_22_131_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192680_22_132_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192680_22_133_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192680_22_134_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192680_22_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5369,13 +5712,35 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_192681_23_bio_ep bao:0000338 :screening_concentration_192681135, :screening_concentration_192681136,
-    :screening_concentration_192681137, :screening_concentration_192681142, :screening_concentration_192681143,
-    :screening_concentration_192681144;
+:endpoint_192681_23_135_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192681_23_136_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192681_23_137_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192681_23_142_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192681_23_143_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192681_23_144_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192681_23_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5391,19 +5756,125 @@
 :endpoint_192681_23_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192682_24_bio_ep bao:0000338 :screening_concentration_192682145, :screening_concentration_192682151,
-    :screening_concentration_192682152, :screening_concentration_192682154, :screening_concentration_192682155,
-    :screening_concentration_192682156, :screening_concentration_192682158, :screening_concentration_192682159,
-    :screening_concentration_192682160, :screening_concentration_192682161, :screening_concentration_192682166,
-    :screening_concentration_192682167, :screening_concentration_192682168, :screening_concentration_192682170,
-    :screening_concentration_192682175, :screening_concentration_192682176, :screening_concentration_192682178,
-    :screening_concentration_192682179, :screening_concentration_192682180, :screening_concentration_192682181,
-    :screening_concentration_192682182, :screening_concentration_192682183, :screening_concentration_192682184,
-    :screening_concentration_192682185;
+:endpoint_192682_24_145_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_151_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_152_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_154_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_155_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_156_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_158_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_159_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_160_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_161_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_166_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_167_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_168_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_170_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_175_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_176_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_178_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_179_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_180_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_181_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_182_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_183_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_184_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192682_24_185_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192682_24_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5418,12 +5889,25 @@
 :endpoint_192682_24_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192683_25_bio_ep bao:0000338 :screening_concentration_192683188, :screening_concentration_192683189,
-    :screening_concentration_192683190, :screening_concentration_192683191;
+:endpoint_192683_25_188_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192683_25_189_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192683_25_190_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192683_25_191_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192683_25_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5438,12 +5922,25 @@
 :endpoint_192683_25_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192684_26_bio_ep bao:0000338 :screening_concentration_192684192, :screening_concentration_192684193,
-    :screening_concentration_192684194, :screening_concentration_192684195;
+:endpoint_192684_26_192_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A", "hours";
-  bao:BAO_0002669 "#N/A", "23,48" .
+  rdfs:label "#N/A" .
+
+:endpoint_192684_26_193_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192684_26_194_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_192684_26_195_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192684_26_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5458,11 +5955,15 @@
 :endpoint_192684_26_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192686_28_bio_ep bao:0000338 :screening_concentration_192686198, :screening_concentration_192686199;
+:endpoint_192686_28_198_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "2,24" .
+  rdfs:label "#N/A" .
+
+:endpoint_192686_28_199_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192686_28_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5477,11 +5978,10 @@
 :endpoint_192686_28_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192711_32_bio_ep bao:0000338 :screening_concentration_192711205;
+:endpoint_192711_32_205_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_192711_32_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5497,11 +5997,10 @@
 :endpoint_192711_32_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192712_33_bio_ep bao:0000338 :screening_concentration_192712206;
+:endpoint_192712_33_206_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_192712_33_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5517,11 +6016,15 @@
 :endpoint_192712_33_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192713_34_bio_ep bao:0000338 :screening_concentration_192713207, :screening_concentration_192713208;
+:endpoint_192713_34_207_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "≤72" .
+  rdfs:label "#N/A" .
+
+:endpoint_192713_34_208_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192713_34_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5536,11 +6039,15 @@
 :endpoint_192713_34_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192714_35_bio_ep bao:0000338 :screening_concentration_192714209, :screening_concentration_192714210;
+:endpoint_192714_35_209_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_192714_35_210_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_192714_35_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5555,11 +6062,10 @@
 :endpoint_192714_35_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_192715_36_bio_ep bao:0000338 :screening_concentration_192715211;
+:endpoint_192715_36_211_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_192715_36_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5574,14 +6080,55 @@
 :endpoint_192715_36_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_202182_38_bio_ep bao:0000338 :screening_concentration_202182214, :screening_concentration_202182215,
-    :screening_concentration_202182216, :screening_concentration_202182217, :screening_concentration_202182218,
-    :screening_concentration_202182219, :screening_concentration_202182220, :screening_concentration_202182221,
-    :screening_concentration_202182222, :screening_concentration_202182223;
-  bao:BAO_0000108 "#N/A", "0.14,0.31,1.14,1.17", "0.19,0.46,1.29,1.69", "91.53", "96.51";
-  bao:BAO_0000182 "% of control", "ng/μg protein";
-  bao:BAO_0002668 "hours";
-  bao:BAO_0002669 "24" .
+:endpoint_202182_38_214_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "91.53";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "formazan absorbance" .
+
+:endpoint_202182_38_215_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "96.51";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "formazan absorbance" .
+
+:endpoint_202182_38_216_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "91.53";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "formazan absorbance" .
+
+:endpoint_202182_38_217_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "96.51";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "formazan absorbance" .
+
+:endpoint_202182_38_218_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "0.19,0.46,1.29,1.69";
+  bao:BAO_0000182 "ng/μg protein";
+  rdfs:label "np content in cell" .
+
+:endpoint_202182_38_219_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "0.14,0.31,1.14,1.17";
+  bao:BAO_0000182 "ng/μg protein";
+  rdfs:label "np content in cell" .
+
+:endpoint_202182_38_220_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "apoptotic cells" .
+
+:endpoint_202182_38_221_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "apoptotic cells" .
+
+:endpoint_202182_38_222_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "apoptotic cells" .
+
+:endpoint_202182_38_223_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "apoptotic cells" .
 
 :endpoint_202182_38_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5599,11 +6146,10 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "203"^^xsd:float .
 
-:endpoint_393537_42_bio_ep bao:0000338 :screening_concentration_39353774;
+:endpoint_393537_42_74_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_393537_42_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5611,18 +6157,26 @@
 :endpoint_393537_42_primary_size_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_393537_42_shape_ep <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
-  a obo:PATO_0000117, bao:BAO_0000179 .
+:endpoint_393537_42_shape_ep a obo:PATO_0000117, bao:BAO_0000179;
+  <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
 :endpoint_393537_42_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_400848_17_bio_ep bao:0000338 :screening_concentration_40084879, :screening_concentration_40084880,
-    :screening_concentration_40084881;
+:endpoint_400848_17_79_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_400848_17_80_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_400848_17_81_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_400848_17_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5640,11 +6194,15 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_467460_7_bio_ep bao:0000338 :screening_concentration_46746038, :screening_concentration_46746039;
+:endpoint_467460_7_38_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "BET surface area" .
+
+:endpoint_467460_7_39_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_467460_7_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5659,11 +6217,15 @@
 :endpoint_467460_7_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_467461_6_bio_ep bao:0000338 :screening_concentration_46746136, :screening_concentration_46746137;
+:endpoint_467461_6_36_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_467461_6_37_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_467461_6_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5677,13 +6239,35 @@
 :endpoint_467461_6_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_467462_5_bio_ep bao:0000338 :screening_concentration_46746230, :screening_concentration_46746231,
-    :screening_concentration_46746232, :screening_concentration_46746233, :screening_concentration_46746234,
-    :screening_concentration_46746235;
+:endpoint_467462_5_30_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_467462_5_31_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467462_5_32_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467462_5_33_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467462_5_34_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467462_5_35_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_467462_5_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5697,15 +6281,70 @@
 :endpoint_467462_5_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_467463_4_bio_ep bao:0000338 :screening_concentration_46746317, :screening_concentration_46746318,
-    :screening_concentration_46746319, :screening_concentration_46746320, :screening_concentration_46746321,
-    :screening_concentration_46746322, :screening_concentration_46746323, :screening_concentration_46746324,
-    :screening_concentration_46746325, :screening_concentration_46746326, :screening_concentration_46746327,
-    :screening_concentration_46746328, :screening_concentration_46746329;
-  bao:BAO_0000108 "#N/A", "2.1", "70";
-  bao:BAO_0000182 "#N/A", "%", "% of control";
-  bao:BAO_0002668 "#N/A", "hours";
-  bao:BAO_0002669 "#N/A", "24" .
+:endpoint_467463_4_17_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "Hoechst 33342/propidium iodide (H/PI) staining" .
+
+:endpoint_467463_4_18_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "2.1";
+  bao:BAO_0000182 "%";
+  rdfs:label "% of cells in S-phase arrest over control" .
+
+:endpoint_467463_4_19_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "70";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "cell viability" .
+
+:endpoint_467463_4_20_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "Annexin V+/PI+ cell percentage increase over control" .
+
+:endpoint_467463_4_21_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_22_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_23_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_24_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_25_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_26_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_27_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_28_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_467463_4_29_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_467463_4_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5723,11 +6362,10 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_467464_3_bio_ep bao:0000338 :screening_concentration_46746416;
+:endpoint_467464_3_16_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_467464_3_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5743,11 +6381,15 @@
 :endpoint_467464_3_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_679487_17_bio_ep bao:0000338 :screening_concentration_67948777, :screening_concentration_67948778;
+:endpoint_679487_17_77_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "1.5";
   bao:BAO_0000182 "fold increase";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "PELI1.5" .
+
+:endpoint_679487_17_78_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "1.5";
+  bao:BAO_0000182 "fold increase";
+  rdfs:label "PELI1.5" .
 
 :endpoint_679487_17_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5765,11 +6407,15 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_679488_16_bio_ep bao:0000338 :screening_concentration_67948875, :screening_concentration_67948876;
+:endpoint_679488_16_75_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "1.5";
   bao:BAO_0000182 "fold increase";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "PELI1.5" .
+
+:endpoint_679488_16_76_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "1.5";
+  bao:BAO_0000182 "fold increase";
+  rdfs:label "PELI1.5" .
 
 :endpoint_679488_16_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5787,12 +6433,20 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:endpoint_745799_12_bio_ep bao:0000338 :screening_concentration_74579959, :screening_concentration_74579960,
-    :screening_concentration_74579961;
+:endpoint_745799_12_59_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
+
+:endpoint_745799_12_60_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_745799_12_61_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_745799_12_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5806,11 +6460,10 @@
 :endpoint_745799_12_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_745800_11_bio_ep bao:0000338 :screening_concentration_74580058;
+:endpoint_745800_11_58_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_745800_11_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5824,15 +6477,70 @@
 :endpoint_745800_11_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_745801_10_bio_ep bao:0000338 :screening_concentration_74580145, :screening_concentration_74580146,
-    :screening_concentration_74580147, :screening_concentration_74580148, :screening_concentration_74580149,
-    :screening_concentration_74580150, :screening_concentration_74580151, :screening_concentration_74580152,
-    :screening_concentration_74580153, :screening_concentration_74580154, :screening_concentration_74580155,
-    :screening_concentration_74580156, :screening_concentration_74580157;
-  bao:BAO_0000108 "#N/A", "3.6", "550";
-  bao:BAO_0000182 "#N/A", "μg/ml";
-  bao:BAO_0002668 "#N/A", "hours";
-  bao:BAO_0002669 "#N/A", "48" .
+:endpoint_745801_10_45_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "550";
+  bao:BAO_0000182 "μg/ml";
+  rdfs:label "LC50" .
+
+:endpoint_745801_10_46_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "550";
+  bao:BAO_0000182 "μg/ml";
+  rdfs:label "LC50" .
+
+:endpoint_745801_10_47_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "chemiluminescence of luminol " .
+
+:endpoint_745801_10_48_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "3.6";
+  bao:BAO_0000182 "μg/ml";
+  rdfs:label "LC50" .
+
+:endpoint_745801_10_49_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "3.6";
+  bao:BAO_0000182 "μg/ml";
+  rdfs:label "LC50" .
+
+:endpoint_745801_10_50_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "chemiluminescence of luminol " .
+
+:endpoint_745801_10_51_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "3.6";
+  bao:BAO_0000182 "μg/ml";
+  rdfs:label "LC50" .
+
+:endpoint_745801_10_52_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "chemiluminescence of luminol " .
+
+:endpoint_745801_10_53_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_745801_10_54_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "cell viability" .
+
+:endpoint_745801_10_55_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "cell viability" .
+
+:endpoint_745801_10_56_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "3.6";
+  bao:BAO_0000182 "μg/ml";
+  rdfs:label "LC50" .
+
+:endpoint_745801_10_57_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_745801_10_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5850,11 +6558,10 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "123"^^xsd:float, "153"^^xsd:float .
 
-:endpoint_781344_8_bio_ep bao:0000338 :screening_concentration_78134440;
+:endpoint_781344_8_40_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "#N/A";
-  bao:BAO_0002669 "#N/A" .
+  rdfs:label "#N/A" .
 
 :endpoint_781344_8_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
@@ -5868,12 +6575,25 @@
 :endpoint_781344_8_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_781345_9_bio_ep bao:0000338 :screening_concentration_78134541, :screening_concentration_78134542,
-    :screening_concentration_78134543, :screening_concentration_78134544;
-  bao:BAO_0000108 "#N/A", "173600± 28600";
-  bao:BAO_0000182 "#N/A", "cells/ml";
-  bao:BAO_0002668 "#N/A", "day";
-  bao:BAO_0002669 "#N/A", "28" .
+:endpoint_781345_9_41_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "Normalized tail length" .
+
+:endpoint_781345_9_42_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "173600± 28600";
+  bao:BAO_0000182 "cells/ml";
+  rdfs:label "BAL counts" .
+
+:endpoint_781345_9_43_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_781345_9_44_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_781345_9_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5891,12 +6611,20 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "107.7"^^xsd:float .
 
-:endpoint_789398_2_bio_ep bao:0000338 :screening_concentration_78939813, :screening_concentration_78939814,
-    :screening_concentration_78939815;
-  bao:BAO_0000108 "#N/A", "15", "20";
-  bao:BAO_0000182 "%", "% of control";
-  bao:BAO_0002668 "hours", "minutes";
-  bao:BAO_0002669 "24", "30" .
+:endpoint_789398_2_13_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "LDH leakage into media" .
+
+:endpoint_789398_2_14_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "20";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "MTT" .
+
+:endpoint_789398_2_15_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "15";
+  bao:BAO_0000182 "%";
+  rdfs:label "apoptotic cells" .
 
 :endpoint_789398_2_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5913,15 +6641,65 @@
 :endpoint_789398_2_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018 .
 
-:endpoint_789399_1_bio_ep bao:0000338 :screening_concentration_7893991, :screening_concentration_78939910,
-    :screening_concentration_78939911, :screening_concentration_78939912, :screening_concentration_7893992,
-    :screening_concentration_7893993, :screening_concentration_7893994, :screening_concentration_7893995,
-    :screening_concentration_7893996, :screening_concentration_7893997, :screening_concentration_7893998,
-    :screening_concentration_7893999;
-  bao:BAO_0000108 "#N/A", "70", "qualitative";
-  bao:BAO_0000182 "#N/A", "%", "% of control", "qualitative";
-  bao:BAO_0002668 "#N/A", "hours";
-  bao:BAO_0002669 "#N/A", "24", "48" .
+:endpoint_789399_1_10_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "IL-6" .
+
+:endpoint_789399_1_11_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "TNF-α" .
+
+:endpoint_789399_1_12_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "IL-8" .
+
+:endpoint_789399_1_1_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "70";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "WST-1 absorbance" .
+
+:endpoint_789399_1_2_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "qualitative";
+  bao:BAO_0000182 "qualitative";
+  rdfs:label "cell morphology" .
+
+:endpoint_789399_1_3_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "qualitative";
+  bao:BAO_0000182 "qualitative";
+  rdfs:label "cell morphology" .
+
+:endpoint_789399_1_4_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "%";
+  rdfs:label "apoptotic cells" .
+
+:endpoint_789399_1_5_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "peroxyde/hydroxyl" .
+
+:endpoint_789399_1_6_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "peroxyde/hydroxyl" .
+
+:endpoint_789399_1_7_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "superoxide" .
+
+:endpoint_789399_1_8_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "cellular gluthatione (GSH)" .
+
+:endpoint_789399_1_9_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "% of control";
+  rdfs:label "mitochondrial membrane potential " .
 
 :endpoint_789399_1_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5939,14 +6717,60 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "3"^^xsd:float .
 
-:endpoint_857785_14_bio_ep bao:0000338 :screening_concentration_85778563, :screening_concentration_85778564,
-    :screening_concentration_85778565, :screening_concentration_85778566, :screening_concentration_85778567,
-    :screening_concentration_85778568, :screening_concentration_85778569, :screening_concentration_85778570,
-    :screening_concentration_85778571, :screening_concentration_85778572, :screening_concentration_85778573;
+:endpoint_857785_14_63_bioassay_ep a bao:BAO_0000179;
   bao:BAO_0000108 "#N/A";
   bao:BAO_0000182 "#N/A";
-  bao:BAO_0002668 "minutes";
-  bao:BAO_0002669 "30" .
+  rdfs:label "#N/A" .
+
+:endpoint_857785_14_64_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_857785_14_65_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_857785_14_66_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "LDH activity" .
+
+:endpoint_857785_14_67_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "LDH activity" .
+
+:endpoint_857785_14_68_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "MDA concentration" .
+
+:endpoint_857785_14_69_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "MDA concentration" .
+
+:endpoint_857785_14_70_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_857785_14_71_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_857785_14_72_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
+
+:endpoint_857785_14_73_bioassay_ep a bao:BAO_0000179;
+  bao:BAO_0000108 "#N/A";
+  bao:BAO_0000182 "#N/A";
+  rdfs:label "#N/A" .
 
 :endpoint_857785_14_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
@@ -5964,10 +6788,10 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
-:evidence_1 a <http://semanticscience.org/resource/SIO_000299>;
-  obo:ECO_9000001 :assay_789399_1_bio_as;
+:evidence_1 obo:ECO_9000001 :assay_789399_1_bio_as;
   cito:containsAssertionFrom :reference_1;
   <http://semanticscience.org/resource/SIO_000208> :causal_assertion_1;
+  a <http://semanticscience.org/resource/SIO_000299>;
   sbdbel:quote "The colorimetric assay showed that at concentrations of ZnO-NPs lower than 5 μg/cm2 there was no cytotoxicity up to 72 h. Starting from 5 μg/cm2, already after 24 h of treatment, a time-dependent decrease of cell viability was observed (Fig. 3A). Higher doses (10, 20, and 40 μg/cm2) induced cytotoxicity, with a cell survival lower than 5%, already after 24 h. "@en .
 
 :evidence_10 a <http://semanticscience.org/resource/SIO_000299>;
@@ -7182,6 +8006,9 @@ in cell culture."""@en .
   <http://semanticscience.org/resource/SIO_000208> :causal_assertion_99;
   sbdbel:quote "For the flat 2D GO, the curve was much smaller than that of spherical particles, imparting much higher carboxyl intensities when the cell-GO interaction happened. Therefore, the electrostatic repulsions between pristine GO and cell membrane would be more difficult to be conquered. "@en .
 
+:measurement_group_001636_37_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_001636_37_213_bioassay_ep .
+
 :measurement_group_001636_37_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_001636_37_bundle_diameter_ep .
 
@@ -7211,6 +8038,11 @@ in cell culture."""@en .
 
 :measurement_group_001636_37_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_001636_37_zeta_potential_ep .
+
+:measurement_group_065707_41_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_065707_41_238_bioassay_ep, :endpoint_065707_41_239_bioassay_ep,
+    :endpoint_065707_41_240_bioassay_ep, :endpoint_065707_41_241_bioassay_ep, :endpoint_065707_41_242_bioassay_ep,
+    :endpoint_065707_41_243_bioassay_ep .
 
 :measurement_group_065707_41_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065707_41_bundle_diameter_ep .
@@ -7242,6 +8074,10 @@ in cell culture."""@en .
 :measurement_group_065707_41_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065707_41_zeta_potential_ep .
 
+:measurement_group_065708_40_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_065708_40_232_bioassay_ep, :endpoint_065708_40_233_bioassay_ep,
+    :endpoint_065708_40_234_bioassay_ep, :endpoint_065708_40_235_bioassay_ep, :endpoint_065708_40_237_bioassay_ep .
+
 :measurement_group_065708_40_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065708_40_bundle_diameter_ep .
 
@@ -7271,6 +8107,9 @@ in cell culture."""@en .
 
 :measurement_group_065708_40_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065708_40_zeta_potential_ep .
+
+:measurement_group_065708_41_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_065708_41_236_bioassay_ep .
 
 :measurement_group_065708_41_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065708_41_bundle_diameter_ep .
@@ -7302,6 +8141,10 @@ in cell culture."""@en .
 :measurement_group_065708_41_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065708_41_zeta_potential_ep .
 
+:measurement_group_065709_40_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_065709_40_227_bioassay_ep, :endpoint_065709_40_228_bioassay_ep,
+    :endpoint_065709_40_229_bioassay_ep, :endpoint_065709_40_230_bioassay_ep, :endpoint_065709_40_231_bioassay_ep .
+
 :measurement_group_065709_40_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065709_40_bundle_diameter_ep .
 
@@ -7331,6 +8174,9 @@ in cell culture."""@en .
 
 :measurement_group_065709_40_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065709_40_zeta_potential_ep .
+
+:measurement_group_065710_39_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_065710_39_225_bioassay_ep, :endpoint_065710_39_226_bioassay_ep .
 
 :measurement_group_065710_39_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065710_39_bundle_diameter_ep .
@@ -7362,6 +8208,9 @@ in cell culture."""@en .
 :measurement_group_065710_39_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065710_39_zeta_potential_ep .
 
+:measurement_group_065711_39_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_065711_39_224_bioassay_ep .
+
 :measurement_group_065711_39_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065711_39_bundle_diameter_ep .
 
@@ -7391,6 +8240,11 @@ in cell culture."""@en .
 
 :measurement_group_065711_39_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_065711_39_zeta_potential_ep .
+
+:measurement_group_192655_18_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192655_18_82_bioassay_ep, :endpoint_192655_18_83_bioassay_ep,
+    :endpoint_192655_18_84_bioassay_ep, :endpoint_192655_18_85_bioassay_ep, :endpoint_192655_18_86_bioassay_ep,
+    :endpoint_192655_18_87_bioassay_ep .
 
 :measurement_group_192655_18_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192655_18_bundle_diameter_ep .
@@ -7422,6 +8276,17 @@ in cell culture."""@en .
 :measurement_group_192655_18_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192655_18_zeta_potential_ep .
 
+:measurement_group_192678_20_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192678_20_100_bioassay_ep, :endpoint_192678_20_101_bioassay_ep,
+    :endpoint_192678_20_102_bioassay_ep, :endpoint_192678_20_103_bioassay_ep, :endpoint_192678_20_104_bioassay_ep,
+    :endpoint_192678_20_105_bioassay_ep, :endpoint_192678_20_106_bioassay_ep, :endpoint_192678_20_107_bioassay_ep,
+    :endpoint_192678_20_108_bioassay_ep, :endpoint_192678_20_109_bioassay_ep, :endpoint_192678_20_110_bioassay_ep,
+    :endpoint_192678_20_111_bioassay_ep, :endpoint_192678_20_112_bioassay_ep, :endpoint_192678_20_113_bioassay_ep,
+    :endpoint_192678_20_114_bioassay_ep, :endpoint_192678_20_115_bioassay_ep, :endpoint_192678_20_90_bioassay_ep,
+    :endpoint_192678_20_91_bioassay_ep, :endpoint_192678_20_92_bioassay_ep, :endpoint_192678_20_93_bioassay_ep,
+    :endpoint_192678_20_94_bioassay_ep, :endpoint_192678_20_95_bioassay_ep, :endpoint_192678_20_96_bioassay_ep,
+    :endpoint_192678_20_97_bioassay_ep, :endpoint_192678_20_98_bioassay_ep, :endpoint_192678_20_99_bioassay_ep .
+
 :measurement_group_192678_20_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192678_20_bundle_diameter_ep .
 
@@ -7451,6 +8316,11 @@ in cell culture."""@en .
 
 :measurement_group_192678_20_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192678_20_zeta_potential_ep .
+
+:measurement_group_192679_21_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192679_21_117_bioassay_ep, :endpoint_192679_21_118_bioassay_ep,
+    :endpoint_192679_21_119_bioassay_ep, :endpoint_192679_21_120_bioassay_ep, :endpoint_192679_21_121_bioassay_ep,
+    :endpoint_192679_21_122_bioassay_ep .
 
 :measurement_group_192679_21_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192679_21_bundle_diameter_ep .
@@ -7482,6 +8352,11 @@ in cell culture."""@en .
 :measurement_group_192679_21_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192679_21_zeta_potential_ep .
 
+:measurement_group_192680_22_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192680_22_128_bioassay_ep, :endpoint_192680_22_129_bioassay_ep,
+    :endpoint_192680_22_130_bioassay_ep, :endpoint_192680_22_131_bioassay_ep, :endpoint_192680_22_132_bioassay_ep,
+    :endpoint_192680_22_133_bioassay_ep, :endpoint_192680_22_134_bioassay_ep .
+
 :measurement_group_192680_22_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192680_22_bundle_diameter_ep .
 
@@ -7511,6 +8386,11 @@ in cell culture."""@en .
 
 :measurement_group_192680_22_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192680_22_zeta_potential_ep .
+
+:measurement_group_192681_23_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192681_23_135_bioassay_ep, :endpoint_192681_23_136_bioassay_ep,
+    :endpoint_192681_23_137_bioassay_ep, :endpoint_192681_23_142_bioassay_ep, :endpoint_192681_23_143_bioassay_ep,
+    :endpoint_192681_23_144_bioassay_ep .
 
 :measurement_group_192681_23_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192681_23_bundle_diameter_ep .
@@ -7542,6 +8422,17 @@ in cell culture."""@en .
 :measurement_group_192681_23_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192681_23_zeta_potential_ep .
 
+:measurement_group_192682_24_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192682_24_145_bioassay_ep, :endpoint_192682_24_151_bioassay_ep,
+    :endpoint_192682_24_152_bioassay_ep, :endpoint_192682_24_154_bioassay_ep, :endpoint_192682_24_155_bioassay_ep,
+    :endpoint_192682_24_156_bioassay_ep, :endpoint_192682_24_158_bioassay_ep, :endpoint_192682_24_159_bioassay_ep,
+    :endpoint_192682_24_160_bioassay_ep, :endpoint_192682_24_161_bioassay_ep, :endpoint_192682_24_166_bioassay_ep,
+    :endpoint_192682_24_167_bioassay_ep, :endpoint_192682_24_168_bioassay_ep, :endpoint_192682_24_170_bioassay_ep,
+    :endpoint_192682_24_175_bioassay_ep, :endpoint_192682_24_176_bioassay_ep, :endpoint_192682_24_178_bioassay_ep,
+    :endpoint_192682_24_179_bioassay_ep, :endpoint_192682_24_180_bioassay_ep, :endpoint_192682_24_181_bioassay_ep,
+    :endpoint_192682_24_182_bioassay_ep, :endpoint_192682_24_183_bioassay_ep, :endpoint_192682_24_184_bioassay_ep,
+    :endpoint_192682_24_185_bioassay_ep .
+
 :measurement_group_192682_24_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192682_24_bundle_diameter_ep .
 
@@ -7571,6 +8462,10 @@ in cell culture."""@en .
 
 :measurement_group_192682_24_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192682_24_zeta_potential_ep .
+
+:measurement_group_192683_25_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192683_25_188_bioassay_ep, :endpoint_192683_25_189_bioassay_ep,
+    :endpoint_192683_25_190_bioassay_ep, :endpoint_192683_25_191_bioassay_ep .
 
 :measurement_group_192683_25_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192683_25_bundle_diameter_ep .
@@ -7602,6 +8497,10 @@ in cell culture."""@en .
 :measurement_group_192683_25_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192683_25_zeta_potential_ep .
 
+:measurement_group_192684_26_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192684_26_192_bioassay_ep, :endpoint_192684_26_193_bioassay_ep,
+    :endpoint_192684_26_194_bioassay_ep, :endpoint_192684_26_195_bioassay_ep .
+
 :measurement_group_192684_26_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192684_26_bundle_diameter_ep .
 
@@ -7631,6 +8530,9 @@ in cell culture."""@en .
 
 :measurement_group_192684_26_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192684_26_zeta_potential_ep .
+
+:measurement_group_192686_28_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192686_28_198_bioassay_ep, :endpoint_192686_28_199_bioassay_ep .
 
 :measurement_group_192686_28_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192686_28_bundle_diameter_ep .
@@ -7662,6 +8564,9 @@ in cell culture."""@en .
 :measurement_group_192686_28_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192686_28_zeta_potential_ep .
 
+:measurement_group_192711_32_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192711_32_205_bioassay_ep .
+
 :measurement_group_192711_32_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192711_32_bundle_diameter_ep .
 
@@ -7691,6 +8596,9 @@ in cell culture."""@en .
 
 :measurement_group_192711_32_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192711_32_zeta_potential_ep .
+
+:measurement_group_192712_33_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192712_33_206_bioassay_ep .
 
 :measurement_group_192712_33_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192712_33_bundle_diameter_ep .
@@ -7722,6 +8630,9 @@ in cell culture."""@en .
 :measurement_group_192712_33_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192712_33_zeta_potential_ep .
 
+:measurement_group_192713_34_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192713_34_207_bioassay_ep, :endpoint_192713_34_208_bioassay_ep .
+
 :measurement_group_192713_34_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192713_34_bundle_diameter_ep .
 
@@ -7751,6 +8662,9 @@ in cell culture."""@en .
 
 :measurement_group_192713_34_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192713_34_zeta_potential_ep .
+
+:measurement_group_192714_35_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192714_35_209_bioassay_ep, :endpoint_192714_35_210_bioassay_ep .
 
 :measurement_group_192714_35_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192714_35_bundle_diameter_ep .
@@ -7782,6 +8696,9 @@ in cell culture."""@en .
 :measurement_group_192714_35_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192714_35_zeta_potential_ep .
 
+:measurement_group_192715_36_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_192715_36_211_bioassay_ep .
+
 :measurement_group_192715_36_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192715_36_bundle_diameter_ep .
 
@@ -7811,6 +8728,12 @@ in cell culture."""@en .
 
 :measurement_group_192715_36_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_192715_36_zeta_potential_ep .
+
+:measurement_group_202182_38_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_202182_38_214_bioassay_ep, :endpoint_202182_38_215_bioassay_ep,
+    :endpoint_202182_38_216_bioassay_ep, :endpoint_202182_38_217_bioassay_ep, :endpoint_202182_38_218_bioassay_ep,
+    :endpoint_202182_38_219_bioassay_ep, :endpoint_202182_38_220_bioassay_ep, :endpoint_202182_38_221_bioassay_ep,
+    :endpoint_202182_38_222_bioassay_ep, :endpoint_202182_38_223_bioassay_ep .
 
 :measurement_group_202182_38_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_202182_38_bundle_diameter_ep .
@@ -7842,6 +8765,9 @@ in cell culture."""@en .
 :measurement_group_202182_38_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_202182_38_zeta_potential_ep .
 
+:measurement_group_393537_42_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_393537_42_74_bioassay_ep .
+
 :measurement_group_393537_42_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_393537_42_bundle_diameter_ep .
 
@@ -7871,6 +8797,10 @@ in cell culture."""@en .
 
 :measurement_group_393537_42_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_393537_42_zeta_potential_ep .
+
+:measurement_group_400848_17_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_400848_17_79_bioassay_ep, :endpoint_400848_17_80_bioassay_ep,
+    :endpoint_400848_17_81_bioassay_ep .
 
 :measurement_group_400848_17_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_400848_17_bundle_diameter_ep .
@@ -7902,6 +8832,9 @@ in cell culture."""@en .
 :measurement_group_400848_17_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_400848_17_zeta_potential_ep .
 
+:measurement_group_467460_7_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_467460_7_38_bioassay_ep, :endpoint_467460_7_39_bioassay_ep .
+
 :measurement_group_467460_7_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467460_7_bundle_diameter_ep .
 
@@ -7931,6 +8864,9 @@ in cell culture."""@en .
 
 :measurement_group_467460_7_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467460_7_zeta_potential_ep .
+
+:measurement_group_467461_6_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_467461_6_36_bioassay_ep, :endpoint_467461_6_37_bioassay_ep .
 
 :measurement_group_467461_6_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467461_6_bundle_diameter_ep .
@@ -7962,6 +8898,11 @@ in cell culture."""@en .
 :measurement_group_467461_6_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467461_6_zeta_potential_ep .
 
+:measurement_group_467462_5_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_467462_5_30_bioassay_ep, :endpoint_467462_5_31_bioassay_ep,
+    :endpoint_467462_5_32_bioassay_ep, :endpoint_467462_5_33_bioassay_ep, :endpoint_467462_5_34_bioassay_ep,
+    :endpoint_467462_5_35_bioassay_ep .
+
 :measurement_group_467462_5_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467462_5_bundle_diameter_ep .
 
@@ -7991,6 +8932,13 @@ in cell culture."""@en .
 
 :measurement_group_467462_5_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467462_5_zeta_potential_ep .
+
+:measurement_group_467463_4_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_467463_4_17_bioassay_ep, :endpoint_467463_4_18_bioassay_ep,
+    :endpoint_467463_4_19_bioassay_ep, :endpoint_467463_4_20_bioassay_ep, :endpoint_467463_4_21_bioassay_ep,
+    :endpoint_467463_4_22_bioassay_ep, :endpoint_467463_4_23_bioassay_ep, :endpoint_467463_4_24_bioassay_ep,
+    :endpoint_467463_4_25_bioassay_ep, :endpoint_467463_4_26_bioassay_ep, :endpoint_467463_4_27_bioassay_ep,
+    :endpoint_467463_4_28_bioassay_ep, :endpoint_467463_4_29_bioassay_ep .
 
 :measurement_group_467463_4_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467463_4_bundle_diameter_ep .
@@ -8022,6 +8970,9 @@ in cell culture."""@en .
 :measurement_group_467463_4_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467463_4_zeta_potential_ep .
 
+:measurement_group_467464_3_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_467464_3_16_bioassay_ep .
+
 :measurement_group_467464_3_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467464_3_bundle_diameter_ep .
 
@@ -8051,6 +9002,9 @@ in cell culture."""@en .
 
 :measurement_group_467464_3_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_467464_3_zeta_potential_ep .
+
+:measurement_group_679487_17_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_679487_17_77_bioassay_ep, :endpoint_679487_17_78_bioassay_ep .
 
 :measurement_group_679487_17_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_679487_17_bundle_diameter_ep .
@@ -8082,6 +9036,9 @@ in cell culture."""@en .
 :measurement_group_679487_17_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_679487_17_zeta_potential_ep .
 
+:measurement_group_679488_16_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_679488_16_75_bioassay_ep, :endpoint_679488_16_76_bioassay_ep .
+
 :measurement_group_679488_16_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_679488_16_bundle_diameter_ep .
 
@@ -8111,6 +9068,10 @@ in cell culture."""@en .
 
 :measurement_group_679488_16_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_679488_16_zeta_potential_ep .
+
+:measurement_group_745799_12_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_745799_12_59_bioassay_ep, :endpoint_745799_12_60_bioassay_ep,
+    :endpoint_745799_12_61_bioassay_ep .
 
 :measurement_group_745799_12_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_745799_12_bundle_diameter_ep .
@@ -8142,6 +9103,9 @@ in cell culture."""@en .
 :measurement_group_745799_12_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_745799_12_zeta_potential_ep .
 
+:measurement_group_745800_11_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_745800_11_58_bioassay_ep .
+
 :measurement_group_745800_11_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_745800_11_bundle_diameter_ep .
 
@@ -8171,6 +9135,13 @@ in cell culture."""@en .
 
 :measurement_group_745800_11_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_745800_11_zeta_potential_ep .
+
+:measurement_group_745801_10_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_745801_10_45_bioassay_ep, :endpoint_745801_10_46_bioassay_ep,
+    :endpoint_745801_10_47_bioassay_ep, :endpoint_745801_10_48_bioassay_ep, :endpoint_745801_10_49_bioassay_ep,
+    :endpoint_745801_10_50_bioassay_ep, :endpoint_745801_10_51_bioassay_ep, :endpoint_745801_10_52_bioassay_ep,
+    :endpoint_745801_10_53_bioassay_ep, :endpoint_745801_10_54_bioassay_ep, :endpoint_745801_10_55_bioassay_ep,
+    :endpoint_745801_10_56_bioassay_ep, :endpoint_745801_10_57_bioassay_ep .
 
 :measurement_group_745801_10_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_745801_10_bundle_diameter_ep .
@@ -8202,6 +9173,9 @@ in cell culture."""@en .
 :measurement_group_745801_10_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_745801_10_zeta_potential_ep .
 
+:measurement_group_781344_8_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_781344_8_40_bioassay_ep .
+
 :measurement_group_781344_8_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_781344_8_bundle_diameter_ep .
 
@@ -8231,6 +9205,10 @@ in cell culture."""@en .
 
 :measurement_group_781344_8_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_781344_8_zeta_potential_ep .
+
+:measurement_group_781345_9_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_781345_9_41_bioassay_ep, :endpoint_781345_9_42_bioassay_ep,
+    :endpoint_781345_9_43_bioassay_ep, :endpoint_781345_9_44_bioassay_ep .
 
 :measurement_group_781345_9_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_781345_9_bundle_diameter_ep .
@@ -8262,6 +9240,10 @@ in cell culture."""@en .
 :measurement_group_781345_9_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_781345_9_zeta_potential_ep .
 
+:measurement_group_789398_2_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_789398_2_13_bioassay_ep, :endpoint_789398_2_14_bioassay_ep,
+    :endpoint_789398_2_15_bioassay_ep .
+
 :measurement_group_789398_2_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_789398_2_bundle_diameter_ep .
 
@@ -8292,6 +9274,13 @@ in cell culture."""@en .
 :measurement_group_789398_2_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_789398_2_zeta_potential_ep .
 
+:measurement_group_789399_1_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_789399_1_10_bioassay_ep, :endpoint_789399_1_11_bioassay_ep,
+    :endpoint_789399_1_12_bioassay_ep, :endpoint_789399_1_1_bioassay_ep, :endpoint_789399_1_2_bioassay_ep,
+    :endpoint_789399_1_3_bioassay_ep, :endpoint_789399_1_4_bioassay_ep, :endpoint_789399_1_5_bioassay_ep,
+    :endpoint_789399_1_6_bioassay_ep, :endpoint_789399_1_7_bioassay_ep, :endpoint_789399_1_8_bioassay_ep,
+    :endpoint_789399_1_9_bioassay_ep .
+
 :measurement_group_789399_1_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_789399_1_bundle_diameter_ep .
 
@@ -8321,6 +9310,12 @@ in cell culture."""@en .
 
 :measurement_group_789399_1_zeta_potential_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_789399_1_zeta_potential_ep .
+
+:measurement_group_857785_14_bio_mg a bao:BAO_0000040;
+  bao:BAO_0000208 :endpoint_857785_14_63_bioassay_ep, :endpoint_857785_14_64_bioassay_ep,
+    :endpoint_857785_14_65_bioassay_ep, :endpoint_857785_14_66_bioassay_ep, :endpoint_857785_14_67_bioassay_ep,
+    :endpoint_857785_14_68_bioassay_ep, :endpoint_857785_14_69_bioassay_ep, :endpoint_857785_14_70_bioassay_ep,
+    :endpoint_857785_14_71_bioassay_ep, :endpoint_857785_14_72_bioassay_ep, :endpoint_857785_14_73_bioassay_ep .
 
 :measurement_group_857785_14_bundle_diameter_mg a bao:BAO_0000040;
   bao:BAO_0000208 :endpoint_857785_14_bundle_diameter_ep .
@@ -10224,12 +11219,12 @@ in cell culture."""@en .
   bao:BAO_0002666 "#N/A" .
 
 :screening_concentration_192681135 a bao:BAO_00000098;
-  bao:BAO_0000183 "#N/A";
-  bao:BAO_0002666 "#N/A" .
+  bao:BAO_0000183 "μg/mL";
+  bao:BAO_0002666 "<20" .
 
 :screening_concentration_192681136 a bao:BAO_00000098;
-  bao:BAO_0000183 "#N/A";
-  bao:BAO_0002666 "#N/A" .
+  bao:BAO_0000183 "μg/mL";
+  bao:BAO_0002666 ">50" .
 
 :screening_concentration_192681137 a bao:BAO_00000098;
   bao:BAO_0000183 "#N/A";
@@ -10782,9 +11777,6 @@ sbdbel:does_not_correlate a sbdbel:relationship;
 
 sbdbel:negatively_correlates a sbdbel:relationship;
   rdfs:label "negatively_correlates" .
-
-sbdbel:observed_outcome a sbdbel:relationship;
-  rdfs:label "observed_outcome" .
 
 sbdbel:positively_correlates a sbdbel:relationship;
   rdfs:label "positively_correlates" .
