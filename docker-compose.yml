@@ -18,7 +18,7 @@ services:
     container_name: snorql
     environment:
       - SNORQL_ENDPOINT=http://localhost:8899/sparql
-      - SNORQL_EXAMPLES_REPO=https://github.com/jmillanacosta/SbD4nano-causal-SPARQL
+      - SNORQL_EXAMPLES_REPO=https://github.com/h2020-sbd4nano/SbD4nano-causal-SPARQL
       - SNORQL_TITLE=SbD4Nano\ Causal\ Network\ RDF
     ports:
       - "8088:80"
