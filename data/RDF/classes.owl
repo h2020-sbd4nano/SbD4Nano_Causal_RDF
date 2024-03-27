@@ -995,7 +995,7 @@
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1914 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1914">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <npo:code>NPO_1914</npo:code>
         <npo:preferred_Name>hydrodynamic size</npo:preferred_Name>
         <rdfs:label>hydrodynamic size</rdfs:label>
