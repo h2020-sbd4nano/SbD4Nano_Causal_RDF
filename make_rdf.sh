@@ -46,13 +46,21 @@ wget -nc $ROBOT
 wget -nc $ROBOT_JAR
 
 # Step 7: Extract used classes
-echo Creating BOTTOM module for eNM
-bash robot merge --input enanomapper-dev.owl \
-    extract --method BOT \
-    --term-file data/iris.tsv \
-    --output data/RDF/classes.owl
-
+less data/props.tsv >> data/iris.tsv
+echo Creating module for eNM
+bash robot \
+    merge \
+        --input enanomapper-dev.owl \
+    extract \
+        --method BOT \
+        --term-file data/iris.tsv \
+        --copy-ontology-annotations true \
+        --annotate-with-source true \
+    annotate \
+        --version-iri "https://h2020-sbd4nano.github.io/sbd-data-landscape/classes/alpha.owl" \
+        --output data/RDF/classes.owl
 echo Success
+
 # Step : cleanup
 #echo "Removing files"
 #rm rmlmapper*

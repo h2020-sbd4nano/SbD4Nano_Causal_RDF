@@ -605,7 +605,7 @@ mappings:
       - [rdfs:type, bao:BAO_0000219~iri] # type: organism format bioassay
       - [bao:BAO_0002921, $(organism_iri)~iri] # organism
       - [bao:BAO_0002833, $(exposure_time)] #incubation time value
-      - [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
+      - [bao:BAO_0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
       # Missing exposure type
       - predicate: rdfs:type # a (assay format type)
         object: $(assay_iri)~iri
@@ -629,7 +629,7 @@ mappings:
       - [rdfs:type, bao:BAO_0000218~iri] # type: cell format bioassay
       - [bao:BAO_0002004, $(model_cell_iri)~iri] # cell line
       - [bao:BAO_0002833, $(exposure_time)] #incubation time value
-      - [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
+      - [bao:BAO_0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
       - predicate: rdfs:type # a (assay format type, e.g., ELISA)
         object: $(assay_iri)~iri
         condition:  
@@ -788,7 +788,7 @@ mappings:
       - [rdfs:label, $(endpoint)]
       #- [bao:BAO_0002668, $(exposure_time_units)]   # has time units TODO change to UO   
       #- [bao:BAO_0002669, $(exposure_time)] # has time value
-      #- [bao:0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri] # has screeninig concentration
+      #- [bao:BAO_0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri] # has screeninig concentration
 
   screeningConcentration:
     sources:

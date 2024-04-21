@@ -1927,7 +1927,7 @@ sbd4nano:pom_166 a rr:PredicateObjectMap.
 sbd4nano:map_bioassayFormatOrganism_000 rr:predicateObjectMap sbd4nano:pom_166.
 sbd4nano:pm_166 a rr:PredicateMap.
 sbd4nano:pom_166 rr:predicateMap sbd4nano:pm_166.
-sbd4nano:pm_166 rr:constant <http://www.bioassayontology.org/bao#0000338>.
+sbd4nano:pm_166 rr:constant bao:BAO_0000338.
 sbd4nano:pom_166 rr:objectMap sbd4nano:om_166.
 sbd4nano:om_166 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/screening_concentration_{hash}{row_id}";
@@ -2079,7 +2079,7 @@ sbd4nano:pom_179 a rr:PredicateObjectMap.
 sbd4nano:map_bioassayFormatCell_000 rr:predicateObjectMap sbd4nano:pom_179.
 sbd4nano:pm_179 a rr:PredicateMap.
 sbd4nano:pom_179 rr:predicateMap sbd4nano:pm_179.
-sbd4nano:pm_179 rr:constant <http://www.bioassayontology.org/bao#0000338>.
+sbd4nano:pm_179 rr:constant bao:BAO_0000338.
 sbd4nano:pom_179 rr:objectMap sbd4nano:om_179.
 sbd4nano:om_179 a rr:ObjectMap;
     rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/screening_concentration_{hash}{row_id}";

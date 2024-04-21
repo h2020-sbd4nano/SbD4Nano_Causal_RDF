@@ -2375,56 +2375,56 @@
   bao:BAO_0000209 :measurement_group_857785_14_zeta_potential_mg;
   bao:BAO_0002846 :protocol_857785_14_zeta_potential_ap .
 
-:bioassay_format_001636_37 bao:0000338 :screening_concentration_001636213;
+:bioassay_format_001636_37 bao:BAO_0000338 :screening_concentration_001636213;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_065707_41 bao:0000338 :screening_concentration_065707238, :screening_concentration_065707239,
+:bioassay_format_065707_41 bao:BAO_0000338 :screening_concentration_065707238, :screening_concentration_065707239,
     :screening_concentration_065707240, :screening_concentration_065707241, :screening_concentration_065707242,
     :screening_concentration_065707243;
   bao:BAO_0002004 obo:BTO_0000018;
   bao:BAO_0002833 "24";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_1530072>, <http://purl.enanomapper.net/onto/ENM_3323766>,
-    <http://purl.enanomapper.net/onto/ENM_3323768>, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1911, <http://purl.enanomapper.net/onto/ENM_3221617>, obo:OBI_0003584,
+    bao:BAO_0000218 .
 
-:bioassay_format_065708_40 bao:0000338 :screening_concentration_065708232, :screening_concentration_065708233,
+:bioassay_format_065708_40 bao:BAO_0000338 :screening_concentration_065708232, :screening_concentration_065708233,
     :screening_concentration_065708234, :screening_concentration_065708235, :screening_concentration_065708237;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
   bao:BAO_0002833 "24", "6";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_5562662>, <http://purl.enanomapper.net/onto/ENM_5723277>,
-    <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_4869361>, <http://purl.enanomapper.net/onto/ENM_5562662>,
+    bao:BAO_0000218 .
 
-:bioassay_format_065708_41 bao:0000338 :screening_concentration_065708236;
+:bioassay_format_065708_41 bao:BAO_0000338 :screening_concentration_065708236;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
   bao:BAO_0002833 "24";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_5723277>, bao:BAO_0000218 .
+  rdfs:type <http://purl.enanomapper.net/onto/ENM_4869361>, bao:BAO_0000218 .
 
-:bioassay_format_065709_40 bao:0000338 :screening_concentration_065709227, :screening_concentration_065709228,
+:bioassay_format_065709_40 bao:BAO_0000338 :screening_concentration_065709227, :screening_concentration_065709228,
     :screening_concentration_065709229, :screening_concentration_065709230, :screening_concentration_065709231;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866073>;
   bao:BAO_0002833 "24", "6";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_5562662>, <http://purl.enanomapper.net/onto/ENM_5723277>,
-    <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_4869361>, <http://purl.enanomapper.net/onto/ENM_5562662>,
+    bao:BAO_0000218 .
 
-:bioassay_format_065710_39 bao:0000338 :screening_concentration_065710225, :screening_concentration_065710226;
+:bioassay_format_065710_39 bao:BAO_0000338 :screening_concentration_065710225, :screening_concentration_065710226;
   bao:BAO_0002004 efo:EFO_0001253;
   bao:BAO_0002833 "#N/A", "24";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_3323768>, bao:BAO_0000218 .
+  rdfs:type enm:ENM_9000013, obo:OBI_0003584, bao:BAO_0000218 .
 
-:bioassay_format_065711_39 bao:0000338 :screening_concentration_065711224;
+:bioassay_format_065711_39 bao:BAO_0000338 :screening_concentration_065711224;
   bao:BAO_0002004 efo:EFO_0001253;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192655_18 bao:0000338 :screening_concentration_19265582, :screening_concentration_19265583,
+:bioassay_format_192655_18 bao:BAO_0000338 :screening_concentration_19265582, :screening_concentration_19265583,
     :screening_concentration_19265584, :screening_concentration_19265585, :screening_concentration_19265586,
     :screening_concentration_19265587;
   bao:BAO_0002833 "24", "≤72";
-  bao:BAO_0002921 <http://purl.enanomapper.net/onto/ENM_2659304>;
+  bao:BAO_0002921 obo:NCBITaxon_35525;
   rdfs:type bao:BAO_0000219 .
 
-:bioassay_format_192678_20 bao:0000338 :screening_concentration_192678100, :screening_concentration_192678101,
+:bioassay_format_192678_20 bao:BAO_0000338 :screening_concentration_192678100, :screening_concentration_192678101,
     :screening_concentration_192678102, :screening_concentration_192678103, :screening_concentration_192678104,
     :screening_concentration_192678105, :screening_concentration_192678106, :screening_concentration_192678107,
     :screening_concentration_192678108, :screening_concentration_192678109, :screening_concentration_192678110,
@@ -2433,33 +2433,32 @@
     :screening_concentration_19267893, :screening_concentration_19267894, :screening_concentration_19267895,
     :screening_concentration_19267896, :screening_concentration_19267897, :screening_concentration_19267898,
     :screening_concentration_19267899;
-  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>, <http://purl.enanomapper.net/onto/ENM_2866074>,
-    <http://purl.enanomapper.net/onto/ENM_2866075>, obo:BTO_0002279, efo:EFO_0001187,
-    efo:EFO_0001203, efo:EFO_0002795;
+  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866074>, <http://purl.enanomapper.net/onto/ENM_2866075>,
+    obo:BTO_0000745, obo:BTO_0002279, efo:EFO_0001187, efo:EFO_0001203, efo:EFO_0002795;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192679_21 bao:0000338 :screening_concentration_192679117, :screening_concentration_192679118,
+:bioassay_format_192679_21 bao:BAO_0000338 :screening_concentration_192679117, :screening_concentration_192679118,
     :screening_concentration_192679119, :screening_concentration_192679120, :screening_concentration_192679121,
     :screening_concentration_192679122;
-  bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0617835>, obo:BTO_0002279, efo:EFO_0001187,
-    efo:EFO_0001203, efo:EFO_0002795;
+  bao:BAO_0002004 obo:BTO_0000745, obo:BTO_0002279, efo:EFO_0001187, efo:EFO_0001203,
+    efo:EFO_0002795;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192680_22 bao:0000338 :screening_concentration_192680131, :screening_concentration_192680132,
+:bioassay_format_192680_22 bao:BAO_0000338 :screening_concentration_192680131, :screening_concentration_192680132,
     :screening_concentration_192680133, :screening_concentration_192680134;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192681_23 bao:0000338 :screening_concentration_192681135, :screening_concentration_192681136,
+:bioassay_format_192681_23 bao:BAO_0000338 :screening_concentration_192681135, :screening_concentration_192681136,
     :screening_concentration_192681137;
   bao:BAO_0002004 obo:BTO_0001619;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192682_24 bao:0000338 :screening_concentration_192682145, :screening_concentration_192682151,
+:bioassay_format_192682_24 bao:BAO_0000338 :screening_concentration_192682145, :screening_concentration_192682151,
     :screening_concentration_192682152, :screening_concentration_192682154, :screening_concentration_192682155,
     :screening_concentration_192682156, :screening_concentration_192682158, :screening_concentration_192682159,
     :screening_concentration_192682160, :screening_concentration_192682161, :screening_concentration_192682166;
@@ -2468,131 +2467,130 @@
     <http://purl.enanomapper.net/onto/ENM_2866073>, efo:EFO_0001193, efo:EFO_0001231,
     efo:EFO_0002324, efo:EFO_0002824, efo:EFO_0003061;
   bao:BAO_0002833 "#N/A";
-  bao:BAO_0002921 obo:NCIT_C14206;
+  bao:BAO_0002921 obo:NCIT_C14238;
   rdfs:type bao:BAO_0000218, bao:BAO_0000219 .
 
-:bioassay_format_192683_25 bao:0000338 :screening_concentration_192683188, :screening_concentration_192683189,
+:bioassay_format_192683_25 bao:BAO_0000338 :screening_concentration_192683188, :screening_concentration_192683189,
     :screening_concentration_192683190, :screening_concentration_192683191;
   bao:BAO_0002004 efo:EFO_0001203, efo:EFO_0001225;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192684_26 bao:0000338 :screening_concentration_192684192, :screening_concentration_192684194,
+:bioassay_format_192684_26 bao:BAO_0000338 :screening_concentration_192684192, :screening_concentration_192684194,
     :screening_concentration_192684195;
   bao:BAO_0002004 obo:BTO_0000018, efo:EFO_0001089;
   bao:BAO_0002833 "#N/A", "23,48";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_3323766>, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1911, bao:BAO_0000218 .
 
-:bioassay_format_192686_28 bao:0000338 :screening_concentration_192686198, :screening_concentration_192686199;
+:bioassay_format_192686_28 bao:BAO_0000338 :screening_concentration_192686198, :screening_concentration_192686199;
   bao:BAO_0002004 obo:BTO_0000018;
   bao:BAO_0002833 "2,24";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192711_32 bao:0000338 :screening_concentration_192711205;
+:bioassay_format_192711_32 bao:BAO_0000338 :screening_concentration_192711205;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0893129>;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192712_33 bao:0000338 :screening_concentration_192712206;
+:bioassay_format_192712_33 bao:BAO_0000338 :screening_concentration_192712206;
   bao:BAO_0002004 obo:BTO_0001619;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192713_34 bao:0000338 :screening_concentration_192713207, :screening_concentration_192713208;
+:bioassay_format_192713_34 bao:BAO_0000338 :screening_concentration_192713207, :screening_concentration_192713208;
   bao:BAO_0002833 "≤72";
-  bao:BAO_0002921 <http://purl.enanomapper.net/onto/ENM_2659304>;
+  bao:BAO_0002921 obo:NCBITaxon_35525;
   rdfs:type bao:BAO_0000219 .
 
-:bioassay_format_192714_35 bao:0000338 :screening_concentration_192714209, :screening_concentration_192714210;
+:bioassay_format_192714_35 bao:BAO_0000338 :screening_concentration_192714209, :screening_concentration_192714210;
   bao:BAO_0002004 obo:BTO_0000018;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_192715_36 bao:0000338 :screening_concentration_192715211;
+:bioassay_format_192715_36 bao:BAO_0000338 :screening_concentration_192715211;
   bao:BAO_0002004 obo:BTO_0000018;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_202182_38 bao:0000338 :screening_concentration_202182214, :screening_concentration_202182215,
+:bioassay_format_202182_38 bao:BAO_0000338 :screening_concentration_202182214, :screening_concentration_202182215,
     :screening_concentration_202182216, :screening_concentration_202182217, :screening_concentration_202182218,
     :screening_concentration_202182219, :screening_concentration_202182220, :screening_concentration_202182221,
     :screening_concentration_202182222, :screening_concentration_202182223;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_0893129>, efo:EFO_0002779;
   bao:BAO_0002833 "24";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_0801504>, bao:BAO_0000218, bao:BAO_0010265 .
+  rdfs:type enm:ENM_8000279, obo:OBI_0000615, obo:OBI_0003584, bao:BAO_0000218 .
 
-:bioassay_format_393537_42 bao:0000338 :screening_concentration_39353774;
+:bioassay_format_393537_42 bao:BAO_0000338 :screening_concentration_39353774;
   bao:BAO_0002833 "#N/A";
-  bao:BAO_0002921 obo:NCIT_C14424;
+  bao:BAO_0002921 obo:NCIT_C14206;
   rdfs:type bao:BAO_0000219 .
 
-:bioassay_format_400848_17 bao:0000338 :screening_concentration_40084879, :screening_concentration_40084880,
+:bioassay_format_400848_17 bao:BAO_0000338 :screening_concentration_40084879, :screening_concentration_40084880,
     :screening_concentration_40084881;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
   bao:BAO_0002833 "#N/A";
   rdfs:type bao:BAO_0000218 .
 
-:bioassay_format_467460_7 bao:0000338 :screening_concentration_46746038;
+:bioassay_format_467460_7 bao:BAO_0000338 :screening_concentration_46746038;
   bao:BAO_0002004 obo:BTO_0001619;
   bao:BAO_0002833 "#N/A";
-  rdfs:type obo:OBI_0003583, bao:BAO_0000218 .
+  rdfs:type <http://purl.enanomapper.net/onto/ENM_2012430>, bao:BAO_0000218 .
 
-:bioassay_format_467463_4 bao:0000338 :screening_concentration_46746317, :screening_concentration_46746319,
+:bioassay_format_467463_4 bao:BAO_0000338 :screening_concentration_46746317, :screening_concentration_46746319,
     :screening_concentration_46746320, :screening_concentration_46746324, :screening_concentration_46746325,
     :screening_concentration_46746326, :screening_concentration_46746327, :screening_concentration_46746328;
   bao:BAO_0002004 obo:BTO_0000018;
   bao:BAO_0002833 "24";
-  rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1855822>, <http://purl.enanomapper.net/onto/ENM_5562662>,
-    enm:ENM_8000243, obo:OBI_0000661, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1911, <http://purl.enanomapper.net/onto/ENM_1648791>, <http://purl.enanomapper.net/onto/ENM_5562662>,
+    <http://purl.enanomapper.net/onto/ENM_5723278>, obo:OBI_0003584, bao:BAO_0000218 .
 
-:bioassay_format_679487_17 bao:0000338 :screening_concentration_67948777, :screening_concentration_67948778;
+:bioassay_format_679487_17 bao:BAO_0000338 :screening_concentration_67948777, :screening_concentration_67948778;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
   bao:BAO_0002833 "#N/A";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_1648790>, bao:BAO_0000218 .
+  rdfs:type obo:OBI_0000615, bao:BAO_0000218 .
 
-:bioassay_format_679488_16 bao:0000338 :screening_concentration_67948875, :screening_concentration_67948876;
+:bioassay_format_679488_16 bao:BAO_0000338 :screening_concentration_67948875, :screening_concentration_67948876;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_5076971>;
   bao:BAO_0002833 "#N/A";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_1648790>, bao:BAO_0000218 .
+  rdfs:type obo:OBI_0000615, bao:BAO_0000218 .
 
-:bioassay_format_745801_10 bao:0000338 :screening_concentration_74580153, :screening_concentration_74580154,
+:bioassay_format_745801_10 bao:BAO_0000338 :screening_concentration_74580153, :screening_concentration_74580154,
     :screening_concentration_74580155, :screening_concentration_74580157;
   bao:BAO_0002004 obo:BTO_0000018, obo:BTO_0001619;
   bao:BAO_0002833 "#N/A", "48";
-  rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1855822>, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1709, npo:NPO_1911, bao:BAO_0000218 .
 
-:bioassay_format_781345_9 bao:0000338 :screening_concentration_78134541, :screening_concentration_78134542;
+:bioassay_format_781345_9 bao:BAO_0000338 :screening_concentration_78134541, :screening_concentration_78134542;
   bao:BAO_0002833 "#N/A", "28";
-  bao:BAO_0002921 obo:NCBITaxon_35525;
-  rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1648790>, bao:BAO_0000219 .
+  bao:BAO_0002921 obo:NCIT_C14424;
+  rdfs:type <http://purl.enanomapper.net/onto/ENM_1855822>, obo:OBI_0302736, bao:BAO_0000219 .
 
-:bioassay_format_789398_2 bao:0000338 :screening_concentration_78939813, :screening_concentration_78939814,
+:bioassay_format_789398_2 bao:BAO_0000338 :screening_concentration_78939813, :screening_concentration_78939814,
     :screening_concentration_78939815;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_7054247>;
   bao:BAO_0002833 "24", "30";
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_3323766>, <http://purl.enanomapper.net/onto/ENM_3323768>,
-    <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218 .
+  rdfs:type npo:NPO_1709, npo:NPO_1911, obo:OBI_0003584, bao:BAO_0000218 .
 
-:bioassay_format_789399_1 bao:0000338 :screening_concentration_7893991, :screening_concentration_78939910,
+:bioassay_format_789399_1 bao:BAO_0000338 :screening_concentration_7893991, :screening_concentration_78939910,
     :screening_concentration_78939911, :screening_concentration_78939912, :screening_concentration_7893992,
     :screening_concentration_7893993, :screening_concentration_7893994, :screening_concentration_7893995,
     :screening_concentration_7893996, :screening_concentration_7893997, :screening_concentration_7893998,
     :screening_concentration_7893999;
   bao:BAO_0002004 efo:EFO_0006639;
   bao:BAO_0002833 "#N/A", "24", "48";
-  rdfs:type npo:NPO_1440, npo:NPO_1911, <http://purl.enanomapper.net/onto/ENM_3221617>,
-    <http://purl.enanomapper.net/onto/ENM_3323767>, enm:ENM_9000013, bao:BAO_0000218,
-    bao:BAO_0010265 .
+  rdfs:type npo:NPO_1440, <http://purl.enanomapper.net/onto/ENM_0801504>, <http://purl.enanomapper.net/onto/ENM_3221617>,
+    <http://purl.enanomapper.net/onto/ENM_5666044>, <http://purl.enanomapper.net/onto/ENM_9802609>,
+    enm:ENM_9000013, obo:OBI_0000661, obo:OBI_0003584, bao:BAO_0000218 .
 
-:bioassay_format_857785_14 bao:0000338 :screening_concentration_85778563, :screening_concentration_85778564,
+:bioassay_format_857785_14 bao:BAO_0000338 :screening_concentration_85778563, :screening_concentration_85778564,
     :screening_concentration_85778565, :screening_concentration_85778566, :screening_concentration_85778567,
     :screening_concentration_85778568, :screening_concentration_85778569, :screening_concentration_85778570,
     :screening_concentration_85778571, :screening_concentration_85778572, :screening_concentration_85778573;
   bao:BAO_0002004 <http://purl.enanomapper.net/onto/ENM_2866074>;
   bao:BAO_0002833 "30";
-  bao:BAO_0002921 <http://semanticscience.org/resource/SIO_000486>;
-  rdfs:type <http://purl.enanomapper.net/onto/ENM_9802609>, bao:BAO_0000218, bao:BAO_0000219,
-    bao:BAO_0010252 .
+  bao:BAO_0002921 <http://purl.enanomapper.net/onto/ENM_2659304>;
+  rdfs:type npo:NPO_1709, <http://purl.enanomapper.net/onto/ENM_1530072>, bao:BAO_0000218,
+    bao:BAO_0000219 .
 
 :causal_assertion_1 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_1;
@@ -2718,7 +2716,7 @@
   <http://semanticscience.org/resource/SIO_000206> :evidence_112;
   <http://semanticscience.org/resource/SIO_000332> :chemical_substance_192678;
   <http://semanticscience.org/resource/SIO_000339> :reference_20;
-  sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_4560050>;
+  sbdbel:hasCause obo:GO_0038096;
   sbdbel:hasOutcome obo:GO_0006909;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
@@ -2862,7 +2860,7 @@
   <http://semanticscience.org/resource/SIO_000206> :evidence_134;
   <http://semanticscience.org/resource/SIO_000332> :chemical_substance_192680;
   <http://semanticscience.org/resource/SIO_000339> :reference_22;
-  sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_6254352>;
+  sbdbel:hasCause <http://semanticscience.org/resource/CHEMINF_001101>;
   sbdbel:hasOutcome npo:NPO_1338;
   sbdbel:hasRelationship sbdbel:does_not_correlate .
 
@@ -3175,7 +3173,7 @@
   <http://semanticscience.org/resource/SIO_000332> :chemical_substance_192683;
   <http://semanticscience.org/resource/SIO_000339> :reference_25;
   sbdbel:hasCause efo:EFO_0000487;
-  sbdbel:hasOutcome <http://purl.enanomapper.net/onto/ENM_5258158>;
+  sbdbel:hasOutcome obo:GO_0004457;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_191 a <http://semanticscience.org/resource/SIO_001183>;
@@ -3506,10 +3504,10 @@
   sbdbel:hasOutcome efo:EFO_0004808;
   sbdbel:hasRelationship sbdbel:positively_correlates .
 
-:causal_assertion_235 a <http://semanticscience.org/resource/SIO_001183>;
-  <http://semanticscience.org/resource/SIO_000206> :evidence_235;
+:causal_assertion_235 <http://semanticscience.org/resource/SIO_000206> :evidence_235;
   <http://semanticscience.org/resource/SIO_000332> :chemical_substance_065708;
   <http://semanticscience.org/resource/SIO_000339> :reference_40;
+  a <http://semanticscience.org/resource/SIO_001183>;
   sbdbel:hasCause efo:EFO_0000428;
   sbdbel:hasOutcome efo:EFO_0004744;
   sbdbel:hasRelationship sbdbel:negatively_correlates .
@@ -4435,7 +4433,7 @@
   rdfs:about "http://purl.bioontology.org/ontology/npo#NPO_1340" .
 
 :cause__190 a sbdbel:cause;
-  rdfs:about "http://purl.enanomapper.net/onto/ENM_5258158" .
+  rdfs:about "http://purl.obolibrary.org/obo/GO_0004457" .
 
 :cause__191 a sbdbel:cause;
   rdfs:about "http://purl.obolibrary.org/obo/GO_1903409" .
@@ -4910,7 +4908,7 @@
     :measurement_group_192678_20_surface_area_mg, :measurement_group_192678_20_zeta_potential_mg;
   dcterms:description "GO: GO"@en, "GO: GO+Mn"@en;
   dcterms:identifier "https://nanocommons.github.io/identifiers/registry#ERM:192678";
-  dcterms:source <https://doi.org/10.1016.j.biomaterials.2012.02.021>, :dataset_NANO_SBD_RDF .
+  dcterms:source <https://doi.org/10.1016/j.biomaterials.2012.02.021>, :dataset_NANO_SBD_RDF .
 
 :chemical_substance_192679 a enm:ENM_0000117;
   obo:BFO_0000056 :measurement_group_192679_21_bundle_diameter_mg, :measurement_group_192679_21_crystal_structure_mg,
@@ -4920,7 +4918,7 @@
     :measurement_group_192679_21_surface_area_mg, :measurement_group_192679_21_zeta_potential_mg;
   dcterms:description "GO: GO"@en;
   dcterms:identifier "https://nanocommons.github.io/identifiers/registry#ERM:192679";
-  dcterms:source <https://doi.org/10.1016.j.biomaterials.2012.02.021>, :dataset_NANO_SBD_RDF .
+  dcterms:source <https://doi.org/10.1016/j.biomaterials.2012.02.021>, :dataset_NANO_SBD_RDF .
 
 :chemical_substance_192680 a enm:ENM_0000117;
   obo:BFO_0000056 :measurement_group_192680_22_bundle_diameter_mg, :measurement_group_192680_22_crystal_structure_mg,
@@ -5646,13 +5644,13 @@
   bao:BAO_0000182 "#N/A";
   rdfs:label "#N/A" .
 
-:endpoint_192679_21_hydrodynamic_diameter_ep a obo:PATO_0000117, bao:BAO_0000179;
-  <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
-  <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
-
-:endpoint_192679_21_primary_size_ep <http://semanticscience.org/resource/SIO_000221>
+:endpoint_192679_21_hydrodynamic_diameter_ep <http://semanticscience.org/resource/SIO_000221>
     obo:UO_0000018;
   a obo:PATO_0000117, bao:BAO_0000179;
+  <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
+
+:endpoint_192679_21_primary_size_ep a obo:PATO_0000117, bao:BAO_0000179;
+  <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
 
 :endpoint_192679_21_shape_ep a obo:PATO_0000117, bao:BAO_0000179;
@@ -6784,14 +6782,15 @@
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
   <http://semanticscience.org/resource/SIO_000300> "spherical" .
 
-:endpoint_857785_14_surface_area_ep a obo:PATO_0000117, bao:BAO_0000179;
+:endpoint_857785_14_surface_area_ep a obo:PATO_0000117;
   <http://semanticscience.org/resource/SIO_000221> obo:UO_0000018;
-  <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float .
+  <http://semanticscience.org/resource/SIO_000300> "#N/A"^^xsd:float;
+  a bao:BAO_0000179 .
 
-:evidence_1 obo:ECO_9000001 :assay_789399_1_bio_as;
+:evidence_1 a <http://semanticscience.org/resource/SIO_000299>;
+  obo:ECO_9000001 :assay_789399_1_bio_as;
   cito:containsAssertionFrom :reference_1;
   <http://semanticscience.org/resource/SIO_000208> :causal_assertion_1;
-  a <http://semanticscience.org/resource/SIO_000299>;
   sbdbel:quote "The colorimetric assay showed that at concentrations of ZnO-NPs lower than 5 μg/cm2 there was no cytotoxicity up to 72 h. Starting from 5 μg/cm2, already after 24 h of treatment, a time-dependent decrease of cell viability was observed (Fig. 3A). Higher doses (10, 20, and 40 μg/cm2) induced cytotoxicity, with a cell survival lower than 5%, already after 24 h. "@en .
 
 :evidence_10 a <http://semanticscience.org/resource/SIO_000299>;
@@ -10457,7 +10456,7 @@ in cell culture."""@en .
   rdfs:about "http://purl.bioontology.org/ontology/npo#NPO_1340" .
 
 :outcome_190 a sbdbel:outcome;
-  rdfs:about "http://purl.enanomapper.net/onto/ENM_5258158" .
+  rdfs:about "http://purl.obolibrary.org/obo/GO_0004457" .
 
 :outcome_191 a sbdbel:outcome;
   rdfs:about "http://purl.obolibrary.org/obo/GO_1903409" .
@@ -10877,10 +10876,10 @@ in cell culture."""@en .
   owl:sameAs <https://doi.org/10.1080/10934520600966177> .
 
 :reference_20 a wd:Q13442814;
-  owl:sameAs <https://doi.org/10.1016.j.biomaterials.2012.02.021> .
+  owl:sameAs <https://doi.org/10.1016/j.biomaterials.2012.02.021> .
 
 :reference_21 a wd:Q13442814;
-  owl:sameAs <https://doi.org/10.1016.j.biomaterials.2012.02.021> .
+  owl:sameAs <https://doi.org/10.1016/j.biomaterials.2012.02.021> .
 
 :reference_22 a wd:Q13442814;
   owl:sameAs <https://doi.org/10.3390%2Fnano9081180>, <https://doi.org/10.3390/ijms221910578> .

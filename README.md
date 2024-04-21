@@ -11,8 +11,8 @@ This repository contains links to supporting data for the SbD4Nano network linki
 
 ## Authors
 
-- Jeaphianne P. M. van Rijn [0000-0001-5026-7705](https://orcid.org/0000-0001-5026-7705)
 - Javier Millan Acosta [0000-0002-4166-7093](https://orcid.org/0000-0002-4166-7093)
+- Jeaphianne P. M. van Rijn [0000-0001-5026-7705](https://orcid.org/0000-0001-5026-7705)
 - Egon L. Willighagen [0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286)
 
 The methodology to generate RDF versions of the curated spreadsheets was adapted from the Nano-MIE-interactions-RDF ([Ammar Ammar, 2023](https://doi.org/10.5281/zenodo.8075705)).
@@ -33,6 +33,6 @@ sudo bash make_rdf.sh
 docker compose up -d
 ```
 The needed graphs are:
-- Either `causal_network.nq` or `causal_network.ttl`
+- `causal_network.ttl`
 - The subset of the eNanoMapper Ontology, `classes.owl`
 The SNORQL instance will fetch the queries from the [queries repository](https://github.com/h2020-sbd4nano/SbD4nano-causal-SPARQL/tree/main).
