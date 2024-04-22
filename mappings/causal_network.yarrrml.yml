@@ -795,7 +795,7 @@ mappings:
       - data-source
     subjects: $(_screeningConcentrationUrl)$(hash)$(row_id)
     predicateobjects:
-      - [a, bao:BAO_00000098]
+      - [a, bao:BAO_0000098]
       - ['bao:BAO_0000183', $(dose_units)] # has concentration units
       - [bao:BAO_0002666, $(dose)]
 
