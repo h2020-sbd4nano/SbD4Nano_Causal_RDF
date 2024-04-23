@@ -14,31 +14,37 @@ echo Fetching latest spreadsheet data
 jupyter execute notebooks/00_explore_clean_spreadsheet.ipynb
 cat mappings/classes_map >> data/iris.tsv
 # Step 1: define paths
-YARRRML="mappings/causal_network.yarrrml.yml"
-RML="mappings/causal_network.rml"
-TTL="data/RDF/causal_network.ttl"
-NQ="data/RDF/causal_network.nq"
+CAUSAL_YARRRML="mappings/causal_network.yarrrml.yml"
+CAUSAL_RML="mappings/causal_network.rml"
+CAUSAL_TTL="data/RDF/causal_network.ttl"
+CAUSAL_NQ="data/RDF/causal_network.nq"
+NANOWIKI_YARRRML="mappings/nanowiki_network.yarrrml.yml"
+NANOWIKI_RML="mappings/nanowiki_network.rml"
+NANOWIKI_TTL="data/RDF/nanowiki_network.ttl"
+NANOWIKI_NQ="data/RDF/nanowiki_network.nq"
 ROBOT="https://github.com/ontodev/robot/raw/master/bin/robot"
 ROBOT_JAR="https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar"
 
-# Step 2: Download RML Mapper
-echo "Downloading RML Mapper v6.2.2"
+# Step 2: Download CAUSAL_RML Mapper
+echo "Downloading CAUSAL_RML Mapper v6.2.2"
 wget -nc https://github.com/RMLio/rmlmapper-java/releases/download/v6.2.2/rmlmapper-6.2.2-r371-all.jar
 
-# Step 3: Install YARRRML Parser
-echo "Installing YARRRML Parser (npm i @rmlio/yarrrml-parser -g)"
+# Step 3: Install CAUSAL_YARRRML Parser
+echo "Installing CAUSAL_YARRRML Parser (npm i @rmlio/yarrrml-parser -g)"
 npm ls -g @rmlio/yarrrml-parser || npm install -g @rmlio/yarrrml-parser
 
 echo ______________________________________
-# Step 4: Run YARRRML to obtain RML
-echo "Running YARRRML on the YAML file to generate RML: $RML"
-yarrrml-parser --input $YARRRML > $RML
-
-# Step 5: Run RML Mapper
-echo "Running RML Mapper to generate RDF ttl"
-java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $TTL -s turtle
-#echo "Running RML Mapper to generate RDF nq"
-#java -jar rmlmapper-6.2.2-r371-all.jar -m $RML -o $NQ
+# Step 4: Run CAUSAL_YARRRML to obtain CAUSAL_RML
+echo "Running CAUSAL_YARRRML on the YAML file to generate CAUSAL_RML: $CAUSAL_RML"
+yarrrml-parser --input $CAUSAL_YARRRML > $CAUSAL_RML
+echo "Running CAUSAL_YARRRML on the YAML file to generate CAUSAL_RML: $NANOWIKI_RML"
+yarrrml-parser --input $NANOWIKI_YARRRML > $NANOWIKI_RML
+# Step 5: Run CAUSAL_RML Mapper
+echo "Running CAUSAL_RML Mapper to generate RDF ttl"
+java -jar rmlmapper-6.2.2-r371-all.jar -m $CAUSAL_RML -o $CAUSAL_TTL -s turtle
+java -jar rmlmapper-6.2.2-r371-all.jar -m $NANOWIKI_RML -o $NANOWIKI_TTL -s turtle
+#echo "Running CAUSAL_RML Mapper to generate RDF nq"
+#java -jar rmlmapper-6.2.2-r371-all.jar -m $CAUSAL_RML -o $CAUSAL_NQ
 
 # Step 6: Get ROBOT & eNM Ontology
 wget -nc https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper-dev.owl

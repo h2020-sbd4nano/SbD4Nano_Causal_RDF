@@ -1,0 +1,164 @@
+prefixes:
+  rr: "http://www.w3.org/ns/r2rml#"
+  dc: "http://purl.org/dc/elements/1.1/"
+  dcterms: "http://purl.org/dc/terms/"
+  void: "http://rdfs.org/ns/void#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  rml: "http://semweb.mmlab.be/ns/rml#"
+  ql: "http://semweb.mmlab.be/ns/ql#"
+  d2rq: "http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#"
+  idlab-fn: "http://example.com/idlab/function/"
+  fnml:   "http://semweb.mmlab.be/ns/fnml#"
+  fno: 	"http://w3id.org/function/ontology#"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  obo: "http://purl.obolibrary.org/obo/"
+  npo: "http://purl.bioontology.org/ontology/npo#"
+  enm: "http://purl.enanomapper.org/onto/"
+  amb:   "http://purl.enanomapper.net/"
+  sio: "http://semanticscience.org/resource/SIO_"
+  wdt: "http://www.wikidata.org/prop/direct/"
+  wd: "http://www.wikidata.org/entity/"
+  bao: "http://www.bioassayontology.org/bao#"
+  efo: "http://www.ebi.ac.uk/efo/"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  cito: "http://purl.org/net/cito/"
+  nci: "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+  NCBITAXON: "http://purl.bioontology.org/ontology/NCBITAXON/"
+  sbdbel: "https://h2020-sbd4nano.github.io/sbdbel/"
+  nsvoc: "https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:"
+  fn: "https://w3id.org/imec/idlab/function#"
+  sbd4nano: "https://h2020-sbd4nano.github.io/sbd-data-landscape/"
+  placeholder: "https://purl.placeholder.enanomapper.net/"
+  erm: "https://nanocommons.github.io/identifiers/registry#"
+  cheminf: "http://semanticscience.org/resource/CHEMINF_"
+base: https://h2020-sbd4nano.github.io/sbd-data-landscape/
+
+authors:
+  - name: Egon Willighagen
+    website: https://orcid.org/0000-0001-7542-0286
+  - name: Javier Millan Acosta
+    website: https://orcid.org/0000-0002-4166-7093
+  - name: Ammar Ammar #original mappings for https://zenodo.org/badge/latestdoi/386910392
+    website: https://orcid.org/0000-0002-8399-8990
+ 
+sources:
+  data-source: ['data/nanowiki.csv~csv']
+  
+external:
+  licenseUrl: https://creativecommons.org/licenses/by/4.0/
+  publisherName: Javier Millan Acosta
+  publisherName2: Jeaphianne van Rijn
+  publisherName3: Egon Willighagen
+  datasetName: NANOWIKI_SBD_RDF
+  datasetTitle: NANOWIKI-SBD RDF
+  datasetDescription: NANO_SBD_RDF version of nanowiki data
+  datasetSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/dataset_
+  referenceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/reference_
+  chemicalSubstanceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/chemical_substance_
+  measureGroupSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/measurement_group_
+  assaySubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_
+  protocolSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/protocol_
+  methodSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/method_
+  endpointSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/endpoint_
+  assertionSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/causal_assertion_
+  evidenceSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/evidence_
+  bioassayFormatSubjectUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_
+  screeningConcentrationUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/screening_concentration_
+  causeUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/cause_
+  outcomeUrl: https://h2020-sbd4nano.github.io/sbd-data-landscape/outcome_
+mappings:
+  dataset:
+    sources:
+      - data-source
+    subject:
+      - $(_datasetSubjectUrl)$(_datasetName)
+    predicateobjects:
+      - [rdf:type, void:DataSet~iri]
+      - [dcterms:title, $(_datasetTitle), en~lang]
+      - [dcterms:description, $(_datasetDescription), en~lang]
+      - [dcterms:license, $(_licenseUrl)~iri]
+      - [dcterms:creator, $(_publisherName)]
+      - [dcterms:creator, $(_publisherName2)]
+      - [dcterms:creator, $(_publisherName3)]
+# References
+  reference:
+    sources:
+      - data-source
+    subjects:
+      - $(_referenceSubjectUrl)$(reference_id)
+    predicateobjects:
+      - [rdf:type, wd:Q13442814~iri]
+      - [owl:sameAs, $(source)~iri]
+ # Evidence
+  quoteEvidence:
+    sources:
+      - data-source
+    subjects:
+      - $(_evidenceSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sio:000299~iri] #is a quote
+      - [sio:000208, $(_assertionSubjectUrl)$(row_id)~iri] #is supporting evidence for a causalAssertion
+      - [sbdbel:quote, $(quote), en~lang]
+      - [cito:containsAssertionFrom, $(_referenceSubjectUrl)$(reference_id)~iri]
+  # causalAssertions
+  causalAssertion:
+    sources:
+      - data-source
+    subjects:
+      - $(_assertionSubjectUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sio:001183~iri] #is a statement
+      - [sio:000206, $(_evidenceSubjectUrl)$(row_id)~iri] #is supported by an evidence
+      - [sbdbel:hasCause, $(cause)~iri] 
+      - [sbdbel:hasRelationship, $(relationship)~iri]
+      - [sbdbel:hasOutcome, $(outcome)~iri]
+      - [sio:000339, $(_referenceSubjectUrl)$(reference_id)~iri] #is specified by a reference
+      - [sio:000332, $(_chemicalSubstanceSubjectUrl)$(reference_id)$(row_id)~iri] # is about a chemical substance
+  # causes
+  cause:
+    sources:
+      - data-source
+    subjects:
+      - $(_causeUrl)_$(row_id)
+    predicateobjects:
+      - [rdf:type, sbdbel:cause~iri] #is a cause
+      - [rdfs:about, $(cause)~iri]
+
+  # relationships
+  relationship:
+    sources:
+      - data-source
+    subjects:
+      - sbdbel:$(relationship)
+    predicateobjects:
+      - [rdf:type, sbdbel:relationship~iri] #is a relationship
+      - [rdfs:label, $(relationship)]
+      
+  # outcomes
+  outcome:
+    sources:
+      - data-source
+    subjects:
+      - $(_outcomeUrl)$(row_id)
+    predicateobjects:
+      - [rdf:type, sbdbel:outcome~iri] #is an outcome
+      - [rdfs:about, $(outcome)~iri]
+  # Substance
+  chemicalSubstance:  
+    sources:
+      - data-source
+    subjects:
+        - $(_chemicalSubstanceSubjectUrl)$(reference_id)$(row_id) 
+    predicateobjects:
+      
+      #- [dcterms:title, $(material_type), en~lang]
+      #- [dcterms:description, $(material_type): $(material_description), en~lang]
+      - [a, $(material)]
+      #- [dcterms:identifier, erm:$(erm)]
+      # Sources
+      - predicate: dcterms:source
+        object: $(_datasetSubjectUrl)$(_datasetName)~iri
+      - predicate: dcterms:source
+        object: $(source)~iri

@@ -1,0 +1,323 @@
+@prefix : <https://h2020-sbd4nano.github.io/sbd-data-landscape/> .
+@prefix NCBITAXON: <http://purl.bioontology.org/ontology/NCBITAXON/> .
+@prefix amb: <http://purl.enanomapper.net/> .
+@prefix bao: <http://www.bioassayontology.org/bao#> .
+@prefix cheminf: <http://semanticscience.org/resource/CHEMINF_> .
+@prefix cito: <http://purl.org/net/cito/> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix efo: <http://www.ebi.ac.uk/efo/> .
+@prefix enm: <http://purl.enanomapper.org/onto/> .
+@prefix erm: <https://nanocommons.github.io/identifiers/registry#> .
+@prefix fn: <https://w3id.org/imec/idlab/function#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <http://w3id.org/function/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix idlab-fn: <http://example.com/idlab/function/> .
+@prefix nci: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix npo: <http://purl.bioontology.org/ontology/npo#> .
+@prefix nsvoc: <https://ammar257ammar.github.com/RDFied-datasets/nanosafery_vocabulary:> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix placeholder: <https://purl.placeholder.enanomapper.net/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix sbdbel: <https://h2020-sbd4nano.github.io/sbdbel/> .
+@prefix sio: <http://semanticscience.org/resource/SIO_> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:causal_assertion_0 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_0;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_00;
+  <http://semanticscience.org/resource/SIO_000339> :reference_0;
+  sbdbel:hasCause npo:NPO_1694;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/Oxidation_State_Concentration>;
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
+
+:causal_assertion_1 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_1;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_11;
+  <http://semanticscience.org/resource/SIO_000339> :reference_1;
+  sbdbel:hasCause npo:NPO_1302;
+  sbdbel:hasOutcome npo:NPO_1967;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_10 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_10;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_1010;
+  <http://semanticscience.org/resource/SIO_000339> :reference_10;
+  sbdbel:hasCause <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class>;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/BioAssayProfile>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_2 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_2;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_22;
+  <http://semanticscience.org/resource/SIO_000339> :reference_2;
+  sbdbel:hasCause npo:NPO_1814;
+  sbdbel:hasOutcome npo:NPO_1302;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_3 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_3;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_33;
+  <http://semanticscience.org/resource/SIO_000339> :reference_3;
+  sbdbel:hasCause npo:NPO_1694;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/Toxicity>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_4 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_4;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_44;
+  <http://semanticscience.org/resource/SIO_000339> :reference_4;
+  sbdbel:hasCause <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class>;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/Toxicity>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_5 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_5;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_55;
+  <http://semanticscience.org/resource/SIO_000339> :reference_5;
+  sbdbel:hasCause npo:NPO_1694;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/LDH_Release>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_6 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_6;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_66;
+  <http://semanticscience.org/resource/SIO_000339> :reference_6;
+  sbdbel:hasCause <http://127.0.0.1/mediawiki/index.php/Concentration_in_culture_medium>;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/LDH_Release>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_7 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_7;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_77;
+  <http://semanticscience.org/resource/SIO_000339> :reference_7;
+  sbdbel:hasCause <http://egonw.github.com/resource/NM_001001>;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/Log_Reciprocal_EC50>;
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
+
+:causal_assertion_8 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_8;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_88;
+  <http://semanticscience.org/resource/SIO_000339> :reference_8;
+  sbdbel:hasCause <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class>;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/BioAssayProfile>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:causal_assertion_9 a <http://semanticscience.org/resource/SIO_001183>;
+  <http://semanticscience.org/resource/SIO_000206> :evidence_9;
+  <http://semanticscience.org/resource/SIO_000332> :chemical_substance_99;
+  <http://semanticscience.org/resource/SIO_000339> :reference_9;
+  sbdbel:hasCause <http://127.0.0.1/mediawiki/index.php/Particle_Class>;
+  sbdbel:hasOutcome <http://127.0.0.1/mediawiki/index.php/BioAssayProfile>;
+  sbdbel:hasRelationship sbdbel:correlates .
+
+:cause__0 a sbdbel:cause;
+  rdfs:about npo:NPO_1694 .
+
+:cause__1 a sbdbel:cause;
+  rdfs:about npo:NPO_1302 .
+
+:cause__10 a sbdbel:cause;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class> .
+
+:cause__2 a sbdbel:cause;
+  rdfs:about npo:NPO_1814 .
+
+:cause__3 a sbdbel:cause;
+  rdfs:about npo:NPO_1694 .
+
+:cause__4 a sbdbel:cause;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class> .
+
+:cause__5 a sbdbel:cause;
+  rdfs:about npo:NPO_1694 .
+
+:cause__6 a sbdbel:cause;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Concentration_in_culture_medium> .
+
+:cause__7 a sbdbel:cause;
+  rdfs:about <http://egonw.github.com/resource/NM_001001> .
+
+:cause__8 a sbdbel:cause;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Surface_Modification_Class> .
+
+:cause__9 a sbdbel:cause;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Particle_Class> .
+
+:chemical_substance_00 a npo:NPO_1541;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_1010 a npo:NPO_707;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_11 a npo:NPO_1541;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_22 a npo:NPO_1541;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_33 a npo:NPO_707;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_44 a npo:NPO_707;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_55 a npo:NPO_707;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_66 a npo:NPO_707;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_77 a npo:NPO_1541;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_88 a npo:NPO_1541;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:chemical_substance_99 a npo:NPO_1541;
+  dcterms:source :dataset_NANOWIKI_SBD_RDF, <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:dataset_NANOWIKI_SBD_RDF a void:DataSet;
+  dcterms:creator "Egon Willighagen", "Javier Millan Acosta", "Jeaphianne van Rijn";
+  dcterms:description "NANO_SBD_RDF version of nanowiki data"@en;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+  dcterms:title "NANOWIKI-SBD RDF"@en .
+
+:evidence_0 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_0;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_0;
+  sbdbel:quote "A correlation between the particle size and the lattice parameter has been established in nanocerium oxide particles (3–30nm). The variation in the lattice parameter is attributed to the lattice strain induced by the introduction of Ce3+ due to the formation of oxygen vacancies. Lattice strain was observed to decrease with an increase in the particle size. Ce3+ ions concentration increased from 17% to 44% with the reduction in the particle size."@en .
+
+:evidence_1 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_1;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_1;
+  sbdbel:quote "The isoelectric points (IEP) of the nanoparticles were near neutral with the exception of TiO2 (IEP = 5.19) and Fe2O3 (IEP = 4.24). Nanoparticle agglomerates were largest at the IEP. TiO2 and Fe2O3 increased in zeta potential and agglomerate size over time; while Al2O3 and ZnO displayed little change."@en .
+
+:evidence_10 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_10;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_10;
+  sbdbel:quote "We have applied a magnetofluorescent nanoparticle library decorated with small molecules to address four critical questions in biomedical nanomaterial research [..] Screening of this library identified a variety of nanomaterials that discriminate among different cell types as well as among different physiologic states of the same cell type."@en .
+
+:evidence_2 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_2;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_2;
+  sbdbel:quote "The isoelectric points (IEP) of the nanoparticles were near neutral with the exception of TiO2 (IEP = 5.19) and Fe2O3 (IEP = 4.24). Nanoparticle agglomerates were largest at the IEP. TiO2 and Fe2O3 increased in zeta potential and agglomerate size over time; while Al2O3 and ZnO displayed little change."@en .
+
+:evidence_3 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_3;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_3;
+  sbdbel:quote "It is evident that particle and alloy characteristics such as particle size and surface composition are important aspects to consider when assessing particle toxicity and metal release from alloy particles compared to pure metal particles."@en .
+
+:evidence_4 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_4;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_4;
+  sbdbel:quote "It is evident that particle and alloy characteristics such as particle size and surface composition are important aspects to consider when assessing particle toxicity and metal release from alloy particles compared to pure metal particles."@en .
+
+:evidence_5 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_5;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_5;
+  sbdbel:quote "LDH and MTS assays revealed that exposure to copper nanoparticles had significant toxic effect with all the sizes tested when compared to unexposed control cultures. Further analysis of the results showed that copper nanoparticles of smaller size and higher concentration exerted the maximum toxic effects."@en .
+
+:evidence_6 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_6;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_6;
+  sbdbel:quote "LDH and MTS assays revealed that exposure to copper nanoparticles had significant toxic effect with all the sizes tested when compared to unexposed control cultures. Further analysis of the results showed that copper nanoparticles of smaller size and higher concentration exerted the maximum toxic effects."@en .
+
+:evidence_7 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_7;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_7;
+  sbdbel:quote "Our results indicate that DHMeþ can be utilized as an efficient descriptor of the chemical stability of metal oxides and, therefore, their cytotoxicity in E. coli in vitro tests. [..] In addition, DHMeþ is also related to the sum of the ionization potentials of a given metal, because the formation of Menþ cations requires sublimation followed by ionization reactions."@en .
+
+:evidence_8 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_8;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_8;
+  sbdbel:quote "We assessed nanoparticle effects in a multidimensional manner, using multiple cell types and multiple assays that reflect different aspects of cellular physiology. Hierarchical clustering of these data identifies nanomaterials with similar patterns of biologic activity across a broad sampling of cellular contexts, as opposed to extrapolating from results of a single in vitro assay."@en .
+
+:evidence_9 a <http://semanticscience.org/resource/SIO_000299>;
+  cito:containsAssertionFrom :reference_9;
+  <http://semanticscience.org/resource/SIO_000208> :causal_assertion_9;
+  sbdbel:quote "We assessed nanoparticle effects in a multidimensional manner, using multiple cell types and multiple assays that reflect different aspects of cellular physiology. Hierarchical clustering of these data identifies nanomaterials with similar patterns of biologic activity across a broad sampling of cellular contexts, as opposed to extrapolating from results of a single in vitro assay."@en .
+
+:outcome_0 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Oxidation_State_Concentration> .
+
+:outcome_1 a sbdbel:outcome;
+  rdfs:about npo:NPO_1967 .
+
+:outcome_10 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/BioAssayProfile> .
+
+:outcome_2 a sbdbel:outcome;
+  rdfs:about npo:NPO_1302 .
+
+:outcome_3 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Toxicity> .
+
+:outcome_4 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Toxicity> .
+
+:outcome_5 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/LDH_Release> .
+
+:outcome_6 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/LDH_Release> .
+
+:outcome_7 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/Log_Reciprocal_EC50> .
+
+:outcome_8 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/BioAssayProfile> .
+
+:outcome_9 a sbdbel:outcome;
+  rdfs:about <http://127.0.0.1/mediawiki/index.php/BioAssayProfile> .
+
+:reference_0 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_1 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_10 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_2 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_3 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_4 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_5 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_6 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_7 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_8 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+:reference_9 a wd:Q13442814;
+  owl:sameAs <https://h2020-sbd4nano.github.io/sbd-data-nanowiki/> .
+
+sbdbel:https%3A%2F%2Fh2020-sbd4nano.github.io%2Fsbdbel%2Fcorrelates a sbdbel:relationship;
+  rdfs:label "https://h2020-sbd4nano.github.io/sbdbel/correlates" .
+
+sbdbel:https%3A%2F%2Fh2020-sbd4nano.github.io%2Fsbdbel%2Fnegatively_correlates a sbdbel:relationship;
+  rdfs:label "https://h2020-sbd4nano.github.io/sbdbel/negatively_correlates" .
