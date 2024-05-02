@@ -26,11 +26,11 @@ ROBOT="https://github.com/ontodev/robot/raw/master/bin/robot"
 ROBOT_JAR="https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar"
 
 # Step 2: Download CAUSAL_RML Mapper
-echo "Downloading CAUSAL_RML Mapper v6.2.2"
+echo "Downloading RML Mapper v6.2.2"
 wget -nc https://github.com/RMLio/rmlmapper-java/releases/download/v6.2.2/rmlmapper-6.2.2-r371-all.jar
 
 # Step 3: Install CAUSAL_YARRRML Parser
-echo "Installing CAUSAL_YARRRML Parser (npm i @rmlio/yarrrml-parser -g)"
+echo "Installing YARRRML Parser (npm i @rmlio/yarrrml-parser -g)"
 npm ls -g @rmlio/yarrrml-parser || npm install -g @rmlio/yarrrml-parser
 
 echo ______________________________________

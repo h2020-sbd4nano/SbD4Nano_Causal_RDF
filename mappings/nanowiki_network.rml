@@ -39,12 +39,16 @@
 <http://mapping.example.com/rules_000> a void:Dataset;
     dcterms:contributor <http://mapping.example.com/person_000>.
 <http://mapping.example.com/person_000> dcterms:contributor foaf:Person;
-    rdfs:label "Javier Millan Acosta";
-    foaf:homepage <http://orcid.org/0000-0002-4166-7093>.
+    rdfs:label "Egon Willighagen";
+    foaf:homepage <https://orcid.org/0000-0001-7542-0286>.
 <http://mapping.example.com/rules_000> dcterms:contributor <http://mapping.example.com/person_001>.
 <http://mapping.example.com/person_001> dcterms:contributor foaf:Person;
+    rdfs:label "Javier Millan Acosta";
+    foaf:homepage <https://orcid.org/0000-0002-4166-7093>.
+<http://mapping.example.com/rules_000> dcterms:contributor <http://mapping.example.com/person_002>.
+<http://mapping.example.com/person_002> dcterms:contributor foaf:Person;
     rdfs:label "Ammar Ammar";
-    foaf:homepage <http://orcid.org/0000-0002-8399-8990>.
+    foaf:homepage <https://orcid.org/0000-0002-8399-8990>.
 sbd4nano:source_000 a rml:LogicalSource;
     rdfs:label "data-source";
     rml:source "data/nanowiki.csv";

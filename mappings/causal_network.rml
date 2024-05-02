@@ -249,7 +249,7 @@ sbd4nano:pm_017 a rr:PredicateMap;
     rr:constant idlab-fn:str.
 sbd4nano:pom_017 rr:objectMap sbd4nano:om_017.
 sbd4nano:om_017 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_bio_as";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_{row_id}";
     rr:termType rr:IRI.
 sbd4nano:pom_018 a rr:PredicateObjectMap.
 sbd4nano:map_quoteEvidence_000 rr:predicateObjectMap sbd4nano:pom_018.
@@ -1068,7 +1068,7 @@ sbd4nano:map_bioassay_000 rml:logicalSource sbd4nano:source_000;
     rdfs:label "bioassay".
 sbd4nano:s_008 a rr:SubjectMap.
 sbd4nano:map_bioassay_000 rr:subjectMap sbd4nano:s_008.
-sbd4nano:s_008 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_bio_as".
+sbd4nano:s_008 rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_{hash}_{reference_id}_{row_id}".
 sbd4nano:pom_091 a rr:PredicateObjectMap.
 sbd4nano:map_bioassay_000 rr:predicateObjectMap sbd4nano:pom_091.
 sbd4nano:pm_091 a rr:PredicateMap.
@@ -1103,7 +1103,7 @@ sbd4nano:pom_094 rr:predicateMap sbd4nano:pm_094.
 sbd4nano:pm_094 rr:constant bao:BAO_0000555.
 sbd4nano:pom_094 rr:objectMap sbd4nano:om_094.
 sbd4nano:om_094 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}_bio_af";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}_{row_id}";
     rr:termType rr:IRI.
 <http://mapping.example.com/rules_000> void:exampleResource sbd4nano:map_assayPrimarySize_000.
 sbd4nano:map_assayPrimarySize_000 rml:logicalSource sbd4nano:source_000;
@@ -1894,7 +1894,7 @@ sbd4nano:pm_162 a rr:PredicateMap;
     rr:constant idlab-fn:str.
 sbd4nano:pom_162 rr:objectMap sbd4nano:om_162.
 sbd4nano:om_162 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}_{row_id}";
     rr:termType rr:IRI.
 sbd4nano:pom_163 a rr:PredicateObjectMap.
 sbd4nano:map_bioassayFormatOrganism_000 rr:predicateObjectMap sbd4nano:pom_163.
@@ -2046,7 +2046,7 @@ sbd4nano:pm_175 a rr:PredicateMap;
     rr:constant idlab-fn:str.
 sbd4nano:pom_175 rr:objectMap sbd4nano:om_175.
 sbd4nano:om_175 a rr:ObjectMap;
-    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}";
+    rr:template "https://h2020-sbd4nano.github.io/sbd-data-landscape/bioassay_format_{hash}_{reference_id}_{row_id}";
     rr:termType rr:IRI.
 sbd4nano:pom_176 a rr:PredicateObjectMap.
 sbd4nano:map_bioassayFormatCell_000 rr:predicateObjectMap sbd4nano:pom_176.
@@ -2474,7 +2474,7 @@ sbd4nano:pom_211 rr:predicateMap sbd4nano:pm_211.
 sbd4nano:pm_211 rr:constant rdf:type.
 sbd4nano:pom_211 rr:objectMap sbd4nano:om_211.
 sbd4nano:om_211 a rr:ObjectMap;
-    rr:constant bao:BAO_00000098;
+    rr:constant bao:BAO_0000098;
     rr:termType rr:IRI.
 sbd4nano:pom_212 a rr:PredicateObjectMap.
 sbd4nano:map_screeningConcentration_000 rr:predicateObjectMap sbd4nano:pom_212.

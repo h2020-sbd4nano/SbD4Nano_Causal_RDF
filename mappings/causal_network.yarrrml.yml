@@ -105,7 +105,7 @@ mappings:
       - [cito:containsAssertionFrom, $(_referenceSubjectUrl)$(reference_id)~iri]
       # A bioassay
       - predicate: obo:ECO_9000001 # uses (as evidence)
-        object:  $(_assaySubjectUrl)$(hash)_$(reference_id)_bio_as~iri 
+        object:  $(_assaySubjectUrl)$(hash)_$(reference_id)_$(row_id)~iri 
         condition:  
           function: grel:string_contains
           parameters:
@@ -289,7 +289,7 @@ mappings:
   bioassay:
     sources:
       - data-source
-    subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_bio_as
+    subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_$(row_id)
     predicateobjects:
       - [rdf:type, bao:BAO_0000015~iri] 
       - predicate: bao:BAO_0000209
@@ -297,7 +297,7 @@ mappings:
       - predicate: bao:BAO_0002846
         object: $(_protocolSubjectUrl)$(hash)_$(reference_id)_bio_ap~iri
       - predicate: bao:BAO_0000555 # Has assay format
-        object: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)_bio_af~iri
+        object: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)_$(row_id)~iri
 
 
 ## Assay primary size
@@ -600,7 +600,7 @@ mappings:
           parameters:
             - [grel:valueParameter, $(organism_iri)]
             - [grel:string_sub, "http"]
-    subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)
+    subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)_$(row_id)
     predicateobjects:
       - [rdfs:type, bao:BAO_0000219~iri] # type: organism format bioassay
       - [bao:BAO_0002921, $(organism_iri)~iri] # organism
@@ -624,7 +624,7 @@ mappings:
       parameters:
         - [grel:valueParameter, $(model_cell_iri)]
         - [grel:string_sub, "http"]
-    subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)
+    subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)_$(row_id)
     predicateobjects:
       - [rdfs:type, bao:BAO_0000218~iri] # type: cell format bioassay
       - [bao:BAO_0002004, $(model_cell_iri)~iri] # cell line
@@ -796,7 +796,7 @@ mappings:
     subjects: $(_screeningConcentrationUrl)$(hash)$(row_id)
     predicateobjects:
       - [a, bao:BAO_0000098]
-      - ['bao:BAO_0000183', $(dose_units)] # has concentration units
+      - [bao:BAO_0000183, $(dose_units)] # has concentration units
       - [bao:BAO_0002666, $(dose)]
 
   ## Primary Size
@@ -892,8 +892,7 @@ endpointZetaPotential:
     - $(_endpointSubjectUrl)$(hash)_$(reference_id)_zeta_potential_ep
   predicateobjects:
     - [rdf:type, bao:BAO_0000179~iri]
-    - [rdf:type, obo:PATO_0000117~iri]
-    
+    - [rdf:type, obo:PATO_0000117~iri] #TODO annotate
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:
