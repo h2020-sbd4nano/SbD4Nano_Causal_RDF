@@ -75,7 +75,7 @@ mappings:
     subject:
       - $(_datasetSubjectUrl)$(_datasetName)
     predicateobjects:
-      - [rdf:type, void:DataSet~iri]
+      - [a, void:DataSet~iri]
       - [dcterms:title, $(_datasetTitle), en~lang]
       - [dcterms:description, $(_datasetDescription), en~lang]
       - [dcterms:license, $(_licenseUrl)~iri]
@@ -89,7 +89,7 @@ mappings:
     subjects:
       - $(_referenceSubjectUrl)$(reference_id)
     predicateobjects:
-      - [rdf:type, wd:Q13442814~iri]
+      - [a, wd:Q13442814~iri]
       - [owl:sameAs, $(source)~iri]
 
   # Evidence
@@ -99,7 +99,7 @@ mappings:
     subjects:
       - $(_evidenceSubjectUrl)$(row_id)
     predicateobjects:
-      - [rdf:type, sio:000299~iri] #is a quote
+      - [a, sio:000299~iri] #is a quote
       - [sio:000208, $(_assertionSubjectUrl)$(row_id)~iri] #is supporting evidence for a causalAssertion
       - [sbdbel:quote, $(quote), en~lang]
       - [cito:containsAssertionFrom, $(_referenceSubjectUrl)$(reference_id)~iri]
@@ -190,7 +190,7 @@ mappings:
     subjects:
       - $(_assertionSubjectUrl)$(row_id)
     predicateobjects:
-      - [rdf:type, sio:001183~iri] #is a statement
+      - [a, sio:001183~iri] #is a statement
       - [sio:000206, $(_evidenceSubjectUrl)$(row_id)~iri] #is supported by an evidence
       - [sbdbel:hasCause, $(s_iri)~iri] 
       - [sbdbel:hasRelationship, sbdbel:$(p)~iri]
@@ -204,7 +204,7 @@ mappings:
     subjects:
       - $(_causeUrl)_$(row_id)
     predicateobjects:
-      - [rdf:type, sbdbel:cause~iri] #is a cause
+      - [a, sbdbel:cause~iri] #is a cause
       - [rdfs:about, $(o_iri)]
 
   # relationships
@@ -214,7 +214,7 @@ mappings:
     subjects:
       - sbdbel:$(p)
     predicateobjects:
-      - [rdf:type, sbdbel:relationship~iri] #is a relationship
+      - [a, sbdbel:relationship~iri] #is a relationship
       - [rdfs:label, $(p)]
       
   # outcomes
@@ -224,7 +224,7 @@ mappings:
     subjects:
       - $(_outcomeUrl)$(row_id)
     predicateobjects:
-      - [rdf:type, sbdbel:outcome~iri] #is an outcome
+      - [a, sbdbel:outcome~iri] #is an outcome
       - [rdfs:about, $(o_iri)]
   # Substance
   chemicalSubstance:  
@@ -291,7 +291,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_$(row_id)
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_bio_mg~iri
       - predicate: bao:BAO_0002846
@@ -306,7 +306,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_primary_size_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_primary_size_mg~iri
@@ -322,7 +322,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_bundle_diameter_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_bundle_diameter_mg~iri
@@ -338,7 +338,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_diameter_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_diameter_mg~iri
@@ -354,7 +354,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_mg~iri
@@ -369,7 +369,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_surface_area_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_surface_area_mg~iri
@@ -384,7 +384,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_shape_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_shape_mg~iri
@@ -400,7 +400,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_zeta_potential_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_zeta_potential_mg~iri
@@ -415,7 +415,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_porosity_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_porosity_mg~iri
@@ -430,7 +430,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_crystal_structure_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_crystal_structure_mg~iri
@@ -445,7 +445,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_polidispersity_index_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_polidispersity_index_mg~iri
@@ -460,7 +460,7 @@ mappings:
       - data-source
     subjects: $(_assaySubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_as
     predicateobjects:
-      - [rdf:type, bao:BAO_0000015~iri] 
+      - [a, bao:BAO_0000015~iri] 
       
       - predicate: bao:BAO_0000209
         object: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_mg~iri
@@ -477,7 +477,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_primary_size_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(primary_size_instrument)
@@ -489,7 +489,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_bundle_diameter_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(bundle_diameter_instrument)
@@ -501,7 +501,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_diameter_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(diameter_instrument)
@@ -513,7 +513,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(hydrodynamic_diameter_instrument)
@@ -524,7 +524,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_surface_area_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(surface_area_instrument)
@@ -536,7 +536,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_zeta_potential_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(zeta_potential_instrument)
@@ -548,7 +548,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_porosity_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(porosity_instrument)
@@ -560,7 +560,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_crystal_structure_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(crystal_structure_instrument)
@@ -572,7 +572,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_polidispersity_index_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(polidispersity_index_instrument)
@@ -584,7 +584,7 @@ mappings:
       - data-source
     subjects: $(_methodSubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_me
     predicateobjects:
-      - [rdf:type, bao:BAO_0000035~iri]
+      - [a, bao:BAO_0000035~iri]
       - predicate: rdfs:label
         object: 
           value: $(endotoxin_impurities_instrument)
@@ -602,14 +602,14 @@ mappings:
             - [grel:string_sub, "http"]
     subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)_$(row_id)
     predicateobjects:
-      - [rdfs:type, bao:BAO_0000219~iri] # type: organism format bioassay
+      #- [rdfs:type, bao:BAO_0000219~iri] # type: organism format bioassay
       - [bao:BAO_0002921, $(organism_iri)~iri] # organism
       - [bao:BAO_0002833, $(exposure_time)] #incubation time value
       - [bao:BAO_0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
       # Missing exposure type
-      - predicate: rdfs:type # a (assay format type)
+      - predicate: a # a (assay format type)
         object: $(assay_iri)~iri
-        condition:  
+        condition:
           function: grel:string_contains
           parameters:
             - [grel:valueParameter, $(assay_iri)]
@@ -626,7 +626,6 @@ mappings:
         - [grel:string_sub, "http"]
     subjects: $(_bioassayFormatSubjectUrl)$(hash)_$(reference_id)_$(row_id)
     predicateobjects:
-      - [rdfs:type, bao:BAO_0000218~iri] # type: cell format bioassay
       - [bao:BAO_0002004, $(model_cell_iri)~iri] # cell line
       - [bao:BAO_0002833, $(exposure_time)] #incubation time value
       - [bao:BAO_0000338, $(_screeningConcentrationUrl)$(hash)$(row_id)~iri]
@@ -644,7 +643,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_bio_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_$(row_id)_bioassay_ep~iri
    ## Measurement Group primary size
@@ -653,7 +652,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_primary_size_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_primary_size_ep~iri
 
@@ -664,7 +663,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_bundle_diameter_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_bundle_diameter_ep~iri
 
@@ -677,7 +676,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_diameter_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_diameter_ep~iri
 
@@ -690,7 +689,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_ep~iri
 
@@ -703,7 +702,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_surface_area_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_surface_area_ep~iri
 
@@ -716,7 +715,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_zeta_potential_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_zeta_potential_ep~iri
 
@@ -729,7 +728,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_porosity_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_porosity_ep~iri
 
@@ -742,7 +741,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_crystal_structure_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_crystal_structure_ep~iri
 
@@ -755,7 +754,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_polidispersity_index_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_polidispersity_index_ep~iri
 
@@ -768,7 +767,7 @@ mappings:
         - data-source
       subjects: $(_measureGroupSubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_mg
       predicateobjects:
-        - [rdf:type, bao:BAO_0000040~iri]
+        - [a, bao:BAO_0000040~iri]
         - predicate: bao:BAO_0000208
           object: $(_endpointSubjectUrl)$(hash)_$(reference_id)_endotoxin_impurities_ep~iri
 
@@ -781,7 +780,13 @@ mappings:
       - data-source
     subjects: $(_endpointSubjectUrl)$(hash)_$(reference_id)_$(row_id)_bioassay_ep
     predicateobjects:
-      - [rdf:type, bao:BAO_0000179~iri]
+      - predicate: a 
+        object: $(endpoint_iri)~iri
+        condition:  
+          function: grel:string_contains
+          parameters:
+            - [grel:valueParameter, $(endpoint_iri)]
+            - [grel:string_sub, "http"]
       - [bao:BAO_0000182, $(endpoint_units)]   # has response units, TODO change to UO   
       - [bao:BAO_0000108, $(endpoint_measurement)] # has response value
       #TODO for now label is from spreadsheet as some classes are missing in enm
@@ -807,8 +812,8 @@ mappings:
     subjects:
       - $(_endpointSubjectUrl)$(hash)_$(reference_id)_primary_size_ep
     predicateobjects:
-      - [rdf:type, bao:BAO_0000179~iri]
-      - [rdf:type, obo:PATO_0000117~iri]
+      - [a, bao:BAO_0000179~iri]
+      - [a, obo:PATO_0000117~iri]
       
       - [sio:000221, obo:UO_0000018~iri]      
       - predicate: sio:000300 # For non-ranges
@@ -832,8 +837,8 @@ mappings:
     subjects:
       - $(_endpointSubjectUrl)$(hash)_$(reference_id)_hydrodynamic_diameter_ep
     predicateobjects:
-      - [rdf:type, bao:BAO_0000179~iri]
-      - [rdf:type, obo:PATO_0000117~iri]
+      - [a, bao:BAO_0000179~iri]
+      - [a, obo:PATO_0000117~iri]
       
       - [sio:000221, obo:UO_0000018~iri]      
       - predicate: sio:000300 # For non-ranges
@@ -852,8 +857,8 @@ mappings:
     subjects:
       - $(_endpointSubjectUrl)$(hash)_$(reference_id)_surface_area_ep
     predicateobjects:
-      - [rdf:type, bao:BAO_0000179~iri]
-      - [rdf:type, obo:PATO_0000117~iri]
+      - [a, bao:BAO_0000179~iri]
+      - [a, obo:PATO_0000117~iri]
       
       - [sio:000221, obo:UO_0000018~iri]      
       - predicate: sio:000300 # For non-ranges
@@ -872,8 +877,8 @@ mappings:
     subjects:
       - $(_endpointSubjectUrl)$(hash)_$(reference_id)_shape_ep
     predicateobjects:
-      - [rdf:type, bao:BAO_0000179~iri]
-      - [rdf:type, obo:PATO_0000117~iri]
+      - [a, bao:BAO_0000179~iri]
+      - [a, obo:PATO_0000117~iri]
       
       - [sio:000221, obo:UO_0000018~iri]
       - predicate: sio:000300
@@ -891,8 +896,8 @@ endpointZetaPotential:
   subjects:
     - $(_endpointSubjectUrl)$(hash)_$(reference_id)_zeta_potential_ep
   predicateobjects:
-    - [rdf:type, bao:BAO_0000179~iri]
-    - [rdf:type, obo:PATO_0000117~iri] #TODO annotate
+    - [a, bao:BAO_0000179~iri]
+    - [a, obo:PATO_0000117~iri] #TODO annotate
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
       object:
@@ -909,8 +914,8 @@ endpointPorosity:
   subjects:
     - $(_endpointSubjectUrl)$(hash)_$(reference_id)_porosity_ep
   predicateobjects:
-    - [rdf:type, bao:BAO_0000179~iri]
-    - [rdf:type, obo:PATO_0000117~iri]
+    - [a, bao:BAO_0000179~iri]
+    - [a, obo:PATO_0000117~iri]
     
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
@@ -928,8 +933,8 @@ endpointCrystalStructure:
   subjects:
     - $(_endpointSubjectUrl)$(hash)_$(reference_id)_crystal_structure_ep
   predicateobjects:
-    - [rdf:type, bao:BAO_000017]
-    - [rdf:type, obo:PATO_0000117~iri]
+    - [a, bao:BAO_000017]
+    - [a, obo:PATO_0000117~iri]
     
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
@@ -947,8 +952,8 @@ endpointPolidispersityIndex:
   subjects:
     - $(_endpointSubjectUrl)$(hash)_$(reference_id)_polidispersity_index_ep
   predicateobjects:
-    - [rdf:type, bao:BAO_0000179~iri]
-    - [rdf:type, obo:PATO_0000117~iri]
+    - [a, bao:BAO_0000179~iri]
+    - [a, obo:PATO_0000117~iri]
     
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300
@@ -966,8 +971,8 @@ endpointEndotoxin:
   subjects:
     - $(_endpointSubjectUrl)$(hash)_$(reference_id)_endotoxin_ep
   predicateobjects:
-    - [rdf:type, bao:BAO_0000179~iri]
-    - [rdf:type, obo:PATO_0000117~iri]
+    - [a, bao:BAO_0000179~iri]
+    - [a, obo:PATO_0000117~iri]
     
     - [sio:000221, obo:UO_0000018~iri]
     - predicate: sio:000300

@@ -1091,6 +1091,19 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1302 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001464"/>
+        <npo:code>NPO_1302</npo:code>
+        <npo:dBXrefID>NCIT:C62354</npo:dBXrefID>
+        <npo:preferred_Name>zeta potential</npo:preferred_Name>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>zeta potential</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1338 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1338">
@@ -1419,6 +1432,18 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1642 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1642">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1945"/>
+        <npo:code>NPO_1642</npo:code>
+        <npo:preferred_Name>surface modification of nanoparticle</npo:preferred_Name>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>surface modification of nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1680 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1680">
@@ -1427,6 +1452,32 @@
         <npo:preferred_Name>parameter</npo:preferred_Name>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
         <rdfs:label>parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1692 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1692">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <npo:code>NPO_1692</npo:code>
+        <npo:preferred_Name>independent specific individual quality</npo:preferred_Name>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>independent specific individual quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1694 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1694">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1692"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <npo:code>NPO_1694</npo:code>
+        <npo:preferred_Name>particle size</npo:preferred_Name>
+        <npo:synonym>size of particle</npo:synonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>particle size</rdfs:label>
     </owl:Class>
     
 
@@ -1501,6 +1552,18 @@
         <npo:preferred_Name>surface charge</npo:preferred_Name>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
         <rdfs:label>surface charge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1814 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1814">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
+        <npo:code>NPO_1814</npo:code>
+        <npo:preferred_Name>pH value</npo:preferred_Name>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>pH value</rdfs:label>
     </owl:Class>
     
 
@@ -2372,6 +2435,16 @@
     
 
 
+    <!-- http://purl.enanomapper.org/onto/ENM_0000044 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.enanomapper.org/onto/ENM_0000043"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.org/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">Barrier integrity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.enanomapper.org/onto/ENM_0000045 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_0000045">
@@ -2490,6 +2563,17 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000845"/>
         <rdfs:isDefinedBy xml:lang="en">A particle of TiO2 structured in rutile crystal structure</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">rutile nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.org/onto/ENM_8000316 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_8000316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>Catalysis of a photoreaction upon irradiation of the photocatalist bearer of this disposition</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.org/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">Photocatalytic activity</rdfs:label>
     </owl:Class>
     
 
@@ -2767,6 +2851,36 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:BFO_0000179>function</obo:BFO_0000179>
+        <obo:BFO_0000180>Function</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the function of a hammer to drive in nails</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of a heart pacemaker to regulate the beating of a heart through electricity</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of amylase in saliva to break down starch into sugar</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc.</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</obo:IAO_0000600>
+        <obo:IAO_0000602>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">function</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/064-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/064-001"/>
     </owl:Axiom>
     
 
@@ -3513,7 +3627,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <!-- http://purl.obolibrary.org/obo/GO_0003824 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003824">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <obo:IAO_0000115>Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <oboInOwl:hasDbXref>Wikipedia:Enzyme</oboInOwl:hasDbXref>
@@ -3571,6 +3685,28 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0006909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006909">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>A vesicle-mediated transport process that results in the engulfment of external particulate material by phagocytes and their delivery to the lysosome. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24907</obo:IAO_0000233>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>Wikipedia:Phagocytosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006909</oboInOwl:id>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>phagocytosis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006909"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A vesicle-mediated transport process that results in the engulfment of external particulate material by phagocytes and their delivery to the lysosome. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0006914 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006914">
@@ -3599,6 +3735,44 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <oboInOwl:hasDbXref>PMID:11099404</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:29455577</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9412464</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006919 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006919">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043280"/>
+        <obo:IAO_0000115>Any process that initiates the activity of the inactive enzyme cysteine-type endopeptidase in the context of an apoptotic process.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>caspase activation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of caspase activity</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of metacaspase activity</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006919</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:comment>This term should be used when the annotation refers to a process that occurs in a context of apoptotic cell death. To annotate gene products involved in activation of cysteine-type endopeptidases in other cellular process (e.g., cell cycle arrest) that do not necessarily develop into an apoptotic process, please use the more general parent term GO:0097202. Examples of &apos;activation of cysteine-type endopeptidase activity involved in apoptotic process&apos; are cytochrome c and Apaf1. When cytochrome c is released from mitochondria and forms a complex with Apaf1, they form a scaffolding platform in which the pro-caspase 9 is bound (the &apos;apoptosome&apos;). The caspase is then cleaved and activated. Cytochrome c and Apaf1 are therefore involved in the conversion of the zymogen procaspase 9 to the active form of the caspase.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>activation of cysteine-type endopeptidase activity involved in apoptotic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006919"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that initiates the activity of the inactive enzyme cysteine-type endopeptidase in the context of an apoptotic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:al</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_apoptosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:14744432</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:18328827</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Caspase</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006919"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>caspase activation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3776,6 +3950,57 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0043280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043281"/>
+        <obo:IAO_0000115>Any process that activates or increases the activity of a cysteine-type endopeptidase involved in the apoptotic process.</obo:IAO_0000115>
+        <oboInOwl:hasBroadSynonym>positive regulation of caspase activity</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>up regulation of caspase activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>up-regulation of caspase activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>upregulation of caspase activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>activation of caspase activity</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>stimulation of caspase activity</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0043280</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>positive regulation of cysteine-type endopeptidase activity involved in apoptotic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043280"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the activity of a cysteine-type endopeptidase involved in the apoptotic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_apoptosis</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>Any process that modulates the activity of a cysteine-type endopeptidase involved in apoptosis.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>GO:0043026</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasBroadSynonym>regulation of caspase activity</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym>regulation of caspase activation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0043281</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>regulation of cysteine-type endopeptidase activity involved in apoptotic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043281"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the activity of a cysteine-type endopeptidase involved in apoptosis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_apoptosis</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0051493 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051493">
@@ -3868,6 +4093,40 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0070527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0070527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The adhesion of one platelet to one or more other platelets via adhesion molecules.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>blood platelet aggregation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>thrombocyte aggregation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0070527</oboInOwl:id>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>platelet aggregation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070527"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The adhesion of one platelet to one or more other platelets via adhesion molecules.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:vk</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070527"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>blood platelet aggregation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CL:0000233</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070527"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>thrombocyte aggregation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CL:0000233</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0097553 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0097553">
@@ -3942,39 +4201,6 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>upregulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <owl:annotatedTarget>activation of proteasomal protein catabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:rl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:21669198</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>activation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -4030,6 +4256,39 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>upregulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>upregulation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>activation of proteasomal protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:rl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:21669198</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4105,6 +4364,74 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>inhibition of cell cycle G1/S phase transition</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1903409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of reactive oxygen species, any molecules or ions formed by the incomplete one-electron reduction of oxygen.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2014-09-03T09:19:13Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>reactive oxygen species anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reactive oxygen species biosynthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reactive oxygen species formation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>reactive oxygen species synthesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ROS formation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>ROS generation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>reactive oxygen species generation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:1903409</oboInOwl:id>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>reactive oxygen species biosynthetic process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of reactive oxygen species, any molecules or ions formed by the incomplete one-electron reduction of oxygen.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:PARL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GO_REF:0000068</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:24252804</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species anabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species biosynthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species formation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species synthesis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ROS generation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:24252804</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903409"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>reactive oxygen species generation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:24252804</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5281,6 +5608,28 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Diameter</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000115>A quality that is equal to the potential energy per unit charge associated with a static (time-invariant) electric field, also called the electrostatic potential.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001464</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#scalar_slim"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>electric potential</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001464"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quality that is equal to the potential energy per unit charge associated with a static (time-invariant) electric field, also called the electrostatic potential.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Wikipedia:http://en.wikipedia.org/wiki/Electric_potential</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

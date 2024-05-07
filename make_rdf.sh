@@ -35,19 +35,20 @@ npm ls -g @rmlio/yarrrml-parser || npm install -g @rmlio/yarrrml-parser
 
 echo ______________________________________
 # Step 4: Run CAUSAL_YARRRML to obtain CAUSAL_RML
-echo "Running CAUSAL_YARRRML on the YAML file to generate CAUSAL_RML: $CAUSAL_RML"
+echo "Running yarrrml-parser on the YAML file to generate CAUSAL_RML: $CAUSAL_RML"
 yarrrml-parser --input $CAUSAL_YARRRML > $CAUSAL_RML
-echo "Running CAUSAL_YARRRML on the YAML file to generate CAUSAL_RML: $NANOWIKI_RML"
-yarrrml-parser --input $NANOWIKI_YARRRML > $NANOWIKI_RML
+#echo "Running yarrrml-parser on the YAML file to generate CAUSAL_RML: $NANOWIKI_RML"
+#yarrrml-parser --input $NANOWIKI_YARRRML > $NANOWIKI_RML
 # Step 5: Run CAUSAL_RML Mapper
 echo "Running CAUSAL_RML Mapper to generate RDF ttl"
 java -jar rmlmapper-6.2.2-r371-all.jar -m $CAUSAL_RML -o $CAUSAL_TTL -s turtle
-java -jar rmlmapper-6.2.2-r371-all.jar -m $NANOWIKI_RML -o $NANOWIKI_TTL -s turtle
+#java -jar rmlmapper-6.2.2-r371-all.jar -m $NANOWIKI_RML -o $NANOWIKI_TTL -s turtle
 #echo "Running CAUSAL_RML Mapper to generate RDF nq"
 #java -jar rmlmapper-6.2.2-r371-all.jar -m $CAUSAL_RML -o $CAUSAL_NQ
 
 # Step 6: Get ROBOT & eNM Ontology
-wget -nc https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper-dev.owl
+rm enanomapper-dev.owl || true
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/enanomapper-dev.owl
 wget -nc $ROBOT
 wget -nc $ROBOT_JAR
 
@@ -66,6 +67,7 @@ bash robot \
         --version-iri "https://h2020-sbd4nano.github.io/sbd-data-landscape/classes/alpha.owl" \
         --output data/RDF/classes.owl
 echo Success
+
 
 # Step : cleanup
 #echo "Removing files"
