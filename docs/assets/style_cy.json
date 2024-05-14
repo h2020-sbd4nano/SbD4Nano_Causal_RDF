@@ -40,7 +40,6 @@
       "font-weight" : "normal",
       "width" : 2.0,
       "target-arrow-color" : "rgb(0,0,0)",
-      "source-arrow-shape" : "triangle",
       "line-color" : "rgb(132,132,132)",
       "text-opacity" : 1.0,
       "content" : "",
