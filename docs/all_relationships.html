@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="js/cytoscape.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #cy {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #assertion-box {
+        position: fixed;
+        top: 10px;
+        background-color: white;
+        padding: 10px;
+        border: 0px solid #ccc;
+    }
+    #info-box {
+        position: fixed;
+        bottom: 10px;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 90vw;
+    }
+</style>
+<body>
+    <div id="assertion-box">
+        <h2><span id="cause-label">Click on an edge</span> <span id="interaction"> </span> <span id="outcome-label"></span></h2>
+    </div>
+    <div id="cy"></div>
+    <div id="info-box">
+        <h3>Context</h3>
+        <p><strong><span id="cause-label">Cause</span>: </strong> <span id="cause-definition">NA</span></p>
+        <p><strong><span id="outcome-label">Outcome</span>: </strong> <span id="outcome-definition">NA</span></p>
+        <p><strong>Described for material :</strong> <span id="material-label">NA</span></p>
+        <p><strong>In resource:</strong> <a id="doi-link" href="#" target="_blank">NA</a></p>
+        <p><strong>Quote:</strong> <span id="quote">NA</span></p>
+    </div>
+    <script>
+Promise.all([
+    fetch('assets/causal_network.cyjs').then(res => res.json()),
+    fetch('assets/style_cy.json').then(res => res.json())
+]).then(([{elements}, [{style}]]) => {
+    const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements,
+        style,
+        layout: {
+            name: 'preset',
+            rows: 1
+        }
+    });
+
+    // Add event listener for edge click
+    cy.on('tap', 'edge', function(event){
+        const edgeData = event.target.data();
+        const sourceId = edgeData.source;
+        const targetId = edgeData.target;
+        
+        // Retrieve source and target nodes using Cytoscape.js methods
+        const sourceNode = cy.getElementById(sourceId);
+        const targetNode = cy.getElementById(targetId);
+
+        // Get cause and outcome labels
+        const causeLabel = sourceNode.data('name');
+        const outcomeLabel = targetNode.data('name');
+
+        // Get cause and outcome definitions
+        const causeDefinition = sourceNode.data('causeComment') || 'NA';
+        const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
+
+        // Get material label, DOI, and quote
+        const materialLabel = edgeData.materialLabel || 'NA';
+        const doi = edgeData.doi || 'NA';
+        const quote = edgeData.quote || 'NA';
+        const interaction = edgeData.interaction || 'NA';
+        const materialType = edgeData.materialType || '/'
+        // Display cause and outcome labels, definitions, material label, DOI, and quote in the info-box div
+        $('#cause-label').text(causeLabel);
+        $('#outcome-label').text(outcomeLabel);
+        $('#cause-definition').text(causeDefinition);
+        $('#outcome-definition').text(outcomeDefinition);
+        $('#material-label').text(materialLabel);
+        $('#doi-link').attr('href', doi).text(doi);
+        $('#quote').text(quote);
+        $('#interaction').text(interaction);
+    });
+});
+
+    </script>
+</body>
+</html>

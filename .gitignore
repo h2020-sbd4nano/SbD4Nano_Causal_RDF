@@ -27,3 +27,6 @@ network.tsv
 increased_all.csv
 no_effect.csv
 reduced_all.csv
+cy_viz.cys
+docs/assets/.~lock.causal_network.csv#
+docs/assets/.~lock.network.csv#
