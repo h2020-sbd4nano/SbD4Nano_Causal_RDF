@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="js/cytoscape.min.js"></script>
-    <script src="js/jquery.min.js"></script>
+    <title>SbD4Nano Causal Links dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.0/cytoscape.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <style>
     body, html {
@@ -15,7 +15,7 @@
         height: 100%;
     }
     #cy {
-        width: 100%;
+        width: 70%;
         height: 100%;
         position: absolute;
         top: 0;
@@ -24,32 +24,51 @@
 
     #assertion-box {
         position: fixed;
-        top: 10px;
-        background-color: white;
-        padding: 10px;
-        border: 0px solid #ccc;
-    }
-    #info-box {
-        position: fixed;
         bottom: 10px;
         background-color: white;
         padding: 10px;
+        border: 0px solid #ccc;
+        width:75%
+    }
+    #info-box {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        background-color: white;
+        padding: 10px;
         border: 1px solid #ccc;
-        width: 90vw;
+        width: 25%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .material-label {
+        cursor: pointer;
+        margin-bottom: 10px;
     }
 </style>
 <body>
-    <div id="assertion-box">
-        <h2><span id="cause-label">Click on an edge</span> <span id="interaction"> </span> <span id="outcome-label"></span></h2>
-    </div>
+
     <div id="cy"></div>
     <div id="info-box">
-        <h3>Context</h3>
-        <p><strong><span id="cause-label">Cause</span>: </strong> <span id="cause-definition">NA</span></p>
-        <p><strong><span id="outcome-label">Outcome</span>: </strong> <span id="outcome-definition">NA</span></p>
+        <h2>Nanosafety Causal Links</h2>
+        Proof-of-concept for a dashboard to explore the SbD4Nano Causal Links data. 
+        
+        Click on an edge to visualize a causal link, or filter the directed graph by material.
+
+        You can pan or zoom freely.
+        <h3>Context supporting the causal link</h3>
+        <p><strong><span id="cause-label-">Cause</span>: </strong><span id="cause-definition">NA</span></p>
+        <p><strong><span id="outcome-label-">Outcome</span>: </strong><span id="outcome-definition">NA</span></p>
         <p><strong>Described for material :</strong> <span id="material-label">NA</span> | <a id="material-iri" href="#" target="_blank"></a> </p>
         <p><strong>In resource:</strong> <a id="doi-link" href="#" target="_blank">NA</a></p>
         <p><strong>Quote:</strong> <span id="quote">NA</span></p>
+        <h3>Material Labels</h3>
+        <p>Select a material to filter the network</p>
+        <div id="material-labels">
+        <button id="show-all-button">Show all materials</button></div>
+    </div>
+    <div id="assertion-box">
+        <h2><span id="cause-label"></span> <span id="interaction"> </span> <span id="outcome-label"></span></h2>
     </div>
     <script>
 Promise.all([
@@ -89,10 +108,13 @@ Promise.all([
         const doi = edgeData.doi || 'NA';
         const quote = edgeData.quote || 'NA';
         const interaction = edgeData.interaction || 'NA';
-        const materialType = edgeData.materialType || '/'
+        const materialType = edgeData.materialType || '/';
+
         // Display cause and outcome labels, definitions, material label, DOI, and quote in the info-box div
         $('#cause-label').text(causeLabel);
+        $('#cause-label-').text(causeLabel);
         $('#outcome-label').text(outcomeLabel);
+        $('#outcome-label-').text(outcomeLabel);
         $('#cause-definition').text(causeDefinition);
         $('#outcome-definition').text(outcomeDefinition);
         $('#material-label').text(materialLabel);
@@ -101,8 +123,40 @@ Promise.all([
         $('#interaction').text(interaction);
         $('#material-iri').attr('href', materialType).text(materialType);
     });
-});
 
+    // Generate material labels
+    const materialLabels = new Set();
+    elements.edges.forEach(edge => {
+        if (edge.data.materialLabel) {
+            materialLabels.add(edge.data.materialLabel);
+        }
+    });
+
+    // Populate material labels in the info-box
+    const materialLabelsContainer = $('#material-labels');
+    materialLabels.forEach(label => {
+        const materialLabelElement = $('<div class="material-label"></div>').text(label);
+        materialLabelElement.click(function() {
+            const filteredEdges = elements.edges.filter(edge => edge.data.materialLabel === label);
+            const filteredNodes = new Set();
+            filteredEdges.forEach(edge => {
+                filteredNodes.add(edge.data.source); // Populate sources (causes)
+                filteredNodes.add(edge.data.target); // Populate targets (outcomes)
+            });
+            const filteredElements = {
+                nodes: elements.nodes.filter(node => filteredNodes.has(node.data.id)),
+                edges: filteredEdges
+            };
+            cy.json({ elements: filteredElements });
+        });
+        materialLabelsContainer.append(materialLabelElement);
+    });
+
+    // Show all button functionality
+    $('#show-all-button').click(function() {
+        cy.json({ elements });
+    });
+});
     </script>
 </body>
 </html>
