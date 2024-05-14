@@ -8,7 +8,7 @@ This repository contains links to supporting data for the SbD4Nano network linki
 - [Shape Expressions (ShEx)](/shapes)
 - [Unique IRIs used in the data model](https://github.com/h2020-sbd4nano/SbD4Nano_Causal_RDF/blob/master/data/iris.tsv)
 - [Queries repository](https://github.com/h2020-sbd4nano/SbD4nano-causal-SPARQL/) used by the SNORQL interface to retrieve queries
-
+- [Visualization dashboard](https://h2020-sbd4nano.github.io/SbD4Nano_Causal_RDF/)
 ## Authors
 
 - Javier Millan Acosta [0000-0002-4166-7093](https://orcid.org/0000-0002-4166-7093)
