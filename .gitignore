@@ -21,9 +21,7 @@ enanomapper-dev.owl
 data/RDF/catalog-v001.xml
 data/RDF/sbd4nanocl.owl
 analyses.ipynb
-network.csv
 *png
-network.tsv
 increased_all.csv
 no_effect.csv
 reduced_all.csv

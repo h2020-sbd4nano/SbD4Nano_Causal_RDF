@@ -5,692 +5,692 @@
   "data" : {
     "shared_name" : "snorql-csv-1715690553.462 - snorql-csv-1715690553.462.csv.tsv",
     "name" : "snorql-csv-1715690553.462 - snorql-csv-1715690553.462.csv.tsv",
-    "SUID" : 95289,
+    "SUID" : 2832,
     "__Annotations" : [ ],
     "selected" : true
   },
   "elements" : {
     "nodes" : [ {
       "data" : {
-        "id" : "95595",
+        "id" : "3293",
         "shared_name" : "Fc-gamma receptor signaling pathway involved in phagocytosis",
         "causeComment" : "An Fc-gamma receptor signaling pathway that contributes to the endocytic engulfment of external particulate material by phagocytes.",
         "name" : "Fc-gamma receptor signaling pathway involved in phagocytosis",
-        "SUID" : 95595,
+        "SUID" : 3293,
         "selected" : false
       },
       "position" : {
-        "x" : 1173.5306134259245,
-        "y" : -336.45833333333326
+        "x" : 168.61141035745095,
+        "y" : 141.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95591",
+        "id" : "3287",
         "shared_name" : "Oxygen vacancies",
         "causeComment" : "Point defects in the bulk or surface of a material",
         "name" : "Oxygen vacancies",
-        "SUID" : 95591,
+        "SUID" : 3287,
         "selected" : false
       },
       "position" : {
-        "x" : 1068.5306134259245,
-        "y" : -336.45833333333326
+        "x" : 0.20721324923215434,
+        "y" : 116.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95585",
+        "id" : "3278",
         "shared_name" : "Embedding into nano-enabled paint formulation",
         "name" : "Embedding into nano-enabled paint formulation",
         "outcomeComment" : "Embedding of a nanomaterial into nano-enabled paint formulation",
-        "SUID" : 95585,
+        "SUID" : 3278,
         "selected" : false
       },
       "position" : {
-        "x" : 1259.7806134259245,
-        "y" : 363.54166666666674
+        "x" : 303.33476804393285,
+        "y" : 16.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95581",
+        "id" : "3271",
         "shared_name" : "thromboembolism AE",
         "name" : "thromboembolism AE",
         "outcomeComment" : "a vascular disorder AE that form in a blood vessel a clot (thrombus) that breaks loose and is carried by the blood stream to plug another vessel.",
-        "SUID" : 95581,
+        "SUID" : 3271,
         "selected" : false
       },
       "position" : {
-        "x" : 1541.0306134259245,
-        "y" : -336.45833333333326
+        "x" : -454.4841189429717,
+        "y" : 516.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95579",
+        "id" : "3269",
         "shared_name" : "Amino-functionalization of a nanoparticle",
         "causeComment" : "Functionalization of a nanoparticle through covalent bonds with amino groups",
         "name" : "Amino-functionalization of a nanoparticle",
-        "SUID" : 95579,
+        "SUID" : 3269,
         "selected" : false
       },
       "position" : {
-        "x" : 1541.0306134259245,
-        "y" : -491.45833333333326
+        "x" : -454.4841189429717,
+        "y" : 616.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95575",
+        "id" : "3263",
         "shared_name" : "Steric hindrance",
         "name" : "Steric hindrance",
         "outcomeComment" : "Increased energy price of a reaction due to steric effects (the atomic spacial arrangement in a molecule or ion)",
-        "SUID" : 95575,
+        "SUID" : 3263,
         "selected" : false
       },
       "position" : {
-        "x" : -1747.8539103835992,
-        "y" : -336.45833333333326
+        "x" : 640.143162260385,
+        "y" : -258.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95569",
+        "id" : "3254",
         "shared_name" : "Crystalline state stability",
         "name" : "Crystalline state stability",
         "outcomeComment" : "The quality of being free from change into another crystalline structural phase",
-        "SUID" : 95569,
+        "SUID" : 3254,
         "selected" : false
       },
       "position" : {
-        "x" : -1537.8539103835992,
-        "y" : -336.45833333333326
+        "x" : 640.143162260385,
+        "y" : 41.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95565",
+        "id" : "3248",
         "shared_name" : "negative regulation of cell cycle G1/S phase transition",
         "name" : "negative regulation of cell cycle G1/S phase transition",
         "outcomeComment" : "Any signaling pathway that decreases or inhibits the activity of a cell cycle cyclin-dependent protein kinase to modulate the switch from G1 phase to S phase of the cell cycle.",
-        "SUID" : 95565,
+        "SUID" : 3248,
         "selected" : false
       },
       "position" : {
-        "x" : -1957.8539103835992,
-        "y" : -336.45833333333326
+        "x" : 640.143162260385,
+        "y" : -58.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95551",
+        "id" : "3227",
         "shared_name" : "Electrostatic stability",
         "name" : "Electrostatic stability",
         "outcomeComment" : "The quality of being free from changes due to the counterbalance between attractive Van der Waals and repulsive Coulomb forces",
-        "SUID" : 95551,
+        "SUID" : 3227,
         "selected" : false
       },
       "position" : {
-        "x" : -1852.8539103835992,
-        "y" : -336.45833333333326
+        "x" : 640.143162260385,
+        "y" : 141.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95541",
+        "id" : "3211",
         "shared_name" : "regulation of cytoskeleton organization",
         "name" : "regulation of cytoskeleton organization",
         "outcomeComment" : "Any process that modulates the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.",
-        "SUID" : 95541,
+        "SUID" : 3211,
         "selected" : false
       },
       "position" : {
-        "x" : -1642.8539103835992,
-        "y" : -336.45833333333326
+        "x" : 640.143162260385,
+        "y" : -158.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95539",
+        "id" : "3209",
         "shared_name" : "Nanoparticle material part consisting of a silica coat",
         "causeComment" : "Silica coating.",
         "name" : "Nanoparticle material part consisting of a silica coat",
-        "SUID" : 95539,
+        "SUID" : 3209,
         "selected" : false
       },
       "position" : {
-        "x" : -1477.318196097885,
-        "y" : -491.45833333333326
+        "x" : 539.1006439954799,
+        "y" : -58.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95535",
+        "id" : "3203",
         "shared_name" : "Ion spilling",
         "causeComment" : "Process by which ions are released from a nanomaterial",
         "name" : "Ion spilling",
-        "SUID" : 95535,
+        "SUID" : 3203,
         "selected" : false
       },
       "position" : {
-        "x" : 803.6865658068768,
-        "y" : -491.45833333333326
+        "x" : -185.03740356986236,
+        "y" : 16.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95531",
+        "id" : "3197",
         "shared_name" : "Ion leakage",
         "causeComment" : "Process by which ions are released from a nanomaterial",
         "name" : "Ion leakage",
-        "SUID" : 95531,
+        "SUID" : 3197,
         "selected" : false
       },
       "position" : {
-        "x" : 698.6865658068768,
-        "y" : -491.45833333333326
+        "x" : -83.99488530494273,
+        "y" : 16.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95527",
+        "id" : "3191",
         "shared_name" : "Hydroxy-functionalization of a nanoparticle",
         "name" : "Hydroxy-functionalization of a nanoparticle",
         "outcomeComment" : "Functionalization of a nanoparticle through hydroxyl groups, comprised of one oxygen atom covalently bonded to one hydrogen atom",
-        "SUID" : 95527,
+        "SUID" : 3191,
         "selected" : false
       },
       "position" : {
-        "x" : 1331.0306134259245,
-        "y" : -336.45833333333326
+        "x" : -538.6862174970447,
+        "y" : 716.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95523",
+        "id" : "3184",
         "shared_name" : "Epoxy-functionalization of a nanoparticle",
         "name" : "Epoxy-functionalization of a nanoparticle",
         "outcomeComment" : "Functionalization of a nanoparticle through epoxy groups, comprised of two carbons and an oxygen in a ring formation",
-        "SUID" : 95523,
+        "SUID" : 3184,
         "selected" : false
       },
       "position" : {
-        "x" : 1436.0306134259245,
-        "y" : -336.45833333333326
+        "x" : -538.6862174970447,
+        "y" : 516.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95521",
+        "id" : "3182",
         "shared_name" : "ultraviolet radiation",
         "causeComment" : "The invisible ultraviolet spectrum makes up one specific portion of sunlight. This unique portion accounts for three percent of all solar radiation reaching the earth. UV radiation causes many health problems",
         "name" : "ultraviolet radiation",
-        "SUID" : 95521,
+        "SUID" : 3182,
         "selected" : false
       },
       "position" : {
-        "x" : 1383.5306134259245,
-        "y" : -491.45833333333326
+        "x" : -538.6862174970447,
+        "y" : 616.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95513",
+        "id" : "3170",
         "shared_name" : "bleb assembly",
         "name" : "bleb assembly",
         "outcomeComment" : "The assembly of a bleb, a cell extension caused by localized decoupling of the cytoskeleton from the plasma membrane and characterized by rapid formation, rounded shape, and scarcity of organelles within the protrusion. Plasma membrane blebbing occurs during apoptosis and other cellular processes, including cell locomotion, cell division, and as a result of physical or chemical stresses.",
-        "SUID" : 95513,
+        "SUID" : 3170,
         "selected" : false
       },
       "position" : {
-        "x" : -224.28248181217054,
-        "y" : 238.54166666666674
+        "x" : -437.6436992321396,
+        "y" : -58.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95507",
+        "id" : "3161",
         "shared_name" : "duration",
         "causeComment" : "A temporal measurement of the time between two specified points.",
         "name" : "duration",
-        "SUID" : 95507,
+        "SUID" : 3161,
         "selected" : false
       },
       "position" : {
-        "x" : -52.17732308201198,
-        "y" : -336.45833333333326
+        "x" : -336.60118096717633,
+        "y" : -58.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95501",
+        "id" : "3152",
         "shared_name" : "activation of cysteine-type endopeptidase activity involved in apoptotic process",
         "name" : "activation of cysteine-type endopeptidase activity involved in apoptotic process",
         "outcomeComment" : "Any process that initiates the activity of the inactive enzyme cysteine-type endopeptidase in the context of an apoptotic process.",
-        "SUID" : 95501,
+        "SUID" : 3152,
         "selected" : false
       },
       "position" : {
-        "x" : 300.7175181878292,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : -333.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95497",
+        "id" : "3146",
         "shared_name" : "lactate dehydrogenase activity",
         "name" : "lactate dehydrogenase activity",
         "outcomeComment" : "Catalysis of the reaction: lactate + NAD+ = H+ + NADH + pyruvate.",
-        "SUID" : 95497,
+        "SUID" : 3146,
         "selected" : false
       },
       "position" : {
-        "x" : 510.7175181878292,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : -233.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95489",
+        "id" : "3134",
         "shared_name" : "LC50",
         "name" : "LC50",
         "outcomeComment" : "It is 50% lethal concentration (the concentration that kills 50% of treated cells).",
-        "SUID" : 95489,
+        "SUID" : 3134,
         "selected" : false
       },
       "position" : {
-        "x" : 90.71751818782923,
-        "y" : 238.54166666666674
+        "x" : -33.47362617244653,
+        "y" : -583.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95485",
+        "id" : "3128",
         "shared_name" : "EC50",
         "name" : "EC50",
         "outcomeComment" : "The effective concentration of an agonist, which produces 50% of the maximum possible response for that agonist.",
-        "SUID" : 95485,
+        "SUID" : 3128,
         "selected" : false
       },
       "position" : {
-        "x" : 195.71751818782923,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : -533.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95481",
+        "id" : "3122",
         "shared_name" : "positive regulation of proteasomal protein catabolic process",
         "name" : "positive regulation of proteasomal protein catabolic process",
         "outcomeComment" : "Any process that activates or increases the frequency, rate or extent of proteasomal protein catabolic process.",
-        "SUID" : 95481,
+        "SUID" : 3122,
         "selected" : false
       },
       "position" : {
-        "x" : 720.7175181878292,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : -433.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95469",
+        "id" : "3104",
         "shared_name" : "TNF-related activation-induced cytokine measurement",
         "name" : "TNF-related activation-induced cytokine measurement",
         "outcomeComment" : "Quantification of the amount of TNF-related activation-induced cytokine in a sample",
-        "SUID" : 95469,
+        "SUID" : 3104,
         "selected" : false
       },
       "position" : {
-        "x" : 405.7175181878292,
-        "y" : 238.54166666666674
+        "x" : -134.5161444373516,
+        "y" : -583.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95465",
+        "id" : "3098",
         "shared_name" : "interleukin-6 measurement",
         "name" : "interleukin-6 measurement",
         "outcomeComment" : "Is a quantification of interleukin-6, a  pro-inflammatory and anti-inflammatory cytokine.",
-        "SUID" : 95465,
+        "SUID" : 3098,
         "selected" : false
       },
       "position" : {
-        "x" : 615.7175181878292,
-        "y" : 238.54166666666674
+        "x" : -235.55866270227125,
+        "y" : -583.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95457",
+        "id" : "3085",
         "shared_name" : "autophagy",
         "name" : "autophagy",
         "outcomeComment" : "The cellular catabolic process in which cells digest cellular materials, such as organelles and other macromolecular constituents, or non-self materials such as intracellular pathogens. Autophagy serves to provide essential nutrients under conditions of cellular stress; or can remodel intracellular structures during cell differentiation.",
-        "SUID" : 95457,
+        "SUID" : 3085,
         "selected" : false
       },
       "position" : {
-        "x" : -1484.2824818121708,
-        "y" : 238.54166666666674
+        "x" : 539.1006439954799,
+        "y" : -433.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95455",
+        "id" : "3083",
         "shared_name" : "exposure",
         "causeComment" : "The act of subjecting someone or something to an influencing experience. E.g. exposure to cigarette smoke",
         "name" : "exposure",
-        "SUID" : 95455,
+        "SUID" : 3083,
         "selected" : false
       },
       "position" : {
-        "x" : 186.8941054894167,
-        "y" : -336.45833333333326
+        "x" : -235.55866270227125,
+        "y" : -433.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95435",
+        "id" : "3053",
         "shared_name" : "mortality",
         "name" : "mortality",
         "outcomeComment" : "Quantification of the number of deaths in a population.",
-        "SUID" : 95435,
+        "SUID" : 3053,
         "selected" : false
       },
       "position" : {
-        "x" : -119.28248181217054,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : -158.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95427",
+        "id" : "3041",
         "shared_name" : "mitochondrial toxicity AE",
         "name" : "mitochondrial toxicity AE",
         "outcomeComment" : "This is an AE which is a condition in which the mitochondria of a body's cells become damaged or decline significantly in number.",
-        "SUID" : 95427,
+        "SUID" : 3041,
         "selected" : false
       },
       "position" : {
-        "x" : -1064.2824818121708,
-        "y" : 238.54166666666674
+        "x" : -151.35656414819823,
+        "y" : 291.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95423",
+        "id" : "3035",
         "shared_name" : "granuloma AE",
         "name" : "granuloma AE",
         "outcomeComment" : "an inflammation AE that shows localized nodular inflammation found in tissues.",
-        "SUID" : 95423,
+        "SUID" : 3035,
         "selected" : false
       },
       "position" : {
-        "x" : -854.2824818121705,
-        "y" : 238.54166666666674
+        "x" : -437.6436992321396,
+        "y" : 466.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95417",
+        "id" : "3026",
         "shared_name" : "necrosis AE",
         "name" : "necrosis AE",
         "outcomeComment" : "a cell death AE that has an outcome of necrosis",
-        "SUID" : 95417,
+        "SUID" : 3026,
         "selected" : false
       },
       "position" : {
-        "x" : -1169.2824818121708,
-        "y" : 238.54166666666674
+        "x" : 539.1006439954799,
+        "y" : 241.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95405",
+        "id" : "3008",
         "shared_name" : "mobility decreased AE",
         "name" : "mobility decreased AE",
         "outcomeComment" : "mobility decreased AE is a nervous system AE that results in difficulty in movement leading to less ability to move part(s) of body",
-        "SUID" : 95405,
+        "SUID" : 3008,
         "selected" : false
       },
       "position" : {
-        "x" : -434.28248181217054,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : 41.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95401",
+        "id" : "3002",
         "shared_name" : "cellular adhesion molecule measurement",
         "name" : "cellular adhesion molecule measurement",
         "outcomeComment" : "quantification of the amount cellular adhesion molecule in a sample",
-        "SUID" : 95401,
+        "SUID" : 3002,
         "selected" : false
       },
       "position" : {
-        "x" : -749.2824818121705,
-        "y" : 238.54166666666674
+        "x" : -336.60118096717633,
+        "y" : 466.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95397",
+        "id" : "2996",
         "shared_name" : "matrix metalloproteinase measurement",
         "name" : "matrix metalloproteinase measurement",
         "outcomeComment" : "Is a quantification of matrix metalloproteinases, Collectively, they are capable of degrading all kinds of extracellular matrix proteins, but also can process a number of bioactive molecules. They are known to be involved in the cleavage of cell surface receptors, the release of apoptotic ligands (such as the FAS ligand), and chemokine/cytokine in/activation.[3] MMPs are also thought to play a major role on cell behaviors such as cell proliferation, migration (adhesion/dispersion), differentiation, angiogenesis, apoptosis, and host defense.",
-        "SUID" : 95397,
+        "SUID" : 2996,
         "selected" : false
       },
       "position" : {
-        "x" : -644.2824818121705,
-        "y" : 238.54166666666674
+        "x" : -235.55866270227125,
+        "y" : 466.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95393",
+        "id" : "2990",
         "shared_name" : "regulation of glutathione biosynthetic process",
         "name" : "regulation of glutathione biosynthetic process",
         "outcomeComment" : "Any process that modulates the frequency, rate or extent of glutathione biosynthetic process.",
-        "SUID" : 95393,
+        "SUID" : 2990,
         "selected" : false
       },
       "position" : {
-        "x" : -959.2824818121705,
-        "y" : 238.54166666666674
+        "x" : -83.99488530494273,
+        "y" : 366.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95385",
+        "id" : "2977",
         "shared_name" : "apoptosis AE",
         "name" : "apoptosis AE",
         "outcomeComment" : "a cell death AE that has an outcome of apoptosis, a form of programmed cell death that occurs in multicellular organisms.",
-        "SUID" : 95385,
+        "SUID" : 2977,
         "selected" : false
       },
       "position" : {
-        "x" : -539.2824818121705,
-        "y" : 238.54166666666674
+        "x" : -538.6862174970447,
+        "y" : 366.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95383",
+        "id" : "2975",
         "shared_name" : "dose",
         "causeComment" : "The total quantity or strength of a substance administered at one time.",
         "name" : "dose",
-        "SUID" : 95383,
+        "SUID" : 2975,
         "selected" : false
       },
       "position" : {
-        "x" : -542.5277199074087,
-        "y" : -336.45833333333326
+        "x" : -235.55866270227125,
+        "y" : 366.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95379",
+        "id" : "2969",
         "shared_name" : "temperature",
         "causeComment" : "A physical quality of the thermal energy of a system.",
         "name" : "temperature",
-        "SUID" : 95379,
+        "SUID" : 2969,
         "selected" : false
       },
       "position" : {
-        "x" : -1379.2824818121708,
-        "y" : 238.54166666666674
+        "x" : 320.1751877548231,
+        "y" : -208.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95375",
+        "id" : "2963",
         "shared_name" : "negative regulation of cytoskeleton organization",
         "causeComment" : "Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.",
         "name" : "negative regulation of cytoskeleton organization",
         "outcomeComment" : "Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.",
-        "SUID" : 95375,
+        "SUID" : 2963,
         "selected" : false
       },
       "position" : {
-        "x" : 839.7806134259245,
-        "y" : 238.54166666666674
+        "x" : 269.6539286223124,
+        "y" : -133.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95363",
+        "id" : "2945",
         "shared_name" : "L lactate dehydrogenase measurement",
         "name" : "L lactate dehydrogenase measurement",
         "outcomeComment" : "Is a quantification of L lactate dehydrodgenase, typically measured in serum, used as a marker of tissue breakdown as LDH is abundant in red blood cells and can function as a marker for hemolysis",
-        "SUID" : 95363,
+        "SUID" : 2945,
         "selected" : false
       },
       "position" : {
-        "x" : -329.28248181217054,
-        "y" : 238.54166666666674
+        "x" : 252.81350891156762,
+        "y" : 191.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95359",
+        "id" : "2939",
         "shared_name" : "energy band gap",
         "name" : "energy band gap",
         "outcomeComment" : "A descriptor that describes the energy range in a solid where no electron states can exist. In graphs of the electron band structure of solids, the band gap generally refers to the energy difference (in electron volts) between the top of the valence band and the bottom of the conduction band in insulators and semiconductors. [http://en.wikipedia.org/wiki/Band_gap]",
-        "SUID" : 95359,
+        "SUID" : 2939,
         "selected" : false
       },
       "position" : {
-        "x" : 1049.7806134259245,
-        "y" : 238.54166666666674
+        "x" : 0.20721324923215434,
+        "y" : 16.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95349",
+        "id" : "2924",
         "shared_name" : "Photocatalytic activity",
         "causeComment" : "Catalysis of a photoreaction upon irradiation of the photocatalist bearer of this disposition",
         "name" : "Photocatalytic activity",
         "outcomeComment" : "Catalysis of a photoreaction upon irradiation of the photocatalist bearer of this disposition",
-        "SUID" : 95349,
+        "SUID" : 2924,
         "selected" : false
       },
       "position" : {
-        "x" : 1259.7806134259245,
-        "y" : 238.54166666666674
+        "x" : 404.3772863089689,
+        "y" : 16.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95345",
+        "id" : "2918",
         "shared_name" : "interleukin-8 measurement",
         "name" : "interleukin-8 measurement",
         "outcomeComment" : "Is a quantification of interleukin-8, is a chemokine produced by macrophages and other cell types such as epithelial cells. It is also synthesized by endothelial cells, which store IL-8 in their storage vesicles, the Weibel-Palade bodies. IL-8 is secreted and is an important mediator of the immune reaction in the innate immune system response.",
-        "SUID" : 95345,
+        "SUID" : 2918,
         "selected" : false
       },
       "position" : {
-        "x" : 944.7806134259245,
-        "y" : 238.54166666666674
+        "x" : 84.40931180330517,
+        "y" : 16.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95341",
+        "id" : "2912",
         "shared_name" : "phagocytosis",
         "name" : "phagocytosis",
         "outcomeComment" : "A vesicle-mediated transport process that results in the engulfment of external particulate material by phagocytes and their delivery to the lysosome. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles.",
-        "SUID" : 95341,
+        "SUID" : 2912,
         "selected" : false
       },
       "position" : {
-        "x" : 1154.7806134259245,
-        "y" : 238.54166666666674
+        "x" : 168.61141035745095,
+        "y" : 41.1138986031292
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95335",
+        "id" : "2903",
         "shared_name" : "reactive oxygen species biosynthetic process",
         "name" : "reactive oxygen species biosynthetic process",
         "outcomeComment" : "The chemical reactions and pathways resulting in the formation of reactive oxygen species, any molecules or ions formed by the incomplete one-electron reduction of oxygen.",
-        "SUID" : 95335,
+        "SUID" : 2903,
         "selected" : false
       },
       "position" : {
-        "x" : -14.282481812170545,
-        "y" : 238.54166666666674
+        "x" : -235.55866270227125,
+        "y" : -58.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95331",
+        "id" : "2897",
         "shared_name" : "size",
         "causeComment" : "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude.",
         "name" : "size",
         "outcomeComment" : "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude.",
-        "SUID" : 95331,
+        "SUID" : 2897,
         "selected" : false
       },
       "position" : {
-        "x" : 775.5615658068768,
-        "y" : -336.45833333333326
+        "x" : 168.61141035745095,
+        "y" : -58.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95319",
+        "id" : "2862",
         "shared_name" : "import across plasma membrane",
         "name" : "import across plasma membrane",
         "outcomeComment" : "The directed movement of some substance from outside of a cell, across the plasma membrane and into the cytosol.",
-        "SUID" : 95319,
+        "SUID" : 2862,
         "selected" : false
       },
       "position" : {
-        "x" : 762.2806134259245,
-        "y" : 363.54166666666674
+        "x" : 168.61141035745095,
+        "y" : -208.8861013968708
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95317",
+        "id" : "2860",
         "shared_name" : "relative negative charge",
         "causeComment" : "most negative charge / total negative charge",
         "name" : "relative negative charge",
-        "SUID" : 95317,
+        "SUID" : 2860,
         "selected" : false
       },
       "position" : {
-        "x" : -1274.2824818121708,
-        "y" : 238.54166666666674
+        "x" : 168.61141035745095,
+        "y" : -308.8861013968708
       },
       "selected" : false
     } ],
     "edges" : [ {
       "data" : {
-        "id" : "95597",
-        "source" : "95595",
-        "target" : "95341",
+        "id" : "3296",
+        "source" : "3293",
+        "target" : "2912",
         "shared_name" : "Fc-gamma receptor signaling pathway involved in phagocytosis (positively_correlates) phagocytosis",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "In contrast, a significant uptake reduction was found after blocking the Fcγ receptor with IgG antibody, revealing a key role of the FcγR-mediated phagocytic pathway in GO entry.",
@@ -698,16 +698,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "Fc-gamma receptor signaling pathway involved in phagocytosis (positively_correlates) phagocytosis",
         "interaction" : "positively_correlates",
-        "SUID" : 95597,
+        "SUID" : 3296,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95593",
-        "source" : "95591",
-        "target" : "95359",
+        "id" : "3290",
+        "source" : "3287",
+        "target" : "2939",
         "shared_name" : "Oxygen vacancies (positively_correlates) energy band gap",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "Moreover, interface states caused by oxygen vacancies also effectively lower the band gap",
@@ -715,16 +715,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "Oxygen vacancies (positively_correlates) energy band gap",
         "interaction" : "positively_correlates",
-        "SUID" : 95593,
+        "SUID" : 3290,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.ceramint.2021.12.096"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95583",
-        "source" : "95579",
-        "target" : "95581",
+        "id" : "3275",
+        "source" : "3269",
+        "target" : "3271",
         "shared_name" : "Amino-functionalization of a nanoparticle (negatively_correlates) thromboembolism AE",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "The intravenous administration of GO or amine-derived GO (GO-NH2) into a mouse (250 μg.kg body weight) led to extensive pulmonary thromboembolism, which is consistent with the highly potent thrombogenic nature of GO, as previously shown in vitro; however, amine-GO (GO-NH2) was found to be less toxic compared with its unfunctionalized counterpart.",
@@ -732,16 +732,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "Amino-functionalization of a nanoparticle (negatively_correlates) thromboembolism AE",
         "interaction" : "negatively_correlates",
-        "SUID" : 95583,
+        "SUID" : 3275,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95577",
-        "source" : "95539",
-        "target" : "95575",
+        "id" : "3266",
+        "source" : "3209",
+        "target" : "3263",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) Steric hindrance",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The increase of hydrodynamic diameter as a function of the TiO2:SiO2 ratio is caused by both the steric hindrance of SiO2 heterocoagulated on the TiO2 surface and the consequent electrostatic destabilization due to the progressive neutralization of the TiO2 surface charge with the increase of SiO2 content [29,30].",
@@ -749,16 +749,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) Steric hindrance",
         "interaction" : "positively_correlates",
-        "SUID" : 95577,
+        "SUID" : 3266,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95573",
-        "source" : "95539",
-        "target" : "95349",
+        "id" : "3260",
+        "source" : "3209",
+        "target" : "2924",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) Photocatalytic activity",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The presence of SiO2 in TiO2/SiO2 Nc (15%) not only inhibits the anatase to rutile phase transformation but also enhances the photocatalytic performance of TiO2 NPs",
@@ -766,16 +766,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) Photocatalytic activity",
         "interaction" : "positively_correlates",
-        "SUID" : 95573,
+        "SUID" : 3260,
         "selected" : false,
         "doi" : "https://doi.org/10.3389/fchem.2021.738969"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95571",
-        "source" : "95539",
-        "target" : "95569",
+        "id" : "3257",
+        "source" : "3209",
+        "target" : "3254",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) Crystalline state stability",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "the inclusion of magnesium silicate in the structure of the catalyst stabilises the anatase phase TiO2",
@@ -783,16 +783,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) Crystalline state stability",
         "interaction" : "positively_correlates",
-        "SUID" : 95571,
+        "SUID" : 3257,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/S0920-5861(02)00225-0"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95567",
-        "source" : "95539",
-        "target" : "95565",
+        "id" : "3251",
+        "source" : "3209",
+        "target" : "3248",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) negative regulation of cell cycle G1/S phase transition",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "We observed that TiO2:SiO2 3:1 was able to induce a slight but significant arrest of the cell cycle in the S-phase",
@@ -800,16 +800,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) negative regulation of cell cycle G1/S phase transition",
         "interaction" : "positively_correlates",
-        "SUID" : 95567,
+        "SUID" : 3251,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95563",
-        "source" : "95539",
-        "target" : "95457",
+        "id" : "3245",
+        "source" : "3209",
+        "target" : "3085",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) autophagy",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The analysis of the LC3BII protein allows us to understand the potential of NPs to induce cell autophagy. Data showed that TiO2:SiO2 1:1 and 3:1 NPs at the dose of 75 µg/mL induced a significant increase of LC3BII expression, while 1:3 NPs values are similar to the control on",
@@ -817,16 +817,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) autophagy",
         "interaction" : "positively_correlates",
-        "SUID" : 95563,
+        "SUID" : 3245,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95561",
-        "source" : "95539",
-        "target" : "95457",
+        "id" : "3242",
+        "source" : "3209",
+        "target" : "3085",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) autophagy",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "Microtubule-associated protein light-chain protein-3 (LC3) is a key protein in autophagosome formation, and it is converted from its cytosolic form (LC3 I) into an active membrane-bound form (LC3 II) by sequential proteolysis and lipidation during autophagosome assembly [54]. Our data on LC3B II expression confirm that autophagy occurs with TiO2:SiO2 1:1, 3:1, and TiO2 NPs, confirming that autophagy is one of the main pathways involved in the response to metal oxide NPs.",
@@ -834,16 +834,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) autophagy",
         "interaction" : "positively_correlates",
-        "SUID" : 95561,
+        "SUID" : 3242,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95559",
-        "source" : "95539",
-        "target" : "95457",
+        "id" : "3239",
+        "source" : "3209",
+        "target" : "3085",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) autophagy",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The analysis of the LC3BII protein allows us to understand the potential of NPs to induce cell autophagy. Data showed that TiO2:SiO2 1:1 and 3:1 NPs at the dose of 75 µg/mL induced a significant increase of LC3BII expression, while 1:3 NPs values are similar to the control one (Figure 7).",
@@ -851,16 +851,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) autophagy",
         "interaction" : "positively_correlates",
-        "SUID" : 95559,
+        "SUID" : 3239,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95557",
-        "source" : "95539",
-        "target" : "95417",
+        "id" : "3236",
+        "source" : "3209",
+        "target" : "3026",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) necrosis AE",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "Data were also confirmed by the Annexin V/PI test, which evidenced that the exposure to TiO2:SiO2 3:1, as well as TiO2 NPs alone, increased the percentage of early necrotic cells (Annexin V+/PI+). Thanks to the Annexin V test, a slight increase of apoptotic (Annexin V+) cells, after exposure to TiO2:SiO2 1:1, 3:1, and TiO2 NPs alone, was appreciated (Supplementary Materials S3b,c).",
@@ -868,16 +868,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) necrosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95557,
+        "SUID" : 3236,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95555",
-        "source" : "95539",
-        "target" : "95417",
+        "id" : "3233",
+        "source" : "3209",
+        "target" : "3026",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) necrosis AE",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "A significant impact on cell viability was observed only with TiO2:SiO2 3:1 at the higher concentrations and necrosis, and slight apoptosis, seems to be the main pathways of cell death. A549 necrosis induced by exposure to 75 µg TiO2/mL TiO2:SiO2 3:1 is mediated by increasing reactive oxygen species, according to mechanisms widely described in literature concerning NPs cytotoxicity [48,49].",
@@ -885,16 +885,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (positively_correlates) necrosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95555,
+        "SUID" : 3233,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95553",
-        "source" : "95539",
-        "target" : "95551",
+        "id" : "3230",
+        "source" : "3209",
+        "target" : "3227",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) Electrostatic stability",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The increase of hydrodynamic diameter as a function of the TiO2:SiO2 ratio is caused by both the steric hindrance of SiO2 heterocoagulated on the TiO2 surface and the consequent electrostatic destabilization due to the progressive neutralization of the TiO2 surface charge with the increase of SiO2 content [29,30].",
@@ -902,16 +902,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) Electrostatic stability",
         "interaction" : "negatively_correlates",
-        "SUID" : 95553,
+        "SUID" : 3230,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95549",
-        "source" : "95539",
-        "target" : "95457",
+        "id" : "3224",
+        "source" : "3209",
+        "target" : "3085",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) autophagy",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "On the other hand, the formation of more oxygen vacancies during the heat treatment in N2 leads to a decreased phase transformation energy of TiO2 in the CTS-850",
@@ -919,16 +919,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) autophagy",
         "interaction" : "negatively_correlates",
-        "SUID" : 95549,
+        "SUID" : 3224,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.ceramint.2021.12.096"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95547",
-        "source" : "95539",
-        "target" : "95331",
+        "id" : "3221",
+        "source" : "3209",
+        "target" : "2897",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) size",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "Besides, the adding of SiO2 into TiO2 could retard the growth of nanoparticles and reduce the anatase grain size from 20.0 to 18.2 nm.",
@@ -936,16 +936,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) size",
         "interaction" : "negatively_correlates",
-        "SUID" : 95547,
+        "SUID" : 3221,
         "selected" : false,
         "doi" : "https://doi.org/10.3389/fchem.2021.738969"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95545",
-        "source" : "95539",
-        "target" : "95331",
+        "id" : "3218",
+        "source" : "3209",
+        "target" : "2897",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) size",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The anatase grain size decreases from 20.0 to 18.2 nm when the SiO2 content increases from 0 to 50%.",
@@ -953,16 +953,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (negatively_correlates) size",
         "interaction" : "negatively_correlates",
-        "SUID" : 95545,
+        "SUID" : 3218,
         "selected" : false,
         "doi" : "https://doi.org/10.3389/fchem.2021.738969"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95543",
-        "source" : "95539",
-        "target" : "95541",
+        "id" : "3215",
+        "source" : "3209",
+        "target" : "3211",
         "shared_name" : "Nanoparticle material part consisting of a silica coat (does_not_correlate) regulation of cytoskeleton organization",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "Furthermore, data from rhodamine phalloidin staining showed that the exposure to the different NPs seems to induce actin network morphological change (Figure 9). The interaction of TiO2:SiO2 NPs 1:1 (Figure 9b) and 3:1 (Figure 9d) with A549 cells, increased cytoskeleton disassembly and the presence of cellular filopodia, while an analog localization of actin is not detectable in the cells exposed to TiO2:SiO2 1:3 (Figure 9c).",
@@ -970,16 +970,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Nanoparticle material part consisting of a silica coat (does_not_correlate) regulation of cytoskeleton organization",
         "interaction" : "does_not_correlate",
-        "SUID" : 95543,
+        "SUID" : 3215,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95537",
-        "source" : "95535",
-        "target" : "95331",
+        "id" : "3206",
+        "source" : "3203",
+        "target" : "2897",
         "shared_name" : "Ion spilling (positively_correlates) size",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "At still higher temperatures, the Si4+ is expelled from the interior of the anatase particles and gradually forms an amorphous surface SiO2 layer. Because this surface layer prevents direct contact of the anatase particles, it suppresses grain growth and retards the transition to rutile.",
@@ -987,16 +987,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Ion spilling (positively_correlates) size",
         "interaction" : "positively_correlates",
-        "SUID" : 95537,
+        "SUID" : 3206,
         "selected" : false,
         "doi" : "https://doi.org/10.1111/j.1151-2916.2001.tb00882.x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95533",
-        "source" : "95531",
-        "target" : "95331",
+        "id" : "3200",
+        "source" : "3197",
+        "target" : "2897",
         "shared_name" : "Ion leakage (positively_correlates) size",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "At still higher temperatures, the Si4+ is expelled from the interior of the anatase particles and gradually forms an amorphous surface SiO2 layer. Because this surface layer prevents direct contact of the anatase particles, it suppresses grain growth and retards the transition to rutile.",
@@ -1004,16 +1004,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "Ion leakage (positively_correlates) size",
         "interaction" : "positively_correlates",
-        "SUID" : 95533,
+        "SUID" : 3200,
         "selected" : false,
         "doi" : "https://doi.org/10.1111/j.1151-2916.2001.tb00882.x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95529",
-        "source" : "95521",
-        "target" : "95527",
+        "id" : "3194",
+        "source" : "3182",
+        "target" : "3191",
         "shared_name" : "ultraviolet radiation (positively_correlates) Hydroxy-functionalization of a nanoparticle",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Different GOs at lower concentrations (≤2 mg/L, C4-1 in Figure 2A) that were clustered together likely resulted from the overall indistinguishable low background-level toxicity (Figure 2A and SI Figure S1). The exception is the UV-treated GO, for which all six concentration samples were clustered together. This indicates that UV-treated GOs exhibit more distinctive toxicity profiles from other GOs.",
@@ -1021,16 +1021,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "ultraviolet radiation (positively_correlates) Hydroxy-functionalization of a nanoparticle",
         "interaction" : "positively_correlates",
-        "SUID" : 95529,
+        "SUID" : 3194,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/ijms221910578"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95525",
-        "source" : "95521",
-        "target" : "95523",
+        "id" : "3188",
+        "source" : "3182",
+        "target" : "3184",
         "shared_name" : "ultraviolet radiation (negatively_correlates) Epoxy-functionalization of a nanoparticle",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "In our study, compared to the untreated GO, the UV-treated GO possessed higher carboxyl (C-COOH) and carbon-carbon groups (C-C and C=C), lower epoxy (C-O-C) and hydroxyl (C-OH) functional groups, and similar oxygen content (Table 1). These features might contribute to the significantly higher molecular toxicity related to DNA damage stress, protein stress, and chemical stress.",
@@ -1038,16 +1038,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "ultraviolet radiation (negatively_correlates) Epoxy-functionalization of a nanoparticle",
         "interaction" : "negatively_correlates",
-        "SUID" : 95525,
+        "SUID" : 3188,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/ijms221910578"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95519",
-        "source" : "95507",
-        "target" : "95335",
+        "id" : "3179",
+        "source" : "3161",
+        "target" : "2903",
         "shared_name" : "duration (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "The H2O2/OH increase was accompanied by a dose- and time-dependent decrease of anion superoxide O2−∙, as revealed by DHE staining (Fig. 5A, right side).",
@@ -1055,16 +1055,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "duration (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95519,
+        "SUID" : 3179,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95517",
-        "source" : "95507",
-        "target" : "95335",
+        "id" : "3176",
+        "source" : "3161",
+        "target" : "2903",
         "shared_name" : "duration (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "H2O2/OH content significantly increased after treatment with ZnO-NPs at 5 and 10 μg/cm2 for 24 h. After 48 h of treatment at 5 μg/cm2 the evaluation of ROS content was comparable to that induced by H2O2 solution (Fig. 5A, left side).",
@@ -1072,16 +1072,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "duration (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95517,
+        "SUID" : 3176,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95515",
-        "source" : "95507",
-        "target" : "95513",
+        "id" : "3173",
+        "source" : "3161",
+        "target" : "3170",
         "shared_name" : "duration (positively_correlates) bleb assembly",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "While untreated LoVo displayed their typical morphology characterized by polygonal shape with numerous microvilli randomly distributed on the cell surface (Fig. 3D), after treatment with 5 μg/cm2 of ZnO-NPs for 48 h, evident signs of cell damage could be detected (Fig. 3E). Treated cells appeared to be rounded, deprived of microvilli and with numerous blebs on their surface.",
@@ -1089,16 +1089,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "duration (positively_correlates) bleb assembly",
         "interaction" : "positively_correlates",
-        "SUID" : 95515,
+        "SUID" : 3173,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95511",
-        "source" : "95507",
-        "target" : "95435",
+        "id" : "3167",
+        "source" : "3161",
+        "target" : "3053",
         "shared_name" : "duration (positively_correlates) mortality",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "The results showed that the immobility and mortality of D. magna progressively worsened as the doses (1–50 mg.L) and exposure time (up to 72 h) increased, displaying dose- and time-dependent patterns.severe acute toxicity only occurred at the highest GO concentration (50 mg.L) at the longest exposure time (72 h).",
@@ -1106,16 +1106,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "duration (positively_correlates) mortality",
         "interaction" : "positively_correlates",
-        "SUID" : 95511,
+        "SUID" : 3167,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.envpol.2017.12.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95509",
-        "source" : "95507",
-        "target" : "95405",
+        "id" : "3164",
+        "source" : "3161",
+        "target" : "3008",
         "shared_name" : "duration (negatively_correlates) mobility decreased AE",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "The results showed that the immobility and mortality of D. magna progressively worsened as the doses (1–50 mg.L) and exposure time (up to 72 h) increased, displaying dose- and time-dependent patterns.severe acute toxicity only occurred at the highest GO concentration (50 mg.L) at the longest exposure time (72 h).",
@@ -1123,16 +1123,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "duration (negatively_correlates) mobility decreased AE",
         "interaction" : "negatively_correlates",
-        "SUID" : 95509,
+        "SUID" : 3164,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.envpol.2017.12.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95505",
-        "source" : "95455",
-        "target" : "95481",
+        "id" : "3158",
+        "source" : "3083",
+        "target" : "3122",
         "shared_name" : "exposure (positively_correlates) positive regulation of proteasomal protein catabolic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Dendritic cells treated with GO (up to 25 μg/mL) were affected in their functional activity (antigens inhibition), this effect was associated with a down-regulation of intracellular levels of one unit of the immune proteasome responsible for antigen processing in these cells.",
@@ -1140,16 +1140,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (positively_correlates) positive regulation of proteasomal protein catabolic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95505,
+        "SUID" : 3158,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95503",
-        "source" : "95455",
-        "target" : "95501",
+        "id" : "3155",
+        "source" : "3083",
+        "target" : "3152",
         "shared_name" : "exposure (positively_correlates) activation of cysteine-type endopeptidase activity involved in apoptotic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Exposure of human neuronal cells (PC12 cells) to reduced graphene oxide (rGO) (diameter between 100−110 nm and thickness between 3−5 nm) caused an increase in the activation of caspase-3, release of lactate dehydrogenase, and generation of reactive oxygen species (ROS)",
@@ -1157,16 +1157,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (positively_correlates) activation of cysteine-type endopeptidase activity involved in apoptotic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95503,
+        "SUID" : 3155,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95499",
-        "source" : "95455",
-        "target" : "95497",
+        "id" : "3149",
+        "source" : "3083",
+        "target" : "3146",
         "shared_name" : "exposure (positively_correlates) lactate dehydrogenase activity",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Exposure of human neuronal cells (PC12 cells) to reduced graphene oxide (rGO) (diameter between 100−110 nm and thickness between 3−5 nm) caused an increase in the activation of caspase-3, release of lactate dehydrogenase, and generation of reactive oxygen species (ROS)",
@@ -1174,16 +1174,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (positively_correlates) lactate dehydrogenase activity",
         "interaction" : "positively_correlates",
-        "SUID" : 95499,
+        "SUID" : 3149,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95495",
-        "source" : "95455",
-        "target" : "95335",
+        "id" : "3143",
+        "source" : "3083",
+        "target" : "2903",
         "shared_name" : "exposure (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Exposure of human neuronal cells (PC12 cells) to reduced graphene oxide (rGO) (diameter between 100−110 nm and thickness between 3−5 nm) caused an increase in the activation of caspase-3, release of lactate dehydrogenase, and generation of reactive oxygen species (ROS)",
@@ -1191,16 +1191,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95495,
+        "SUID" : 3143,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95493",
-        "source" : "95455",
-        "target" : "95335",
+        "id" : "3140",
+        "source" : "3083",
+        "target" : "2903",
         "shared_name" : "exposure (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO acts on alveolar macrophages and alveolar epithelial cells by the generation of ROS, yielding inflammation, and resulting in apoptosis of mitochondrial respiration.27",
@@ -1208,16 +1208,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95493,
+        "SUID" : 3140,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95491",
-        "source" : "95455",
-        "target" : "95489",
+        "id" : "3137",
+        "source" : "3083",
+        "target" : "3134",
         "shared_name" : "exposure (observed_outcome) LC50",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO having a size of 200−300 nm was prepared, and the toxicity evaluation of GO on Daphnia magna was done. EC50 and LC50 values of GO after an exposure of 72 h were found to be 43.3 and 45.4 mg.L, respectively.254",
@@ -1225,16 +1225,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (observed_outcome) LC50",
         "interaction" : "observed_outcome",
-        "SUID" : 95491,
+        "SUID" : 3137,
         "selected" : false,
         "doi" : "https://doi.org/10.1021.acsomega.2c03171"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95487",
-        "source" : "95455",
-        "target" : "95485",
+        "id" : "3131",
+        "source" : "3083",
+        "target" : "3128",
         "shared_name" : "exposure (observed_outcome) EC50",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO having a size of 200−300 nm was prepared, and the toxicity evaluation of GO on Daphnia magna was done. EC50 and LC50 values of GO after an exposure of 72 h were found to be 43.3 and 45.4 mg.L, respectively.254",
@@ -1242,16 +1242,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (observed_outcome) EC50",
         "interaction" : "observed_outcome",
-        "SUID" : 95487,
+        "SUID" : 3131,
         "selected" : false,
         "doi" : "https://doi.org/10.1021.acsomega.2c03171"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95483",
-        "source" : "95455",
-        "target" : "95481",
+        "id" : "3125",
+        "source" : "3083",
+        "target" : "3122",
         "shared_name" : "exposure (negatively_correlates) positive regulation of proteasomal protein catabolic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO disrupted the protein antigen processing in DCs by down-regulating the levels of immunoproteasome LMP7",
@@ -1259,16 +1259,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (negatively_correlates) positive regulation of proteasomal protein catabolic process",
         "interaction" : "negatively_correlates",
-        "SUID" : 95483,
+        "SUID" : 3125,
         "selected" : false,
         "doi" : "https://doi.org/10.1002/smll.201201546"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95479",
-        "source" : "95455",
-        "target" : "95335",
+        "id" : "3119",
+        "source" : "3083",
+        "target" : "2903",
         "shared_name" : "exposure (negatively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO acts on alveolar macrophages and alveolar epithelial cells by the generation of ROS, yielding inflammation, and resulting in apoptosis of mitochondrial respiration.27",
@@ -1276,16 +1276,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (negatively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "negatively_correlates",
-        "SUID" : 95479,
+        "SUID" : 3119,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95477",
-        "source" : "95455",
-        "target" : "95335",
+        "id" : "3116",
+        "source" : "3083",
+        "target" : "2903",
         "shared_name" : "exposure (does_not_correlate) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "he current literature proposes that the generation of reactive oxygen species in target cells is the most important cytotoxicity mechanism of graphene.",
@@ -1293,16 +1293,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (does_not_correlate) reactive oxygen species biosynthetic process",
         "interaction" : "does_not_correlate",
-        "SUID" : 95477,
+        "SUID" : 3116,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95475",
-        "source" : "95455",
-        "target" : "95319",
+        "id" : "3113",
+        "source" : "3083",
+        "target" : "2862",
         "shared_name" : "exposure (does_not_correlate) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "exposure of A549 cells to GO did not show cell uptake, although size-dependent cytotoxicity and dose-dependent oxidative stress were observed.37",
@@ -1310,16 +1310,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (does_not_correlate) import across plasma membrane",
         "interaction" : "does_not_correlate",
-        "SUID" : 95475,
+        "SUID" : 3113,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95473",
-        "source" : "95455",
-        "target" : "95335",
+        "id" : "3110",
+        "source" : "3083",
+        "target" : "2903",
         "shared_name" : "exposure (correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Many reports have proposed that oxidative stress is one of the mechanisms involved in the toxic effects of carbon nanomaterials.2,24,37,90 The oxidative stress in target cells is caused by the generation of reactive oxygen species (ROS).2 Antioxidant enzymes, such as superoxide dismutase or glutathione per-oxidase, are able to reduce and eliminate ROS. If homeostasis is not achieved, cellular macromolecules, such as proteins, DNA, and lipids, can be damaged.2",
@@ -1327,16 +1327,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (correlates) reactive oxygen species biosynthetic process",
         "interaction" : "correlates",
-        "SUID" : 95473,
+        "SUID" : 3110,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95471",
-        "source" : "95455",
-        "target" : "95469",
+        "id" : "3107",
+        "source" : "3083",
+        "target" : "3104",
         "shared_name" : "exposure (correlates) TNF-related activation-induced cytokine measurement",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "TNF-α and IL-6 contents were not detected in LoVo treated for 24 h and 48 h with both types of particles tested (data not shown).",
@@ -1344,16 +1344,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "exposure (correlates) TNF-related activation-induced cytokine measurement",
         "interaction" : "correlates",
-        "SUID" : 95471,
+        "SUID" : 3107,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95467",
-        "source" : "95455",
-        "target" : "95465",
+        "id" : "3101",
+        "source" : "3083",
+        "target" : "3098",
         "shared_name" : "exposure (correlates) interleukin-6 measurement",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "TNF-α and IL-6 contents were not detected in LoVo treated for 24 h and 48 h with both types of particles tested (data not shown).",
@@ -1361,16 +1361,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "exposure (correlates) interleukin-6 measurement",
         "interaction" : "correlates",
-        "SUID" : 95467,
+        "SUID" : 3101,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95463",
-        "source" : "95455",
-        "target" : "95435",
+        "id" : "3095",
+        "source" : "3083",
+        "target" : "3053",
         "shared_name" : "exposure (correlates) mortality",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Neither mortality nor immobility was inhibited at concentrations ≤10 mg.L at 24 h",
@@ -1378,16 +1378,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (correlates) mortality",
         "interaction" : "correlates",
-        "SUID" : 95463,
+        "SUID" : 3095,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.envpol.2017.12.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95461",
-        "source" : "95455",
-        "target" : "95385",
+        "id" : "3092",
+        "source" : "3083",
+        "target" : "2977",
         "shared_name" : "exposure (correlates) apoptosis AE",
         "materialLabel" : "aluminium oxide nanoparticle",
         "quote" : "The analysis of BJ cells yielded similar results, with the percentage of cells in early apoptosis reaching 8.14%, and the percentage of cells in late apoptosis of up to 6.67%. The percentage of necrotic cells ranged between 0.38–0.75% and 0.25–0.85% for murine and human fibroblasts, respectively. The results of cell survival estimated by this method are concordant with those obtained in the EZ4U assay, that allows to conclude that aluminium oxide nanoparticles are of a relatively inert nature and show low cytotoxic activity.",
@@ -1395,16 +1395,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_9000005",
         "name" : "exposure (correlates) apoptosis AE",
         "interaction" : "correlates",
-        "SUID" : 95461,
+        "SUID" : 3092,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2011.07.010"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95459",
-        "source" : "95455",
-        "target" : "95457",
+        "id" : "3089",
+        "source" : "3083",
+        "target" : "3085",
         "shared_name" : "exposure (#N/A) autophagy",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Murine macrophage-like RAW264.7 cells incubated with GO (∼100 μg/mL) were also able to elicit autophagy and the expression of Toll-like receptors associated with inflammatory responses.48",
@@ -1412,16 +1412,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "exposure (#N/A) autophagy",
         "interaction" : "#N/A",
-        "SUID" : 95459,
+        "SUID" : 3089,
         "selected" : false,
         "doi" : "https://doi.org/10.1021/tx400385x"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95453",
-        "source" : "95383",
-        "target" : "95335",
+        "id" : "3080",
+        "source" : "2975",
+        "target" : "2903",
         "shared_name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "After 24-h exposure, Ag NP concentrations ranging from 2.5 to 15 μg/ml induced significant ROS",
@@ -1429,16 +1429,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95453,
+        "SUID" : 3080,
         "selected" : false,
         "doi" : "https://doi.org/10.1007/s00204-010-0545-5"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95451",
-        "source" : "95383",
-        "target" : "95335",
+        "id" : "3077",
+        "source" : "2975",
+        "target" : "2903",
         "shared_name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "After 24-h exposure, Ag NP concentrations ranging from 2.5 to 15 μg/ml induced significant ROS",
@@ -1446,16 +1446,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95451,
+        "SUID" : 3077,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95449",
-        "source" : "95383",
-        "target" : "95335",
+        "id" : "3074",
+        "source" : "2975",
+        "target" : "2903",
         "shared_name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The maximum ROS levels were found at 6 h, from that point on the levels of ROS reduced over a period of 24 h (data not shown). Therefore, the data shown here was only at 6 h exposure. The level of ROS in cells increased in a concentration-dependent manner and was statistically increased (p < 0.05) from 10 μg/ml concentration. Ag (15, 100 nm) treatment at 25 and 50 μg/ml resulted in an approximately 10-fold increase in ROS generation over control levels",
@@ -1463,16 +1463,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95449,
+        "SUID" : 3074,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95447",
-        "source" : "95383",
-        "target" : "95335",
+        "id" : "3071",
+        "source" : "2975",
+        "target" : "2903",
         "shared_name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The level of ROS in cells increased in a concentration-dependent manner and was statistically increased (p < 0.05) from 10 μg/ml concentration. Ag (15, 100 nm) treatment at 25 and 50 μg/ml resulted in an approximately 10-fold increase in ROS generation over control levels (Fig. 4A). The qualitative generation of ROS was also observed using fluorescence microscopy, which detected the brightest obvious fluorescent intensity with Ag exposed cells at 25 μg/ml (Fig. 4B–D).",
@@ -1480,16 +1480,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95447,
+        "SUID" : 3071,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95445",
-        "source" : "95383",
-        "target" : "95335",
+        "id" : "3068",
+        "source" : "2975",
+        "target" : "2903",
         "shared_name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "H2O2/OH content significantly increased after treatment with ZnO-NPs at 5 and 10 μg/cm2 for 24 h. After 48 h of treatment at 5 μg/cm2 the evaluation of ROS content was comparable to that induced by H2O2 solution (Fig. 5A, left side).",
@@ -1497,16 +1497,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95445,
+        "SUID" : 3068,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95443",
-        "source" : "95383",
-        "target" : "95335",
+        "id" : "3065",
+        "source" : "2975",
+        "target" : "2903",
         "shared_name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO with higher concentrations induces more ROS. Among the three GO samples, s-GO causes the most serious oxidative stress.",
@@ -1514,16 +1514,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "dose (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95443,
+        "SUID" : 3065,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.toxlet.2010.11.016"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95441",
-        "source" : "95383",
-        "target" : "95363",
+        "id" : "3062",
+        "source" : "2975",
+        "target" : "2945",
         "shared_name" : "dose (positively_correlates) L lactate dehydrogenase measurement",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The results demonstrated that exposure to Ag nanoparticles for 24 h resulted in concentration-dependent increase in LDH leakage and exhibited a significant (p < 0.05) cytotoxicity at 10–50 μg/ml (Fig. 1B). It was noted that there is a statistically significant difference between different silver particle sizes of 100 and 15 nm, where the 100 nm particles showed higher toxicity at 25 and 50 μg/ml.",
@@ -1531,16 +1531,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) L lactate dehydrogenase measurement",
         "interaction" : "positively_correlates",
-        "SUID" : 95441,
+        "SUID" : 3062,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95439",
-        "source" : "95383",
-        "target" : "95363",
+        "id" : "3059",
+        "source" : "2975",
+        "target" : "2945",
         "shared_name" : "dose (positively_correlates) L lactate dehydrogenase measurement",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "a significant increase in LDH leakage was observed with exposure to ZnO",
@@ -1548,16 +1548,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "dose (positively_correlates) L lactate dehydrogenase measurement",
         "interaction" : "positively_correlates",
-        "SUID" : 95439,
+        "SUID" : 3059,
         "selected" : false,
         "doi" : "https://doi.org/10.1080/10934520600966177"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95437",
-        "source" : "95383",
-        "target" : "95435",
+        "id" : "3056",
+        "source" : "2975",
+        "target" : "3053",
         "shared_name" : "dose (positively_correlates) mortality",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "The results showed that the immobility and mortality of D. magna progressively worsened as the doses (1–50 mg.L) and exposure time (up to 72 h) increased, displaying dose- and time-dependent patterns.severe acute toxicity only occurred at the highest GO concentration (50 mg.L) at the longest exposure time (72 h).",
@@ -1565,16 +1565,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "dose (positively_correlates) mortality",
         "interaction" : "positively_correlates",
-        "SUID" : 95437,
+        "SUID" : 3056,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.envpol.2017.12.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95433",
-        "source" : "95383",
-        "target" : "95427",
+        "id" : "3050",
+        "source" : "2975",
+        "target" : "3041",
         "shared_name" : "dose (positively_correlates) mitochondrial toxicity AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "A reduction in mitochondrial function of A549 cells exposed to Ag NPs for 24 h was observed in a dose-dependent manner (0–20 μg/ml) (Fig. 2a).",
@@ -1582,16 +1582,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) mitochondrial toxicity AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95433,
+        "SUID" : 3050,
         "selected" : false,
         "doi" : "https://doi.org/10.1007/s00204-010-0545-5"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95431",
-        "source" : "95383",
-        "target" : "95427",
+        "id" : "3047",
+        "source" : "2975",
+        "target" : "3041",
         "shared_name" : "dose (positively_correlates) mitochondrial toxicity AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "A reduction in mitochondrial function of A549 cells exposed to Ag NPs for 24 h was observed in a dose-dependent manner (0–20 μg/ml) (Fig. 2a).",
@@ -1599,16 +1599,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) mitochondrial toxicity AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95431,
+        "SUID" : 3047,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95429",
-        "source" : "95383",
-        "target" : "95427",
+        "id" : "3044",
+        "source" : "2975",
+        "target" : "3041",
         "shared_name" : "dose (positively_correlates) mitochondrial toxicity AE",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "Moreover, flow cytometric analysis has revealed an increase of H2O2 and OHradical dot intracellular levels, accompanied by a consequently decrease of O2−radical dot content, depletion of GSH level and depolarization of mitochondrial membrane potential.",
@@ -1616,16 +1616,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "dose (positively_correlates) mitochondrial toxicity AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95429,
+        "SUID" : 3044,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95425",
-        "source" : "95383",
-        "target" : "95423",
+        "id" : "3038",
+        "source" : "2975",
+        "target" : "3035",
         "shared_name" : "dose (positively_correlates) granuloma AE",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "graphene oxides under low dose (0.1 mg) and middle dose (0.25 mg) did not exhibit obvious toxicity to mice, under high dose (0.4 mg) exhibited chronic toxicity such as 4.9 mice death and lung granuloma formation, mainly located in lung, liver, spleen and kidney, almost could not be cleaned by kidney.",
@@ -1633,16 +1633,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "dose (positively_correlates) granuloma AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95425,
+        "SUID" : 3038,
         "selected" : false,
         "doi" : "https://doi.org/10.1007.s11671-010-9751-6"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95421",
-        "source" : "95383",
-        "target" : "95417",
+        "id" : "3032",
+        "source" : "2975",
+        "target" : "3026",
         "shared_name" : "dose (positively_correlates) necrosis AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "Cell death was primarily due to a dose-dependent increase in necrosis/late apoptosis at 2.5–15 μg/ml Ag NPs (Fig. 3c), whereas only a minor increase in early apoptosis was detected (Fig. 3b).",
@@ -1650,16 +1650,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) necrosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95421,
+        "SUID" : 3032,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95419",
-        "source" : "95383",
-        "target" : "95417",
+        "id" : "3029",
+        "source" : "2975",
+        "target" : "3026",
         "shared_name" : "dose (positively_correlates) necrosis AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "Cell death was primarily due to a dose-dependent increase in necrosis/late apoptosis at 2.5–15 μg/ml Ag NPs (Fig. 3c), whereas only a minor increase in early apoptosis was detected (Fig. 3b).",
@@ -1667,16 +1667,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) necrosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95419,
+        "SUID" : 3029,
         "selected" : false,
         "doi" : "https://doi.org/10.1007/s00204-010-0545-5"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95415",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "3023",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (positively_correlates) apoptosis AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "Cell death was primarily due to a dose-dependent increase in necrosis/late apoptosis at 2.5–15 μg/ml Ag NPs (Fig. 3c), whereas only a minor increase in early apoptosis was detected (Fig. 3b).",
@@ -1684,16 +1684,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) apoptosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95415,
+        "SUID" : 3023,
         "selected" : false,
         "doi" : "https://doi.org/10.1007/s00204-010-0545-5"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95413",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "3020",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (positively_correlates) apoptosis AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "Cell death was primarily due to a dose-dependent increase in necrosis/late apoptosis at 2.5–15 μg/ml Ag NPs (Fig. 3c), whereas only a minor increase in early apoptosis was detected (Fig. 3b).",
@@ -1701,16 +1701,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (positively_correlates) apoptosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95413,
+        "SUID" : 3020,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95411",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "3017",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (positively_correlates) apoptosis AE",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "Annexin V positive–PI positive (late apoptotic) cells (4.0%). Both Annexin V positive fractions significantly increased after 24 h treatment with 10 μg/cm2 (8.1% and 34.8%), 20 μg/cm2 (21.2% and 71.4%) and 40 μg/cm2 (18.8% and 75.7%) of ZnO-NPs. These results showed that ZnO-NPs induced dose-dependent apoptotic cell death.",
@@ -1718,16 +1718,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "dose (positively_correlates) apoptosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95411,
+        "SUID" : 3017,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95409",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "3014",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (positively_correlates) apoptosis AE",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "Because cellular metabolic activity seems affected by nanoparticles, while the plasma membrane of some cells remained relatively intact, the possibility of apoptosis caused by nanoparticles was assessed at lower concentrations. Flow cytometer analysis to quantify the number of cells in apoptosis vs. necrosis confirmed that apoptosis took place with exposure to ZnO. A small percentage of apoptotic cells were observed at a concentration of 25 μg/mL. About 15% of apoptotic cells and <2% of necrotic cells were observed at a concentration of 50 μg/mL. At a concentration of 10 μg/mL, no apoptosis was observed.",
@@ -1735,16 +1735,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "dose (positively_correlates) apoptosis AE",
         "interaction" : "positively_correlates",
-        "SUID" : 95409,
+        "SUID" : 3014,
         "selected" : false,
         "doi" : "https://doi.org/10.1080/10934520600966177"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95407",
-        "source" : "95383",
-        "target" : "95405",
+        "id" : "3011",
+        "source" : "2975",
+        "target" : "3008",
         "shared_name" : "dose (negatively_correlates) mobility decreased AE",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "The results showed that the immobility and mortality of D. magna progressively worsened as the doses (1–50 mg.L) and exposure time (up to 72 h) increased, displaying dose- and time-dependent patterns. severe acute toxicity only occurred at the highest GO concentration (50 mg.L) at the longest exposure time (72 h).",
@@ -1752,16 +1752,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "dose (negatively_correlates) mobility decreased AE",
         "interaction" : "negatively_correlates",
-        "SUID" : 95407,
+        "SUID" : 3011,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.envpol.2017.12.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95403",
-        "source" : "95383",
-        "target" : "95401",
+        "id" : "3005",
+        "source" : "2975",
+        "target" : "3002",
         "shared_name" : "dose (negatively_correlates) cellular adhesion molecule measurement",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "graphene oxides with dose of less than 20 μg/mL did not exhibit toxicity to human fibroblast cells, and the dose of more than 50 μg/mL exhibits obvious cytotoxicity such as decreasing cell adhesion, inducing cell apoptosis, entering into lysosomes, mitochondrion, endoplasm, and cell nucleus.",
@@ -1769,16 +1769,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "dose (negatively_correlates) cellular adhesion molecule measurement",
         "interaction" : "negatively_correlates",
-        "SUID" : 95403,
+        "SUID" : 3005,
         "selected" : false,
         "doi" : "https://doi.org/10.1007.s11671-010-9751-6"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95399",
-        "source" : "95383",
-        "target" : "95397",
+        "id" : "2999",
+        "source" : "2975",
+        "target" : "2996",
         "shared_name" : "dose (negatively_correlates) matrix metalloproteinase measurement",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The results indicated that there was a significant decrease (80%) of MMP at 25 and 50 μg/ml Ag (15, 100 nm) (Fig. 5A). The qualitative mitochondrial membrane potential was also observed under fluorescence microscope stained with rhodamine 123. The brightness of the fluorescent intensity was reduced in cells exposed to Ag at 25 and 50 μg/ml that indicates a significant reduction of mitochondrial membrane potential (Fig. 5B–D).",
@@ -1786,16 +1786,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (negatively_correlates) matrix metalloproteinase measurement",
         "interaction" : "negatively_correlates",
-        "SUID" : 95399,
+        "SUID" : 2999,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95395",
-        "source" : "95383",
-        "target" : "95393",
+        "id" : "2993",
+        "source" : "2975",
+        "target" : "2990",
         "shared_name" : "dose (does_not_correlate) regulation of glutathione biosynthetic process",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "Intracellular GSH level, revealed by MCB staining (Fig. 5C), exhibited a dose-dependent decrease after 24 h exposure to ZnO-NPs. Depletion of GSH was not induced by TiO2 treatments, in agreement with poor ROS content.",
@@ -1803,16 +1803,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "dose (does_not_correlate) regulation of glutathione biosynthetic process",
         "interaction" : "does_not_correlate",
-        "SUID" : 95395,
+        "SUID" : 2993,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95391",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "2987",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (correlates) apoptosis AE",
         "materialLabel" : "silver nanoparticle",
         "quote" : "Since apoptotic cells were virtually absent irrespective of the  treatment conditions applied, we conclude that SNP-mediated cell death occurs via non-apoptotic  pathways (data not shown).",
@@ -1820,16 +1820,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "dose (correlates) apoptosis AE",
         "interaction" : "correlates",
-        "SUID" : 95391,
+        "SUID" : 2987,
         "selected" : false,
         "doi" : "https://doi.org/10.1088/1742-6596/304/1/012030"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95389",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "2984",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (correlates) apoptosis AE",
         "materialLabel" : "aluminium oxide nanoparticle",
         "quote" : "No statistically significant increase in the percentage of apoptotic or necrotic cells was observed in the cultures treated with aluminium oxide nanoparticles compared to the control (p = 0.370 for L929 cells and p = 0.108 for BJ cells) (Table 2). The percentages of L929 cells in early and late apoptosis did not exceed 8.26% and 6.0%, respectively.",
@@ -1837,16 +1837,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_9000005",
         "name" : "dose (correlates) apoptosis AE",
         "interaction" : "correlates",
-        "SUID" : 95389,
+        "SUID" : 2984,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2011.07.010"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95387",
-        "source" : "95383",
-        "target" : "95385",
+        "id" : "2981",
+        "source" : "2975",
+        "target" : "2977",
         "shared_name" : "dose (#N/A) apoptosis AE",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "morphology of HDF cells cultured with 20 μg/mL GO for 3 days, showing cell have unclear boundary, membrane vesicles and fragmentation, the arrow showing apoptotic cells formed nodular structure encapsulating GO",
@@ -1854,16 +1854,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "dose (#N/A) apoptosis AE",
         "interaction" : "#N/A",
-        "SUID" : 95387,
+        "SUID" : 2981,
         "selected" : false,
         "doi" : "https://doi.org/10.1007.s11671-010-9751-6"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95381",
-        "source" : "95379",
-        "target" : "95319",
+        "id" : "2972",
+        "source" : "2969",
+        "target" : "2862",
         "shared_name" : "temperature (does_not_correlate) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "The internalization of 350 nm and 2 μm GO was proved an energy-dependent process, as remarkable decreases (∼85% compared with cells at 37 °C) occurred for GO under low-energy incubation (at 4 °C).",
@@ -1871,16 +1871,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "temperature (does_not_correlate) import across plasma membrane",
         "interaction" : "does_not_correlate",
-        "SUID" : 95381,
+        "SUID" : 2972,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95599",
-        "source" : "95375",
-        "target" : "95319",
+        "id" : "3299",
+        "source" : "2963",
+        "target" : "2862",
         "shared_name" : "negative regulation of cytoskeleton organization (negatively_correlates) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "When cells were respectively treated with latrunculin B (Lat B) [41] and nocodazole (Noco) [42] to disrupt actin and microtubule movement, significant reductions of GO uptake were found.",
@@ -1888,16 +1888,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "negative regulation of cytoskeleton organization (negatively_correlates) import across plasma membrane",
         "interaction" : "negatively_correlates",
-        "SUID" : 95599,
+        "SUID" : 3299,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95589",
-        "source" : "95349",
-        "target" : "95585",
+        "id" : "3284",
+        "source" : "2924",
+        "target" : "3278",
         "shared_name" : "Photocatalytic activity (negatively_correlates) Embedding into nano-enabled paint formulation",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "toxicity of NanoTiO2 was reduced by inclusion into a paint matrix",
@@ -1905,16 +1905,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "Photocatalytic activity (negatively_correlates) Embedding into nano-enabled paint formulation",
         "interaction" : "negatively_correlates",
-        "SUID" : 95589,
+        "SUID" : 3284,
         "selected" : false,
         "doi" : "https://doi.org/10.1186/1743-8977-9-4"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95587",
-        "source" : "95349",
-        "target" : "95585",
+        "id" : "3281",
+        "source" : "2924",
+        "target" : "3278",
         "shared_name" : "Photocatalytic activity (negatively_correlates) Embedding into nano-enabled paint formulation",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "Pulmonary inflammation and DNA damage and hepatic histopathology were not changed in mice instilled with sanding dust from NanoTiO2 paint compared to paint without NanoTiO2. However, pure NanoTiO2 caused greater inflammation than NanoTiO2 embedded in the paint matrix.",
@@ -1922,16 +1922,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "Photocatalytic activity (negatively_correlates) Embedding into nano-enabled paint formulation",
         "interaction" : "negatively_correlates",
-        "SUID" : 95587,
+        "SUID" : 3281,
         "selected" : false,
         "doi" : "https://doi.org/10.1186/1743-8977-9-4"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95377",
-        "source" : "95331",
-        "target" : "95375",
+        "id" : "2966",
+        "source" : "2897",
+        "target" : "2963",
         "shared_name" : "size (positively_correlates) negative regulation of cytoskeleton organization",
         "materialLabel" : "TiO2@SiO2 nanocomposite",
         "quote" : "The size and physical properties of NPs are partly responsible for the NPs toxicity, with particles with smaller size and higher stability being more interactive with pulmonary cells.",
@@ -1939,16 +1939,16 @@
         "materialType" : "http://purl.enanomapper.net/onto/ENM_0218062",
         "name" : "size (positively_correlates) negative regulation of cytoskeleton organization",
         "interaction" : "positively_correlates",
-        "SUID" : 95377,
+        "SUID" : 2966,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/nano9071041"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95373",
-        "source" : "95331",
-        "target" : "95335",
+        "id" : "2960",
+        "source" : "2897",
+        "target" : "2903",
         "shared_name" : "size (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "A significant depletion of GSH (70%) was observed at 25 μg/ml Ag (15,100 nm) relative to controls (61.00 ± 5.28 nmol GSH/mg cellular protein) (Fig. 6). Overall, the data demonstrated a significant depletion (p < 0.05) of GSH levels occurred in Ag (15,100 nm) exposed cells.",
@@ -1956,16 +1956,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "size (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95373,
+        "SUID" : 2960,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95371",
-        "source" : "95331",
-        "target" : "95335",
+        "id" : "2957",
+        "source" : "2897",
+        "target" : "2903",
         "shared_name" : "size (positively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The maximum ROS levels were found at 6 h, from that point on the levels of ROS reduced over a period of 24 h (data not shown). Therefore, the data shown here was only at 6 h exposure. The level of ROS in cells increased in a concentration-dependent manner and was statistically increased (p < 0.05) from 10 μg/ml concentration. Ag (15, 100 nm) treatment at 25 and 50 μg/ml resulted in an approximately 10-fold increase in ROS generation over control levels",
@@ -1973,16 +1973,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "size (positively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "positively_correlates",
-        "SUID" : 95371,
+        "SUID" : 2957,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95369",
-        "source" : "95331",
-        "target" : "95319",
+        "id" : "2954",
+        "source" : "2897",
+        "target" : "2862",
         "shared_name" : "size (positively_correlates) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Surprisingly, the saturated uptake amount of the two GO sheets did not vary with lateral dimension (Fig. 2B), and an identical accumulation of GO in macrophages was observed (Fig. 2C and D)",
@@ -1990,16 +1990,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "size (positively_correlates) import across plasma membrane",
         "interaction" : "positively_correlates",
-        "SUID" : 95369,
+        "SUID" : 2954,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95367",
-        "source" : "95331",
-        "target" : "95319",
+        "id" : "2951",
+        "source" : "2897",
+        "target" : "2862",
         "shared_name" : "size (positively_correlates) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "the saturated uptake amount of the two GO sheets did not vary with lateral dimension",
@@ -2007,16 +2007,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "size (positively_correlates) import across plasma membrane",
         "interaction" : "positively_correlates",
-        "SUID" : 95367,
+        "SUID" : 2951,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95365",
-        "source" : "95331",
-        "target" : "95363",
+        "id" : "2948",
+        "source" : "2897",
+        "target" : "2945",
         "shared_name" : "size (positively_correlates) L lactate dehydrogenase measurement",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The results demonstrated that exposure to Ag nanoparticles for 24 h resulted in concentration-dependent increase in LDH leakage and exhibited a significant (p < 0.05) cytotoxicity at 10–50 μg/ml (Fig. 1B). It was noted that there is a statistically significant difference between different silver particle sizes of 100 and 15 nm, where the 100 nm particles showed higher toxicity at 25 and 50 μg/ml.",
@@ -2024,16 +2024,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "size (positively_correlates) L lactate dehydrogenase measurement",
         "interaction" : "positively_correlates",
-        "SUID" : 95365,
+        "SUID" : 2948,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95361",
-        "source" : "95331",
-        "target" : "95359",
+        "id" : "2942",
+        "source" : "2897",
+        "target" : "2939",
         "shared_name" : "size (positively_correlates) energy band gap",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "Interestingly, the CTS-1050, even though with carbon doping, shows a larger band gap than those of CTS-650 and CTS-850. This is ascribed to the largest grain size, fading of quantum confinement, which is in agreement with previous reports",
@@ -2041,16 +2041,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "size (positively_correlates) energy band gap",
         "interaction" : "positively_correlates",
-        "SUID" : 95361,
+        "SUID" : 2942,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.ceramint.2021.12.096"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95357",
-        "source" : "95331",
-        "target" : "95335",
+        "id" : "2936",
+        "source" : "2897",
+        "target" : "2903",
         "shared_name" : "size (negatively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "A significant depletion of GSH (70%) was observed at 25 μg/ml Ag (15,100 nm) relative to controls (61.00 ± 5.28 nmol GSH/mg cellular protein) (Fig. 6). Overall, the data demonstrated a significant depletion (p < 0.05) of GSH levels occurred in Ag (15,100 nm) exposed cells.",
@@ -2058,16 +2058,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "size (negatively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "negatively_correlates",
-        "SUID" : 95357,
+        "SUID" : 2936,
         "selected" : false,
         "doi" : "https://doi.org/10.1007/s00204-010-0545-5"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95355",
-        "source" : "95331",
-        "target" : "95335",
+        "id" : "2933",
+        "source" : "2897",
+        "target" : "2903",
         "shared_name" : "size (negatively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "A significant depletion of GSH (70%) was observed at 25 μg/ml Ag (15,100 nm) relative to controls (61.00 ± 5.28 nmol GSH/mg cellular protein) (Fig. 6). Overall, the data demonstrated a significant depletion (p < 0.05) of GSH levels occurred in Ag (15,100 nm) exposed cells.",
@@ -2075,16 +2075,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "size (negatively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "negatively_correlates",
-        "SUID" : 95355,
+        "SUID" : 2933,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95353",
-        "source" : "95331",
-        "target" : "95335",
+        "id" : "2930",
+        "source" : "2897",
+        "target" : "2903",
         "shared_name" : "size (negatively_correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO with higher concentrations induces more ROS. Among the three GO samples, s-GO causes the most serious oxidative stress.",
@@ -2092,16 +2092,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "size (negatively_correlates) reactive oxygen species biosynthetic process",
         "interaction" : "negatively_correlates",
-        "SUID" : 95353,
+        "SUID" : 2930,
         "selected" : false,
         "doi" : "https://doi.org/10.1016.j.toxlet.2010.11.016"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95351",
-        "source" : "95331",
-        "target" : "95349",
+        "id" : "2927",
+        "source" : "2897",
+        "target" : "2924",
         "shared_name" : "size (negatively_correlates) Photocatalytic activity",
         "materialLabel" : "titanium dioxide nanoparticle",
         "quote" : "For TiO2, as the particle size decreases, its photocatalytic activity will increase to a certain extent, showing a specific size effect.",
@@ -2109,16 +2109,16 @@
         "materialType" : "http://purl.obolibrary.org/obo/CHEBI_51050",
         "name" : "size (negatively_correlates) Photocatalytic activity",
         "interaction" : "negatively_correlates",
-        "SUID" : 95351,
+        "SUID" : 2927,
         "selected" : false,
         "doi" : "https://doi.org/10.3390/catal10070759"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95347",
-        "source" : "95331",
-        "target" : "95345",
+        "id" : "2921",
+        "source" : "2897",
+        "target" : "2918",
         "shared_name" : "size (negatively_correlates) interleukin-8 measurement",
         "materialLabel" : "zinc oxide nanoparticle",
         "quote" : "As shown in Figs. 6A and B, in the supernatants of untreated cells there was a low content of IL-8. When the cells were treated with the lower dose (3 µg/cm2 for 24 h and 48 h) of ZnO-NPs a significant IL-8 release was revealed (Fig. 6A). Exposure to the higher ZnO-NPs concentration induced an amplified chemokine secretion. IL-8 release by cells treated with TiO2 at 3 µg/cm2 was comparable with control ones (Fig. 6B). The exposure of LoVo to 5 µg/cm2 of TiO2 particles stimulated a significant release of IL-8. The experimental results suggest that the release of IL-8 induced by TiO2 particles is due to the presence of a percentage of particles smaller than 100 nm in size distribution. It has been demonstrated that TiO2 nanoparticles induce oxidative stress and release of IL8",
@@ -2126,16 +2126,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1542",
         "name" : "size (negatively_correlates) interleukin-8 measurement",
         "interaction" : "negatively_correlates",
-        "SUID" : 95347,
+        "SUID" : 2921,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.taap.2010.04.012"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95343",
-        "source" : "95331",
-        "target" : "95341",
+        "id" : "2915",
+        "source" : "2897",
+        "target" : "2912",
         "shared_name" : "size (does_not_correlate) phagocytosis",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "As referred in the GO characterization, the 350 nm and 2 μm GO had a same layer amount (same height ≈4 nm), so the total surface area of the flat materials would be identical for different GO sheets with an equal quality amount. Accordingly, these two GO with same lateral area and surface properties could absorb equal amounts of IgG opsonin (Fig. S8). Interaction between the FcγR and IgG was proportional to the IgG absorption. Therefore, GO sheets differed greatly in size would be internalized by macrophages at a similar level through IgG-FcγR meditated phagocytosis.",
@@ -2143,16 +2143,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "size (does_not_correlate) phagocytosis",
         "interaction" : "does_not_correlate",
-        "SUID" : 95343,
+        "SUID" : 2915,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95339",
-        "source" : "95331",
-        "target" : "95319",
+        "id" : "2909",
+        "source" : "2897",
+        "target" : "2862",
         "shared_name" : "size (does_not_correlate) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "Surprisingly, the saturated uptake amount of the two GO sheets did not vary with lateral dimension (Fig. 2B), and an identical accumulation of GO in macrophages was observed (Fig. 2C and D)",
@@ -2160,16 +2160,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "size (does_not_correlate) import across plasma membrane",
         "interaction" : "does_not_correlate",
-        "SUID" : 95339,
+        "SUID" : 2909,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95337",
-        "source" : "95331",
-        "target" : "95335",
+        "id" : "2906",
+        "source" : "2897",
+        "target" : "2903",
         "shared_name" : "size (correlates) reactive oxygen species biosynthetic process",
         "materialLabel" : "silver nanoparticle",
         "quote" : "The maximum ROS levels were found at 6 h, from that point on the levels of ROS reduced over a period of 24 h (data not shown). Therefore, the data shown here was only at 6 h exposure. The level of ROS in cells increased in a concentration-dependent manner and was statistically increased (p < 0.05) from 10 μg/ml concentration. Ag (15, 100 nm) treatment at 25 and 50 μg/ml resulted in an approximately 10-fold increase in ROS generation over control levels",
@@ -2177,16 +2177,16 @@
         "materialType" : "http://purl.bioontology.org/ontology/npo#NPO_1892",
         "name" : "size (correlates) reactive oxygen species biosynthetic process",
         "interaction" : "correlates",
-        "SUID" : 95337,
+        "SUID" : 2906,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.tiv.2005.06.034"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95333",
-        "source" : "95331",
-        "target" : "95319",
+        "id" : "2900",
+        "source" : "2897",
+        "target" : "2862",
         "shared_name" : "size (correlates) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "the saturated uptake amount of the two GO sheets did not vary with lateral dimension",
@@ -2194,16 +2194,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "size (correlates) import across plasma membrane",
         "interaction" : "correlates",
-        "SUID" : 95333,
+        "SUID" : 2900,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95329",
-        "source" : "95317",
-        "target" : "95319",
+        "id" : "2894",
+        "source" : "2860",
+        "target" : "2862",
         "shared_name" : "relative negative charge (negatively_correlates) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO internalization was negligible in all these non-phagocytes, which was likely due to strong electrostatic repulsions between GO and cell surface (negatively charged)",
@@ -2211,16 +2211,16 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "relative negative charge (negatively_correlates) import across plasma membrane",
         "interaction" : "negatively_correlates",
-        "SUID" : 95329,
+        "SUID" : 2894,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "95323",
-        "source" : "95317",
-        "target" : "95319",
+        "id" : "2875",
+        "source" : "2860",
+        "target" : "2862",
         "shared_name" : "relative negative charge (does_not_correlate) import across plasma membrane",
         "materialLabel" : "graphene oxide nanoparticle",
         "quote" : "GO internalization was negligible in all these non-phagocytes, which was likely due to strong electrostatic repulsions between GO and cell surface (negatively charged)",
@@ -2228,7 +2228,7 @@
         "materialType" : "http://purl.enanomapper.org/onto/ENM_0000117",
         "name" : "relative negative charge (does_not_correlate) import across plasma membrane",
         "interaction" : "does_not_correlate",
-        "SUID" : 95323,
+        "SUID" : 2875,
         "selected" : false,
         "doi" : "https://doi.org/10.1016/j.biomaterials.2012.02.021"
       },
