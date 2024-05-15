@@ -25,13 +25,14 @@
         top: 0;
         left: 0;
     }
+
     #assertion-box {
     position: fixed;
     bottom: 10px;
     padding: 10px;
     border: 0px solid #ccc;
     border-radius: 10px;
-    background-color: black; /* Changed background color to black */
+    background-color: black;
     color: #fff;
     }
     
@@ -41,14 +42,15 @@
     
     .assertion-label {
         display: inline-block;
-        width: 100px; /* Adjust width as needed */
-        color: white; /* Set color to white */
+    width: 100px;
+    color: white;
     }
     
     .assertion-value {
         display: inline-block;
-        color: white; /* Set color to white */
+    color: white;
     }
+
     #info-box {
         position: fixed;
         bottom: 0px;
@@ -60,14 +62,17 @@
         height: 100%;
         overflow-y: scroll;
     }
+
     .material-label {
         cursor: pointer;
         margin-bottom: 10px;
     }
 
     .assertion-link {
-    cursor: pointer; /* Change cursor to pointer for each assertion link */
-    }
+    cursor: pointer;
+}
+
+
 </style>
 <body>
 
@@ -79,16 +84,18 @@
         Click on an edge to visualize a causal link, or filter the directed graph by material.
 
         You can pan or zoom freely.
+        <hr>
         <p><strong>Described for material :</strong> <span id="material-label">NA</span> | <a id="material-iri" href="#" target="_blank"></a> </p>
         <p><strong>In resource:</strong> <a id="doi-link" href="#" target="_blank">NA</a></p>
         <p><strong>Quote:</strong> <span id="quote">NA</span></p>
         <h3>Material Labels</h3>
         <p>Select a material to filter the network</p>
         <div id="material-labels">
-            <button id="show-all-button">Show all materials</button>
+            <button id="show-all-button">Restore</button>
         </div>
     </div>
     <div id="assertion-box">
+        <p>Click on an edge to display all causal links between the connected nodes</p>
         <span id="cause-label"></span> <span id="outcome-label"></span></div>
     </div>
 
@@ -108,7 +115,36 @@
                     animate: true //decide?
                 }
             });
-        
+                // Generate material labels
+                const materialLabels = new Set();
+                elements.edges.forEach(edge => {
+                    if (edge.data.materialLabel) {
+                        materialLabels.add(edge.data.materialLabel);
+                    }
+                });
+                // Populate material labels in the info-box
+                const materialLabelsContainer = $('#material-labels');
+                materialLabels.forEach(label => {
+                    const materialLabelElement = $('<div class="material-label"></div>').text(label);
+                    materialLabelElement.click(function() {
+                    const filteredEdges = elements.edges.filter(edge => edge.data.materialLabel === label);
+                    const filteredNodes = new Set();
+                    filteredEdges.forEach(edge => {
+                        filteredNodes.add(edge.data.source); // Populate sources (causes)
+                        filteredNodes.add(edge.data.target); // Populate targets (outcomes)
+                });
+                const filteredElements = {
+                    nodes: elements.nodes.filter(node => filteredNodes.has(node.data.id)),
+                    edges: filteredEdges
+                };
+                cy.json({ elements: filteredElements });
+                    });
+                materialLabelsContainer.append(materialLabelElement);
+                });
+            // Show all button functionality
+            $('#show-all-button').click(function() {
+                cy.json({ elements });
+            });
             // Function to update info box with node information
             function updateInfoBox(edgeId) {
                 const edge = cy.getElementById(edgeId);
@@ -164,11 +200,6 @@
             $('#assertion-box').on('click', '.see-context-button', function() {
                 const edgeId = $(this).data('edge-id');
                 updateInfoBox(edgeId);
-            });
-        
-            // Show all button functionality
-            $('#show-all-button').click(function() {
-                cy.json({ elements });
             });
             
         });
