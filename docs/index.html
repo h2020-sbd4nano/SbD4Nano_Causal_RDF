@@ -7,6 +7,9 @@
     <title>SbD4Nano Causal Links dashboard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.0/cytoscape.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script>
+    <script type="text/javascript" src="js/cytoscape-cola.js"></script>
 </head>
 <style>
     body, html {
@@ -82,7 +85,7 @@ Promise.all([
         elements,
         style,
         layout: {
-            name: 'preset',
+            name: 'cola',
             rows: 1
         }
     });
