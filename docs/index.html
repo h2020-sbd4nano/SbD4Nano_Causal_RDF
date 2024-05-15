@@ -63,16 +63,23 @@
         overflow-y: scroll;
     }
 
-    .material-label {
-        cursor: pointer;
+    .filter-container {
         margin-bottom: 10px;
     }
 
-    .assertion-link {
-    cursor: pointer;
-}
+    .filter-label {
+        font-weight: bold;
+    }
 
+    .filter-option {
+        margin-left: 10px;
+    }
 
+    .material-label,
+    .interaction-label {
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
 </style>
 <body>
 
@@ -81,7 +88,7 @@
         <h2>Nanosafety Causal Links</h2>
         Proof-of-concept for a dashboard to explore the SbD4Nano Causal Links data. 
         
-        Click on an edge to visualize a causal link, or filter the directed graph by material.
+        Click on an edge to visualize a causal link, or filter the directed graph by material and interaction.
 
         You can pan or zoom freely.
         <hr>
@@ -91,118 +98,188 @@
         <h3>Material Labels</h3>
         <p>Select a material to filter the network</p>
         <div id="material-labels">
-            <button id="show-all-button">Restore</button>
+        <div class="filter-container">
+            <span class="filter-label">Material Labels:</span>
+            <div id="material-filters"></div>
+        </div>
+        <div class="filter-container">
+            <span class="filter-label">Interaction Types:</span>
+            <div id="interaction-filters"></div>
         </div>
     </div>
     <div id="assertion-box">
         <p>Click on an edge to display all causal links between the connected nodes</p>
-        <span id="cause-label"></span> <span id="outcome-label"></span></div>
+        <span id="cause-label"></span> <span id="outcome-label"></span>
     </div>
 
     <script>
-        
-        Promise.all([
-            fetch('assets/causal_network.cyjs').then(res => res.json()),
-            fetch('assets/style_cy.json').then(res => res.json())
-        ]).then(([{elements}, [{style}]]) => {
-            const cy = cytoscape({
-                container: document.getElementById('cy'),
-                elements,
-                style,
-                layout: {
-                    name: 'cola',
-                    rows: 1,
-                    animate: true //decide?
-                }
-            });
-                // Generate material labels
-                const materialLabels = new Set();
-                elements.edges.forEach(edge => {
-                    if (edge.data.materialLabel) {
-                        materialLabels.add(edge.data.materialLabel);
-                    }
-                });
-                // Populate material labels in the info-box
-                const materialLabelsContainer = $('#material-labels');
-                materialLabels.forEach(label => {
-                    const materialLabelElement = $('<div class="material-label"></div>').text(label);
-                    materialLabelElement.click(function() {
-                    const filteredEdges = elements.edges.filter(edge => edge.data.materialLabel === label);
-                    const filteredNodes = new Set();
-                    filteredEdges.forEach(edge => {
-                        filteredNodes.add(edge.data.source); // Populate sources (causes)
-                        filteredNodes.add(edge.data.target); // Populate targets (outcomes)
-                });
-                const filteredElements = {
-                    nodes: elements.nodes.filter(node => filteredNodes.has(node.data.id)),
-                    edges: filteredEdges
-                };
-                cy.json({ elements: filteredElements });
-                    });
-                materialLabelsContainer.append(materialLabelElement);
-                });
-            // Show all button functionality
-            $('#show-all-button').click(function() {
-                cy.json({ elements });
-            });
-            // Function to update info box with node information
-            function updateInfoBox(edgeId) {
-                const edge = cy.getElementById(edgeId);
-                const sourceNode = edge.source();
-                const targetNode = edge.target();
-                const causeLabel = sourceNode.data('name');
-                const outcomeLabel = targetNode.data('name');
-                const causeDefinition = sourceNode.data('causeComment') || 'NA';
-                const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
-                const materialLabel = edge.data('materialLabel') || 'NA';
-                const quote = edge.data('quote');
-                const doi = edge.data('doi') || 'NA';
-                const materialType = edge.data('materialType') || '/';
-                
-                // Update the info box with the node information
-                $('#cause-label').text(causeLabel);
-                $('#outcome-label').text(outcomeLabel);
-                $('#cause-definition').text(causeDefinition);
-                $('#outcome-definition').text(outcomeDefinition);
-                $('#material-label').text(materialLabel);
-                $('#doi-link').attr('href', doi).text(doi);
-                $('#quote').text(quote);
-                $('#material-iri').attr('href', materialType).text(materialType);
-            }
-        
-            // Add event listener for edge click
-            cy.on('tap', 'edge', function(event){
-                const clickedEdgeData = event.target.data();
-                const sourceId = clickedEdgeData.source;
-                const targetId = clickedEdgeData.target;
-        
-                // Find all edges connecting the same source and target nodes
-                const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
-                
-                // Initialize assertion text
-                let assertionText = '';
-        
-                // Loop through connected edges and build assertion text with "See Context" button
-                connectedEdges.forEach(edge => {
-                    const causeLabel = edge.source().data('name');
-                    const interaction = edge.data('interaction') || 'NA';
-                    const outcomeLabel = edge.target().data('name');
-                    const edgeId = edge.id(); // Retrieve the ID of the edge
-                    assertionText += `<span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
-                                      <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
-                });
-        
-                // Update the assertion box with the constructed assertion text
-                $('#assertion-box').html(assertionText);
-            });
-        
-            // Add event listener for the "See Context" button click
-            $('#assertion-box').on('click', '.see-context-button', function() {
-                const edgeId = $(this).data('edge-id');
-                updateInfoBox(edgeId);
-            });
-            
+Promise.all([
+    fetch('assets/causal_network.cyjs').then(res => res.json()),
+    fetch('assets/style_cy.json').then(res => res.json())
+]).then(([{elements}, [{style}]]) => {
+    const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements,
+        style,
+        layout: {
+            name: 'cola',
+            rows: 1,
+            animate: true
+        }
+    });
+
+    // Generate material labels
+    const materialLabels = new Set();
+    elements.edges.forEach(edge => {
+        if (edge.data.materialLabel) {
+            materialLabels.add(edge.data.materialLabel);
+        }
+    });
+
+    // Populate material labels in the info-box
+    const materialFiltersContainer = $('#material-filters');
+    materialLabels.forEach(label => {
+        const checkboxId = `material-${label.replace(/\s/g, '-').toLowerCase()}`;
+        const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="material-label" value="${label}" checked>`);
+        const labelElement = $(`<label for="${checkboxId}" class="material-label">${label}</label><br>`);
+        materialFiltersContainer.append(checkbox).append(labelElement);
+    });
+
+    // Generate interaction types
+    const interactionTypes = new Set();
+    elements.edges.forEach(edge => {
+        if (edge.data.interaction) {
+            interactionTypes.add(edge.data.interaction);
+        }
+    });
+
+    // Populate interaction types in the info-box
+    const interactionFiltersContainer = $('#interaction-filters');
+    interactionTypes.forEach(type => {
+        const checkboxId = `interaction-${type.replace(/\s/g, '-').toLowerCase()}`;
+        const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="interaction-label" value="${type}" checked>`);
+        const labelElement = $(`<label for="${checkboxId}" class="interaction-label">${type}</label><br>`);
+        interactionFiltersContainer.append(checkbox).append(labelElement);
+    });
+
+    // Function to update info box with node information
+    function updateInfoBox(edgeId) {
+        const edge = cy.getElementById(edgeId);
+        const sourceNode = edge.source();
+        const targetNode = edge.target();
+        const causeLabel = sourceNode.data('name');
+        const outcomeLabel = targetNode.data('name');
+        const causeDefinition = sourceNode.data('causeComment') || 'NA';
+        const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
+        const materialLabel = edge.data('materialLabel') || 'NA';
+        const quote = edge.data('quote');
+        const doi = edge.data('doi') || 'NA';
+        const materialType = edge.data('materialType') || '/';
+
+        // Update the info box with the node information
+        $('#cause-label').text(causeLabel);
+        $('#outcome-label').text(outcomeLabel);
+        $('#cause-definition').text(causeDefinition);
+        $('#outcome-definition').text(outcomeDefinition);
+        $('#material-label').text(materialLabel);
+        $('#doi-link').attr('href', doi).text(doi);
+        $('#quote').text(quote);
+        $('#material-iri').attr('href', materialType).text(materialType);
+    }
+
+    // Add event listener for edge click
+    cy.on('tap', 'edge', function(event){
+        const clickedEdgeData = event.target.data();
+        const sourceId = clickedEdgeData.source;
+        const targetId = clickedEdgeData.target;
+
+        // Find all edges connecting the same source and target nodes
+        const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
+
+        // Initialize assertion text
+        let assertionText = '';
+
+        // Loop through connected edges and build assertion text with "See Context" button
+        connectedEdges.forEach(edge => {
+            const causeLabel = edge.source().data('name');
+            const interaction = edge.data('interaction') || 'NA';
+            const outcomeLabel = edge.target().data('name');
+            const edgeId = edge.id(); // Retrieve the ID of the edge
+            assertionText += `<span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
+                              <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
         });
+
+        // Update the assertion box with the constructed assertion text
+        $('#assertion-box').html(assertionText);
+    });
+
+    // Add event listener for the "See Context" button click
+    $('#assertion-box').on('click', '.see-context-button', function() {
+        const edgeId = $(this).data('edge-id');
+        updateInfoBox(edgeId);
+    });
+
+    // Add event listener for material labels
+    $('#material-filters').on('change', '.material-label', function() {
+        const selectedMaterials = [];
+        $('.material-label:checked').each(function() {
+            selectedMaterials.push($(this).val());
+        });
+
+        // Filter edges based on selected material labels
+        const filteredEdges = elements.edges.filter(edge => {
+            const materialLabel = edge.data.materialLabel || 'NA';
+            return selectedMaterials.includes(materialLabel);
+        });
+
+        // Apply interaction type filter if it's not empty
+        const selectedInteractions = [];
+        $('.interaction-label:checked').each(function() {
+            selectedInteractions.push($(this).val());
+        });
+
+        if (selectedInteractions.length > 0) {
+            const edgesWithInteractionFilter = filteredEdges.filter(edge => {
+                const interaction = edge.data.interaction || 'NA';
+                return selectedInteractions.includes(interaction);
+            });
+            cy.json({ elements: { nodes: elements.nodes, edges: edgesWithInteractionFilter } });
+        } else {
+            cy.json({ elements: { nodes: elements.nodes, edges: filteredEdges } });
+        }
+    });
+
+    // Add event listener for interaction types
+    $('#interaction-filters').on('change', '.interaction-label', function() {
+        const selectedInteractions = [];
+        $('.interaction-label:checked').each(function() {
+            selectedInteractions.push($(this).val());
+        });
+
+        // Filter edges based on selected interaction types
+        const filteredEdges = elements.edges.filter(edge => {
+            const interaction = edge.data.interaction || 'NA';
+            return selectedInteractions.includes(interaction);
+        });
+
+        // Apply material filter if it's not empty
+        const selectedMaterials = [];
+        $('.material-label:checked').each(function() {
+            selectedMaterials.push($(this).val());
+        });
+
+        if (selectedMaterials.length > 0) {
+            const edgesWithMaterialFilter = filteredEdges.filter(edge => {
+                const materialLabel = edge.data.materialLabel || 'NA';
+                return selectedMaterials.includes(materialLabel);
+            });
+            cy.json({ elements: { nodes: elements.nodes, edges: edgesWithMaterialFilter } });
+        } else {
+            cy.json({ elements: { nodes: elements.nodes, edges: filteredEdges } });
+        }
+    });
+
+});
     </script>
 
 </body>
