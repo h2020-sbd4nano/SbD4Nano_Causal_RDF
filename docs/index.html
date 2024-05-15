@@ -22,6 +22,9 @@ body, html {
     height: 100%;
     font-family: 'Candara', sans-serif;
 }
+.highlight-source {
+    background-color: #fc766a;
+}
 
 #cy {
     width: 70%;
@@ -114,156 +117,176 @@ body, html {
         <span class="filter-label">Interaction Types:</span>
         <div id="interaction-filters"></div>
     </div>
+    <button id="hazard_reduction-button">Hazard Reduction Strategies</button>
+</div>
     <script>
-        Promise.all([
-            fetch('assets/causal_network.cyjs').then(res => res.json()),
-            fetch('assets/style_cy.json').then(res => res.json())
-        ]).then(([{elements}, [{style}]]) => {
-            const cy = cytoscape({
-                container: document.getElementById('cy'),
-                elements,
-                style,
-                layout: {
-                    name: 'cola',
-                    rows: 1,
-                    animate: true
+Promise.all([
+    fetch('assets/causal_network.cyjs').then(res => res.json()),
+    fetch('assets/style_cy.json').then(res => res.json())
+]).then(([{elements}, [{style}]]) => {
+    const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements,
+        style,
+        layout: {
+            name: 'cola',
+            rows: 1,
+            animate: true
+        }
+    });
+
+    function updateInfoBox(edgeId) {
+        const edge = cy.getElementById(edgeId);
+        const sourceNode = edge.source();
+        const targetNode = edge.target();
+        const causeLabel = sourceNode.data('name');
+        const outcomeLabel = targetNode.data('name');
+        const causeDefinition = sourceNode.data('causeComment') || 'NA';
+        const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
+        const materialLabel = edge.data('materialLabel') || 'NA';
+        const quote = edge.data('quote');
+        const doi = edge.data('doi') || 'NA';
+        const materialType = edge.data('materialType') || '/';
+
+        $('#cause-label').text(causeLabel);
+        $('#outcome-label').text(outcomeLabel);
+        $('#cause-definition').text(causeDefinition);
+        $('#outcome-definition').text(outcomeDefinition);
+        $('#material-label').text(materialLabel);
+        $('#quote').text(quote);
+        $('#material-iri').attr('href', materialType).text(materialType);
+        $('#formatted-doi').text("Fetching citation...");
+
+        const cite = new Cite();
+        Cite.async(doi).then(function(cite) {
+            const formattedDOI = cite.format('bibliography', {
+                format: 'html',
+                template: 'apa',
+                prepend: function (entry) {
+                    return '<i class="fa-solid fa-file fa-xs"></i><a href="../../work/' + doi.toUpperCase() +
+                    '"><code class="highligher-rouge"><nobr>' + doi + '</nobr></code></a>&nbsp;';
+                },
+                append: function (entry) {
+                    return ' <a href="https://doi.org/' + doi + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + doi + '">Scholia</a>';
                 }
             });
-            // Function to update info box with node information
-            function updateInfoBox(edgeId) {
-                const edge = cy.getElementById(edgeId);
-                const sourceNode = edge.source();
-                const targetNode = edge.target();
-                const causeLabel = sourceNode.data('name');
-                const outcomeLabel = targetNode.data('name');
-                const causeDefinition = sourceNode.data('causeComment') || 'NA';
-                const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
-                const materialLabel = edge.data('materialLabel') || 'NA';
-                const quote = edge.data('quote');
-                const doi = edge.data('doi') || 'NA';
-                const materialType = edge.data('materialType') || '/';
-            
-                // Update the info box with the node information
-                $('#cause-label').text(causeLabel);
-                $('#outcome-label').text(outcomeLabel);
-                $('#cause-definition').text(causeDefinition);
-                $('#outcome-definition').text(outcomeDefinition);
-                $('#material-label').text(materialLabel);
-                $('#quote').text(quote);
-                $('#material-iri').attr('href', materialType).text(materialType);
-                $('#formatted-doi').text("Fetching citation...");
-                // Fetch and display citation information for the DOI
-                const cite = new Cite();
-                Cite.async(doi).then(function(cite) {
-                    
-                    const formattedDOI = cite.format('bibliography', {
-                        format: 'html',
-                        template: 'apa',
-                        prepend: function (entry) {
-                            return '<i class="fa-solid fa-file fa-xs"></i><a href="../../work/' + doi.toUpperCase() +
-                            '"><code class="highligher-rouge"><nobr>' + doi + '</nobr></code></a>&nbsp;';
-                        },
-                        append: function (entry) {
-                            return ' <a href="https://doi.org/' + doi + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + doi + '">Scholia</a>';
-                        }
-                    });
-                    $('#material-label').text(materialLabel);
-                    $('#formatted-doi').text("");
-                    $('#formatted-doi').append(formattedDOI);
-                });
-            }
-            function updateGraph() {
-                const selectedMaterials = $('.material-label:checked').map(function() {
-                    return $(this).val();
-                }).get();
-
-                const selectedInteractions = $('.interaction-label:checked').map(function() {
-                    return $(this).val();
-                }).get();
-
-                const filteredEdges = elements.edges.filter(edge => {
-                    const materialLabel = edge.data.materialLabel || 'NA';
-                    const interaction = edge.data.interaction || 'NA';
-
-                    return (selectedMaterials.includes(materialLabel) || selectedMaterials.length === 0) &&
-                        (selectedInteractions.includes(interaction) || selectedInteractions.length === 0);
-                });
-
-                const filteredNodeIds = new Set();
-                filteredEdges.forEach(edge => {
-                    filteredNodeIds.add(edge.data.source);
-                    filteredNodeIds.add(edge.data.target);
-                });
-
-                const filteredNodes = elements.nodes.filter(node => filteredNodeIds.has(node.data.id));
-
-                const filteredElements = {
-                    nodes: filteredNodes,
-                    edges: filteredEdges
-                };
-
-                cy.json({ elements: filteredElements });
-            }
-
-            const materialLabels = new Set();
-            elements.edges.forEach(edge => {
-                if (edge.data.materialLabel) {
-                    materialLabels.add(edge.data.materialLabel);
-                }
-            });
-
-            const materialFiltersContainer = $('#material-filters');
-            materialLabels.forEach(label => {
-                const checkboxId = `material-${label.replace(/\s/g, '-').toLowerCase()}`;
-                const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="material-label" value="${label}" checked>`);
-                const labelElement = $(`<label for="${checkboxId}" class="material-label">${label}</label><br>`);
-                materialFiltersContainer.append(checkbox).append(labelElement);
-            });
-
-            const interactionTypes = new Set();
-            elements.edges.forEach(edge => {
-                if (edge.data.interaction) {
-                    interactionTypes.add(edge.data.interaction);
-                }
-            });
-
-            const interactionFiltersContainer = $('#interaction-filters');
-            interactionTypes.forEach(type => {
-                const checkboxId = `interaction-${type.replace(/\s/g, '-').toLowerCase()}`;
-                const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="interaction-label" value="${type}" checked>`);
-                const labelElement = $(`<label for="${checkboxId}" class="interaction-label">${type}</label><br>`);
-                interactionFiltersContainer.append(checkbox).append(labelElement);
-            });
-
-            $('.material-label').change(updateGraph);
-            $('.interaction-label').change(updateGraph);
-
-            cy.on('tap', 'edge', function(event){
-                const clickedEdgeData = event.target.data();
-                const sourceId = clickedEdgeData.source;
-                const targetId = clickedEdgeData.target;
-
-                const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
-
-                let assertionText = '';
-
-                connectedEdges.forEach(edge => {
-                    const causeLabel = edge.source().data('name');
-                    const interaction = edge.data('interaction') || 'NA';
-                    const outcomeLabel = edge.target().data('name');
-                    const edgeId = edge.id();
-                    assertionText += `<span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
-                                      <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
-                });
-
-                $('#assertion-box').html(assertionText);
-            });
-
-            $('#assertion-box').on('click', '.see-context-button', function() {
-                const edgeId = $(this).data('edge-id');
-                updateInfoBox(edgeId);
-            });
+            $('#material-label').text(materialLabel);
+            $('#formatted-doi').text("");
+            $('#formatted-doi').append(formattedDOI);
         });
+    }
+
+    function filterEdgesByHazardReduction(edges, includeHazardReduction) {
+        if (includeHazardReduction) {
+            return edges.filter(edge => edge.data['hazard_reduction'] === 1);
+        } else {
+            return edges;
+        }
+    }
+
+    function updateGraph() {
+        const selectedMaterials = $('.material-label:checked').map(function() {
+            return $(this).val();
+        }).get();
+
+        const selectedInteractions = $('.interaction-label:checked').map(function() {
+            return $(this).val();
+        }).get();
+
+        const includeHazardReduction = $('#hazard_reduction-button').hasClass('active');
+
+        let filteredEdges = elements.edges;
+
+        // Apply material filter
+        filteredEdges = filteredEdges.filter(edge => selectedMaterials.includes(edge.data.materialLabel) || selectedMaterials.length === 0);
+
+        // Apply interaction type filter
+        filteredEdges = filteredEdges.filter(edge => selectedInteractions.includes(edge.data.interaction) || selectedInteractions.length === 0);
+
+        // Apply hazard reduction filter
+        filteredEdges = filterEdgesByHazardReduction(filteredEdges, includeHazardReduction);
+
+        const filteredNodeIds = new Set();
+        filteredEdges.forEach(edge => {
+            filteredNodeIds.add(edge.data.source);
+            filteredNodeIds.add(edge.data.target);
+        });
+
+        const filteredNodes = elements.nodes.filter(node => filteredNodeIds.has(node.data.id));
+
+        const filteredElements = {
+            nodes: filteredNodes,
+            edges: filteredEdges
+        };
+
+        cy.json({ elements: filteredElements });
+    }
+
+    const materialLabels = new Set();
+    elements.edges.forEach(edge => {
+        if (edge.data.materialLabel) {
+            materialLabels.add(edge.data.materialLabel);
+        }
+    });
+
+    const materialFiltersContainer = $('#material-filters');
+    materialLabels.forEach(label => {
+        const checkboxId = `material-${label.replace(/\s/g, '-').toLowerCase()}`;
+        const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="material-label" value="${label}" checked>`);
+        const labelElement = $(`<label for="${checkboxId}" class="material-label">${label}</label><br>`);
+        materialFiltersContainer.append(checkbox).append(labelElement);
+    });
+
+    const interactionTypes = new Set();
+    elements.edges.forEach(edge => {
+        if (edge.data.interaction) {
+            interactionTypes.add(edge.data.interaction);
+        }
+    });
+
+    const interactionFiltersContainer = $('#interaction-filters');
+    interactionTypes.forEach(type => {
+        const checkboxId = `interaction-${type.replace(/\s/g, '-').toLowerCase()}`;
+        const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="interaction-label" value="${type}" checked>`);
+        const labelElement = $(`<label for="${checkboxId}" class="interaction-label">${type}</label><br>`);
+        interactionFiltersContainer.append(checkbox).append(labelElement);
+    });
+
+    $('.material-label').change(updateGraph);
+    $('.interaction-label').change(updateGraph);
+
+    cy.on('tap', 'edge', function(event){
+        const clickedEdgeData = event.target.data();
+        const sourceId = clickedEdgeData.source;
+        const targetId = clickedEdgeData.target;
+
+        const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
+
+        let assertionText = '';
+
+        connectedEdges.forEach(edge => {
+            const causeLabel = edge.source().data('name');
+            const interaction = edge.data('interaction') || 'NA';
+            const outcomeLabel = edge.target().data('name');
+            const edgeId = edge.id();
+            assertionText += `<span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
+                              <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
+        });
+
+        $('#assertion-box').html(assertionText);
+    });
+
+    $('#assertion-box').on('click', '.see-context-button', function() {
+        const edgeId = $(this).data('edge-id');
+        updateInfoBox(edgeId);
+    });
+
+    $('#hazard_reduction-button').click(function() {
+        $(this).toggleClass('active');
+        updateGraph();
+    });
+});
+
     </script>
 </div>
 
