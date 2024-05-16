@@ -27,7 +27,7 @@ body, html {
 }
 
 #cy {
-    width: 70%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -44,24 +44,26 @@ body, html {
 }
 
 #info-box {
-    position: fixed;
-    bottom: 0px;
+    position: absolute;
+    top: 15px;
     right: 0px;
     background-color: white;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 2%;
     width: 25%;
-    height: 100%;
     overflow-y: scroll;
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Updated border declaration */
 }
 
 #filters {
     border-radius: 10px;
-    border-color: #0f4c81;
+    border: 3px solid #0f4c81; /* Updated border declaration */
     position:absolute;
     top:15px;
     left:15px;
     background-color: #fff;
+    width: 15vw;
+    padding:2%
 }
 
 .filter-label {
@@ -75,6 +77,11 @@ body, html {
     margin-bottom: 5px;
     margin-top: 3px;
 }
+
+.evidence-assertion-box {
+    color:#0f4c81;
+}
+
 </style>
 <body>
 
@@ -84,33 +91,30 @@ body, html {
     <span id="cause-label"></span> <span id="outcome-label"></span>
 </div>
 <div id="info-box">
-    <h1>Nanosafety Causal Links</h1>
-    Proof-of-concept for a dashboard to explore the SbD4Nano Causal Links data.
-
-    Click on an edge to visualize a causal link, or filter the directed graph by material and interaction.
-
-    You can pan or zoom freely.
+    <h2>Context for assertion</h2>
     <hr>
+    <p><strong><span id="evidence-assertion-box"></span></strong></p>
+
     <h3>Material</h3>
     <p><span id="material-label"></span> <a id="material-iri" href="#" target="_blank"></a> </p>
 
-    <hr>
-
-    <hr>
     <div id="citation-box">
-        <h2>Evidence</h2>
+        <h3>Evidence</h3>
         <div id="quote-box">
             <p><i><span id="quote"></span></i></p>
         </div>
         <p><strong>Bibliography</strong></p>
         <div id="formatted-doi"></div>
     </div>
-    <hr>
-    <p><strong>Cause definition: </strong><span id="cause-definition"></span></p>
-    <p><strong>Outcome definition: </strong><i><span id="outcome-definition"></span></p>
+    <p><strong>Cause definition: </strong><div id="cause-definition"></div></p>
+    <p><strong>Outcome definition: </strong><i><div id="outcome-definition"></div></p>
 </div>
 
 <div id="filters">
+    <img src="https://mlswpsr7n78j.i.optimole.com/w:300/h:130/q:mauto/ig:avif/f:best/https://www.nanosafetycluster.eu/wp-content/uploads/2020/11/SbD4Nano.png" width = 260px />
+    <h1>NanoSafety Causal Links</h1>
+    <p>Click on an edge to visualize a causal link, or filter the directed graph by material and interaction.
+        You can drag nodes, pan and zoom freely.</p>
     <h3>Filter</h3>
     <div class="filter-container">
         <span class="filter-label">Material Labels:</span>
@@ -119,9 +123,12 @@ body, html {
     <div class="filter-container">
         <span class="filter-label">Interaction Types:</span>
         <div id="interaction-filters"></div>
+    
     </div>
     <button id="hazard_reduction-button">Hazard Reduction Strategies</button>
+    <button id="hazard_increase-button">Hazard Increase</button>
 </div>
+
     <script>
 Promise.all([
     fetch('assets/causal_network.cyjs').then(res => res.json()),
@@ -132,7 +139,8 @@ Promise.all([
         elements,
         style,
         layout: {
-            name: 'cola',
+            //name: 'cola',
+            name: 'breadthfirst',
             rows: 1,
             animate: true
         }
@@ -150,15 +158,20 @@ Promise.all([
         const quote = edge.data('quote');
         const doi = edge.data('doi') || 'NA';
         const materialType = edge.data('materialType') || '/';
-
-        $('#cause-label').text(causeLabel);
-        $('#outcome-label').text(outcomeLabel);
-        $('#cause-definition').text(causeDefinition);
-        $('#outcome-definition').text(outcomeDefinition);
+        const causeIri = sourceNode.data('causeIri') ;
+        const outcomeIri = targetNode.data('outcomeIri');
+        var assertionTriples = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
+        $('#evidence-assertion-box').html(assertionTriples);
+        $('#cause-label').attr('href', causeIri).text(causeLabel);
+        $('#outcome-label').attr('href', outcomeIri).text(outcomeLabel);
+        $('#cause-definition').text(causeDefinition + '. (' + causeIri + ')');
+        $('#outcome-definition').html(`${outcomeDefinition} <a href="${outcomeIri}>${outcomeIri}</a>`);
+        $('#cause-definition').html(`${causeDefinition} <a href="${causeIri}>${causeIri}</a>`);
+        $('#assertion-triple-box')
         $('#material-label').text(materialLabel);
         $('#quote').text(quote);
         $('#material-iri').attr('href', materialType).text(materialType);
-        $('#formatted-doi').text("Fetching citation...");
+        $('#formatted-doi').text(doi);
 
         const cite = new Cite();
         Cite.async(doi).then(function(cite) {
@@ -178,14 +191,14 @@ Promise.all([
             $('#formatted-doi').append(formattedDOI);
         });
     }
-
-    function filterEdgesByHazardReduction(edges, includeHazardReduction) {
-        if (includeHazardReduction) {
-            return edges.filter(edge => edge.data['hazard_reduction'] === 1);
+    function filterEdgesByHazardReduction(edges, includeHazardEffect, which_effect) {
+        if (includeHazardEffect) {
+            return edges.filter(edge => edge.data[which_effect] === 1);
         } else {
             return edges;
         }
     }
+    const hazardIncrease = 'hazard_reduction';
 
     function updateGraph() {
         const selectedMaterials = $('.material-label:checked').map(function() {
@@ -196,8 +209,8 @@ Promise.all([
             return $(this).val();
         }).get();
 
-        const includeHazardReduction = $('#hazard_reduction-button').hasClass('active');
-
+        const includeHazardreduction = $('#hazard_reduction-button').hasClass('active');
+        const includeHazardIncrease = $('#hazard_increase-button').hasClass('active');
         let filteredEdges = elements.edges;
 
         // Apply material filter
@@ -207,8 +220,9 @@ Promise.all([
         filteredEdges = filteredEdges.filter(edge => selectedInteractions.includes(edge.data.interaction) || selectedInteractions.length === 0);
 
         // Apply hazard reduction filter
-        filteredEdges = filterEdgesByHazardReduction(filteredEdges, includeHazardReduction);
-
+        filteredEdges = filterEdgesByHazardReduction(filteredEdges, includeHazardreduction, 'hazard_reduction');
+        // Apply hazard increase filter
+        filteredEdges = filterEdgesByHazardReduction(filteredEdges, includeHazardIncrease, 'hazard_increase');
         const filteredNodeIds = new Set();
         filteredEdges.forEach(edge => {
             filteredNodeIds.add(edge.data.source);
@@ -266,7 +280,6 @@ Promise.all([
         const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
 
         let assertionText = '';
-
         connectedEdges.forEach(edge => {
             const causeLabel = edge.source().data('name');
             const interaction = edge.data('interaction') || 'NA';
@@ -274,9 +287,11 @@ Promise.all([
             const edgeId = edge.id();
             assertionText += `<span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
                               <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
+            assertionTriple = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
         });
 
         $('#assertion-box').html(assertionText);
+        $('#evidence-assertion-box').html(assertionTriple);
     });
 
     $('#assertion-box').on('click', '.see-context-button', function() {
@@ -285,6 +300,10 @@ Promise.all([
     });
 
     $('#hazard_reduction-button').click(function() {
+        $(this).toggleClass('active');
+        updateGraph();
+    });
+    $('#hazard_increase-button').click(function() {
         $(this).toggleClass('active');
         updateGraph();
     });
