@@ -1142,18 +1142,6 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/npo#NPO_1365 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1365">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000186"/>
-        <npo:code>NPO_1365</npo:code>
-        <npo:preferred_Name>aspect ratio</npo:preferred_Name>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
-        <rdfs:label>aspect ratio</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1367 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1367">
@@ -1396,6 +1384,19 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_156 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_156">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_274"/>
+        <npo:code>NPO_156</npo:code>
+        <npo:preferred_Name>ellipsoidal shape</npo:preferred_Name>
+        <npo:synonym>ellipsoidal</npo:synonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>ellipsoidal shape</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_1597 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1597">
@@ -1564,6 +1565,18 @@
         <npo:preferred_Name>pH value</npo:preferred_Name>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
         <rdfs:label>pH value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_1815 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_1815">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1793"/>
+        <npo:code>NPO_1815</npo:code>
+        <npo:preferred_Name>zeta potential value</npo:preferred_Name>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>zeta potential value</rdfs:label>
     </owl:Class>
     
 
@@ -1802,6 +1815,19 @@
     
 
 
+    <!-- http://purl.bioontology.org/ontology/npo#NPO_286 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_286">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_156"/>
+        <npo:code>NPO_286</npo:code>
+        <npo:preferred_Name>spherical shape</npo:preferred_Name>
+        <npo:synonym>spherical</npo:synonym>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/npo.owl"/>
+        <rdfs:label>spherical shape</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/npo#NPO_532 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/npo#NPO_532">
@@ -1861,6 +1887,28 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
         <rdfs:label xml:lang="en">Ion leakage</rdfs:label>
         <rdfs:label xml:lang="en">Ion spilling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0468307 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0468307">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <obo:IAO_0000115>Functionalization of a nanoparticle through carboxy groups</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">Carboxy-functionalization of a nanoparticle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_0468309 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_0468309">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <obo:IAO_0000115>Functionalization of a nanoparticle via the addition of glucose</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">Glucose-functionalization of a nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -2067,6 +2115,17 @@
         <rdfs:label xml:lang="en">HKC</rdfs:label>
         <rdfs:label xml:lang="en">Human kidney cell line</rdfs:label>
         <rdfs:label xml:lang="en">Mouse platelets</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2866079 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2866079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002433"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">CR-mediated phagocytic pathway</rdfs:label>
+        <rdfs:label xml:lang="en">Complement receptor-mediated phagocytic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -2319,6 +2378,17 @@
         <obo:IAO_0000115>Embedding of a nanomaterial into nano-enabled paint formulation</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
         <rdfs:label xml:lang="en">Embedding into nano-enabled paint formulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_9318045 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_9318045">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_1883"/>
+        <obo:IAO_0000115>Functionalization of a nanoparticle through carbon-carbon groups</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">Carbon-carbon-functionalization of a nanoparticle</rdfs:label>
     </owl:Class>
     
 
@@ -3038,6 +3108,16 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BTO_0000849 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0000849">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001639"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bto.owl"/>
+        <rdfs:label>melanoma cell line</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BTO_0001034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BTO_0001034">
@@ -3321,6 +3401,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <oboInOwl:hasDbXref>VHOG:0001533</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WBbt:0004017</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>XAO:0003012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0009000</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ubprop#_upper_level"/>
         <rdfs:comment>The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).</rdfs:comment>
@@ -3332,6 +3413,18 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CARO:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007002</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ZFA:0009000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
 
@@ -3365,6 +3458,7 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <obo:IAO_0000115>A cell found predominately in the blood.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>FMA:62844</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D001773</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0009044</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#cellxgene_subset"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/cl#general_cell_types_upper_slim"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
@@ -3376,6 +3470,12 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <owl:annotatedTarget>A cell found predominately in the blood.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tfm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CL_0000081"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>ZFA:0009044</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/UnspecifiedMatching"/>
     </owl:Axiom>
     
 
@@ -3899,6 +3999,29 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0034121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate, or extent of toll-like receptor signaling pathway.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>regulation of TLR signaling pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of toll-like receptor signalling pathway</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0034121</oboInOwl:id>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:label>regulation of toll-like receptor signaling pathway</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034121"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate, or extent of toll-like receptor signaling pathway.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:add</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16551253</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17328678</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0038096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0038096">
@@ -4034,43 +4157,6 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0051494 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051494">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051493"/>
-        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>down regulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>down-regulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>downregulation of cytoskeleton organization</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>negative regulation of cytoskeleton organisation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>inhibition of cytoskeleton organization</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>negative regulation of cytoskeleton organization and biogenesis</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>GO:0051494</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <rdfs:label>negative regulation of cytoskeleton organization</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the formation, arrangement of constituent parts, or disassembly of cytoskeletal structures.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>negative regulation of cytoskeleton organisation</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051494"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>negative regulation of cytoskeleton organization and biogenesis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0061136 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061136">
@@ -4201,6 +4287,12 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>positive regulation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -4283,12 +4375,6 @@ Human lung carcinoma established from an explanted lung tumor which was removed 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>activation of proteasome-mediated protein catabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901800"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>activation of proteasome-mediated protein catabolism</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4549,6 +4635,8 @@ Previous. An information content entity is a non-realizable information entity t
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C63923"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77808"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C85491"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <rdfs:label>Escherichia coli</rdfs:label>
@@ -4628,15 +4716,21 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:NCIT_P106>Human</obo:NCIT_P106>
         <obo:NCIT_P108>Human</obo:NCIT_P108>
         <obo:NCIT_P207>C0086418</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
         <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P325>The bipedal primate mammal assigned to the species Homo sapiens.</obo:NCIT_P325>
         <obo:NCIT_P325>The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.</obo:NCIT_P325>
         <obo:NCIT_P331>9606</obo:NCIT_P331>
         <obo:NCIT_P366>Human</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>HUMAN</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Homo sapiens</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Human</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Human, General</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133805"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C133862"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77808"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <rdfs:label>Human</rdfs:label>
     </owl:Class>
@@ -4649,8 +4743,28 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget>The bipedal primate mammal assigned to the species Homo sapiens.</owl:annotatedTarget>
+        <obo:NCIT_P378>CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
         <owl:annotatedTarget>The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research.</owl:annotatedTarget>
         <obo:NCIT_P378>PQCMC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>HUMAN</owl:annotatedTarget>
+        <obo:NCIT_P383>PT</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Homo sapiens</owl:annotatedTarget>
+        <obo:NCIT_P383>SY</obo:NCIT_P383>
+        <obo:NCIT_P384>CDISC</obo:NCIT_P384>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C14225"/>
@@ -5144,6 +5258,61 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000556"/>
+        <obo:IAO_0000115>an edema AE which has an outcome of lung edema</obo:IAO_0000115>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <rdfs:label>lung edema AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000555"/>
+        <obo:IAO_0000115>a homeostasis AE which has an outcome of abnormal fluid regulation, which is any anomaly in the control of intracellular and/or extracellular fluid</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <rdfs:label>abnormal fluid regulation AE</rdfs:label>
+        <rdfs:seeAlso>MP: MP_0001784</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <obo:IAO_0000115>an AE that occurs in the homeostasis system.</obo:IAO_0000115>
+        <rdfs:comment>anomaly in the processes involved in the maintenance of an internal equilibrium of various functions and chemical or protein composition of the fluids and tissues</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <rdfs:label>homeostasis AE</rdfs:label>
+        <rdfs:seeAlso>MP: MP_0001764</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000556">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000546"/>
+        <obo:IAO_0000115>an abnormal fluid regulation AE which has an outcome of edema, which is an accumulation of an excessive amount of watery fluid in cells or intercellular tissues</obo:IAO_0000115>
+        <obo:IAO_0000118>oedema, swelling, dropsy</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Oedema</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Swelling_(medical)</obo:IAO_0000119>
+        <obo:OAE_0004334>10016807</obo:OAE_0004334>
+        <obo:OAE_0004334>10030095</obo:OAE_0004334>
+        <obo:OAE_0004334>10042674</obo:OAE_0004334>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <rdfs:label>edema AE</rdfs:label>
+        <rdfs:seeAlso>MP: MP_0001785</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OAE_0000557 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000557">
@@ -5173,6 +5342,18 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
         <rdfs:label>nervous system AE</rdfs:label>
         <rdfs:seeAlso>MP: MP_0003633</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000588 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000588">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">an adverse event which occurs in a hematopoietic system, which is any structural or developmental anomaly of the blood cells or the organs associated with the development and formation of blood cells</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <rdfs:label>hematopoietic system AE</rdfs:label>
+        <rdfs:seeAlso>MP: MP_0002396</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5216,6 +5397,23 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
         <obo:OAE_0004334>10018691</obo:OAE_0004334>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
         <rdfs:label xml:lang="en">granuloma AE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0002258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000588"/>
+        <obo:IAO_0000117>JX, LW, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>Hemolysis AE is a hematopoietic system AE that is the rupturing of erythrocytes (red blood cells) and the release of their contents (cytoplasm) into surrounding fluid.</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Hemolysis</obo:IAO_0000119>
+        <obo:OAE_0001849>溶血</obo:OAE_0001849>
+        <obo:OAE_0004334>10019491</obo:OAE_0004334>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
+        <rdfs:label>hemolysis AE</rdfs:label>
+        <rdfs:seeAlso>CTCAE: E10037</rdfs:seeAlso>
+        <rdfs:seeAlso>NCIt: C37965</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -5374,6 +5572,34 @@ The &apos;adverse event&apos; defined in the above paper has now been changed to
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000952 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+        <obo:IAO_0000111>oral administration</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>An administering substance in vivo into the mouth of an organism</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>oral administration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000994 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000994">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+        <obo:IAO_0000111>intravenous injection</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>is the injection of a material entity (bearing the administered substance role) into the vein (bearing the target role) of an organism using a syringe</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>intravenous injection</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001501">
@@ -5490,6 +5716,29 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000119>PMID:7686265</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label>comet assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600007">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000487"/>
+        <obo:IAO_0000111 xml:lang="en">administering substance in vivo</obo:IAO_0000111>
+        <obo:IAO_0000112>Balb/c mice received an intracameral or subconjunctival injection of trinitrophenylated spleen cells</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">injecting mice with 10 ug morphine intranasally, a patient taking two pills of 1 mg aspirin orally</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>A process by which a substance is intentionally given to an organism resulting in exposure of the organism to that substance.</obo:IAO_0000115>
+        <obo:IAO_0000116>2009-11-10. Tracker: https://sourceforge.net/tracker/?func=detail&amp;aid=2893050&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Different routes and means of administration should go as children underneath this</obo:IAO_0000116>
+        <obo:IAO_0000116>Update the definition based on the discussion. Details see the tracker:
+https://sourceforge.net/p/obi/obi-terms/738/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">needs roles such as perturber and perturbee (children of input role). Perturb is too strong. Host might be the name for one role. Others considered: Doner, Donated, Acceptor.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>Person:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">administering substance in vivo</rdfs:label>
     </owl:Class>
     
 
@@ -13238,6 +13487,21 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001213 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BTO_0000849"/>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001641"/>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>NCIt:C117184</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>MDA-MB-435</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Was originally considered to be a breast cancer cell line but has since been identified as a melanoma cell line.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <rdfs:label>MDAMB435</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0001225 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001225">
@@ -13799,6 +14063,17 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
     
 
 
+    <!-- http://www.ebi.ac.uk/efo/EFO_0006286 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0006286">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001639"/>
+        <oboInOwl:hasExactSynonym>MGC803</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <rdfs:label>MGC-803</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/efo/EFO_0006639 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0006639">
@@ -13894,6 +14169,23 @@ A cancer cell line is a cell line.</obo:IAO_0000117>
         <oboInOwl:hasDbXref>NCIT:C17231</oboInOwl:hasDbXref>
         <rdfs:isDefinedBy rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
         <rdfs:label xml:lang="en">ultraviolet radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0022402 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0022402">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0002888"/>
+        <obo:IAO_0000115>Homo sapiens SAOS-2 cell line established from primary osteogenic sarcoma</obo:IAO_0000115>
+        <obo:IAO_0000117>Kalpana Panneerselvam</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>BTO:0000971</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CLO:0008947</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>RRID:CVCL_0548</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SaOS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sarcoma OSteogenic-2</oboInOwl:hasExactSynonym>
+        <rdfs:isDefinedBy rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
+        <rdfs:label>Saos-2 cell</rdfs:label>
     </owl:Class>
     
 
