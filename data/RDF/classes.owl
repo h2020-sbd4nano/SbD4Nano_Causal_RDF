@@ -2057,16 +2057,6 @@
     
 
 
-    <!-- http://purl.enanomapper.net/onto/ENM_1905906 -->
-
-    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_1905906">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000475"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
-        <rdfs:label xml:lang="en">organ quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.enanomapper.net/onto/ENM_2012430 -->
 
     <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2012430">
@@ -2079,6 +2069,16 @@
         </rdfs:subClassOf>
         <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
         <rdfs:label xml:lang="en">BET surface area assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.enanomapper.net/onto/ENM_2012432 -->
+
+    <owl:Class rdf:about="http://purl.enanomapper.net/onto/ENM_2012432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.enanomapper.net/onto/enm.owl"/>
+        <rdfs:label xml:lang="en">anatase to rutile phase transformation</rdfs:label>
     </owl:Class>
     
 
