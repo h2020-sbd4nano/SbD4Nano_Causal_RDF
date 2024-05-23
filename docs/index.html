@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Candara">
-    <title>SbD4Nano Causal Links dashboard</title>
+    <title>SbD4Nano Causal Links network</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.0/cytoscape.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script>
@@ -13,319 +13,392 @@
     <script>
         var Cite = require('citation-js');
     </script>
-</head>
-<style>
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Candara', sans-serif;
-}
-.highlight-source {
-    background-color: #fc766a;
+    <style>
+        body, html {
+            margin: 0;
+            background-color: white;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Candara', sans-serif;
+        }
+        .highlight-source {
+            background-color: #fc766a;
+        }
+
+        #cy {
+    height: 70vh; 
+    top: 10vh; 
+    left: 17vw;
+    width: 83vw;
+    overflow: visible; 
 }
 
-#cy {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+        #header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 10vh;
+            background-color: #27295e;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            position: absolute;
+        }
 
-#assertion-box {
+        #header img {
+            height: 130px;
+            margin-right: 20px;
+        }
+
+        #header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        #assertion-box {
+            position: fixed;
+            top: 10vh;
+            right: 0vw;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(15, 76, 129, 0.8);
+            color: #fff;
+        }
+
+        #info-box {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    background-color: #27295e;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    padding: 1.5%;
     position: fixed;
-    bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgba(15, 76, 129, 0.8);
-    color: #fff;
-}
-
-#info-box {
-    position: absolute;
-    top: 15px;
-    right: 0px;
-    background-color: white;
-    padding: 2%;
-    width: 25%;
-    overflow-y: scroll;
-    border-radius: 10px;
-    border: 1px solid #ccc; /* Updated border declaration */
-}
-
-#filters {
-    border-radius: 10px;
-    border: 3px solid #0f4c81; /* Updated border declaration */
-    position:absolute;
-    top:15px;
-    left:15px;
-    background-color: #fff;
-    width: 15vw;
-    padding:2%
-}
-
-.filter-label {
-    font-weight: bold;
-    color: #0f4c81;
-}
-
-.material-label,
-.interaction-label {
-    cursor: pointer;
-    margin-bottom: 5px;
-    margin-top: 3px;
-}
-
-.evidence-assertion-box {
-    color:#0f4c81;
-}
-
-</style>
-<body>
-
-<div id="cy"></div>
-<div id="assertion-box">
-    <p>Click on an edge to display all causal links between the connected nodes</p>
-    <span id="cause-label"></span> <span id="outcome-label"></span>
-</div>
-<div id="info-box">
-    <h2>Context for assertion</h2>
-    <hr>
-    <p><strong><span id="evidence-assertion-box"></span></strong></p>
-
-    <h3>Material</h3>
-    <p><span id="material-label"></span> <a id="material-iri" href="#" target="_blank"></a> </p>
-
-    <div id="citation-box">
-        <h2>Evidence</h2>
-        <p><strong>Quote</strong></p>
-        <h3>Evidence</h3>
-        <div id="quote-box">
-            <p><i>"<span id="quote"></span>"</i></p>
-        </div>
-        <p><strong>Bibliography</strong></p>
-        <div id="formatted-doi"></div>
-    </div>
-    <p><strong>Cause definition: </strong><div id="cause-definition"></div></p>
-    <p><strong>Outcome definition: </strong><i><div id="outcome-definition"></div></p>
-</div>
-
-<div id="filters">
-    <img src="https://mlswpsr7n78j.i.optimole.com/w:300/h:130/q:mauto/ig:avif/f:best/https://www.nanosafetycluster.eu/wp-content/uploads/2020/11/SbD4Nano.png" width = 260px />
-    <h1>NanoSafety Causal Links</h1>
-    <p>Click on an edge to visualize a causal link, or filter the directed graph by material and interaction.
-        You can drag nodes, pan and zoom freely.</p>
-    <h3>Filter</h3>
-    <div class="filter-container">
-        <span class="filter-label">Material Labels:</span>
-        <div id="material-filters"></div>
-    </div>
-    <div class="filter-container">
-        <span class="filter-label">Interaction Types:</span>
-        <div id="interaction-filters"></div>
+    bottom: 0; 
     
+}
+
+    #info-box a:link { color: #fc766a; }
+        .column {
+            flex: 0.3;
+            padding-right: 1%;
+        }
+        
+
+        
+        #filters {
+            position: absolute; 
+            top: 10vh; /* Adjusted to match the header height */
+            bottom: 0; /* Set bottom to 0 */
+            padding: 2vw;
+            color: black;
+            background-color: #27295e;
+            color: white;
+            width: 13vw;
+            left: 0px;
+        }
+
+        #filters button {
+    background-color: #fc766a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+        .filter-label {
+            font-weight: bold;
+            color: #fc766a;
+        }
+
+        .material-label,
+        .interaction-label {
+            cursor: pointer;
+            margin-bottom: 5px;
+            margin-top: 3px;
+        }
+
+        .evidence-assertion-box {
+            color: #0f4c81;
+            left: 7px;
+        }
+
+        .filter-container button {
+            background-color: #fc766a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 5px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://images.squarespace-cdn.com/content/v1/5ea2b9fb90548636ad12d15a/1595259979348-URD0AZF7LAM1IZSO1C3P/Copy+of+SbD+logo+set+final+%281%29.png?format=260w" />
+        <h1>Causal Links Network</h1>
+
     </div>
-    <button id="hazard_reduction-button">Hazard Reduction Strategies</button>
-    <button id="hazard_increase-button">Hazard Increase</button>
-</div>
+    <div id="filters">
+        <h3>Filter</h3>
+        <div class="filter-container">
+            <span class="filter-label">Material Labels:</span>
+            <div id="material-filters"></div>
+        </div>
+        <div class="filter-container">
+            <span class="filter-label">Interaction Types:</span>
+            <div id="interaction-filters"></div>
+        </div>
+        <h4>Subset network by outcome type</h4>
+        <button id="hazard_reduction-button">Hazard Reduction</button>
+        <button id="hazard_increase-button">Hazard Increase</button>
+    </div>
+    <div id="cy"></div>
+    <div id="assertion-box">
+        <p>Click on an edge to display all causal links between the connected nodes</p>
+    </div>
+    <div id="info-box">
+        <div class="column">
+            <h2>Cause & Outcome</h2>
+            <p><strong><span id="cause-label"></span></strong> <span id="cause-definition"></span></p>
+            <p><strong><span id="outcome-label"></span></strong> <span id="outcome-definition"></span></p>
+        </div>
+        <div class="column">
+            <h2>DOI</h2>
+            <div id="formatted-doi"></div>
+        </div>
+        <div class="column quote-column">
+            <h2>Quote</h2>
+            <div id="quote-box">
+                <p><i><span id="quote"></span></i></p>
+            </div>
+        </div>
+    </div>
+    
+
+
 
     <script>
-Promise.all([
-    fetch('assets/dashboard-data.cyjs').then(res => res.json()),
-    fetch('assets/style_cy.json').then(res => res.json())
-]).then(([{elements}, [{style}]]) => {
-    const cy = cytoscape({
-        container: document.getElementById('cy'),
-        elements,
-        style,
-        layout: {
-            name: 'breadthfirst',
-            rows: 1,
-            animate: true
-        }
-    });
+    Promise.all([
+        fetch('assets/dashboard-data.cyjs').then(res => res.json()),
+        fetch('assets/style_cy.json').then(res => res.json())
+    ]).then(([{elements}, [{style}]]) => {
+        const cy = cytoscape({
+            container: document.getElementById('cy'),
+            elements,
+            autounselectify: true,
+                        
+            boxSelectionEnabled: false,
+            style,
+            layout: {
+                name: 'cola',
+                edgeSymDiffLength: 20, // symmetric diff edge length in simulation
+                edgeJaccardLength: 120, // jaccard edge length in simulation
+                avoidOverlap: true, // if true, prevents overlap of node bounding boxes
+                handleDisconnected: true, // if true, avoids disconnected components from overlapping
+                convergenceThreshold: 0.01, // when the alpha value (system energy) falls below this value, the layout stops
+                nodeSpacing: function( node ){ return 120; }, // extra spacing around nodes
+                flow: { axis: 'x', minSeparation: 30 }, // use DAG/tree flow layout if specified, e.g. { axis: 'y', minSeparation: 30 }
+                alignment: 'horizontal', // relative alignment constraints on nodes, e.g. {vertical: [[{node: node1, offset: 0}, {node: node2, offset: 5}]], horizontal: [[{node: node3}, {node: node4}], [{node: node5}, {node: node6}]]}
+                gapInequalities: undefined, // list of inequality constraints for the gap between the nodes, e.g. [{"axis":"y", "left":node1, "right":node2, "gap":25}]
+                centerGraph: true, // adjusts the node positions initially to center the graph (pass false if you want to start the layout from the current position)
 
-    function updateInfoBox(edgeId) {
-        const edge = cy.getElementById(edgeId);
-        const sourceNode = edge.source();
-        const targetNode = edge.target();
-        const causeLabel = sourceNode.data('name');
-        const outcomeLabel = targetNode.data('name');
-        const causeDefinition = sourceNode.data('causeComment') || 'NA';
-        const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
-        const materialLabel = edge.data('materialLabel') || 'NA';
-        const quote = edge.data('quote');
-        const doi = edge.data('doi') || 'NA';
-        const materialType = edge.data('materialType') || '/';
-        const causeIri = sourceNode.data('causeIri');
-        const outcomeIri = targetNode.data('outcomeIri');
-        var assertionTriples = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
-        $('#evidence-assertion-box').html(assertionTriples);
-        $('#cause-label').attr('href', causeIri).text(causeLabel);
-        $('#outcome-label').attr('href', outcomeIri).text(outcomeLabel);
-        $('#cause-definition').text(causeDefinition + '. (' + causeIri + ')');
-        $('#outcome-definition').html(`${outcomeDefinition} <a href="${outcomeIri}">${outcomeIri}</a>`);
-        $('#cause-definition').html(`${causeDefinition} <a href="${causeIri}">${causeIri}</a>`);
-        $('#assertion-triple-box');
-        $('#material-label').text(materialLabel);
-        $('#quote').text(quote);
-        $('#material-iri').attr('href', materialType).text(materialType);
-        $('#formatted-doi').text(doi);
+            }
+        });
+        cytoscape.stylesheet()
+        .selector('node')
+        .css({
+        'width': 'label'
+        })
 
-        const cite = new Cite();
-        Cite.async(doi).then(function(cite) {
-            const formattedDOI = cite.format('bibliography', {
-                format: 'html',
-                template: 'apa',
-                prepend: function (entry) {
-                    return '<i class="fa-solid fa-file fa-xs"></i><a href="../../work/' + doi.toUpperCase() +
-                    '"><code class="highligher-rouge"><nobr>' + doi + '</nobr></code></a>&nbsp;';
-                },
-                append: function (entry) {
-                    return ' <a href="https://doi.org/' + doi + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + doi + '">Scholia</a>';
-                }
-            });
+        function updateInfoBox(edgeId) {
+            const edge = cy.getElementById(edgeId);
+            const sourceNode = edge.source();
+            const targetNode = edge.target();
+            const causeLabel = sourceNode.data('name');
+            const outcomeLabel = targetNode.data('name');
+            const causeDefinition = sourceNode.data('causeComment') || 'NA';
+            const outcomeDefinition = targetNode.data('outcomeComment') || 'NA';
+            const materialLabel = edge.data('materialLabel') || 'NA';
+            const quote = edge.data('quote');
+            const doi = edge.data('doi') || 'NA';
+            const materialType = edge.data('materialType') || '/';
+            const causeIri = sourceNode.data('causeIri');
+            const outcomeIri = targetNode.data('outcomeIri');
+            var assertionTriples = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
+            $('#evidence-assertion-box').html(assertionTriples);
+            $('#cause-label').attr('href', causeIri).text(causeLabel);
+            $('#outcome-label').attr('href', outcomeIri).text(outcomeLabel);
+            $('#cause-definition').text(causeDefinition + '. (' + causeIri + ')');
+            $('#outcome-definition').html(`${outcomeDefinition} <a href="${outcomeIri}">${outcomeIri}</a>`);
+            $('#cause-definition').html(`${causeDefinition} <a href="${causeIri}">${causeIri}</a>`);
+            $('#assertion-triple-box');
             $('#material-label').text(materialLabel);
-            $('#formatted-doi').text("");
-            $('#formatted-doi').append(formattedDOI);
-        });
-    }
+            $('#quote').text(quote);
+            $('#material-iri').attr('href', materialType).text(materialType);
+            $('#formatted-doi').text(doi);
 
-    function filterEdgesByHazardEffect(edges, includeEffect, effectType) {
-        if (includeEffect) {
-            return edges.filter(edge => edge.data[effectType] === 1);
-        } else {
-            return edges;
-        }
-    }
-
-    function updateGraph() {
-        const selectedMaterials = $('.material-label:checked').map(function() {
-            return $(this).val();
-        }).get();
-
-        const selectedInteractions = $('.interaction-label:checked').map(function() {
-            return $(this).val();
-        }).get();
-
-        const includeHazardReduction = $('#hazard_reduction-button').hasClass('active');
-        const includeHazardIncrease = $('#hazard_increase-button').hasClass('active');
-
-        let filteredEdges = elements.edges;
-
-        // Apply material filter
-        if (selectedMaterials.length > 0) {
-            filteredEdges = filteredEdges.filter(edge => selectedMaterials.includes(edge.data.materialLabel));
+            const cite = new Cite();
+            Cite.async(doi).then(function(cite) {
+                const formattedDOI = cite.format('bibliography', {
+                    format: 'html',
+                    template: 'apa',
+                    prepend: function (entry) {
+                        return '<i class="fa-solid fa-file fa-xs"></i><a href="../../work/' + doi.toUpperCase() +
+                        '"><code class="highligher-rouge"><nobr>' + doi + '</nobr></code></a>&nbsp;';
+                    },
+                    append: function (entry) {
+                        return ' <a href="https://doi.org/' + doi + '">CrossRef</a> <a href="https://scholia.toolforge.org/doi/' + doi + '">Scholia</a>';
+                    }
+                });
+                $('#material-label').text(materialLabel);
+                $('#formatted-doi').text("");
+                $('#formatted-doi').append(formattedDOI);
+            });
         }
 
-        // Apply interaction type filter
-        if (selectedInteractions.length > 0) {
-            filteredEdges = filteredEdges.filter(edge => selectedInteractions.includes(edge.data.interaction));
+        function filterEdgesByHazardEffect(edges, includeEffect, effectType) {
+            if (includeEffect) {
+                return edges.filter(edge => edge.data[effectType] === 1);
+            } else {
+                return edges;
+            }
         }
 
-        // Apply hazard effect filters
-        if (includeHazardReduction) {
-            filteredEdges = filteredEdges.filter(edge => edge.data.hazard_reduction === 1);
+        function updateGraph() {
+            const selectedMaterials = $('.material-label:checked').map(function() {
+                return $(this).val();
+            }).get();
+
+            const selectedInteractions = $('.interaction-label:checked').map(function() {
+                return $(this).val();
+            }).get();
+
+            const includeHazardReduction = $('#hazard_reduction-button').hasClass('active');
+            const includeHazardIncrease = $('#hazard_increase-button').hasClass('active');
+
+            let filteredEdges = elements.edges;
+
+            // Apply material filter
+            if (selectedMaterials.length > 0) {
+                filteredEdges = filteredEdges.filter(edge => selectedMaterials.includes(edge.data.materialLabel));
+            }
+
+            // Apply interaction type filter
+            if (selectedInteractions.length > 0) {
+                filteredEdges = filteredEdges.filter(edge => selectedInteractions.includes(edge.data.interaction));
+            }
+
+            // Apply hazard effect filters
+            if (includeHazardReduction) {
+                filteredEdges = filteredEdges.filter(edge => edge.data.hazard_reduction === 1);
+            }
+            if (includeHazardIncrease) {
+                filteredEdges = filteredEdges.filter(edge => edge.data.hazard_increase === 1);
+            }
+
+            // Collect the IDs of nodes that are connected by the filtered edges
+            const filteredNodeIds = new Set();
+            filteredEdges.forEach(edge => {
+                filteredNodeIds.add(edge.data.source);
+                filteredNodeIds.add(edge.data.target);
+            });
+
+            // Filter nodes based on the collected IDs
+            const filteredNodes = elements.nodes.filter(node => filteredNodeIds.has(node.data.id));
+
+            const filteredElements = {
+                nodes: filteredNodes,
+                edges: filteredEdges
+            };
+
+            cy.json({ elements: filteredElements });
         }
-        if (includeHazardIncrease) {
-            filteredEdges = filteredEdges.filter(edge => edge.data.hazard_increase === 1);
-        }
 
-        // Collect the IDs of nodes that are connected by the filtered edges
-        const filteredNodeIds = new Set();
-        filteredEdges.forEach(edge => {
-            filteredNodeIds.add(edge.data.source);
-            filteredNodeIds.add(edge.data.target);
-        });
-
-        // Filter nodes based on the collected IDs
-        const filteredNodes = elements.nodes.filter(node => filteredNodeIds.has(node.data.id));
-
-        const filteredElements = {
-            nodes: filteredNodes,
-            edges: filteredEdges
-        };
-
-        cy.json({ elements: filteredElements });
-    }
-
-    const materialLabels = new Set();
-    elements.edges.forEach(edge => {
-        if (edge.data.materialLabel) {
-            materialLabels.add(edge.data.materialLabel);
-        }
-    });
-
-    const materialFiltersContainer = $('#material-filters');
-    materialLabels.forEach(label => {
-        const checkboxId = `material-${label.replace(/\s/g, '-').toLowerCase()}`;
-        const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="material-label" value="${label}" checked>`);
-        const labelElement = $(`<label for="${checkboxId}" class="material-label">${label}</label><br>`);
-        materialFiltersContainer.append(checkbox).append(labelElement);
-    });
-
-    const interactionTypes = new Set();
-    elements.edges.forEach(edge => {
-        if (edge.data.interaction) {
-            interactionTypes.add(edge.data.interaction);
-        }
-    });
-
-    const interactionFiltersContainer = $('#interaction-filters');
-    interactionTypes.forEach(type => {
-        const checkboxId = `interaction-${type.replace(/\s/g, '-').toLowerCase()}`;
-        const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="interaction-label" value="${type}" checked>`);
-        const labelElement = $(`<label for="${checkboxId}" class="interaction-label">${type}</label><br>`);
-        interactionFiltersContainer.append(checkbox).append(labelElement);
-    });
-
-    $('.material-label').change(updateGraph);
-    $('.interaction-label').change(updateGraph);
-
-    cy.on('tap', 'edge', function(event){
-        const clickedEdgeData = event.target.data();
-        const sourceId = clickedEdgeData.source;
-        const targetId = clickedEdgeData.target;
-
-        const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
-
-        let assertionText = '';
-        connectedEdges.forEach(edge => {
-            const causeLabel = edge.source().data('name');
-            const interaction = edge.data('interaction') || 'NA';
-            const outcomeLabel = edge.target().data('name');
-            const edgeId = edge.id();
-            assertionText += `<span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
-                              <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
-            assertionTriple = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
+        const materialLabels = new Set();
+        elements.edges.forEach(edge => {
+            if (edge.data.materialLabel) {
+                materialLabels.add(edge.data.materialLabel);
+            }
         });
 
-        $('#assertion-box').html(assertionText);
-        $('#evidence-assertion-box').html(assertionTriple);
-    });
+        const materialFiltersContainer = $('#material-filters');
+        materialLabels.forEach(label => {
+            const checkboxId = `material-${label.replace(/\s/g, '-').toLowerCase()}`;
+            const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="material-label" value="${label}" checked>`);
+            const labelElement = $(`<label for="${checkboxId}" class="material-label">${label}</label><br>`);
+            materialFiltersContainer.append(checkbox).append(labelElement);
+        });
 
-    $('#assertion-box').on('click', '.see-context-button', function() {
-        const edgeId = $(this).data('edge-id');
-        updateInfoBox(edgeId);
-    });
+        const interactionTypes = new Set();
+        elements.edges.forEach(edge => {
+            if (edge.data.interaction) {
+                interactionTypes.add(edge.data.interaction);
+            }
+        });
 
-    $('#hazard_reduction-button').click(function() {
-        $(this).toggleClass('active');
-        console.log('toggle hazard reduction');
-        updateGraph();
-    });
+        const interactionFiltersContainer = $('#interaction-filters');
+        interactionTypes.forEach(type => {
+            const checkboxId = `interaction-${type.replace(/\s/g, '-').toLowerCase()}`;
+            const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="interaction-label" value="${type}" checked>`);
+            const labelElement = $(`<label for="${checkboxId}" class="interaction-label">${type}</label><br>`);
+            interactionFiltersContainer.append(checkbox).append(labelElement);
+        });
 
-    $('#hazard_increase-button').click(function() {
-        $(this).toggleClass('active');
-        console.log('toggle hazard increase');
-        updateGraph();
+        $('.material-label').change(updateGraph);
+        $('.interaction-label').change(updateGraph);
+
+        cy.on('tap', 'edge', function(event){
+            const clickedEdgeData = event.target.data();
+            const sourceId = clickedEdgeData.source;
+            const targetId = clickedEdgeData.target;
+
+            const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
+
+            let assertionText = '';
+            connectedEdges.forEach(edge => {
+                const causeLabel = edge.source().data('name');
+                const interaction = edge.data('interaction') || 'NA';
+                const outcomeLabel = edge.target().data('name');
+                const edgeId = edge.id();
+                assertionText += `<img src="https://images.squarespace-cdn.com/content/v1/5ea2b9fb90548636ad12d15a/1595435611654-QLTXIZUF4YP57K6CAWSP/1.png?format=300w" width="17px"/><span class="assertion-link" data-edge-id="${edgeId}">${causeLabel} ${interaction} ${outcomeLabel}</span>
+                <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
+                assertionTriple = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
+            });
+
+            $('#assertion-box').html(assertionText);
+            $('#evidence-assertion-box').html(assertionTriple);
+        });
+
+        $('#assertion-box').on('click', '.see-context-button', function() {
+            const edgeId = $(this).data('edge-id');
+            updateInfoBox(edgeId);
+        });
+
+        $('#hazard_reduction-button').click(function() {
+            $(this).toggleClass('active');
+            console.log('toggle hazard reduction');
+            updateGraph();
+        });
+
+        $('#hazard_increase-button').click(function() {
+            $(this).toggleClass('active');
+            console.log('toggle hazard increase');
+            updateGraph();
+        });
     });
-});
 
     </script>
-</div>
-
 </body>
 </html>
