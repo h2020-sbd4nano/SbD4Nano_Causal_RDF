@@ -5644,7 +5644,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_5;
   sbdbel:hasCause obo:PATO_0000117;
   sbdbel:hasOutcome npo:NPO_1235;
-  sbdbel:hasRelationship sbdbel:positively_correlates .
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
 
 :causal_assertion_43 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_43;
@@ -5876,7 +5876,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_10;
   sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_2012432>;
   sbdbel:hasOutcome efo:EFO_0004811;
-  sbdbel:hasRelationship sbdbel:positively_correlates .
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
 
 :causal_assertion_7 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_7;
@@ -7069,7 +7069,7 @@
     :measurement_group_192713_34_surface_area_mg, :measurement_group_192713_34_zeta_potential_mg;
   dcterms:description "GO: GO"@en;
   dcterms:identifier "https://nanocommons.github.io/identifiers/registry#ERM:192713";
-  dcterms:source <https://doi.org/10.1016.j.toxlet.2010.11.016>, :dataset_NANO_SBD_RDF .
+  dcterms:source <https://doi.org/10.1016/j.toxlet.2010.11.016>, :dataset_NANO_SBD_RDF .
 
 :chemical_substance_192714 a enm:ENM_0000117;
   obo:BFO_0000056 :measurement_group_192714_35_bundle_diameter_mg, :measurement_group_192714_35_crystal_structure_mg,
@@ -7079,7 +7079,7 @@
     :measurement_group_192714_35_surface_area_mg, :measurement_group_192714_35_zeta_potential_mg;
   dcterms:description "GO: GO"@en;
   dcterms:identifier "https://nanocommons.github.io/identifiers/registry#ERM:192714";
-  dcterms:source <https://doi.org/10.1016.j.toxlet.2010.11.016>, :dataset_NANO_SBD_RDF .
+  dcterms:source <https://doi.org/10.1016/j.toxlet.2010.11.016>, :dataset_NANO_SBD_RDF .
 
 :chemical_substance_192715 a enm:ENM_0000117;
   obo:BFO_0000056 :measurement_group_192715_36_bundle_diameter_mg, :measurement_group_192715_36_crystal_structure_mg,
@@ -9982,13 +9982,13 @@ pathways (data not shown)."""@en .
   obo:ECO_9000001 "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_467462_5_polidispersity_index_as";
   cito:containsAssertionFrom :reference_5;
   <http://semanticscience.org/resource/SIO_000208> :causal_assertion_41;
-  sbdbel:quote "According to the nitrogen adsorption-desorption isotherms (Figures 5A,B; Table 3), the TiO2/SiO2 Nc (15%) with a mesoporous structure and large surface area (132.9 m2/g) makes their ability to well-dispersed and interact with binder (liquid glass) and extender pigments, which lead to the formation of isolate nanoparticles of W silicate coating This is an important feature indicating that W silicate coating with adding TiO2/SiO2 Nc (15%) has the potential to be photocatalytic and bactericidal materials."@en .
+  sbdbel:quote "The surface area of TiO2/SiO2 Nc (15%) is 132.9 m2/g (Figure 5C and Table 3), which is most 4 times larger than that of commercial mixture TiO2/SiO2 (31.4 m2/g). The increased specific surface area mainly results from the large specific surface area of SiO2 and nano size of TiO2/SiO2 Nc (15%). The TiO2/SiO2 Nc (15%) with a larger surface area can provide increased centers for absorption and photocatalytic reaction. In addition, high BET surface area is also clearly beneficial for contact between sample and bacteria lead to enhance the antibacterial ability."@en .
 
 :evidence_42 a <http://semanticscience.org/resource/SIO_000299>;
   obo:ECO_9000001 "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_467462_5_polidispersity_index_as";
   cito:containsAssertionFrom :reference_5;
   <http://semanticscience.org/resource/SIO_000208> :causal_assertion_42;
-  sbdbel:quote "According to the nitrogen adsorption-desorption isotherms (Figures 5A,B; Table 3), the TiO2/SiO2 Nc (15%) with a mesoporous structure and large surface area (132.9 m2/g) makes their ability to well-dispersed and interact with binder (liquid glass) and extender pigments, which lead to the formation of isolate nanoparticles of W silicate coating This is an important feature indicating that W silicate coating with adding TiO2/SiO2 Nc (15%) has the potential to be photocatalytic and bactericidal materials."@en .
+  sbdbel:quote "The surface area of TiO2/SiO2 Nc (15%) is 132.9 m2/g (Figure 5C and Table 3), which is most 4 times larger than that of commercial mixture TiO2/SiO2 (31.4 m2/g). The increased specific surface area mainly results from the large specific surface area of SiO2 and nano size of TiO2/SiO2 Nc (15%). The TiO2/SiO2 Nc (15%) with a larger surface area can provide increased centers for absorption and photocatalytic reaction. In addition, high BET surface area is also clearly beneficial for contact between sample and bacteria lead to enhance the antibacterial ability."@en .
 
 :evidence_43 a <http://semanticscience.org/resource/SIO_000299>;
   obo:ECO_9000001 "https://h2020-sbd4nano.github.io/sbd-data-landscape/assay_467462_5_primary_size_as";
@@ -13336,10 +13336,10 @@ in cell culture."""@en .
   owl:sameAs <https://doi.org/10.1007/s11671-010-9751-6> .
 
 :reference_34 a wd:Q13442814;
-  owl:sameAs <https://doi.org/10.1016.j.toxlet.2010.11.016> .
+  owl:sameAs <https://doi.org/10.1016/j.toxlet.2010.11.016> .
 
 :reference_35 a wd:Q13442814;
-  owl:sameAs <https://doi.org/10.1016.j.toxlet.2010.11.016> .
+  owl:sameAs <https://doi.org/10.1016/j.toxlet.2010.11.016> .
 
 :reference_36 a wd:Q13442814;
   owl:sameAs <https://doi.org/10.3390/ijms221910578> .
