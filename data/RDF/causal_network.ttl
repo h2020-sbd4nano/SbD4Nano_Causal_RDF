@@ -4828,7 +4828,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_23;
   sbdbel:hasCause efo:EFO_0000487;
   sbdbel:hasOutcome obo:GO_1901800;
-  sbdbel:hasRelationship sbdbel:negatively_correlates .
+  sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_179 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_179;
@@ -5204,7 +5204,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_31;
   sbdbel:hasCause efo:EFO_0000487;
   sbdbel:hasOutcome obo:GO_1901800;
-  sbdbel:hasRelationship sbdbel:negatively_correlates .
+  sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_232 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_232;
@@ -5788,7 +5788,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_10;
   sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_2012432>;
   sbdbel:hasOutcome bao:BAO_0002145;
-  sbdbel:hasRelationship sbdbel:negatively_correlates .
+  sbdbel:hasRelationship sbdbel:positively_correlates .
 
 :causal_assertion_6 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_6;
@@ -5804,7 +5804,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_10;
   sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_2012432>;
   sbdbel:hasOutcome obo:GO_1903409;
-  sbdbel:hasRelationship sbdbel:positively_correlates .
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
 
 :causal_assertion_61 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_61;
@@ -5812,7 +5812,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_10;
   sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_2012432>;
   sbdbel:hasOutcome npo:NPO_1338;
-  sbdbel:hasRelationship sbdbel:positively_correlates .
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
 
 :causal_assertion_62 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_62;
@@ -5820,7 +5820,7 @@
   <http://semanticscience.org/resource/SIO_000339> :reference_10;
   sbdbel:hasCause <http://purl.enanomapper.net/onto/ENM_2012432>;
   sbdbel:hasOutcome obo:GO_1903409;
-  sbdbel:hasRelationship sbdbel:positively_correlates .
+  sbdbel:hasRelationship sbdbel:negatively_correlates .
 
 :causal_assertion_63 a <http://semanticscience.org/resource/SIO_001183>;
   <http://semanticscience.org/resource/SIO_000206> :evidence_63;
