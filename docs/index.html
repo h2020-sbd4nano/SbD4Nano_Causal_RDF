@@ -170,13 +170,16 @@
     </div>
     <div id="info-box">
         <div class="column">
-            <h2>Cause & Outcome</h2>
+            <h2>Edge information</h2>
             <p><strong><span id="cause-label"></span></strong> <span id="cause-definition"></span></p>
+            <p><strong><span id="relation-edge"></span></strong> 
             <p><strong><span id="outcome-label"></span></strong> <span id="outcome-definition"></span></p>
+            
         </div>
         <div class="column">
-            <h2>DOI</h2>
+            <h2>Source</h2>
             <div id="formatted-doi"></div>
+            <p><span id="material-label"></span> <a id="material-iri" href="#" target="_blank"></a> </p>
         </div>
         <div class="column quote-column">
             <h2>Quote</h2>
@@ -203,14 +206,13 @@
             style,
             layout: {
                 name: 'cola',
-                edgeSymDiffLength: 20, // symmetric diff edge length in simulation
-                edgeJaccardLength: 120, // jaccard edge length in simulation
+                edgeSymDiffLength: 60, // symmetric diff edge length in simulation
+                edgeJaccardLength: 320, // jaccard edge length in simulation
                 avoidOverlap: true, // if true, prevents overlap of node bounding boxes
                 handleDisconnected: true, // if true, avoids disconnected components from overlapping
                 convergenceThreshold: 0.01, // when the alpha value (system energy) falls below this value, the layout stops
                 nodeSpacing: function( node ){ return 120; }, // extra spacing around nodes
                 flow: { axis: 'x', minSeparation: 30 }, // use DAG/tree flow layout if specified, e.g. { axis: 'y', minSeparation: 30 }
-                alignment: 'horizontal', // relative alignment constraints on nodes, e.g. {vertical: [[{node: node1, offset: 0}, {node: node2, offset: 5}]], horizontal: [[{node: node3}, {node: node4}], [{node: node5}, {node: node6}]]}
                 gapInequalities: undefined, // list of inequality constraints for the gap between the nodes, e.g. [{"axis":"y", "left":node1, "right":node2, "gap":25}]
                 centerGraph: true, // adjusts the node positions initially to center the graph (pass false if you want to start the layout from the current position)
 
@@ -236,7 +238,10 @@
             const materialType = edge.data('materialType') || '/';
             const causeIri = sourceNode.data('causeIri');
             const outcomeIri = targetNode.data('outcomeIri');
+            const interaction = edge.data('interaction') || 'NA';
+            
             var assertionTriples = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
+            var materialInfo = 
             $('#evidence-assertion-box').html(assertionTriples);
             $('#cause-label').attr('href', causeIri).text(causeLabel);
             $('#outcome-label').attr('href', outcomeIri).text(outcomeLabel);
@@ -244,11 +249,12 @@
             $('#outcome-definition').html(`${outcomeDefinition} <a href="${outcomeIri}">${outcomeIri}</a>`);
             $('#cause-definition').html(`${causeDefinition} <a href="${causeIri}">${causeIri}</a>`);
             $('#assertion-triple-box');
-            $('#material-label').text(materialLabel);
+            $('#material-label').text('Material: ' + materialLabel);
             $('#quote').text(quote);
             $('#material-iri').attr('href', materialType).text(materialType);
             $('#formatted-doi').text(doi);
-
+            $('#material-edge-label').text('Material: ' + materialLabel);
+            $('#relation-edge').text(interaction);
             const cite = new Cite();
             Cite.async(doi).then(function(cite) {
                 const formattedDOI = cite.format('bibliography', {
