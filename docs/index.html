@@ -34,29 +34,99 @@
     overflow: visible; 
 }
 
-        #header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 10vh;
-            background-color: #27295e;
-            color: white;
-            font-size: 30px;
-            display: flex;
-            align-items: center;
-            padding-left: 15px;
-            position: absolute;
-        }
 
-        #header img {
-            height: 130px;
-            margin-right: 20px;
-        }
+#about-box {
+    position: fixed;
+    top: 17.5vh;
+    left: 33.3vw;
+    width: 33.3vw;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Same color and transparency as assertion box */
+    color: #fff;
+    padding: 3vh 3vw; /* Add padding */
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
 
-        #header h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
+
+#selected-nodes-box {
+    max-height: 55vh; /* Set the maximum height of the box */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: fixed;
+    top: 13vh;
+    left: 20vw;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(15, 76, 129, 0.8);
+    color: #fff;
+    max-width: 10vw; /* Set the maximum width */
+}
+
+#selected-nodes-box::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background-color: rgba(15, 76, 129, 0.5); /* Background color of the scrollbar track */
+}
+
+#selected-nodes-box::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7); /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Border radius of the scrollbar thumb */
+}
+
+#selected-nodes-box p {
+    margin-left: 10px; /* Padding from the left */
+    margin-bottom: 5px; /* Adjust line spacing */
+    word-wrap: break-word; /* Wrap long words */
+}
+#selected-nodes-box button {
+    background-color: #fc766a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #27295e;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    position: absolute;
+    justify-content: space-between; /* Align items to the start and end of the container */
+}
+
+#header img {
+    height: 130px;
+    margin-right: 20px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#about-link {
+    margin-right: 10vw; /* Add some space between the link and the right edge */
+}
+
+#about-text {
+    cursor: pointer;
+}
+
+#about-text:hover {
+    text-decoration: underline; /* Underline the text when hovering */
+}
 
         #assertion-box {
             position: fixed;
@@ -93,7 +163,7 @@
         #filters {
             position: absolute; 
             top: 10vh; /* Adjusted to match the header height */
-            bottom: 0; /* Set bottom to 0 */
+            bottom: 26vh; /* Set bottom to 0 */
             padding: 2vw;
             color: black;
             background-color: #27295e;
@@ -148,10 +218,28 @@
     <div id="header">
         <img src="https://images.squarespace-cdn.com/content/v1/5ea2b9fb90548636ad12d15a/1595259979348-URD0AZF7LAM1IZSO1C3P/Copy+of+SbD+logo+set+final+%281%29.png?format=260w" />
         <h1>Causal Links Network</h1>
+        <div id="about-link"> 
+            <p id="about-text">About</p>
+        </div>
 
     </div>
+    <div id="about-box">
+        <h1>Safe by Design for Nano - Causal Links.</h1>
+            <h2>About</h2>
+            <h3>Funding</h3>
+                <p>This project was funded by <a href="https://www.sbd4nano.eu/">SbD4Nano</a> (European Union H2020 research and innovation program under grant agreement no. 862195).</p>
+            <h2>Usage</h2>
+                <h3>Subset by material type</h3>
+                    <p>You can select one or more materials to subset the network.</p>
+                <h3>Subset by outcome types</h3>
+                    <p>The buttons for hazard reduction and hazard increase subset the network to show the direct links leading to either outcome type.</p>
+                <h3>Subset for selected nodes</h3>
+                    <p>You can select one or more nodes to subset the network.</p>
+                <h3>Visualize context for causal links</h3>
+                    <p>Clicking on any edge shows the context for the causal link it represents.</p>
+    </div>
     <div id="filters">
-        <h3>Filter</h3>
+        <h3>Filter</h3>   
         <div class="filter-container">
             <span class="filter-label">Material Labels:</span>
             <div id="material-filters"></div>
@@ -163,6 +251,7 @@
         <h4>Subset network by outcome type</h4>
         <button id="hazard_reduction-button">Hazard Reduction</button>
         <button id="hazard_increase-button">Hazard Increase</button>
+        
     </div>
     <div id="cy"></div>
     <div id="assertion-box">
@@ -189,6 +278,12 @@
         </div>
     </div>
     
+    <div id="selected-nodes-box">
+        <button id="subset-btn">Subset selected nodes</button>
+        <div id="selected-nodes-list">
+            <p>Select one or more nodes to subset the network</p></div> 
+        
+    </div>
 
 
 
@@ -200,30 +295,104 @@
         const cy = cytoscape({
             container: document.getElementById('cy'),
             elements,
-            autounselectify: true,
+            autounselectify: false,
                         
-            boxSelectionEnabled: false,
+            boxSelectionEnabled: true,
             style,
-            layout: {
-                name: 'cola',
-                edgeSymDiffLength: 60, // symmetric diff edge length in simulation
-                edgeJaccardLength: 320, // jaccard edge length in simulation
-                avoidOverlap: true, // if true, prevents overlap of node bounding boxes
-                handleDisconnected: true, // if true, avoids disconnected components from overlapping
-                convergenceThreshold: 0.01, // when the alpha value (system energy) falls below this value, the layout stops
-                nodeSpacing: function( node ){ return 120; }, // extra spacing around nodes
-                flow: { axis: 'x', minSeparation: 30 }, // use DAG/tree flow layout if specified, e.g. { axis: 'y', minSeparation: 30 }
-                gapInequalities: undefined, // list of inequality constraints for the gap between the nodes, e.g. [{"axis":"y", "left":node1, "right":node2, "gap":25}]
-                centerGraph: true, // adjusts the node positions initially to center the graph (pass false if you want to start the layout from the current position)
 
-            }
         });
+        recalculateLayout();
         cytoscape.stylesheet()
         .selector('node')
         .css({
         'width': 'label'
         })
 
+        // Button click event listener
+        document.getElementById('subset-btn').addEventListener('click', function() {
+            var selectedNodes = cy.$('node:selected');
+            if (selectedNodes.length > 0) {
+                var selectedIds = selectedNodes.map(node => node.id());
+                var subsetEles = cy.collection();
+                selectedIds.forEach(function(id) {
+                    subsetEles = subsetEles.add(cy.getElementById(id)).add(cy.edges('[source="' + id + '"]').add(cy.edges('[target="' + id + '"]')));
+                });
+                var subsetGraph = subsetEles.connectedNodes().union(subsetEles);
+                cy.elements().remove();
+                cy.add(subsetGraph);
+                recalculateLayout()
+            } else {
+                cy.json({ elements: elements });
+                recalculateLayout();
+            }
+        });
+// Function to update the selected nodes box
+function updateSelectedNodesBox(selectedNodes) {
+    var selectedNodesBoxList = $('#selected-nodes-list');
+    selectedNodesBoxList.empty(); // Clear the box before updating
+
+    selectedNodes.forEach(function(node) {
+        var nodeName = node.data('name');
+        selectedNodesBoxList.append('<p>' + nodeName + '</p>');
+    });
+}
+
+// Function to clear the selected nodes box
+function clearSelectedNodesBox() {
+    $('#selected-nodes-list').empty();
+}
+
+// Event listener for node selection/deselection
+cy.on('select unselect', 'node', function(event){
+    var selectedNodes = cy.$('node:selected');
+    updateSelectedNodesBox(selectedNodes); // Update the selected nodes box
+});
+
+        // Function to clear the selected nodes box
+        function clearSelectedNodesBox() {
+            $('#selected-nodes-list').empty();
+        }
+        document.getElementById('subset-btn').addEventListener('click', function() {
+            var selectedNodes = cy.$('node:selected');
+            if (selectedNodes.length > 0) {
+                var selectedIds = selectedNodes.map(node => node.id());
+                var subsetEles = cy.collection();
+                selectedIds.forEach(function(id) {
+                    subsetEles = subsetEles.add(cy.getElementById(id)).add(cy.edges('[source="' + id + '"]').add(cy.edges('[target="' + id + '"]')));
+                });
+                var subsetGraph = subsetEles.connectedNodes().union(subsetEles);
+                cy.elements().remove();
+                cy.add(subsetGraph);
+                recalculateLayout();
+                
+            } else {
+                // Reload the original elements if no nodes are selected
+                cy.json({ elements: elements });
+                recalculateLayout();
+                clearSelectedNodesBox(); // Clear the selected nodes box
+            }
+        });
+
+        // Function to recalculate the layout
+        function recalculateLayout() {
+            var layout = cy.layout({
+                name: 'cola',
+                animate: true,
+                fit:true, 
+                maxSimulationTime: 500,
+                nodeDimensionsIncludeLabels: true,
+                avoidOverlap: true, // if true, prevents overlap of node bounding boxes
+                handleDisconnected: true, // if true, avoids disconnected components from overlapping
+                convergenceThreshold: 0.1, // when the alpha value (system energy) falls below this value, the layout stops
+                nodeSpacing: function( node ){ return 120; }, // extra spacing around nodes
+                flow: { axis: 'x', minSeparation: 10 }, // use DAG/tree flow layout if specified, e.g. { axis: 'y', minSeparation: 30 }
+
+            });
+            layout.run();
+            cy.fit();
+            
+        }
+        window.addEventListener('resize', recalculateLayout);
         function updateInfoBox(edgeId) {
             const edge = cy.getElementById(edgeId);
             const sourceNode = edge.source();
@@ -276,6 +445,7 @@
 
         function filterEdgesByHazardEffect(edges, includeEffect, effectType) {
             if (includeEffect) {
+                cs.layout().run();
                 return edges.filter(edge => edge.data[effectType] === 1);
             } else {
                 return edges;
@@ -330,6 +500,7 @@
             };
 
             cy.json({ elements: filteredElements });
+            recalculateLayout();
         }
 
         const materialLabels = new Set();
@@ -365,6 +536,13 @@
         $('.material-label').change(updateGraph);
         $('.interaction-label').change(updateGraph);
 
+        // Node selection stuff
+
+        cy.on('select unselect', 'node', function(event){
+            var selectedNodes = cy.$('node:selected');
+            console.log(selectedNodes); // Log selected nodes to console for debugging
+            updateSelectedNodesBox(selectedNodes); // Update the selected nodes box
+        });
         cy.on('tap', 'edge', function(event){
             const clickedEdgeData = event.target.data();
             const sourceId = clickedEdgeData.source;
@@ -390,6 +568,7 @@
         $('#assertion-box').on('click', '.see-context-button', function() {
             const edgeId = $(this).data('edge-id');
             updateInfoBox(edgeId);
+            
         });
 
         $('#hazard_reduction-button').click(function() {
@@ -402,9 +581,23 @@
             $(this).toggleClass('active');
             console.log('toggle hazard increase');
             updateGraph();
+            
         });
     });
+// JavaScript to show/hide the about box
+document.getElementById('about-text').addEventListener('click', function() {
+    document.getElementById('about-box').style.display = 'block';
+});
 
+
+
+// Clicking outside the about box hides it
+document.addEventListener('click', function(event) {
+    const aboutBox = document.getElementById('about-box');
+    if (!aboutBox.contains(event.target) && event.target !== document.getElementById('about-text')) {
+        aboutBox.style.display = 'none';
+    }
+});
     </script>
 </body>
 </html>
