@@ -103,7 +103,7 @@
     align-items: center;
     padding-left: 15px;
     position: absolute;
-    justify-content: space-between; /* Align items to the start and end of the container */
+    justify-content: space-between; 
 }
 
 #header img {
@@ -152,27 +152,27 @@
     
 }
 
-    #info-box a:link { color: #fc766a; }
-        .column {
-            flex: 0.3;
-            padding-right: 1%;
-        }
+#info-box a:link { color: #fc766a; }
+    .column {
+        flex: 0.3;
+        padding-right: 1%;
+    }
         
 
         
-        #filters {
-            position: absolute; 
-            top: 10vh; /* Adjusted to match the header height */
-            bottom: 26vh; /* Set bottom to 0 */
-            padding: 2vw;
-            color: black;
-            background-color: #27295e;
-            color: white;
-            width: 13vw;
-            left: 0px;
-        }
+#filters {
+    position: absolute; 
+    top: 10vh; /* Adjusted to match the header height */
+    bottom: 26vh; /* Set bottom to 0 */
+    padding: 2vw;
+    color: black;
+    background-color: #27295e;
+    color: white;
+    width: 13vw;
+    left: 0px;
+}
 
-        #filters button {
+#filters button {
     background-color: #fc766a;
     color: white;
     border: none;
@@ -183,48 +183,81 @@
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    }
+    .filter-label {
+        font-weight: bold;
+        color: #fc766a;
+    }
+    .material-label,
+    .interaction-label {
+        cursor: pointer;
+        margin-bottom: 5px;
+        margin-top: 3px;
+    }
+    .evidence-assertion-box {
+        color: #0f4c81;
+        left: 7px;
+    }
+
+.filter-container button {
+    background-color: #fc766a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
 }
-        .filter-label {
-            font-weight: bold;
-            color: #fc766a;
-        }
+.dropdown-btn {
+    background-color: rgba(15, 76, 129, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+    text-align: left;
+}
 
-        .material-label,
-        .interaction-label {
-            cursor: pointer;
-            margin-bottom: 5px;
-            margin-top: 3px;
-        }
+.dropdown-content {
+    display: none;
+    background-color: rgba(15, 76, 129, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1; 
+}
 
-        .evidence-assertion-box {
-            color: #0f4c81;
-            left: 7px;
-        }
+.dropdown-content select {
+    width: 100%;
+    margin-bottom: 10px;
+}
 
-        .filter-container button {
-            background-color: #fc766a;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 5px;
-            width: 100%;
-            text-align: center;
-        }
+.dropdown-content button {
+    background-color: #fc766a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
     </style>
 </head>
 <body>
     <div id="header">
-        <img src="https://images.squarespace-cdn.com/content/v1/5ea2b9fb90548636ad12d15a/1595259979348-URD0AZF7LAM1IZSO1C3P/Copy+of+SbD+logo+set+final+%281%29.png?format=260w" />
-        <h1>Causal Links Network</h1>
+        <img href="/" src="https://images.squarespace-cdn.com/content/v1/5ea2b9fb90548636ad12d15a/1595259979348-URD0AZF7LAM1IZSO1C3P/Copy+of+SbD+logo+set+final+%281%29.png?format=260w" />
+        <h1>Causal Links Network </h1>
         <div id="about-link"> 
             <p id="about-text">About</p>
         </div>
 
     </div>
     <div id="about-box">
-        <h1>Safe by Design for Nano - Causal Links.</h1>
+        <h1>Safe by Design for Nano - Causal Links</h1>
+        <hr>
             <h2>About</h2>
             <h3>Funding</h3>
                 <p>This project was funded by <a href="https://www.sbd4nano.eu/">SbD4Nano</a> (European Union H2020 research and innovation program under grant agreement no. 862195).</p>
@@ -241,13 +274,23 @@
     <div id="filters">
         <h3>Filter</h3>   
         <div class="filter-container">
-            <span class="filter-label">Material Labels:</span>
-            <div id="material-filters"></div>
+            <button id="material-dropdown-btn" class="dropdown-btn">Filter by materials ></button>
+            <div id="material-dropdown-content" class="dropdown-content">
+                <select id="material-dropdown" multiple>
+                </select>
+                <button id="apply-material-filter-btn">Apply</button>
+            </div>
         </div>
+
         <div class="filter-container">
-            <span class="filter-label">Interaction Types:</span>
-            <div id="interaction-filters"></div>
+            <button id="interaction-dropdown-btn" class="dropdown-btn">Filter by interaction types ></button>
+            <div id="interaction-dropdown-content" class="dropdown-content">
+                <select id="interaction-dropdown" multiple>
+                </select>
+                <button id="apply-interaction-filter-btn">Apply</button>
+            </div>
         </div>
+
         <h4>Subset network by outcome type</h4>
         <button id="hazard_reduction-button">Hazard Reduction</button>
         <button id="hazard_increase-button">Hazard Increase</button>
@@ -279,10 +322,9 @@
     </div>
     
     <div id="selected-nodes-box">
-        <button id="subset-btn">Subset selected nodes</button>
+        <button id="subset-btn">Subset network by selected nodes</button>
         <div id="selected-nodes-list">
             <p>Select one or more nodes to subset the network</p></div> 
-        
     </div>
 
 
@@ -326,27 +368,27 @@
                 recalculateLayout();
             }
         });
-// Function to update the selected nodes box
-function updateSelectedNodesBox(selectedNodes) {
-    var selectedNodesBoxList = $('#selected-nodes-list');
-    selectedNodesBoxList.empty(); // Clear the box before updating
+        // Function to update the selected nodes box
+        function updateSelectedNodesBox(selectedNodes) {
+            var selectedNodesBoxList = $('#selected-nodes-list');
+            selectedNodesBoxList.empty(); // Clear the box before updating
+        
+            selectedNodes.forEach(function(node) {
+                var nodeName = node.data('name');
+                selectedNodesBoxList.append('<p>' + nodeName + '</p>');
+            });
+        }
 
-    selectedNodes.forEach(function(node) {
-        var nodeName = node.data('name');
-        selectedNodesBoxList.append('<p>' + nodeName + '</p>');
-    });
-}
+        // Function to clear the selected nodes box
+        function clearSelectedNodesBox() {
+            $('#selected-nodes-list').empty();
+        }
 
-// Function to clear the selected nodes box
-function clearSelectedNodesBox() {
-    $('#selected-nodes-list').empty();
-}
-
-// Event listener for node selection/deselection
-cy.on('select unselect', 'node', function(event){
-    var selectedNodes = cy.$('node:selected');
-    updateSelectedNodesBox(selectedNodes); // Update the selected nodes box
-});
+        // Event listener for node selection/deselection
+        cy.on('select unselect', 'node', function(event){
+            var selectedNodes = cy.$('node:selected');
+            updateSelectedNodesBox(selectedNodes); // Update the selected nodes box
+        });
 
         // Function to clear the selected nodes box
         function clearSelectedNodesBox() {
@@ -452,30 +494,85 @@ cy.on('select unselect', 'node', function(event){
             }
         }
 
-        function updateGraph() {
-            const selectedMaterials = $('.material-label:checked').map(function() {
-                return $(this).val();
-            }).get();
 
+        // relationship/interaction filters
+        $(document).ready(function() {
+            const interactionDropdown = $('#interaction-dropdown');
+            const interactionTypes = new Set();
+            elements.edges.forEach(edge => {
+                if (edge.data.interaction) {
+                    interactionTypes.add(edge.data.interaction);
+                }
+            });
+            interactionTypes.forEach(label => {
+                const option = $('<option>', { value: label, text: label });
+                interactionDropdown.append(option);
+        });
+
+
+        // material filters
+        $(document).ready(function() {
+            const materialDropdown = $('#material-dropdown');
+            const materialLabels = new Set();
+            elements.edges.forEach(edge => {
+                if (edge.data.materialLabel) {
+                    materialLabels.add(edge.data.materialLabel);
+                }
+        });
+        materialLabels.forEach(label => {
+            const option = $('<option>', { value: label, text: label });
+            materialDropdown.append(option);
+        });
+
+        // Event listener for material dropdown button click
+        $('#material-dropdown-btn').click(function() {
+            const btnOffset = $(this).offset();
+            $('#material-dropdown-content').css({
+                top: btnOffset.top + $(this).outerHeight(),
+                left: btnOffset.left
+            }).toggle();
+        });
+
+        // Event listener for material dropdown apply button click
+        $('#apply-material-filter-btn').click(function() {
+            $('#material-dropdown-content').hide(); // Hide dropdown after applying filter
+            updateGraph();
+            });
+        });
+
+        // Event listener for interaction dropdown button click
+        $('#interaction-dropdown-btn').click(function() {
+            const btnOffset = $(this).offset();
+            $('#interaction-dropdown-content').css({
+                top: btnOffset.top + $(this).outerHeight(),
+                left: btnOffset.left
+            }).toggle();
+        });
+
+        // Event listener for interaction dropdown apply button click
+        $('#apply-interaction-filter-btn').click(function() {
+            $('#interaction-dropdown-content').hide(); // Hide dropdown after applying filter
+            updateGraph();
+            });
+        });
+
+        // Function called whenever graph has to be updated
+        function updateGraph() {
+            const selectedMaterials = $('#material-dropdown').val();
             const selectedInteractions = $('.interaction-label:checked').map(function() {
                 return $(this).val();
             }).get();
-
             const includeHazardReduction = $('#hazard_reduction-button').hasClass('active');
             const includeHazardIncrease = $('#hazard_increase-button').hasClass('active');
-
             let filteredEdges = elements.edges;
-
             // Apply material filter
             if (selectedMaterials.length > 0) {
                 filteredEdges = filteredEdges.filter(edge => selectedMaterials.includes(edge.data.materialLabel));
             }
-
             // Apply interaction type filter
             if (selectedInteractions.length > 0) {
                 filteredEdges = filteredEdges.filter(edge => selectedInteractions.includes(edge.data.interaction));
             }
-
             // Apply hazard effect filters
             if (includeHazardReduction) {
                 filteredEdges = filteredEdges.filter(edge => edge.data.hazard_reduction === 1);
@@ -483,61 +580,26 @@ cy.on('select unselect', 'node', function(event){
             if (includeHazardIncrease) {
                 filteredEdges = filteredEdges.filter(edge => edge.data.hazard_increase === 1);
             }
-
             // Collect the IDs of nodes that are connected by the filtered edges
             const filteredNodeIds = new Set();
             filteredEdges.forEach(edge => {
                 filteredNodeIds.add(edge.data.source);
                 filteredNodeIds.add(edge.data.target);
             });
-
             // Filter nodes based on the collected IDs
             const filteredNodes = elements.nodes.filter(node => filteredNodeIds.has(node.data.id));
-
             const filteredElements = {
                 nodes: filteredNodes,
                 edges: filteredEdges
             };
-
             cy.json({ elements: filteredElements });
             recalculateLayout();
         }
 
-        const materialLabels = new Set();
-        elements.edges.forEach(edge => {
-            if (edge.data.materialLabel) {
-                materialLabels.add(edge.data.materialLabel);
-            }
-        });
-
-        const materialFiltersContainer = $('#material-filters');
-        materialLabels.forEach(label => {
-            const checkboxId = `material-${label.replace(/\s/g, '-').toLowerCase()}`;
-            const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="material-label" value="${label}" checked>`);
-            const labelElement = $(`<label for="${checkboxId}" class="material-label">${label}</label><br>`);
-            materialFiltersContainer.append(checkbox).append(labelElement);
-        });
-
-        const interactionTypes = new Set();
-        elements.edges.forEach(edge => {
-            if (edge.data.interaction) {
-                interactionTypes.add(edge.data.interaction);
-            }
-        });
-
-        const interactionFiltersContainer = $('#interaction-filters');
-        interactionTypes.forEach(type => {
-            const checkboxId = `interaction-${type.replace(/\s/g, '-').toLowerCase()}`;
-            const checkbox = $(`<input type="checkbox" id="${checkboxId}" class="interaction-label" value="${type}" checked>`);
-            const labelElement = $(`<label for="${checkboxId}" class="interaction-label">${type}</label><br>`);
-            interactionFiltersContainer.append(checkbox).append(labelElement);
-        });
-
         $('.material-label').change(updateGraph);
         $('.interaction-label').change(updateGraph);
 
-        // Node selection stuff
-
+        // Node and edge selection
         cy.on('select unselect', 'node', function(event){
             var selectedNodes = cy.$('node:selected');
             console.log(selectedNodes); // Log selected nodes to console for debugging
@@ -547,9 +609,7 @@ cy.on('select unselect', 'node', function(event){
             const clickedEdgeData = event.target.data();
             const sourceId = clickedEdgeData.source;
             const targetId = clickedEdgeData.target;
-
             const connectedEdges = cy.edges('[source="' + sourceId + '"][target="' + targetId + '"]');
-
             let assertionText = '';
             connectedEdges.forEach(edge => {
                 const causeLabel = edge.source().data('name');
@@ -560,44 +620,37 @@ cy.on('select unselect', 'node', function(event){
                 <button class="see-context-button" data-edge-id="${edgeId}">See Context</button><br>`;
                 assertionTriple = `<p><strong>Cause: ${causeLabel}</strong></p> <p><strong>Outcome: ${outcomeLabel}</strong></p>`;
             });
-
             $('#assertion-box').html(assertionText);
             $('#evidence-assertion-box').html(assertionTriple);
         });
-
         $('#assertion-box').on('click', '.see-context-button', function() {
             const edgeId = $(this).data('edge-id');
             updateInfoBox(edgeId);
-            
-        });
 
+        });
         $('#hazard_reduction-button').click(function() {
             $(this).toggleClass('active');
-            console.log('toggle hazard reduction');
             updateGraph();
         });
-
         $('#hazard_increase-button').click(function() {
             $(this).toggleClass('active');
-            console.log('toggle hazard increase');
             updateGraph();
-            
+
         });
+        });
+
+        // JavaScript to show/hide the about box
+        document.getElementById('about-text').addEventListener('click', function() {
+        document.getElementById('about-box').style.display = 'block';
+        });
+        // Clicking outside the about box hides it
+        document.addEventListener('click', function(event) {
+            const aboutBox = document.getElementById('about-box');
+            if (!aboutBox.contains(event.target) && event.target !== document.getElementById('about-text')) {
+                aboutBox.style.display = 'none';
+            }
     });
-// JavaScript to show/hide the about box
-document.getElementById('about-text').addEventListener('click', function() {
-    document.getElementById('about-box').style.display = 'block';
-});
 
-
-
-// Clicking outside the about box hides it
-document.addEventListener('click', function(event) {
-    const aboutBox = document.getElementById('about-box');
-    if (!aboutBox.contains(event.target) && event.target !== document.getElementById('about-text')) {
-        aboutBox.style.display = 'none';
-    }
-});
     </script>
 </body>
 </html>
